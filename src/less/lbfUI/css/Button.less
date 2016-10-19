@@ -1,0 +1,56 @@
+@import '../../base/variable';
+
+.lbf-button{line-height:38px; display:inline-block; font-size: 14px; text-align: center; cursor: pointer; color:@dark; border:1px solid @border-color; border-radius:2px; padding:0 15px; min-width:50px; background:@white no-repeat center; -webkit-transition: border-color .25s, background-color .25s; transition: border-color .25s, background-color .25s;	
+}
+big > .lbf-button, big.lbf-button, .lbf-button-big {
+		line-height: 43px; min-width: 118px; font-size: 16px;
+	}
+div.lbf-button{*display:inline; *zoom:1;}
+input.lbf-button,
+button.lbf-button {
+	overflow: visible; -ms-box-sizing: content-box; box-sizing: content-box; font-family: inherit;	
+}
+.lbf-button:hover{color:@dark; border-color:@border-hover; text-decoration:none;}
+.lbf-button:active{background-color:@light;}
+.lbf-button-disabled { opacity:.5; filter:alpha(opacity=50); cursor:default; -ms-pointer-events:none; pointer-events:none; }
+.lbf-button-disabled *{cursor:default;}
+.lbf-button-disabled,
+.lbf-button-disabled:hover,
+.lbf-button-disabled:active,
+.lbf-button-loading,
+.lbf-button-loading:hover,
+.lbf-button-loading:active { border-color:@border-color; background-color:@white;}
+
+.lbf-button-primary,
+.lbf-button-primary.lbf-button-disabled,
+.lbf-button-primary.lbf-button-disabled:hover,
+.lbf-button-primary.lbf-button-disabled:active,
+.lbf-button-primary.lbf-button-loading:hover,
+.lbf-button-primary.lbf-button-loading:active { border: 1px solid @blue; background-color: @blue; color: @white; }
+.lbf-button-primary:hover { background-color: @bright-blue; border-color:@bright-blue; color:@white; }
+.lbf-button-primary:active { background-color:@dark-blue; border-color:@dark-blue;}
+
+
+.lbf-button-success, 
+.lbf-button-success.lbf-button-disabled,
+.lbf-button-success.lbf-button-disabled:hover,
+.lbf-button-success.lbf-button-disabled:active,
+.lbf-button-success.lbf-button-loading:hover,
+.lbf-button-success.lbf-button-loading:active { border: 1px solid @green; background-color: @green; color: @white; }
+.lbf-button-success:hover { background-color: @green; border-color:@green; }
+.lbf-button-success:active { background-color:@green; border-color:@green; }
+
+
+.lbf-button-warning,
+.lbf-button-warning.lbf-button-disabled,
+.lbf-button-warning.lbf-button-disabled:hover,
+.lbf-button-warning.lbf-button-disabled:active,
+.lbf-button-warning.lbf-button-loading:hover,
+.lbf-button-warning.lbf-button-loading:active { border: 1px solid @red; background-color: @red; color: @white; }
+.lbf-button-warning:hover { background-color: #ff684f; border-color:#ff684f; color:@white;}
+.lbf-button-warning:active { background-color:#e63c1e; border-color:#e63c1e;}
+
+.lbf-button-loading { color: transparent!important; cursor:default; pointer-events:none; }
+.lbf-button.lbf-button-loading { background-image: url(../images/Button/loading.gif); }
+.lbf-button-primary.lbf-button-loading { background-image: url(../images/Button/loading-primary.gif);}
+.lbf-button-warning.lbf-button-loading { background-image: url(../images/Button/loading-warning.gif);}

@@ -1,0 +1,99 @@
+@import '../../base/mixin';
+
+.members-select-box {
+	.w(450);
+	.h(375);
+	.table-loading {
+		position: relative;
+		top:50%;
+		s.loading {
+			margin-top:-15px;
+		}
+		&.normal {
+			position: static;
+			s.loading {
+				margin-top: 0;
+			}
+		}
+	}
+	.tl;
+	li {
+		border-bottom: 1px #EBEDF2 solid;
+		height:74px;//jerry要求把80改成74px
+		.ovh;
+		.poi;
+		.member-info {
+			.w(240px);
+			.h(50px);
+			.mt(12px);//居中
+			.ml(15px);
+			.l;
+			.ovh;
+			&-img {
+				.mr(15px);
+			}
+			b,span {
+				.w(170px);
+				.db;
+				.ovh;
+				.ell;
+			}
+			b {
+				.mt(5px);
+				.c(#1e2330);
+				font-size:16px;
+				font-weight: normal;
+			}
+			span {
+				.c(#a8abb3);
+			}
+		}
+		.member-info-img {
+			.l;
+          >img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+          }
+		}
+        .lbf-itextbox {
+          .mt(30px);
+          .mr(15px);
+          .c(#a8abb3);
+          .r;
+        }
+		.lbf-icheckbox {
+	    	.mt(27px);//30->27
+	    	.mr(15px);
+		    .r;
+		}
+		&:hover {
+			background-color: #F5FAFE;
+		}
+		&.single {
+			.lbf-icheckbox {
+				//background-position:0 100px;
+				display: none;
+			}
+		}
+		&.selected {
+			.bg(#d3e9ff);
+			.lbf-icheckbox {
+				background-position:0 -20px;
+				//display: none;
+			}
+		}
+	}
+	.list-null {
+		font-size: 20px;
+		top: 50%;
+		left: 50%;
+		.w(90px);
+		.h(26px);
+		.ml(-45px);
+		.mt(-13px);
+		.abs;
+		.tc;
+		.def;
+	}
+}

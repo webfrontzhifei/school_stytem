@@ -1,0 +1,109 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+.lbf-combobox {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-family: 'microsoft yahei', arial;
+  vertical-align: bottom;
+  /* select */
+}
+.lbf-combobox-label {
+  position: relative;
+  display: block;
+  padding: 0 40px 0 12px;
+  text-align: left;
+  line-height: 38px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.lbf-combobox-label:hover {
+  border-color: #ABABAF;
+  text-decoration: none;
+  z-index: 1000;
+}
+.lbf-combobox-label:focus,
+.lbf-combobox-focus .lbf-combobox-label {
+  border-color: #18c09d;
+}
+.lbf-combobox-label:active {
+  background-color: #ededed;
+}
+.lbf-combobox-caption {
+  display: block;
+}
+.lbf-combobox-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 38px;
+  background: url('../images/Combobox/arrow-down.png') no-repeat center;
+}
+body .lbf-combobox-on,
+body .lbf-combobox-on:hover {
+  border: 1px solid #18c09d;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1000;
+}
+.lbf-combobox-error .lbf-combobox-label,
+.lbf-combobox-error .lbf-combobox-label:hover {
+  border-color: #ff5237;
+  background-color: #ffe2df;
+  z-index: 1000;
+}
+.lbf-combobox-panel {
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: -1px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #18C09D;
+  font-family: 'microsoft yahei', arial;
+}
+.lbf-combobox-panel .lbf-combobox-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lbf-combobox-panel .lbf-combobox-option {
+  background-color: #fff;
+}
+.lbf-combobox-panel .lbf-combobox-item {
+  display: block;
+  height: 36px;
+  padding: 0 12px;
+  line-height: 36px;
+  color: #333333;
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+}
+.lbf-combobox-panel .lbf-combobox-item:hover {
+  text-decoration: none;
+}
+.lbf-combobox-panel .lbf-combobox-option:hover {
+  background-color: #EAFFFA;
+}
+.lbf-combobox-panel .lbf-combobox-item-selected,
+.lbf-combobox-panel .lbf-combobox-item-selected:hover {
+  background-color: #D8FFF4;
+}
+.lbf-combobox-disabled {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  pointer-events: none;
+  cursor: default;
+  *zoom: 1;
+}
+.lbf-combobox select {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}

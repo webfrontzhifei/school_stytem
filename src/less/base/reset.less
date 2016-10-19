@@ -1,0 +1,98 @@
+/**
+ * CSS reset
+ * @fileoverview
+ * @author seanxphuang
+ * @create 14-5-27
+ */
+
+@import "mixin";
+
+html {
+    overflow-y: scroll;
+}
+
+:root {
+    overflow: auto;
+}
+
+body {
+    min-width: 1220px;
+    font: status-bar;
+    font-size: 14px;
+    line-height: 1.42858;
+    color: @black;
+}
+
+:focus { 
+    outline:none;
+}
+
+h6, h5, h4, h3, h2, h1 {
+    margin:0;
+    font-size: 100%;
+    .n;
+}
+
+body, form, ul, ol, dl, dd, p{
+    margin:0;
+}
+
+ul, ol {
+    list-style-type:none;
+    padding: 0;
+}
+
+img {
+    border:none;
+    .vb;
+}
+
+button, input, select, textarea, dialog {
+    .f(1em);
+    margin:0;
+    padding:0;
+    font-family: inherit;
+    color: inherit;
+}
+
+select {
+    .opacity;
+}
+
+a {
+    text-decoration: none;
+    color: @blue;
+
+    * {
+        .poi;
+    }
+
+    &:hover {
+        //jerry说此处应用dark-blue
+        color: @dark-blue;
+    }
+}
+
+sup {
+    vertical-align:text-top;
+}
+
+sub {
+    vertical-align:text-bottom;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    table-layout:fixed;
+}
+
+[hidden] { .dn; }
+
+/*禁用ie下文本框后面的X*/
+input::-ms-clear { .dn; }
+
+div::-webkit-scrollbar{width:8px; height:8px;}
+div::-webkit-scrollbar-thumb{ background-color: #bbb; border-radius:8px; }
+div::-webkit-scrollbar-thumb:hover { background-color: #aaa; }
+div::-webkit-scrollbar-track-piece{background-color:#ddd;}

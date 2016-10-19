@@ -1,0 +1,37 @@
+.lbf-autocomplete {
+  display: none;
+  position: absolute;
+}
+.lbf-autocomplete-options {
+  padding: 5px 0;
+  margin-left: 0;
+  border: 1px solid #ccc;
+  border: 0 rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.lbf-autocomplete-options li {
+  height: 34px;
+  white-space: nowrap;
+}
+.lbf-autocomplete-options li a {
+  display: block;
+  padding: 7px 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #545a6c;
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+}
+.lbf-autocomplete-options li a b {
+  font-weight: 100;
+}
+.lbf-autocomplete-options li a span {
+  cursor: pointer;
+  float: right;
+}
+.lbf-autocomplete-options li.on a {
+  background-color: #EAFFFA;
+}

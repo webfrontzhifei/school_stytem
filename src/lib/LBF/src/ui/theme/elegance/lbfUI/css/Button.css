@@ -1,0 +1,126 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+.lbf-button {
+  display: inline-block;
+  min-width: 46px;
+  line-height: 38px;
+  padding: 0 16px;
+  border: 1px solid #d0d0d5;
+  border-radius: 4px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 100%;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  color: #545a6c;
+  overflow: visible;
+  cursor: pointer;
+}
+div.lbf-button {
+  *display: inline;
+  *zoom: 1;
+}
+.lbf-button:hover {
+  color: #2d3441;
+  border-color: #a6a6a6;
+  text-decoration: none;
+}
+.lbf-button:active {
+  background-color: #f5f5fa;
+}
+.lbf-button-disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.lbf-button-disabled,
+.lbf-button-loading {
+  cursor: default;
+  pointer-events: none;
+}
+.lbf-button-disabled,
+.lbf-button-disabled:hover,
+.lbf-button-disabled:active,
+.lbf-button-loading,
+.lbf-button-loading:hover,
+.lbf-button-loading:active {
+  border-color: #ccc;
+  background-color: #fafafa;
+}
+.lbf-button-primary,
+.lbf-button-primary.lbf-button-disabled,
+.lbf-button-primary.lbf-button-disabled:hover,
+.lbf-button-primary.lbf-button-disabled:active,
+.lbf-button-primary.lbf-button-loading:hover,
+.lbf-button-primary.lbf-button-loading:active {
+  border: 1px solid #5480e0;
+  background-color: #5480e0;
+  color: #fff;
+}
+.lbf-button-primary:hover {
+  border-color: #5E90FB;
+  background-color: #5E90FB;
+  color: #fff;
+}
+.lbf-button-primary:active {
+  border-color: #4A70C4;
+  background-color: #4A70C4;
+  color: #fff;
+}
+.lbf-button-success,
+.lbf-button-success.lbf-button-disabled,
+.lbf-button-success.lbf-button-disabled:hover,
+.lbf-button-success.lbf-button-disabled:active,
+.lbf-button-success.lbf-button-loading:hover,
+.lbf-button-success.lbf-button-loading:active {
+  border: 1px solid #1BC09A;
+  background-color: #1BC09A;
+  color: #fff;
+}
+.lbf-button-success:hover,
+.lbf-button-success:active {
+  border-color: #1FCEA5;
+  background-color: #1FCEA5;
+  color: #fff;
+}
+.lbf-button-warning,
+.lbf-button-warning.lbf-button-disabled,
+.lbf-button-warning.lbf-button-disabled:hover,
+.lbf-button-warning.lbf-button-disabled:active,
+.lbf-button-warning.lbf-button-loading:hover,
+.lbf-button-warning.lbf-button-loading:active {
+  border: 1px solid #F4615C;
+  background-color: #F4615C;
+  color: #fff;
+}
+.lbf-button-warning:hover {
+  border-color: #FF7772;
+  background-color: #FF7772;
+  color: #fff;
+}
+.lbf-button-warning:active {
+  border-color: #DC5652;
+  background-color: #DC5652;
+  color: #fff;
+}
+.lbf-button-loading {
+  color: transparent!important;
+  background-image: url('../images/Button/loading.gif');
+}
+.lbf-button-primary.lbf-button-loading {
+  background-image: url('../images/Button/loading-primary.gif');
+}
+.lbf-button-warning.lbf-button-loading {
+  background-image: url('../images/Button/loading-warning.gif');
+}

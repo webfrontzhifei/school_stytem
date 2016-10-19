@@ -1,0 +1,219 @@
+@import '../base/variable';
+
+:root .page {
+  overflow: hidden;
+}
+
+.header {
+  height: 70px;
+  line-height: 70px;
+  background-color: @dark;
+  position: relative;
+  a {
+    cursor: pointer;
+    -webkit-transition: all .15s;
+    transition: all .15s;
+  }
+}
+.header-logo {
+  float: left;
+  padding: 0 30px;
+  -webkit-transition: padding .25s;
+  transition: padding .25s;
+}
+.header-logo-a {
+  display: block;
+  width: 138px;
+  background: url(images/logo-s.png) no-repeat left center;
+  text-indent: -9em;
+  overflow: hidden;
+}
+//small width definition for header-logo
+.Small-Header-Logo(){
+  .header-logo {
+    padding: 0 14px 0 16px;
+  }
+  .header-logo-a {
+    width: 39px;
+  }
+}
+//For browers unsupport @media
+.page-small{
+  .Small-Header-Logo;
+}
+//For Advanced browers
+@media screen and (max-width: 1340px) {
+  .Small-Header-Logo;
+}
+.header-nav-li {
+  float: left;
+  min-width: 39px;
+  padding: 0 23px;
+  font-size: 18px;
+  text-align: center;
+  color: @nav-color;
+  position: relative;
+  &:hover {
+    color: @nav-color;
+    background-color: @nav-hover;
+  }
+}
+.header-nav-active,
+.header-nav-active:hover {
+  color: @white;
+}
+
+.header-nav-active:after {
+  content: '';
+  position: absolute; bottom: 0; left: 15px; right: 15px;
+  border-bottom: 4px solid @nav-border;
+}
+
+/* slide */
+.slide {
+  width: 199px;
+  padding: 10px 0;
+  border-right: 1px solid @light;
+  background-color: @white;
+  position: absolute; top: 70px; bottom: 0;
+  -webkit-transition: width .25s;
+  transition: width .25s;
+  white-space: nowrap;
+  z-index: 5;
+}
+.slide-adjust-90{
+  top:90px;//此调整针对浏览器缩放时出现的tip所占高度
+}
+@import 'icons-nav';
+
+.slide-dl {
+  margin: 15px 0;
+  line-height: 20px;
+  overflow: hidden;
+  &:hover {
+    overflow: visible;
+  }
+}
+.slide-dt {
+  height: 30px; line-height: 30px;
+  padding: 0 30px;
+  color: @gray;
+  -webkit-transition: height .15s;
+  transition: height .15s;
+}
+
+.slide-dd-a {
+  display: block;
+  line-height: 20px;
+  padding: 15px 30px;
+  font-size: 15px;//fix the bug of Microsoft YaHei Font, add bu xinxu 其实然并卵
+  color: @dark;
+  -webkit-transition: color .15s;
+  transition: color .15s;
+}
+.slide-dd-a:hover,
+.active .slide-dd-a { 
+  color: @blue;
+}
+.slide-dd-a > i {
+  margin-right: 12px;
+}
+
+
+/* content */
+.content {
+  margin-left: 199px;
+  border-left: 1px solid @light;
+  margin-right: ~'calc(100% - 100vw)';
+}
+
+.slide[style*='height'] + .content {
+  border-left-color: transparent;
+}
+
+//small width definition for .slide & .content
+.Small-Slide-and-Content(){
+  .slide {
+    box-shadow: 0 0 15px rgba(0,0,0,.25);
+  }
+  .content {
+    margin-right: 0;
+    margin-left: 69px;
+  }
+  .slide-unopen {
+    width: 69px;
+    padding-top: 15px;  padding-bottom: 5px;
+    box-shadow: none;
+    .slide-dt {
+      width: 50px; height: 0;
+      padding: 0; margin: 0 auto;
+      font-size: 0;
+      color: transparent;
+      overflow: hidden;
+    }
+    .slide-dl + .slide-dl > .slide-dt {
+      border-bottom: 1px solid @light;
+    }
+    .slide-dd-a {
+      width: 20px;
+      padding-left: 24px; padding-right: 24px;
+      color: transparent;
+      -webkit-transition: none;
+      transition: none;
+    }
+    .slide-dd-a:after {
+      content: attr(data-title);
+      display: none;
+      line-height: 20px;
+      position: absolute; left: 70px;
+      padding: 5px 10px; margin: -7px 0 0 6px;
+      border-radius: 2px;
+      background-color: @dark;
+      font-size: 12px;
+      color: #fff;
+    }
+    .slide-dd-a:before {
+      content: '';
+      display: none;
+      position: absolute; left: 70px;
+      width: 0; height: 0;
+      margin: 2px 0 0 -6px;
+      border: 6px solid transparent;
+      border-right-color: @dark;
+      overflow: hidden;
+    }
+    .slide-dd-a:hover {
+      &:after,
+      &:before {
+        display: inline;
+      }
+    }
+    .slide-toggle {
+      position: absolute; top: 0; left: 0;
+      width: 70px; height: 30px;
+      text-align: center;
+    }
+    .slide-toggle:before {
+      content: '';
+      display: inline-block;
+      width: 0; height: 0;
+      margin: 10px 0 0 6px;
+      border: 6px solid transparent;
+      border-left-color: @border-normal;
+      -webkit-transition: border-color .25s;
+      transition: border-color .25s;
+      overflow: hidden;
+    }
+    .slide-toggle:hover:before {
+      border-left-color: @border-hover;
+    }
+  }
+}
+//For browers unsupport @media
+.page-small{
+  .Small-Slide-and-Content;
+}
+//For Advanced browers
+@media screen and (max-width: 1340px) {
+  .Small-Slide-and-Content;
+}

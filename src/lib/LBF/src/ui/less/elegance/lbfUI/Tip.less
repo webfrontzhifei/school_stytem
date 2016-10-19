@@ -1,0 +1,93 @@
+@import '../base/variable';
+
+.lbf-tip { 
+	position: absolute; max-width: 250px; font-size: 12px; border-radius: 3px; background-color: @lbf-tip-color-background;
+	&-content {
+		padding: 6px 8px; color: @lbf-tip-color; line-height: 18px;
+	}
+	&-arrow { 
+		position: absolute;
+	}
+	/* arrow */
+	&-top &-arrow {
+		left: 50%; bottom: 1px;
+	}
+	&-bottom &-arrow {
+		left: 50%; top: -6px;
+	}
+	&-right &-arrow {
+		top: 50%; left: -6px;
+	}
+	&-left &-arrow {
+		top: 50%; right: 0;
+	}
+	/* 纯CSS实现三角方案，用背景图可忽略 */
+	&-arrow-before,
+	&-arrow-after { 
+		position: absolute; width: 0; height: 0; overflow: hidden; border: @lbf-tip-size solid;
+	}
+	
+	&-top &-arrow-before { 
+		left: -@lbf-tip-size; top: 1px; border-color: @lbf-tip-color-border transparent; border-bottom-width: 0;
+	}
+	&-top &-arrow-after { 
+		left: -@lbf-tip-size; border-color: @lbf-tip-color-border transparent; border-bottom-width: 0;
+	}
+	
+	&-right &-arrow-before {
+		top: -@lbf-tip-size; border-left-width: 0; border-color: transparent @lbf-tip-color-border;
+	}
+	&-right &-arrow-after {
+		left: 1px; top: -@lbf-tip-size; border-left-width: 0; border-color: transparent @lbf-tip-color-border;
+	}
+	
+	&-bottom &-arrow-before  {
+		left: -@lbf-tip-size; border-color: @lbf-tip-color-border transparent; border-top-width: 0;
+	}
+	&-bottom &-arrow-after {
+		left: -@lbf-tip-size; top: 1px; border-color: @lbf-tip-color-border transparent; border-top-width: 0;
+	}
+	
+	&-left &-arrow-after {
+		top: -@lbf-tip-size; left: -1px; border-color: transparent @lbf-tip-color-border; border-right-width: 0;
+	}
+	&-left &-arrow-before {
+		top: -@lbf-tip-size; border-color: transparent @lbf-tip-color-border; border-right-width: 0;
+	}
+	
+	/* error */
+	&-error {
+		background-color: @lbf-tip-color-background-error;
+	}
+	
+	&-error&-top &-arrow-before {
+		border-color: @lbf-tip-color-border-error transparent; 
+	}
+	&-error&-top &-arrow-after {
+		border-color: @lbf-tip-color-border-error transparent; 
+	}
+	
+	&-error&-right &-arrow-before {
+		border-color: transparent  @lbf-tip-color-border-error;
+	}
+	&-error&-right &-arrow-after {
+		border-color: transparent  @lbf-tip-color-border-error;
+	}
+	
+	&-error&-bottom &-arrow-before  {
+		border-color: @lbf-tip-color-border-error transparent; 
+	}
+	&-error&-bottom &-arrow-after {
+		border-color: @lbf-tip-color-border-error transparent; 
+	}
+	
+	&-error&-left &-arrow-after {
+		border-color: transparent  @lbf-tip-color-border-error; 
+	}
+	&-error&-left &-arrow-before {
+		 border-color: transparent  @lbf-tip-color-border-error; 
+	}
+}
+
+
+

@@ -1,0 +1,172 @@
+@import '../../base/variable';
+/* 分传统文本域和线性文本域 */
+textarea {
+	line-height: 20px;
+	outline:0 none; 
+	font-family: inherit;
+	resize: none;
+}
+/* 1. 传统式 */
+textarea.lbf-textarea, 
+.lbf-textarea > .lbf-textarea {
+	height: auto; width: auto;
+	padding: 9px 8px; 
+	border: 1px solid @border-normal; 
+	border-radius:2px; 
+	background-color:#fff;	
+	color: @dark;
+	font-size: 14px;
+	-webkit-transition: border-color .25s;
+	transition: border-color .25s;
+	vertical-align: top;
+	overflow:auto; 
+	resize:none;
+}
+textarea.lbf-textarea:hover,
+.lbf-textarea > .lbf-textarea:hover { 
+	border-color: @border-hover; 
+}
+textarea.lbf-textarea:focus,
+.lbf-textarea > .lbf-textarea:focus {
+	border-color: @blue; 
+}
+
+
+
+/* 2. 线性式 */
+span.lbf-textarea {
+	display: inline-block;
+}
+
+span.lbf-textarea,
+div.lbf-textarea {
+	position: relative;
+	margin-top: 30px;
+	padding-bottom: 38px;
+}
+p.lbf-textarea {
+	position: relative;
+	padding-bottom: 38px;
+}
+
+.lbf-textarea > textarea {
+	width: 100%;
+	height: 20px;
+	padding: 9px 0;	
+	border: 0 none;	
+	background: none;
+	font-size: 16px;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.lbf-textarea:after {
+	content: '';
+	position: absolute;
+	left: 0; right: 0; bottom: 0;
+	border-top: 1px solid @border-normal;
+	border-bottom: 20px solid transparent;
+	-webkit-transition: border-color .25s;
+	transition: border-color .25s
+}
+
+.lbf-textarea-hover:after  { 
+	border-top-color: @border-hover; 
+}
+.lbf-textarea-focus:after {
+	border-top: 2px solid @blue;
+}
+.lbf-textarea-error:after  { 
+	border-top-color: @red;  
+}
+
+.lbf-textarea.lbf-textarea-init {
+	padding-bottom: 0;
+}
+.lbf-textarea-init > textarea {
+	min-height: 58px;
+	-webkit-transition: height .15s;
+	transition: height .15s;
+	visibility: visible;
+}
+
+/* placeholder */
+.lbf-textarea-init > .lbf-textarea-placeholder { position:absolute; top:9px; left:0; color: @light-gray; -webkit-transition: all .25s; transition: all .25s; cursor:text;}
+
+.lbf-textarea > textarea:focus ~ .lbf-textarea-placeholder,
+.lbf-textarea-active .lbf-textarea-placeholder {
+	top: -25px;
+	font-size: 14px;	
+}
+.lbf-textarea > .lbf-textarea ~ .lbf-textarea-placeholder,
+.lbf-textarea > .lbf-textarea:focus ~ .lbf-textarea-placeholder {
+	font-size: 14px;
+}
+
+.lbf-textarea > textarea:focus ~ .lbf-textarea-placeholder {
+	color: @blue;
+}
+.lbf-textarea-error > .lbf-textarea-placeholder,
+.lbf-textarea-error > textarea:focus ~ .lbf-textarea-placeholder {
+	color: @red;
+}
+.lbf-textarea-placeholder .required {
+	position: absolute; margin: 2px 0 0 -10px; color: @red;
+}
+
+/* normal textarea */
+div.lbf-textarea-normal {
+	margin-top: 0;
+	padding-bottom: 0;
+}
+.lbf-textarea-normal:after {
+	display: none;
+}
+.lbf-textarea-normal > .lbf-textarea-placeholder {
+	color: @light-gray!important;
+	-webkit-transition: opacity .15s;
+	transition: opacity .15s;
+	left: 9px; right: 9px;
+}
+.lbf-textarea-normal textarea:focus ~ .lbf-textarea-placeholder,
+.lbf-textarea-normal.lbf-textarea-active .lbf-textarea-placeholder {
+	top: 9px; 
+	font-size: 100%;
+	opacity: .38;
+	filter: ~'alpha(opacity=38)';
+}
+
+
+/* value length */
+.lbf-textarea-number {
+	position: absolute;	
+	bottom: -3px; right: 0;
+	font-size: 12px;
+	color: @light-gray;
+}
+/* 错误提示 */
+.lbf-textarea > .error {
+	color: @red;
+	position: absolute;
+	padding: 9px 0;
+	font-size: 14px;
+	top: -25px; right: 0;
+}
+
+
+
+
+
+
+
+.lbf-textarea-flash-on,
+.lbf-textarea-flash-on:hover,
+.lbf-textarea-flash-on:focus { border-color:#4d90fe;}
+.lbf-textarea-flash-off,
+.lbf-textarea-flash-off:hover,
+.lbf-textarea-flash-off { border-color:#b9b9b9; border-top-color:#a0a0a0;}
+.lbf-textarea-disabled { background:#eeeeee; pointer-events: none;}
+.lbf-textarea-disabled textarea { background:#eeeeee; color:#bbbbbb;}
+

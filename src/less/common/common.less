@@ -1,0 +1,599 @@
+@import '../base/mixin';
+@import '../base/icons';
+@import '../base/extend';
+@import 'constr';
+@import 'table';
+@import 'animation';
+@import 'dialog';
+
+// icon-ol-bg for 圈里面一个数字类型的样式
+.icon-ol {
+  .dib;
+  .w(20px);
+  .h(20px);
+  background-image: url('images/icons-ol-bg.png');
+  .border-radius(20px);
+  .tc;
+  .c(@white);
+  font-size: 14px;
+}
+.gb-hintbar{
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  background-color: #F6F6CC;
+  color: #000;
+}
+
+.loading {
+  .dib();
+  .w(20px);
+  .h(20px);
+  background-repeat: no-repeat;
+  background-image: url('images/loading.gif');
+  background: url('images/loading.png'), linear-gradient(transparent, transparent);
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 800ms linear infinite;
+  &.whiteSpin {
+    background-image: url('images/loading-white.gif');
+    background: url('images/loading-white.png'), linear-gradient(transparent, transparent);
+  }
+  s& {
+    .p(5);
+    background-image: url('images/loading2.gif');
+    background: url('images/loading2.png'), linear-gradient(transparent, transparent);
+    &.whiteSpin {
+      background-image: url('images/loading2-white.gif');
+      background: url('images/loading2-white.png'), linear-gradient(transparent, transparent);
+    }
+  }
+}
+
+.link-search-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: top;
+}
+
+.link-search-x {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.link-search-x .icon-con-search {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.link-search-input {
+  width: 25px;
+  padding: 3px 5px;
+  margin-right: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #f0f3f5;
+  background-color: transparent;
+}
+
+.link-search-x .lbf-search-input a {
+  padding: 9px;
+}
+
+// todo
+// merge to lbf
+.btn-group {
+  .dib;
+
+  .lbf-button {
+    .rel;
+    left: -1px;
+    z-index: 1;
+    border-radius: 0;
+
+    &:hover {
+      z-index: 10;
+    }
+  }
+
+  .btn-left {
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .btn-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .btn-checked {
+    .c(@white);
+    .bg(@nav-border);
+    border-color: @nav-border;
+  }
+}
+
+.left {
+  .l;
+}
+
+.right {
+  .r;
+}
+
+.dark {
+  .dark;
+}
+
+a.dark:hover, .blue {
+  .blue;
+}
+
+.red {
+  .red;
+}
+
+.gray {
+  .c(#a8abb3);
+}
+
+a.blue:hover {
+  color: @dark-blue;
+}
+
+.green {
+  .green;
+}
+
+.white, .white:hover {
+  .white;
+}
+
+// verify code style
+.code {
+  &-box {
+    .w(170);
+    .dib;
+  }
+  &-btn {
+    .abs;
+    .ml(10);
+    .mt(-5);
+    img {
+      .vm;
+      .mr(15);
+    }
+  }
+}
+
+/* 通用页面级常驻提示、警告样式 */
+.remind-info {
+  min-height: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding: 13px 54px;
+  border-radius: 4px;
+  font-size: 14px;
+  color:#1e2331;
+  position: relative;
+  & > h6 {
+    line-height: 1.5;
+    margin-top: -1px;
+  }
+  & > p {
+    line-height: 1.5;
+  }
+  & > i:first-child {
+    .abs();
+    .ml(-34px);
+  }
+  & > a[class$='-close'] {
+    position: absolute;
+    right: 16px;
+    top: 15px;
+  }
+  &-warning {
+    //color: #ff5237;
+    background-color: #ffe2df;
+  }
+  &-success {
+    //color: #00bf23;
+    background-color: #d9f7df;
+  }
+  &-wait {
+    //color: #e5a325;
+    background-color: #fff1d6;
+  }
+  &-error {
+    //color: #ff4222;
+    background-color: #ffe3de;
+  }
+  &-info {
+    //color: #1e2431;
+    background-color: #e0ebfd;
+  }
+  &.no-close {
+    padding-right: 20px;
+    & > a[class$='-close'] {
+      display: none;
+    }
+  }
+
+}
+
+/* 全局公用的内容主体投影样式，PS: 不建议直用在table上，因为IE9 border-collpase模式下投影无效 */
+.box-shadow {
+  .border-shadow();
+}
+
+/* 白色汽泡 */
+body .tip-white-theme {
+
+  .bg(#fff);
+  border: 1px solid @border-gray;
+
+  .lbf-tip-content {
+    .c(@dark);
+  }
+
+  .quota-gray-text {
+    .c(@gray);
+  }
+
+  .lbf-tip-arrow-after {
+    border-color: #fff transparent;
+  }
+
+  .lbf-tip-arrow-before {
+    border-color: @border-gray transparent;
+  }
+
+  //同时使用has-shadow类名，即可实现有box-shadow
+  &.has-shadow {
+    border-color: @border-normal;
+    box-shadow: 0 1px 15px 0 rgba(30, 36, 49, 0.15);
+    .lbf-tip-arrow-before {
+      border-color: @border-normal transparent;
+    }
+  }
+}
+
+body .avatar-tip {
+  .w(130px);
+  .h(40px);
+  .tc();
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Webkit内核兼容CSS */
+    top:64px !important;//修正修改密码的tip在chrome等下的位置偏移
+  }
+  background: #262f40;
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+
+  .lbf-tip-content {
+    .lh(28px);
+    max-height: 40px;
+    .mb(10px);
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    a{
+      color:#fff;
+      padding-left: 13px;
+      display: block;
+    }
+    &:hover{
+      background: #141823;
+    }
+  }
+  .lbf-tip-arrow{
+    display: none;
+  }
+
+}
+
+//头部重置密码框
+/* .global-reset-pwd {
+  width: 474px;
+  li {
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .item-head {
+    float: left;
+    width: 94px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .tip {
+    padding-top: 3px;
+    color: #a2a9b6;
+  }
+  .item-body {
+    float: right;
+    width: 380px;
+  }
+  .pwd-new {
+    margin-bottom: 16px;
+  }
+  .verify-code {
+    height: 53px;
+    margin-bottom: 0;
+    .item-head {
+      height: 53px;
+      line-height: 53px;
+    }
+    .item-body {
+      height: 53px;
+    }
+    .lbf-text-input {
+      float: left;
+      width: 152px;
+      margin-top: 6px;
+    }
+    .code-btn {
+      margin-top: 0;
+    }
+} */
+.global-modifypwd-dialog {
+    
+    .lbf-panel-body {
+        padding: 0;
+    }
+    
+    .lbf-panel-foot {
+        padding: 0;
+    }
+    
+    .mpop_step {
+        margin: 0;
+    } 
+    
+    .area-step {
+        margin: 0;
+        padding-top: 40px;
+    }
+    
+    .btn-box {
+        text-align: center;
+        margin-top: 70px;
+        
+        .lbf-button {
+            line-height: 43px;
+            min-width: 118px;
+            font-size: 16px;
+            margin: auto 10px;
+        }
+    }
+    
+    .tips-bottom {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 45px;
+        color: @gray;
+        background-color: #f8fafb;
+        
+        .icon {
+            .mt(-3px);
+            .mr(3px);
+            vertical-align: middle;
+        } 
+    }
+    
+    .area-step2 {
+        display: none;
+        
+        .lbf-text-input {
+            margin-bottom: 40px;
+        }
+    }
+    
+    .modifypwd-wrap {
+      width: 375px;
+      margin: auto;
+
+      li {
+        overflow: hidden;
+
+      }
+      .item-head {
+        float: left;
+        width: 94px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 30px;
+      }
+      .tip {
+        padding-top: 3px;
+        color: #a2a9b6;
+      }
+      .item-body {
+        float: right;
+        width: 270px;
+      }
+      .pwd-new {
+        margin-bottom: 16px;
+      }
+      .verify-code {
+        margin-bottom: 0;
+        margin-top: 30px;
+        
+
+        .lbf-text-input {
+          float: left;
+          width: 155px;
+          /*margin-top: 6px;*/
+        }
+        .code-btn {
+          margin-top: 0;
+        }
+        .sendcode-btn {
+            margin-top: 30px;
+            float: right;
+        }
+      }
+      
+
+        
+        .lbf-text-input-remind {
+            line-height: 20px;
+            padding-top: 5px;
+        }
+
+    }
+    
+    .mpop_step {
+      border: 0;
+      background-color: #f4f6f9;
+    }
+    
+    .name {
+        /*color: @blue;*/
+        padding: 0 5px;
+    }
+    
+    .phone {
+        padding: 0 5px;
+    }
+
+}
+
+.global-unbind-dialog {
+    .name {
+        padding: 0 5px;
+    }
+    
+    p {
+        text-align: center!important;
+    }
+}
+
+
+
+
+
+
+
+/**
+step进度框，支持2步和三步
+*/
+
+.mpop_step {
+  height: 40px;
+  line-height: 40px;
+  margin: 0 -25px;
+  border-top: 1px solid #d0d0d5;
+  border-bottom: 1px solid #d0d0d5;
+  font-size: 16px;
+  color: #a2a9b6;
+  overflow: hidden;
+}
+  .mpop_step_1,
+  .mpop_step_2,
+  .mpop_step_3 {
+    float: left;
+    text-align: center;
+    position: relative;
+  }
+  .mpop_col2 {
+    width: 50%;
+  }
+  .mpop_col3 {
+    width: 33.3%;
+  }
+
+  .mpop_step_3 {
+    float: right;
+  }
+  .mpop_step .active {
+    background-color: #7f8699;
+    color: #fff;
+  }
+  .active > .mpop_step_num {
+    background-color: #7f8699;
+    color: #fff;
+  }
+
+  .mpop_step_1:after,
+  .mpop_step_2:after,
+  .mpop_step_2:before,
+  .mpop_step_3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-width: 20px 15px;
+    border-style: solid;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .mpop_step_1:after,
+  .mpop_step_2:after {
+    right: -30px;
+    border-color: transparent;
+    border-left-color: #7f8699;
+  }
+
+  .mpop_step_2:before,
+  .mpop_step_3:before {
+    left: 0px;
+    border-color: transparent;
+    border-left-color: #f4f6f9;
+  }
+  //.mpop_mg_step_2.active,
+  //.mpop_mg_step_3.active {
+  //  //width: 44.3%;
+  //  //margin-left: 5.7%;
+  //  //text-indent: -30px;
+  //}
+  .mpop_step .active:after,
+  .mpop_step .active:before {
+    visibility: visible;
+  }
+
+  //Empty List has Infomation Msg\guide-link\refresh-icon
+  .empty-info {
+    .tc();
+    .msg {
+      font-size: 20px;
+    }
+    .lbf-button-link {
+      font-size: 16px;
+    }
+  }
+
+.top-progress-bar {
+  position: fixed;
+  top: 0;
+  left: -1600px;
+  width: 90%;
+  height: 10px;
+  opacity: 0;
+  border-top: 2px solid #0067ed;
+  animation: top-bar-animation 400ms ease;
+  -webkit-animation: top-bar-animation 400ms ease;
+}
+
+//table-page-data
+//added by vergil
+.table-page-data {
+    & > span {
+        padding: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .table-page-a {
+        span {
+            .c(@blue);
+        }
+    }
+}

@@ -1,0 +1,220 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.4
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+.ztree * {
+  padding: 0;
+  margin: 0;
+}
+.ztree {
+  margin: 0;
+  color: #1e2330;
+  font-size: 14px;
+  font-family: 'microsoft yahei', Tahoma, sans-serif;
+  min-width: 100%;
+  float: left;
+}
+.ztree li {
+  list-style: none;
+  line-height: 14px;
+  text-align: left;
+  white-space: nowrap;
+}
+.ztree li ul.line {
+  background: url(../images/zTree/line_conn.gif) 0 0 repeat-y;
+}
+.ztree li a {
+  display: block;
+  padding: 0 3px 0 0;
+  cursor: pointer;
+  height: 35px;
+  color: #1e2330;
+  background-color: transparent;
+  text-decoration: none;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ztree li a:hover {
+  text-decoration: none;
+  background-color: #f2fbff;
+}
+.ztree li a.curSelectedNode,
+.ztree li a.curSelectedNode:hover {
+  padding-top: 0px;
+  background-color: #d3e9ff;
+  color: #1e2330;
+  height: 35px;
+}
+.ztree li a.curSelectedNode_Edit {
+  padding-top: 0px;
+  background-color:transparent;
+  color: #1e2330;
+  height: 35px;
+  border: 0;
+}
+.ztree li a.tmpTargetNode_inner {
+  padding-top: 0px;
+  background-color: #f2fbff;
+  height: 35px;
+}
+.ztree li a.tmpTargetNode_prev {
+  border-top: 1px solid #00a1f2;
+}
+.ztree li a.tmpTargetNode_next {
+  border-bottom: 1px solid #00a1f2;
+}
+.ztree li a .tree_btn_right {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0 5px;
+  line-height: 1.2;
+  letter-spacing: -0.25em;
+}
+.ztree li a .tree_btn_right .disabled {
+  opacity: .4;
+  cursor: default;
+  outline: 0 none;
+}
+.ztree li a .tree_btn_right:empty {
+  display: none;
+}
+.ztree li a .icon-mng-create-org-disable,
+.ztree li a .icon-mng-delete-disable,
+.ztree li a .icon-mng-edit-disable {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin-top: 8px;
+}
+.ztree li a .tree_btn_clear {
+  background: url(../images/zTree/icon-clear.png) no-repeat center;
+}
+.ztree li a:hover .tree_btn_right {
+  background-color: #f2fbff;
+}
+.ztree li a.curSelectedNode_Edit .tree_btn_right,
+.ztree li a.curSelectedNode .tree_btn_right {
+  display:none;
+}
+.ztree li a.curSelectedNode .tree_btn_right,
+.ztree li .curSelectedNode:hover .tree_btn_right {
+  height: 35px;
+  background-color: #d3e9ff;
+}
+.ztree li .curSelectedNode:hover .tree_btn_right {
+  display:block;
+}
+.ztree li a input.rename {
+  height: 14px;
+  width: 80px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  *border: 0px;
+  font-family: 'microsoft yahei';
+}
+.ztree li span {
+  line-height: 35px;
+  margin-right: 4px;
+}
+.ztree li span.button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -4px;
+  *vertical-align: 0;
+  cursor: pointer;
+}
+.ztree li span.switch {
+  left:0 !important;
+}
+.ztree li span.ico_docu,
+.ztree li span.ico_open,
+.ztree li span.ico_close {
+  background-position: 50% 50% !important;
+}
+.ztree li span.button.noline_docu,
+.ztree li span.button.noline_open,
+.ztree li span.button.noline_close {
+  background: url(../images/zTree/switch.png) no-repeat;
+  margin: 0 0 0 5px;
+}
+.ztree li span.button.noline_close {
+  background-position: 0 -20px;
+}
+.ztree li span.tree_ico_before {
+  display:inline-block;
+  margin-left:10px;
+  margin-right:-10px;
+  &.tree_ico_leader {
+    background: url(../images/zTree/leader.png) no-repeat 100%;
+  }
+}
+.ztree li span.tree_ico_before + span.noline_docu {
+  width: 6px;
+  margin-right: 0;
+}
+.ztree li span.ico_loading {
+  background: #ffffff url(../images/zTree/loading.gif) no-repeat center;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 8px;
+}
+.ztree li span.ico_loading + span {
+  margin-left: 4px;
+}
+.ztree li a:hover span.ico_loading {
+  background-color: #f2fbff;
+}
+.ztree li a.curSelectedNode span.ico_loading {
+  background-color: #d3e9ff;
+}
+ul.tmpTargetzTree {
+  background-color: #fff;
+}
+span.tmpzTreeMove_arrow {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 2px 0 0 1px;
+  border: 0 none;
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: -110px -80px;
+  background-image: url("../images/zTree/zTreeStandard.png");
+}
+
+ul.ztree.zTreeDragUL {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 100002;
+  min-width: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #00a1f2;
+  opacity: .8;
+}
+ul.ztree.zTreeDragUL .tree_ico_before {
+  display: none !important;
+}
+ul.ztree.zTreeDragUL .switch {
+  background: none !important;
+  width: 10px !important;
+}
+.zTreeMask {
+  z-index: 10000;
+  background-color: #cfcfcf;
+  position: absolute;
+}

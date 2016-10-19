@@ -1,0 +1,29 @@
+.lbf-checkbox { position:relative; _position:static; width:13px; height:13px; margin:1px 0 0; background:white; vertical-align:bottom; cursor:pointer;
+    border:1px solid gainsboro;
+    -webkit-appearance:none;
+    appearance:none;
+    -webkit-border-radius:1px;
+    -moz-border-radius:1px;
+    border-radius:1px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.lbf-checkbox:hover,
+.lbf-checkbox-hover { border-color:#c6c6c6;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.lbf-checkbox:active,
+.lbf-checkbox-active { border-color:#c6c6c6; background: #ebebeb;}
+.lbf-checkbox:checked { background:white;}
+.lbf-checkbox-checked::after { position:absolute; top:-6px; left:-5px; display:block;
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtklEQVQ4y2P4//8/A7Ux1Q0cxoaCADIbCUgCMTvVXAoE5kA8CYidyXYpGrAH4iVAHIXiCwoMDQTimUBcBsRMlBrKCsTpUANzkC0j11BuIK6EGlgKsoAkQ4FgChD7AzELVI8YEDdDDawDYk6YQaQY6gg1oAqILYC4D8oHGcyLbBAphoJAKtQgGO4EYiHk2CLHUJAXm6AG9gCxNHoSIMdQEJCFGqiALaGSayjMxQwUGzq0S6nhZygA2ojsbh6J67kAAAAASUVORK5CYII=);
+}
+.lbf-checkbox-disabled {
+    opacity: 0.5;
+}
+.lbf-checkbox-error,
+.lbf-checkbox-error:hover,
+.lbf-checkbox-error:focus { border-color:#dd4b39;}

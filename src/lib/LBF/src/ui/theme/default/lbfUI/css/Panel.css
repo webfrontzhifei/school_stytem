@@ -1,0 +1,74 @@
+.lbf-panel {
+    position: absolute;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.4);
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    -webkit-border-radius: 0;
+         -moz-border-radius: 0;
+              border-radius: 0;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #e5e5e5;
+    border: rgba(0,0,0,0);
+    outline: 0;
+}
+
+.lbf-panel-head {
+  padding: 15px 20px;
+  font-weight:bold;
+  font-size:16px;
+  color:#333;
+}
+
+.lbf-panel .lbf-panel-close { position:absolute; right: 17px; top: 17px; display:inline-block; width:14px; height:14px; margin-top: 2px; text-indent:9999px; line-height:1px; overflow:hidden; background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close.png);}
+.lbf-panel .lbf-panel-close:hover { background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close-hover.png);}
+
+/*
+.lbf-panel-head h3 {
+  margin: 0;
+  line-height: 30px;
+}
+*/
+.lbf-panel-body {
+  position: relative;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.lbf-panel-foot {
+  padding: 19px 20px 20px;
+  margin-bottom: 0;
+  text-align: right;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.lbf-panel-foot div { margin-left:10px;}
+
+.lbf-panel-foot:before,
+.lbf-panel-foot:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.lbf-panel-foot:after {
+  clear: both;
+}
+
+.lbf-panel-foot .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.lbf-panel-foot .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.lbf-panel-foot .btn-block + .btn-block {
+  margin-left: 0;
+}

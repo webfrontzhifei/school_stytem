@@ -1,0 +1,70 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/* tabs */
+.lbf-tabview-tabs {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #DFDFE0;
+  position: relative;
+}
+.lbf-tabview-tab {
+  float: left;
+  margin-right: 46px;
+  font-size: 16px;
+  text-align: center;
+  color: #555A6C;
+  overflow: hidden;
+  cursor: pointer;
+}
+.lbf-tabview-tab a {
+  display: block;
+  color: inherit;
+  *color: #555A6C ;
+}
+.lbf-tabview-tab:hover,
+.lbf-tabview-tab:hover a,
+.lbf-tabview-tab-hover {
+  color: #5480e0;
+}
+.lbf-tabview-tab-selected,
+.lbf-tabview-tab-selected a,
+.lbf-tabview-tab-selected:hover {
+  color: #5480e0;
+  cursor: default;
+}
+.lbf-tabview-tab-close {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  text-indent: 999em;
+  line-height: 1px;
+  overflow: hidden;
+}
+.lbf-tabview-tab-hover .lbf-tabview-tab-close,
+.lbf-tabview-tab:hover .lbf-tabview-tab-close {
+  display: inline-block;
+}
+.lbf-tabview-tab-line {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  border-bottom: 3px solid #5480e0;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+/* contents */
+.lbf-tabview-content {
+  display: none;
+}
+.lbf-tabview-content-selected {
+  display: block;
+}

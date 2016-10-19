@@ -1,0 +1,64 @@
+.Editor-wrap { }
+.Editor-wrap .topPanel { height:28px; line-height:30px; margin-bottom:5px;}
+.Editor-topPanel-btn { float:left; min-width:70px; height:28px;}
+.Editor-topPanel-btn .btn { float:left; padding:6px 14px 6px 26px; border:1px solid #fff; height:16px; background:no-repeat 5px center; line-height:15px; font-size:14px; color:#0070c0;}
+.Editor-topPanel-btn .on { border-color:#ccc;
+    -webkit-transition: 200ms -webkit-transform;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius:3px;
+}
+.Editor-topPanel-btn .btn:hover { color:#45a3f9;}
+.Editor-Plugin-PopupPanel { display:none; border:1px solid #ccc; background-color:#fff;
+    -webkit-transition: 200ms -webkit-transform;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius:3px;
+    border-top-left-radius:0;
+}
+.Editor-Plugin-PopupPanel .cover { position:absolute; top:-2px; left:0; width:68px; height:3px; background-color:#fff;}
+.Editor-wrap .main { height:221px;}
+.Editor-wrap .main .LBF-UI-Nodes-Textarea { width:426px; height:201px; padding:9px 18px; line-height:25px; color:#7f7f7f;}
+.Editor-wrap .bottomPanel { padding:13px 0;}
+
+/** FacePlugin
+============================================**/
+.Editor-FacePlugin-btn .btn { background-image:url(../images/Editor/Plugin-Face-icon.png);}
+.Editor-FacePlugin-btn .btn:hover { background-image:url(../images/Editor/Plugin-Face-icon-hover.png);}
+.Editor-FacePlugin-facePanel { width:453px; height:206px; padding:4px; background:#fff url(../images/Editor/Plugin-Face-all.png) no-repeat 3px 3px;}
+.Editor-FacePlugin-facePanel a,
+.Editor-FacePlugin-facePanel a:link,
+.Editor-FacePlugin-facePanel a:visited { float:left; display:block; width:30px; height:29px; text-decoration:none; overflow:hidden;}
+.Editor-FacePlugin-facePanel a:hover { margin:-2px 0 0 -2px; border:2px solid #4b97cb;}
+
+/** LinkPlugin
+============================================**/
+.Editor-LinkPlugin-btn .btn { background-image:url(../images/Editor/Plugin-Link-icon.png);}
+.Editor-LinkPlugin-btn .btn:hover { background-image:url(../images/Editor/Plugin-Link-icon-hover.png);}
+.Editor-LinkPlugin-inputPanel { display:none; padding:20px 20px 15px;}
+.Editor-LinkPlugin-inputPanel .LBF-UI-Nodes-TextInput { width:302px; height:22px; margin:0 0 15px;}
+.Editor-LinkPlugin-inputPanel .btns { text-align:right;}
+.Editor-LinkPlugin-inputPanel .LBF-UI-Nodes-Button { height:22px; margin:0; padding:0 6px; font-size:12px; line-height:23px;
+    border-radius:3px;
+}
+.Editor-LinkPlugin-inputPanel .LBF-UI-Nodes-Button span { display:inline-block; height:22px; line-height:22px; vertical-align:top}
+.Editor-LinkPlugin-inputPanel .add { min-width:34px; _width:34px; margin-right:6px; color:#0070c0;}
+.Editor-LinkPlugin-inputPanel .add:hover { color:#45a3f9;}
+.Editor-LinkPlugin-inputPanel .icon { padding-left:20px;}
+.Editor-LinkPlugin-inputPanel .add .icon { background:url(../images/Editor/Plugin-Link-add-icon.png) no-repeat 0 center;}
+.Editor-LinkPlugin-inputPanel .add:hover .icon { background-image:url(../images/Editor/Plugin-Link-add-icon-hover.png);}
+.Editor-LinkPlugin-inputPanel .cancel { min-width:34px; _width:34px; color:#7f7f7f;}
+
+/** ImagePlugin
+============================================**/
+.Editor-ImagePlugin-btn { position:relative; padding-right:14px;}
+.Editor-ImagePlugin-btn .btn { padding-right:0; background-image:url(../images/Editor/Plugin-Image-icon.png);}
+.Editor-ImagePlugin-btn .btn:hover { background-image:url(../images/Editor/Plugin-Image-icon-hover.png);}
+.Editor-ImagePlugin-btn .remove { display:none; position:absolute; top:2px; right:0; margin-left:5px; background-image:none; color:#0070c0; font-size:12px;}
+.Editor-ImagePlugin-btn .remove:hover { color:#45a3f9;}
+.Editor-ImagePlugin-ImageViewer .LBF-UI-Nodes-Tip-content { padding:1px;}
+.Editor-ImagePlugin-ImageViewer img { display:block;}
+
+/** LinkPlugin
+============================================**/
+.Editor-CountPlugin p { font-size:12px; color:#4c4c4c;}
+.Editor-CountPlugin .num { margin:0 4px; color:#0070c0;}
+.Editor-CountPlugin .minus .num { color:#ff4900;}

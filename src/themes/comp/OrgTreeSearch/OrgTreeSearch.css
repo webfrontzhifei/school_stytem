@@ -1,0 +1,20 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.lbf-autocomplete-option a:hover {
+  background-color: #f5fafe;
+}
+.lbf-autocomplete-option a.focus {
+  background-color: #f5fafe;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk9yZ1RyZWVTZWFyY2guY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7O0dBRUc7QUFDSDs7R0FFRztBQUNIO0VBQ0UsMEJBQTBCO0NBQzNCO0FBQ0Q7RUFDRSwwQkFBMEI7Q0FDM0IiLCJmaWxlIjoiY29tcC9PcmdUcmVlU2VhcmNoL09yZ1RyZWVTZWFyY2guY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBcbiAqIEB2YXJpYWJsZS5sZXNzXG4gKiBAYXV0aG9yIHhpbnh1emhhbmcgXG4gKiBAY3JlYXRlIDE0LTExLTA3XG4gKi9cbi8qKlxuICogRm9udCBDb2xvcnNcbiAqL1xuLyoqXG4gKiBCYWNrZ3JvdW5kIENvbG9yc1xuICovXG4ubGJmLWF1dG9jb21wbGV0ZS1vcHRpb24gYTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNWZhZmU7XG59XG4ubGJmLWF1dG9jb21wbGV0ZS1vcHRpb24gYS5mb2N1cyB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNWZhZmU7XG59XG4iXX0= */

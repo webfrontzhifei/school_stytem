@@ -1,0 +1,45 @@
+@import '../../base/variable';
+.lbf-combobox { display: inline-block; vertical-align: middle;}
+div.lbf-combobox{*display: inline; *zoom:1;}
+.lbf-combobox-label{border-radius: 2px;}
+.lbf-combobox-label,
+.lbf-combobox-label.lbf-button { 
+	position:relative; display:block; padding: 0 40px 0 12px; text-align: left; line-height:38px; background-color: @white; overflow:hidden;}
+.lbf-combobox-label:hover{ border:1px solid @border-hover; text-decoration:none; z-index:1000;}
+.lbf-combobox-label:active { background-color: @bg-gray; }
+.lbf-combobox-caption { display: block; height:38px; overflow:hidden;}
+.lbf-combobox-icon { position:absolute; right:0; top:0; width:40px; height:38px; background:url(../images/Combobox/arrow-down.png) no-repeat center;}
+
+body .lbf-combobox-on,
+body .lbf-combobox-on:hover{ border:1px solid @blue; z-index:1000;}
+
+
+.lbf-combobox-error {
+	border: 1px solid @error-red; 
+
+	.lbf-combobox-label {
+		background-color: #ffe2df;
+	}
+}
+
+.lbf-combobox-panel { display:none; overflow-y:auto; overflow-x:hidden; margin: -1px 0 0; font-size: 14px; list-style: none; background-color: @white; border: 1px solid @blue;}
+.lbf-combobox-panel .lbf-combobox-options { list-style:none; margin:0; padding:0;}
+.lbf-combobox-panel .lbf-combobox-option{ background-color: @white; }
+.lbf-combobox-panel .lbf-combobox-item { display: block; height:36px; padding: 0 12px; line-height: 36px; color: @dark; white-space: nowrap; text-decoration:none; overflow:hidden;}
+.lbf-combobox-panel .lbf-combobox-item:hover { text-decoration: none; }
+.lbf-combobox-panel .lbf-combobox-option:hover { background-color: @list-hover; }
+.lbf-combobox-panel .lbf-combobox-item-selected,
+.lbf-combobox-panel .lbf-combobox-item-selected:hover { background-color: @list-selected; }
+
+.lbf-combobox-disabled { opacity: 0.65; filter: alpha(opacity=65); -ms-pointer-events: none; pointer-events: none; cursor: default; *zoom: 1; }
+
+
+/* select */
+select { display: inline-block;
+	height: 40px;
+	margin: 0;
+	border: 1px solid #d0d0d5;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	vertical-align: middle; }
+.lbf-combobox select{position: absolute; clip: rect(0,0,0,0);}

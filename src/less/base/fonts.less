@@ -1,0 +1,67 @@
+/**
+ * 
+ * @fonts.less
+ * @author xinxuzhang 
+ * @create 14-11-20
+ * @use opensourse https://icomoon.io/app/
+ */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-ktmrk7');
+	src:url('fonts/icomoon.eot?#iefix-ktmrk7') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-ktmrk7') format('woff'),
+		url('fonts/icomoon.ttf?-ktmrk7') format('truetype'),
+		url('fonts/icomoon.svg?-ktmrk7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="font-"], [class*=" font-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.font {
+	display: inline-block; 
+	width: 20px; height: 20px; line-height: 20px;
+	text-align: center;
+	font-family: 'icomoon';
+	vertical-align: -1px;
+}
+
+.font-key:before {
+	content: "\e600";
+}
+.font-stop:before {
+	content: "\e601";
+}
+.font-delete:before {
+	content: "\e602";
+}
+.font-edit:before {
+	content: "\e603";
+}
+
+/* below for IE7 */
+.font-key {
+	*zoom: ~"expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;')";
+}
+.font-stop {
+	*zoom: ~"expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;')";
+}
+.font-delete {
+	*zoom: ~"expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe602;')";
+}
+.font-edit {
+	*zoom: ~"expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe603;')";
+}

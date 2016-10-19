@@ -1,0 +1,249 @@
+@import '../../base/variable';
+
+/* add by xinxuzhang
+* 此处输入框略复杂，规则如下：
+* input.lbf-text-input以及search搜索框还是传统输入框，四周围起来
+* .lbf-text-input > input这种父子关系的则是线性输入框
+*/
+
+/* reset [type=search] ui */
+[type=search] {
+  -webkit-appearance: none;
+   box-sizing: content-box;
+}
+[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url(../images/TextInput/icons-search.png) no-repeat 0 -40px;
+  cursor: pointer;
+}
+[type=search]::-webkit-search-cancel-button:hover {
+  background-position: 0 -60px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+/* 传统输入框和线性输入框公用的部分 */
+input.lbf-text-input,
+.lbf-text-input > input {
+	height: 40px;
+	line-height: 20px;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	outline:0 none; color:@dark;
+	-webkit-transition: border-color .25s;
+	transition: border-color .25s;
+}
+
+
+/* 下面是传统输入框 */
+input.lbf-text-input { position:relative; padding:9px 8px; border:1px solid @border-normal; border-radius: 2px; font-size: 14px;  vertical-align:top; background-color:@white; 	
+}
+
+/* hover */
+input.lbf-text-input:hover { border-color: @border-hover; }
+/* focus */
+input.lbf-text-input:focus { border-color: @blue; }
+/* disabled */
+input.lbf-text-input-disabled, input.lbf-text-input[disabled] { border-color: #d9d9d9!important; background:#eeeeee; cursor: default; pointer-events: none; }
+/* error */
+input.lbf-text-input-error,
+input.lbf-text-input-error:hover,
+input.lbf-text-input-error:focus { border-color: @red; }
+
+/* 创新的线性输入框 */
+span.lbf-text-input {
+	display: inline-block;
+}
+span.lbf-text-input,
+div.lbf-text-input {
+	margin-top: 30px;
+	position: relative;
+	font-size: 16px;
+}
+p.lbf-text-input {
+	font-size: 16px;
+}
+
+.lbf-text-input > input { 
+	display: block;
+	width: 100%;
+	padding: 9px 0;
+	border: 0 none;
+	border-bottom: 1px solid @border-normal;
+	background: none;
+}
+
+.lbf-text-input > input[maxlength] {
+	margin-bottom: 30px;
+}
+.lbf-text-input-count > input,
+.lbf-text-input-count > input[maxlength] {
+	margin-bottom: 0;
+}
+.lbf-text-input > input:focus {
+	border-bottom: 2px solid @blue;
+	padding-bottom: 8px;
+}
+.lbf-text-input-disabled > input { 
+	color: @light-gray;
+}
+.lbf-text-input-error > input,
+.lbf-text-input-error > input:focus { 
+	border-color: @red;
+}
+
+.lbf-text-input > .lbf-text-input-number {
+	display: block;
+	line-height: 30px;
+	text-align: right;
+	font-size: 12px;
+	color: @light-gray;	
+}
+
+/* 普通提示 */
+.lbf-text-input-remind {
+	line-height: 30px;
+	font-size: 14px;
+	color: @light-gray;
+}
+.lbf-text-input-count .lbf-text-input-remind,
+.lbf-text-input > input[maxlength] ~ .lbf-text-input-remind {
+	margin-top: -30px;
+}
+
+/* 错误提示 */
+.lbf-text-input > .error {
+	color: @red;
+	position: absolute;
+	padding: 9px 0;
+	font-size: 14px;
+	top: -25px; right: 0;
+}
+
+.lbf-text-input-placeholder .required {
+	position: absolute; margin: 2px 0 0 -10px; color: @red;
+}
+
+/* placeholder */
+.lbf-text-input-placeholder { 
+	position: absolute;
+	left: 0; top: 0;
+	line-height: 20px;
+	padding: 9px 0;
+	font-size: 100%;
+	color: @light-gray;
+	-webkit-transition: all .25s;
+	transition: all .25s;
+	cursor: text;
+	white-space: nowrap;
+}
+.lbf-text-input > input:focus ~ .lbf-text-input-placeholder,
+.lbf-text-input.lbf-text-input-active .lbf-text-input-placeholder {
+	top: -25px;
+	font-size: 14px;	
+}
+.lbf-text-input > input:focus ~ .lbf-text-input-placeholder {
+	color: @blue;
+}
+.lbf-text-input-error > .lbf-text-input-placeholder,
+.lbf-text-input-error > input:focus ~ .lbf-text-input-placeholder {
+	color: @red;
+}
+
+/* 搜索框，还是传统模样 */
+span.lbf-search-input,
+div.lbf-search-input,
+div.lbf-text-input-normal,
+.lbf-search-input > input[placeholder],
+.lbf-text-input > .lbf-text-input {
+	margin-top: 0px;
+}
+.lbf-search-input > input[maxlength],
+.lbf-text-input > .lbf-text-input {
+	margin-bottom: 0;
+}
+.lbf-search-input { padding-left: 35px; border:1px solid @border-normal; border-radius: 2px; background-color: @white; -webkit-transition: border-color .25s;
+	transition: border-color .25s; overflow: hidden; }
+/* hover */
+.lbf-search-input:hover { border-color: @border-hover; }
+/* focus */
+.lbf-text-input-focus, 
+.lbf-text-input-focus:hover { border-color: @blue; }
+/* icon */
+.lbf-search-input > a { width: 20px; height: 20px; padding: 9px 5px 9px 10px; position: absolute; top: 0; left: 0; text-align: center; }
+.lbf-search-input .icon-search { display: inline-block; width: 100%; height: 100%; background: url(../images/TextInput/icons-search.png) no-repeat; vertical-align: top;  }
+.lbf-search-input a:hover .icon-search { background-position: 0 0; }
+.lbf-text-input-focus .icon-search, 
+.lbf-text-input-focus a:hover .icon-search { background-position: 0 -20px; }
+
+.lbf-search-input .lbf-text-input-placeholder,
+.lbf-text-input > .lbf-text-input ~ .lbf-text-input-placeholder {
+	color: @light-gray!important;
+	font-size: 14px;
+	-webkit-transition: opacity .15s;
+	transition: opacity .15s;
+	left: 40px; 
+}
+.lbf-search-input .lbf-text-input-placeholder {
+	left:35px;
+}
+.lbf-text-input > .lbf-text-input ~ .lbf-text-input-placeholder {
+	left: 9px;
+}
+.lbf-search-input > input:focus {
+	padding-bottom: 9px;
+}
+.lbf-search-input > input:focus ~ .lbf-text-input-placeholder,
+.lbf-text-input > .lbf-text-input:focus ~ .lbf-text-input-placeholder {
+	top: 0;
+	font-size: 14px;
+	opacity: .38;
+	filter: ~'alpha(opacity=38)';	
+}
+.lbf-search-input > input, 
+.lbf-search-input > input:focus { 
+	height: 38px; border: 0 none;
+	font-size: 14px; 
+}
+
+.lbf-text-input > .lbf-text-input {
+	border: 1px solid @border-normal;
+	padding: 9px 8px;
+}
+.lbf-text-input > .lbf-text-input:hover {
+	border: 1px solid @border-hover;
+}
+.lbf-text-input-focus > .lbf-text-input,
+.lbf-text-input > .lbf-text-input:focus {
+	padding: 9px 8px;
+	border: 1px solid @blue;
+}
+
+/* placeholder占位符 */
+::-webkit-input-placeholder {
+  -webkit-transition: opacity .15s;
+  color: @light-gray;
+  line-height: 20px;
+}
+:focus::-webkit-input-placeholder {
+  opacity: .38;
+}
+::-moz-placeholder {
+  transition: opacity .15s;
+  color: @light-gray;
+}
+:focus::-moz-placeholder {
+  opacity: .38;
+}
+:-ms-input-placeholder {
+  transition: opacity .15s;
+  color: @light-gray!important;
+}
+:focus:-ms-input-placeholder {
+  opacity: .38;
+}

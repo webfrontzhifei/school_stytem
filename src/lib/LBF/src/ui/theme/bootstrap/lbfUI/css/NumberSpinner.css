@@ -1,0 +1,20 @@
+.lbf-numberspinner { position:relative; display:inline-block; *display:inline; *zoom:1; padding:0 24px;}
+.lbf-numberspinner-input { width:32px; border:1px solid #d9d9d9;}
+.lbf-numberspinner .lbf-numberspinner-input input { text-align:center;}
+.lbf-numberspinner .lbf-numberspinner-button { width:100%;}
+.lbf-numberspinner .lbf-numberspinner-decrease { position:absolute; top:0; left:0; width:22px; min-width:23px; padding:3px 0 4px; border-right:0 none; border-color:#d9d9d9;
+    webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.lbf-numberspinner .lbf-numberspinner-increase { position:absolute; top:0; right:0; width:22px; min-width:23px; padding:3px 0 4px; border-left:0 none; border-color:#d9d9d9;
+    webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

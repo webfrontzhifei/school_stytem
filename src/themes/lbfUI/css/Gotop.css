@@ -1,0 +1,17 @@
+.lbf-gotop a {
+  position: fixed;
+  display: block;
+  width: 38px;
+  height: 38px;
+  right: 40px;
+  bottom: 35px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  background: url(../images/Gotop/gotop.png) no-repeat 0 0;
+}
+.lbf-gotop a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkdvdG9wLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2YsWUFBWTtFQUNaLGFBQWE7RUFDYixZQUFZO0VBQ1osYUFBYTtFQUNiLGFBQWE7RUFDYiwwQkFBMEI7RUFDMUIseURBQXlEO0NBQzFEO0FBQ0Q7RUFDRSxXQUFXO0VBQ1gsMkJBQTJCO0NBQzVCIiwiZmlsZSI6ImxiZlVJL2Nzcy9Hb3RvcC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGJmLWdvdG9wIGEge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMzhweDtcbiAgaGVpZ2h0OiAzOHB4O1xuICByaWdodDogNDBweDtcbiAgYm90dG9tOiAzNXB4O1xuICBvcGFjaXR5OiAwLjg7XG4gIGZpbHRlcjogYWxwaGEob3BhY2l0eT04MCk7XG4gIGJhY2tncm91bmQ6IHVybCguLi9pbWFnZXMvR290b3AvZ290b3AucG5nKSBuby1yZXBlYXQgMCAwO1xufVxuLmxiZi1nb3RvcCBhOmhvdmVyIHtcbiAgb3BhY2l0eTogMTtcbiAgZmlsdGVyOiBhbHBoYShvcGFjaXR5PTEwMCk7XG59XG4iXX0= */

@@ -1,0 +1,298 @@
+@import '../../base/variable';
+
+.lbf-date-picker-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+span.lbf-date-picker-wrap {
+  display: inline-block;
+}
+
+.lbf-date-picker-wrap:hover > input {
+  border-color: @border-hover;
+}
+
+.lbf-date-picker-wrap.lbf-dropdown-on > input,
+.lbf-text-input.lbf-dropdown-on {
+  border-color: @blue;
+}
+
+/* = Calendar = */
+.lbf-date-picker {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: @white;
+  font-size: 14px;
+  box-shadow: 0 1px 15px 0 rgba(30, 36, 49, 0.15);
+  border: 1px solid @border-normal;
+  border-radius: 2px;
+  -webkit-animation: fadeIn .2s;
+  animation: fadeIn .2s;
+}
+
+/* date-picker-month-year-button */
+.lbf-date-picker-btn-prev,
+.lbf-date-picker-btn-next {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: url(../images/DatePicker/date-picker.png) no-repeat 0 0;
+  cursor: pointer;
+}
+
+.lbf-date-picker-btn-next {
+  left: auto;
+  right: 10px;
+  background-position: 0px -72px;
+}
+.lbf-date-picker-btn-next:hover {
+  background-position: 0px -48px;
+}
+.lbf-date-picker-btn-prev{
+  background-position: 0px -24px;
+}
+.lbf-date-picker-btn-prev:hover {
+  background-position: 0 0;
+}
+.lbf-date-picker-btn-disabled,.lbf-date-picker-year-disabled,.lbf-date-picker-month-disabled,.lbf-date-picker-date-disabled{
+  opacity: 0.38;
+  cursor: default;
+}
+a.lbf-date-picker-btn-prev.lbf-date-picker-btn-disabled:hover{
+  background-position: 0px -24px;
+}
+a.lbf-date-picker-btn-next.lbf-date-picker-btn-disabled:hover{
+  background-position: 0px -72px;
+}
+
+
+
+
+
+/* date-picker-month-year-panel */
+.lbf-date-picker-viewport {
+  min-height: 1%;
+  padding: 0 5px 5px 5px; /*padding-bottom:5px;*/
+}
+
+.lbf-date-picker-viewport:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.lbf-date-picker-table {
+  border-collapse: separate;
+  float: left;
+  width: auto; /*margin:0 8px; */
+  border-spacing: 0 1px;
+  font-size: 13px;
+  *table-layout: auto;
+}
+
+.lbf-date-picker-table + .lbf-date-picker-table {
+  border-left: 1px solid @light;
+}
+
+.lbf-date-picker-caption {
+  margin-bottom: 1px;
+  text-align: center;
+  color: @dark;
+  height: 26px;
+  padding-top: 10px;
+}
+
+.lbf-date-picker-caption-link {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  font-size: 14px;
+  text-decoration: none;
+  color: @dark;
+}
+
+.lbf-date-picker-caption-link:hover {
+  color: @gray;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lbf-date-picker-today-link {
+  display: block;
+  border-radius: 2px;
+  line-height: 30px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* date-mode */
+.lbf-date-picker-weekday {
+  padding: 3px 0;
+  font-weight: normal;
+  text-align: center; /* border:1px solid #e1e1e1;*/
+  *border-bottom-width: 2px; /* background:#f7f8fa;*/
+  -moz-border-radius: 0;
+}
+
+.lbf-date-picker-date {
+  width: 26px;
+  border: 1px @white solid;
+  border-radius: 2px;
+  color: @dark;
+  padding: 3px 2px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: default;
+  opacity: 0.38;
+  filter:alpha(opacity=38);/*IE8*/
+}
+
+.lbf-date-picker-date-blank:hover {
+  background-color: @white;
+  border-color: transparent;
+}
+
+.lbf-date-picker-date-enabled {
+  cursor: pointer;
+  color: @dark;
+  opacity:1;
+  filter:alpha(opacity=100);/*IE8*/
+}
+
+.lbf-date-picker-date-enabled:hover {
+  border-color: @bg-gray;
+  background-color: @bg-gray;
+  -webkit-transition: background-color .2s, color .2s;
+  transition: background-color .2s, color .2s;
+}
+
+.lbf-date-picker-date-highlight {
+  background-color: @blue;
+  color: @white;
+}
+
+.lbf-date-picker-date-selected,
+.lbf-date-picker-date-between,
+.lbf-date-picker-date-first,
+.lbf-date-picker-date-last {
+  border-color: @blue;
+  border-radius: 0;
+}
+
+.lbf-date-picker-date-between:hover,
+.lbf-date-picker-date-first:hover,
+.lbf-date-picker-date-last:hover {
+  background-color: transparent;
+  border-color: @blue;
+}
+
+.lbf-date-picker-date-selected,
+.lbf-date-picker-date-selected:hover {
+  border-radius: 2px;
+  background-color: @blue;
+  color: @white;
+  border-color: @blue;
+
+}
+
+.lbf-date-picker-date-between, .lbf-date-picker-date-between:hover {
+  background-color: @blue;
+  color: @white;
+}
+
+.lbf-date-picker-date-first {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.lbf-date-picker-date-last {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.lbf-date-picker-buttons {
+  clear: both;
+  text-align: right;
+  padding: 5px 10px 10px;
+}
+
+.lbf-date-picker-buttons .lbf-button {
+  margin-left: 10px;
+  line-height: 30px;
+  border-radius: 2px;
+}
+
+/* month-mode */
+/* override the default lbf-date-picker-table */
+.lbf-date-picker-month-table,
+.lbf-date-picker-year-table {
+  margin: 0 7px 0 8px;
+}
+
+.lbf-date-picker-month-table th,
+.lbf-date-picker-month-table td,
+  /* year-mode */
+.lbf-date-picker-year-table th,
+.lbf-date-picker-year-table td {
+  padding: 0;
+}
+
+.lbf-date-picker-month,
+.lbf-date-picker-year {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 4em;
+  border: 1px solid @white;
+  padding: 17px 7px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: default;
+  color: @gray;
+  text-decoration: none;
+  border-radius: 2px;
+  opacity: 0.38;
+  filter:alpha(opacity=38);/*IE8*/
+}
+
+.lbf-date-picker-month-enabled:hover,
+.lbf-date-picker-year-enabled:hover {
+  border: 1px solid @blue;
+  background-color: @white;
+  text-decoration: none;
+}
+
+.lbf-date-picker-year-disabled:hover,
+.lbf-date-picker-month-disabled:hover{
+  color: @dark;
+}
+
+.lbf-date-picker-month-enabled,
+.lbf-date-picker-year-enabled {
+  cursor: pointer;
+  color: @dark;
+  opacity: 1;
+  filter:alpha(opacity=100);/*IE8*/
+}
+
+.lbf-date-picker-month-selected,
+.lbf-date-picker-year-selected {
+  border: 1px solid @border-normal;
+  background-color: @bg-gray;
+}
+
+/* year-mode */
+.lbf-date-picker-year-first, .lbf-date-picker-year-last {
+  color: @gray;
+}

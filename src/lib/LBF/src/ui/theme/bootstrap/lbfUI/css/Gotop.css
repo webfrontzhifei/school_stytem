@@ -1,0 +1,3 @@
+.lbf-gotop {}
+.lbf-gotop a { position:fixed; display:block; width:38px; height:38px; right:40px; bottom:35px; opacity:0.8; filter:alpha(opacity=80); background:url(//combo.b.qq.com/lbf/0.6.3/ui/theme/bootstrap/images/Gotop/gotop.png) no-repeat 0 0;}
+.lbf-gotop a:hover { opacity:1; filter:alpha(opacity=100);}

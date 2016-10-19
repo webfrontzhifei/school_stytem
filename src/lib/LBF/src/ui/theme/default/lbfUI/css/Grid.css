@@ -1,0 +1,42 @@
+.lbf-grid { overflow:hidden;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.lbf-grid .nowrap { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: normal; word-wrap:normal;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.lbf-grid table { table-layout: fixed; border-collapse:collapse; border: 1px solid #dedede;}
+.lbf-grid-header { height:30px; padding-left:10px; line-height:30px; text-align:left; font-size:14px; font-weight:bold; color:#666; background:#eeeeee; border:1px solid #dedede; border-bottom:none;}
+.lbf-grid-body { position:relative;}
+.lbf-grid-body-header { position:relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.lbf-grid-body-body-table { margin-top:-1px;
+}
+.lbf-grid-col-drag-handle { position:absolute; top:0; width:20px; cursor:col-resize;}
+.lbf-grid-col { border-right:1px solid #dedede; border-bottom:1px solid #dedede; padding:5px 10px; background:#f1f1f1;}
+.lbf-grid-col-on { background:#d8e8fa;}
+.lbf-grid-col-on-up .lbf-grid-col-sort-icon,
+.lbf-grid-col-on-down .lbf-grid-col-sort-icon { display:inline-block; margin-left:3px; vertical-align:middle; font-size:0; overflow:hidden; width:7px; height:5px; background:url(//combo.b.qq.com/lbf/0.6.3/ui/theme/bootstrap/images/Combobox/combobox.png) no-repeat right 0;}
+.lbf-grid-col-on-down .lbf-grid-col-sort-icon { background-position:right -7px;}
+.lbf-grid-col-div { line-height:18px; font-size:12px; font-weight:bold; color:#666; word-break: break-all; word-wrap:break-word;}
+.lbf-grid-cell { border-right:1px solid #dedede; border-bottom:1px solid #dedede; padding:5px 10px;}
+.lbf-grid-cell-div { line-height:18px; font-size:12px; color:#666; word-break: break-all; word-wrap:break-word;}
+.lbf-grid-row-odd .lbf-grid-cell { background:#f9f9f9;}
+.lbf-grid-row-hover .lbf-grid-cell { background:#e1eff8;}
+.lbf-grid-row-on .lbf-grid-cell { background:#fff5cc;}
+.lbf-grid-footer { height:40px; padding:5px 0;}
+.lbf-grid-drag-bar { position:absolute; top:0; display:none; background:#888; width:1px; overflow:hidden; font-size:0;}
+
+/* 原生表格html样式接口 在lbf-grid未初始化时，保证第一时间呈现 */
+.lbf-grid-table { width:100%; border: 1px solid #dedede; font-size:12px; border-collapse:collapse;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.lbf-grid-table th,
+.lbf-grid-table td { padding:5px 10px; color:#666; line-height:18px; text-align:center;  border-right:1px solid #dedede;}
+.lbf-grid-table thead th { background:#f1f1f1; border-bottom:1px solid #dedede;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}

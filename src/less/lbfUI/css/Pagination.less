@@ -1,0 +1,34 @@
+@import '../../base/variable';
+.lbf-pagination { overflow:hidden;}
+
+/* jump直达模块 */
+.lbf-pagination-jump { float: right; display: inline-block; *display: inline; zoom: 1; margin-left: 3px;}
+.lbf-pagination-input { width:62px; height:16px; padding:6px 3px; border: 1px solid @border-color; vertical-align:middle; text-align:center; color: @gray; border-radius: 2px; }
+.lbf-pagination-go  { display:inline-block; vertical-align:middle; padding: 4px 10px 4px 15px; line-height: 20px; border: 0 none; border-radius: 2px; }
+
+.lbf-pagination-prev,
+.lbf-pagination-next {
+	display: inline-block; width: 0; padding-left: 24px; height: 100%; font: 0/0 a; color: transparent;
+	background: url(../images/Pagination/icons-prev-next.png) no-repeat;
+    overflow: hidden;
+}
+.lbf-pagination-next { }
+.lbf-pagination-next:hover { cursor: pointer; background-position: 0 -30px; }
+.lbf-pagination-prev { background-position: 0 -90px; }
+.lbf-pagination-prev:hover { cursor: pointer; background-position: 0 -120px; }
+
+
+/* 列表 */
+.lbf-pagination-item-list { height: 28px; float: right; }
+.lbf-pagination-item { float: left; /*width: 32px;*/ min-width: 32px; height: 100%; text-align: center; line-height:28px;}
+.lbf-pagination-page { display: inline-block; min-width: 24px; height: 100%; line-height: 28px; text-decoration: none; color: @light-gray; }
+.lbf-pagination-page:hover { background-color: @bg-gray; color: @dark; }
+.lbf-pagination-current,
+.lbf-pagination-current:hover { cursor: default; color: @white; background-color: @blue;}
+.lbf-pagination-disabled,
+.lbf-pagination-disabled:hover { cursor: default; color: @light; -ms-pointer-events: none; pointer-events: none; }
+.lbf-pagination-prev.lbf-pagination-disabled { background-position: 0 -150px; }
+.lbf-pagination-next.lbf-pagination-disabled { background-position: 0 -60px; }
+
+/* 简单短分页 */
+.lbf-pagination-simple .lbf-pagination-input {width: 44px;}

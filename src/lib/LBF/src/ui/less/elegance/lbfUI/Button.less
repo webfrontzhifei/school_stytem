@@ -1,0 +1,108 @@
+@import '../base/variable';
+
+.lbf-button {
+	display: inline-block;
+	min-width: 46px; line-height: 38px; 
+	padding: 0 16px;
+	border: 1px solid @lbf-border-color; border-radius: @lbf-border-radius;
+	background-color: #fff; background-repeat: no-repeat; background-position: center;
+	-ms-box-sizing: content-box; box-sizing: content-box;
+	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	font-size: 100%; font-family: inherit;
+	text-align: center; text-decoration: none;
+	color:@dark;
+	overflow: visible;
+	cursor: pointer;      
+	
+	// block level for IE7
+	div& {
+		*display: inline; *zoom: 1;
+	}
+	
+	// :hover & :active
+	&:hover {
+		color: #2d3441; border-color: #a6a6a6; text-decoration:none;
+	}
+	&:active {
+		background-color: #f5f5fa;
+	}
+	
+	// disabled
+	&-disabled {
+		 opacity:.5; filter:alpha(opacity=50);	 
+	}
+	
+	&-disabled,
+	&-loading {
+		cursor: default; pointer-events:none;
+	}
+	
+	&-disabled, 
+	&-disabled:hover,
+	&-disabled:active,
+	&-loading,
+	&-loading:hover,
+	&-loading:active {
+		border-color: #ccc; background-color: #fafafa;
+	}
+	
+	&-primary,
+	&-primary&-disabled,
+	&-primary&-disabled:hover,
+	&-primary&-disabled:active,
+	&-primary&-loading:hover,
+	&-primary&-loading:active { 
+		border: 1px solid @lbf-link-color; background-color: @lbf-link-color; color: #fff;
+	}
+	&-primary:hover { 
+		border-color:#5E90FB; background-color: #5E90FB; color:#fff;
+	}
+	&-primary:active {
+		border-color:#4A70C4; background-color:#4A70C4; color:#fff;
+	}
+	
+	&-success, 
+	&-success&-disabled,
+	&-success&-disabled:hover,
+	&-success&-disabled:active,
+	&-success&-loading:hover,
+	&-success&-loading:active {
+		border: 1px solid #1BC09A; background-color: #1BC09A; color: #fff;
+	}
+	&-success:hover,
+	&-success:active { 
+		border-color:#1FCEA5; background-color: #1FCEA5; color: #fff;
+	}
+	
+	
+	&-warning,
+	&-warning&-disabled,
+	&-warning&-disabled:hover,
+	&-warning&-disabled:active,
+	&-warning&-loading:hover,
+	&-warning&-loading:active {
+		border: 1px solid #F4615C; background-color: #F4615C; color: #fff;
+	}
+	&-warning:hover {
+		border-color:#FF7772; background-color: #FF7772; color:#fff;
+	}
+	&-warning:active {
+		border-color:#DC5652; background-color:#DC5652; color: #fff;
+	}
+	
+	&-loading {
+		color: transparent!important; background-image: url('@{lbf-images}/Button/loading.gif');
+	}
+	&-primary&-loading { 
+		background-image: url('@{lbf-images}/Button/loading-primary.gif');
+	}
+	&-warning&-loading {
+		background-image: url('@{lbf-images}/Button/loading-warning.gif');
+	}
+}
+
+
+
+
+
+

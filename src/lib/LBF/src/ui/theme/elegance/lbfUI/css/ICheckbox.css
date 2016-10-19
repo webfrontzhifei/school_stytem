@@ -1,0 +1,43 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+.lbf-icheckbox {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border: 0 none;
+  background: url('../images/ICheckbox/checkbox.png') no-repeat;
+  vertical-align: middle;
+  cursor: pointer;
+  /*&&-halfchecked { background-position: 0 0;}*/
+}
+.lbf-icheckbox.lbf-icheckbox-hover {
+  background-position: 0 -20px;
+}
+.lbf-icheckbox.lbf-icheckbox-checked {
+  background-position: 0 -40px;
+}
+.lbf-icheckbox.lbf-icheckbox-disabled {
+  background-position: 0 -60px;
+  cursor: default;
+  pointer-events: none;
+}
+.lbf-icheckbox-checked.lbf-icheckbox-disabled {
+  background-position: 0 -80px;
+  background-color: transparent;
+}
+.lbf-icheckbox input {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.lbf-icheckbox + label {
+  vertical-align: -1px;
+}

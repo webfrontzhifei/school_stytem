@@ -1,0 +1,106 @@
+@import '../base/variable';
+
+/* text input */
+.lbf-text-input input, input.lbf-text-input, .lbf-search-input {
+	height: 40px; line-height: 18px;
+	padding: 9px 8px;
+	border: 1px solid #D0D0D5; border-radius: @lbf-border-radius;
+	-ms-box-sizing: border-box; box-sizing: border-box;
+	background-color: #fff;
+	outline: none;
+	font-size: 100%; font-family: 'microsoft yahei', arial, sans-serif;
+	color: @lbf-color;	
+	vertical-align: top;
+	position: relative;
+}
+
+.lbf-text-input input {
+	display: block; width: 100%;
+}
+
+.lbf-search-input input {
+	height: 20px; margin: 0; padding: 0; border: 0; background: none;
+}
+
+@ie7hack: screen\9;
+
+@media @ie7hack {
+	.lbf-text-input input, input.lbf-text-input {
+	   width: 94%; height: 20px; padding-left: 2.5%; padding-right: 2.5%;
+	}
+}
+
+
+
+.lbf-text-input {
+	span& {
+		display: inline-block;
+	}
+	// hover
+	& input:hover, input&:hover {
+		border-color: #ABABAF;
+	}
+	// focus
+	& input:focus, input&:focus {
+		border-color: @lbf-focus-color;
+	}
+	// disabled
+	&-disabled input, input&[disabled], input&[readonly] {
+		border-color: #d9d9d9!important; background: #eee;
+		cursor: default; pointer-events: none;
+	}
+	&-disabled input {
+		color: #a2a9b6;
+	}
+	// error
+	&-error input, input&-error:focus {
+		border-color: @lbf-error-color; 
+		// background-color: @lbf-error-background-error;
+	}
+	
+	// placeholder
+	& &-placeholder {
+		line-height: 34px;
+		position: absolute; top: 2px; left: 8px; right: 8px;
+		color: @lbf-placeholder-color;
+		text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+		pointer-events: none;
+		-webkit-transition: opacity .1s; transition: opacity .1s;
+		cursor: text; 
+	}
+	&-focus &-placeholder, & input:focus + &-placeholder {
+		opacity: 0.38; filter: alpha(opacity=38);
+	}
+	position: relative;
+	overflow: hidden;
+}
+
+/* search input */
+.lbf-search-input {
+	padding-left: 40px;
+	& > a {
+		width: 20px; height: 20px;
+		padding: 9px 10px;
+		text-align: center;
+		position: absolute; top: 0; left: 0;		
+	}
+	& .icon-search {
+		display: block;
+	}
+	& .lbf-text-input-placeholder {
+		left: 40px;
+	}
+	.lbf-text-input-focus .icon-search {
+		background-position: 0 -20px;
+	}
+}
+input[type=search]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	width: 20px; height: 20px;
+	background: url('@{lbf-images}/nodes/closes.png') no-repeat;
+	cursor: pointer;
+}
+input[type=search]::-webkit-search-cancel-button:hover {
+	background-position: 0 -20px;
+}
+

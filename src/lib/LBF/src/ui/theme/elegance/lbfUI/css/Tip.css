@@ -1,0 +1,119 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+.lbf-tip {
+  position: absolute;
+  max-width: 250px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: #373c42;
+  /* arrow */
+  /* 纯CSS实现三角方案，用背景图可忽略 */
+  /* error */
+}
+.lbf-tip-content {
+  padding: 6px 8px;
+  color: #ffffff;
+  line-height: 18px;
+}
+.lbf-tip-arrow {
+  position: absolute;
+}
+.lbf-tip-top .lbf-tip-arrow {
+  left: 50%;
+  bottom: 1px;
+}
+.lbf-tip-bottom .lbf-tip-arrow {
+  left: 50%;
+  top: -6px;
+}
+.lbf-tip-right .lbf-tip-arrow {
+  top: 50%;
+  left: -6px;
+}
+.lbf-tip-left .lbf-tip-arrow {
+  top: 50%;
+  right: 0;
+}
+.lbf-tip-arrow-before,
+.lbf-tip-arrow-after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 6px solid;
+}
+.lbf-tip-top .lbf-tip-arrow-before {
+  left: -6px;
+  top: 1px;
+  border-color: #373c42 transparent;
+  border-bottom-width: 0;
+}
+.lbf-tip-top .lbf-tip-arrow-after {
+  left: -6px;
+  border-color: #373c42 transparent;
+  border-bottom-width: 0;
+}
+.lbf-tip-right .lbf-tip-arrow-before {
+  top: -6px;
+  border-left-width: 0;
+  border-color: transparent #373c42;
+}
+.lbf-tip-right .lbf-tip-arrow-after {
+  left: 1px;
+  top: -6px;
+  border-left-width: 0;
+  border-color: transparent #373c42;
+}
+.lbf-tip-bottom .lbf-tip-arrow-before {
+  left: -6px;
+  border-color: #373c42 transparent;
+  border-top-width: 0;
+}
+.lbf-tip-bottom .lbf-tip-arrow-after {
+  left: -6px;
+  top: 1px;
+  border-color: #373c42 transparent;
+  border-top-width: 0;
+}
+.lbf-tip-left .lbf-tip-arrow-after {
+  top: -6px;
+  left: -1px;
+  border-color: transparent #373c42;
+  border-right-width: 0;
+}
+.lbf-tip-left .lbf-tip-arrow-before {
+  top: -6px;
+  border-color: transparent #373c42;
+  border-right-width: 0;
+}
+.lbf-tip-error {
+  background-color: #ff5237;
+}
+.lbf-tip-error.lbf-tip-top .lbf-tip-arrow-before {
+  border-color: #ff5237 transparent;
+}
+.lbf-tip-error.lbf-tip-top .lbf-tip-arrow-after {
+  border-color: #ff5237 transparent;
+}
+.lbf-tip-error.lbf-tip-right .lbf-tip-arrow-before {
+  border-color: transparent #ff5237;
+}
+.lbf-tip-error.lbf-tip-right .lbf-tip-arrow-after {
+  border-color: transparent #ff5237;
+}
+.lbf-tip-error.lbf-tip-bottom .lbf-tip-arrow-before {
+  border-color: #ff5237 transparent;
+}
+.lbf-tip-error.lbf-tip-bottom .lbf-tip-arrow-after {
+  border-color: #ff5237 transparent;
+}
+.lbf-tip-error.lbf-tip-left .lbf-tip-arrow-after {
+  border-color: transparent #ff5237;
+}
+.lbf-tip-error.lbf-tip-left .lbf-tip-arrow-before {
+  border-color: transparent #ff5237;
+}

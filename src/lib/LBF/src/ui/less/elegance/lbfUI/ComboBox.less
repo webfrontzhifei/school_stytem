@@ -1,0 +1,68 @@
+@import '../base/variable';
+
+.lbf-combobox {
+	display: inline-block; *display: inline; *zoom:1; font-family:'microsoft yahei', arial; vertical-align: bottom;
+	&-label {
+		position:relative; display:block; padding: 0 40px 0 12px; text-align:left; line-height:38px; background-color: #fff; overflow:hidden;
+	}
+	&-label:hover {
+		border-color:#ABABAF; text-decoration: none; z-index: 1000;
+	}
+	&-label:focus,
+	&-focus &-label {
+		border-color: @lbf-focus-color;
+	}
+	&-label:active {
+		background-color: #ededed; 
+	}
+	&-caption {
+		display: block; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;
+	}
+	&-icon {
+		position:absolute; right:0; top:0; width:40px; height:38px; background:url('@{lbf-images}/Combobox/arrow-down.png') no-repeat center;
+	}
+	
+	body &-on,
+	body &-on:hover {
+		border:1px solid @lbf-focus-color; border-bottom-left-radius: 0; border-bottom-right-radius: 0; z-index:1000;
+	}
+	
+	
+	
+	&-error &-label,
+	&-error &-label:hover {
+		border-color: @lbf-error-color; background-color: @lbf-error-background-error; z-index:1000;
+	}
+	
+	&-panel {
+		display:none; overflow-y:auto; overflow-x:hidden; margin: -1px 0 0; font-size: 14px; list-style: none; background-color: #ffffff; border: 1px solid #18C09D; font-family:'microsoft yahei', arial;
+	}
+	&-panel &-options {
+		list-style:none; margin:0; padding:0;
+	}
+	&-panel &-option{
+		background-color: #fff; 
+	}
+	&-panel &-item {
+		display: block; height:36px; padding: 0 12px; line-height: 36px; color: #333333; white-space: nowrap; text-overflow: ellipsis; text-decoration:none; overflow:hidden;
+	}
+	&-panel &-item:hover {
+		text-decoration: none; 
+	}
+	&-panel &-option:hover {
+		background-color: #EAFFFA; 
+	}
+	&-panel &-item-selected,
+	&-panel &-item-selected:hover {
+		background-color: #D8FFF4; 
+	}
+	
+	&-disabled {
+		opacity: 0.65; filter: alpha(opacity=65); pointer-events: none; cursor: default; *zoom: 1; 
+	}
+	
+	/* select */
+	& select {
+		position: absolute; clip: rect(0 0 0 0); 
+	}
+}

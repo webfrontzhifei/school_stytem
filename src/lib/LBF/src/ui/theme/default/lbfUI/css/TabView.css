@@ -1,0 +1,23 @@
+/* reset */
+.lbf-tabview ul { margin:0; padding:0;}
+.lbf-tabview li { list-style:none;}
+
+/* tab */
+.lbf-tabview-tabs { height:30px; padding:0; margin:0; border-bottom:1px solid #ccc;}
+.lbf-tabview-tabs li { position:relative; float:left; display:inline-block; *display:inline; *zoom:1; height:29px; padding:0 25px; margin-right:5px; border:1px solid #ddd; border-bottom:none; background:white; color:#999; line-height:29px; cursor:pointer; text-align:center; font-size:12px;
+    border-radius:2px 2px 0 0;
+}
+.lbf-tabview-tabs li:hover,
+.lbf-tabview-tabs li.lbf-tabview-tab-hover,
+.lbf-tabview-tabs li.lbf-tabview-tab-selected { z-index:1;  padding-bottom:1px; border-color:#ccc; border-bottom:none; background:#ffffff; color:#333; cursor:default;}
+
+/* tab close */
+.lbf-tabview-tabs li .lbf-tabview-close { display:none; position:absolute; top:4px; right:4px; width:14px; height:14px; text-indent:9999px; line-height:1px; overflow:hidden; background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close.png);}
+.lbf-tabview-tabs li:hover .lbf-tabview-close,
+.lbf-tabview-tabs li.lbf-tabview-tab-hover .lbf-tabview-close { display:block;}
+.lbf-tabview-tabs li .lbf-tabview-close:hover { background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close-hover.png);}
+
+/* content */
+.lbf-tabview-contents {}
+.lbf-tabview-contents li { display:none;}
+.lbf-tabview-contents li.lbf-tabview-content-selected { display: block; color:#333;}

@@ -1,0 +1,141 @@
+@import '../base/mixin';
+
+/* 表格通用样式 */
+.table {
+	width: 100%; table-layout: fixed; border-collapse: collapse; border-spacing: 0;
+	&-size {
+		background-color: @white;
+		position: relative;
+	}
+    &-base {
+		.lh(51px);
+		thead td, th {
+			.lh(52px); .p(0); .bg(@bg-gray); .tl; .n; color: @gray;
+			cursor: text;
+		}
+		thead tr:hover {
+			td {
+				.bg(@bg-gray);
+			}
+		}
+		tbody {
+			td {
+				.lh(20); padding: 16px 0; .bg;
+				border-bottom: 1px solid @light;				
+			}			
+			/*tr:hover td{
+				.bg(@list-hover);	
+			}*/
+			.selected:hover  td{
+				.bg(@list-selected);	
+			}
+		}
+		tr { 
+			.def;
+			&.empty td{
+				.p(25);
+				text-align:center;
+				.gray;
+			}
+			
+			&.empty:hover td {
+				.bg;
+			}
+			td, th {
+				&:first-child {
+					padding-left: 30px;
+				}
+				&.col-chk {
+					width: 36px;
+					padding-left: 10px;
+				}
+			}
+			&.selected td {
+				background-color: @list-selected;
+			}
+		}
+	}
+	&-page {
+		margin-top: -1px; position: relative;
+		.h(32); padding: 10px 10px 8px 22px;
+		border-top: 1px solid @light;
+		&-data {
+			.l; .pt(5);
+		}
+		&-a {
+			display: inline-block; margin-left:5px;
+			i {
+				margin-left:5px;
+                vertical-align:2px;
+			}
+			&:hover {
+				.link;
+			}
+            
+            &:hover i{
+                background-position: 0px -16px;
+            }
+		}
+	}
+	&-loading {
+		height: 100px; .pt(100); .pb(100); .tc; line-height: 100px;
+		& > i, & > s {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+		
+		& > i{
+		    margin: -10px 0 0 -10px;
+		}
+		
+		& > s {
+		    margin: -15px 0 0 -15px;
+		}
+	}
+
+	/* added by vergilzhou starts */
+	tr.tr-empty {
+
+		td {
+			.tc();
+			.pt(17px);
+			.pb(40px);
+
+			.text-main {
+				font-size: 24px;
+				.h(35px);
+				.mt(-5px);
+			}
+
+			.text-secondary {
+				font-size: 14px;
+			}
+
+		}
+
+	}
+	/* added by vergilzhou ends */
+}
+
+.table-null {
+	.dn;
+	.h(250px);
+	.pt(70px);
+	.tc;
+	.bg(#fff);
+	border-bottom:1px solid #ebedf2;
+	&-icon {
+		.dib;
+		.w(100px);
+		.h(100px);
+		background:url('@{images}/icons-null.png') no-repeat;
+	}
+	&-title {
+		.f(24px);
+		.mt(10px);
+	}
+	&-desc {
+		.pb(40px);
+	}
+}

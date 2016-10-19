@@ -1,0 +1,130 @@
+/* =Reset default browser CSS.
+-------------------------------------------------------------- */
+.lbf-reset * { margin:0; padding:0; font-family:"microsoft yahei", tahoma;}
+.lbf-reset :focus { outline:0;}
+.lbf-reset ol, .lbf-reset ul { list-style:none;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+.lbf-reset table { border-collapse:separate; border-spacing:0;}
+.lbf-reset caption, .lbf-reset th td { font-weight:normal; text-align:left;}
+.lbf-reset blockquote:before, .lbf-reset blockquote:after,
+.lbf-reset q:before, .lbf-reset q:after { content:'';}
+.lbf-reset blockquote, .lbf-reset q { quotes:'' '';}
+.lbf-reset img { border:0 none;}
+.lbf-reset article, .lbf-reset aside, .lbf-reset details, .lbf-reset figcaption, .lbf-reset figure,
+.lbf-reset footer, .lbf-reset header, .lbf-reset hgroup, .lbf-reset menu, .lbf-reset nav, .lbf-reset section { display:block;}
+.lbf-reset a { text-decoration:none; color:#006cb8;}
+.lbf-reset p { color:#888; font-size:12px;}
+
+/* clear float */
+.lbf-reset .clearfix:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; font-size:0;}
+.lbf-reset .clearfix { min-height:1%;}
+
+/* inline block */
+.lbf-inline-block { display:inline-block; *display:inline; zoom:1;}
+
+/* hidden */
+.lbf-hidden { display:none!important;}
+
+/*
+Font sizes for all selectors other than the body are given in percentages,
+with 100% equal to 13px. To calculate a font size percentage, multiply the
+desired size in pixels by 7.6923076923.
+
+Here's a quick lookup table:
+
+10px - 76.923%
+11px - 84.615%
+12px - 92.308%
+13px - 100%
+14px - 107.692%
+15px - 115.385%
+16px - 123.077%
+17px - 130.769%
+18px - 138.462%
+19px - 146.154%
+20px - 153.846%
+*/
+
+/* -- Links ----------------------------------------------------------------- */
+.lbf-reset a {
+    color: #356de4;
+    text-decoration: none;
+}
+
+.lbf-reset .hidden {
+    display: none;
+}
+
+.lbf-reset a:hover { text-decoration: underline; }
+
+/* -- Paragraphs ------------------------------------------------------------ */
+.lbf-reset p { margin: 1.3em 0; }
+.lbf-reset dd p, .lbf-reset td p { margin-bottom: 0; }
+.lbf-reset dd p:first-child, .lbf-reset td p:first-child { margin-top: 0; }
+
+/* -- Headings -------------------------------------------------------------- */
+.lbf-reset h1, .lbf-reset h2, .lbf-reset h3, .lbf-reset h4, .lbf-reset h5, .lbf-reset h6 {
+    color: #D98527;/*was #f80*/
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 1.1em 0 0.5em;
+}
+
+.lbf-reset h1 {
+    font-size: 184.6%;
+    color: #30418C;
+    margin: 0.75em 0 0.5em;
+}
+
+.lbf-reset h2 {
+    font-size: 153.846%;
+    color: #E48A2B;
+}
+
+.lbf-reset h3 { font-size: 138.462%; }
+
+.lbf-reset h4 {
+    border-bottom: 1px solid #DBDFEA;
+    color: #E48A2B;
+    font-size: 115.385%;
+    font-weight: normal;
+    padding-bottom: 2px;
+}
+
+.lbf-reset h5, .lbf-reset h6 { font-size: 107.692%; }
+
+/* -- Lists ----------------------------------------------------------------- */
+.lbf-reset dd { margin: 0.2em 0 0.7em 1em; }
+.lbf-reset dl { margin: 1em 0; }
+.lbf-reset dt { font-weight: bold; }
+
+/* -- Tables ---------------------------------------------------------------- */
+.lbf-reset caption, .lbf-reset th { text-align: left; }
+
+.lbf-reset table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.lbf-reset td, .lbf-reset th {
+    border: 1px solid #fff;
+    padding: 5px 12px;
+    vertical-align: top;
+}
+
+.lbf-reset td { background: #fff; }
+.lbf-reset td dl { margin: 0; }
+.lbf-reset td dl dl { margin: 1em 0; }
+.lbf-reset td pre:first-child { margin-top: 0; }
+
+.lbf-reset th {
+    background: #fff;/*#97A0BF*/
+    border-bottom: 0 none;
+    border-top: 0 none;
+    color: #000;/*#FFF1D5*/
+    font-weight: bold;
+    line-height: 1.3;
+    white-space: nowrap;
+}

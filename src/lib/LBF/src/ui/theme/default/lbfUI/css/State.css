@@ -1,0 +1,64 @@
+.lbf-state {
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, "Microsoft Yahei", Simsun, sans-serif;
+    border: 1px solid #dedede;
+    background-color: #f8f8f8;
+    -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.lbf-state,
+.lbf-state .lbf-state-title {
+  color: #333;
+}
+
+.lbf-state .lbf-state-title {
+  margin: 0 6px 0 0;
+}
+
+.lbf-state-success {
+  color: #ffffff;
+  background-color: #53a93f;
+  border-color: #53a93f;
+}
+
+.lbf-state-success .lbf-state-title {
+  color: #ffffff;
+}
+
+.lbf-state-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border:1px solid #f0ad4e;
+}
+.lbf-state-warning .lbf-state-title {
+  color: #ffffff;
+}
+
+.lbf-state-danger,
+.lbf-state-error {
+  color: #ffffff;
+  background-color: #dd4b39;
+  border-color: #dd4b39;
+}
+
+.lbf-state-danger .lbf-state-title,
+.lbf-state-error .lbf-state-title {
+  color: #ffffff;
+}
+
+.lbf-state-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.lbf-state-info .lbf-state-title {
+  color: #ffffff;
+}
+
+.lbf-state-close { display:block; float:right; margin:3px 0 0 0; width:14px; height:14px; text-indent:9999px; line-height:1px; overflow:hidden; background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close.png);}
+.lbf-state-close:hover { background-image:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/nodes/close-hover.png);}

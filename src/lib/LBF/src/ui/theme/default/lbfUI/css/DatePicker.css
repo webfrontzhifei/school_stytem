@@ -1,0 +1,69 @@
+/* = Calendar = */
+/* reset the th because the range datepicker don't need the 1px #fff border */
+.lbf-date-picker.lbf-reset td, .lbf-date-picker.lbf-reset th { border: 0 none;}
+.lbf-date-picker { display:none; position:absolute; z-index:2; border:1px solid #ccc; background-color:#fff; font-size:12px; text-align:center; font-family:Tahoma,Helvetica,Arial,sans-serif;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    background-clip:padding-box;
+}
+/* date-picker-month-year-button */
+.lbf-date-picker .lbf-date-picker-btn-prev,
+.lbf-date-picker .lbf-date-picker-btn-next { position:absolute; top:7px; left:10px; display:inline-block; width:23px; height:23px; background:url(//combo.b.qq.com/lbf/0.8.0/ui/theme/default/lbfUI/images/DatePicker/date-picker-all.png) no-repeat 0 0; cursor:pointer;}
+.lbf-date-picker .lbf-date-picker-btn-next { left:auto; right:10px; background-position:-23px 0;}
+.lbf-date-picker .lbf-date-picker-btn-prev:hover { background-position:-46px 0;}
+.lbf-date-picker .lbf-date-picker-btn-next:hover { background-position:-69px 0;}
+/* date-picker-month-year-panel */
+.lbf-date-picker .lbf-date-picker-viewport { min-height:1%; padding-bottom:5px;}
+.lbf-date-picker .lbf-date-picker-viewport:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; font-size:0;}
+.lbf-date-picker .lbf-date-picker-table { float:left; width:auto; margin:0 8px; border-spacing:0 7px; border-collapse:collapse; font-size:12px;}
+.lbf-date-picker .lbf-date-picker-caption { margin-bottom:1px; text-align:center; color: #444444; height:26px; padding-top:10px;}
+.lbf-date-picker .lbf-date-picker-caption-link { display: inline-block; *display: inline; zoom: 1; font: 14px Tahoma, "microsoft yahei", simsun; text-decoration: none; color: #444;}
+.lbf-date-picker .lbf-date-picker-caption-link:hover { color: #6681CC; cursor: pointer; text-decoration: none;}
+.lbf-date-picker .lbf-date-picker-today-link { display:block; padding:0 0 10px; }
+
+/* date-mode */
+.lbf-date-picker .lbf-date-picker-weekday { font-weight:normal; text-align:center; border:1px solid #e1e1e1; *border-bottom-width:2px;  background:#f7f8fa; -moz-border-radius:0;}
+.lbf-date-picker .lbf-date-picker-date { padding:4px 11px; line-height:20px; text-align:center; white-space:nowrap; font-family:"Tahoma"; cursor:default; color:#9e9e9e;}
+.lbf-date-picker .lbf-date-picker-date-enabled { color:#000; cursor:pointer;}
+.lbf-date-picker .lbf-date-picker-date-highlight { background-color:#0070c0; color:#fff;}
+.lbf-date-picker .lbf-date-picker-date-selected,
+.lbf-date-picker .lbf-date-picker-date-between,
+.lbf-date-picker .lbf-date-picker-date-first,
+.lbf-date-picker .lbf-date-picker-date-last { background:url(//combo.b.qq.com/lbf/0.7.3/ui/theme/bootstrap/images/DatePicker/date-picker-all.png) no-repeat;}
+.lbf-date-picker .lbf-date-picker-date-selected { background-position: -92px 2px; color: #fff;}
+.lbf-date-picker .lbf-date-picker-date-between { background-position: -164px 2px; color:#fff;}
+.lbf-date-picker .lbf-date-picker-date-first { background-position: -127px 2px; color: #37adf0;}
+.lbf-date-picker .lbf-date-picker-date-last { background-position: -202px 2px; color: #37adf0;}
+
+.lbf-date-picker .lbf-date-picker-buttons { clear: both; text-align: right; padding: 5px 10px 10px; }
+.lbf-date-picker .lbf-date-picker-buttons .lbf-button { margin-left: 10px; line-height: 30px; border-radius: 2px; }
+
+/* month-mode */
+/* override the default lbf-date-picker-table */
+.lbf-date-picker .lbf-date-picker-month-table,
+.lbf-date-picker .lbf-date-picker-year-table { margin:0 7px 0 8px;}
+.lbf-date-picker .lbf-date-picker-month-table th,
+.lbf-date-picker .lbf-date-picker-month-table td,
+  /* year-mode */
+.lbf-date-picker .lbf-date-picker-year-table th,
+.lbf-date-picker .lbf-date-picker-year-table td { padding: 0;}
+.lbf-date-picker .lbf-date-picker-month,
+.lbf-date-picker .lbf-date-picker-year { display: inline-block; *display: inline; zoom: 1; width: 4em; border: 1px solid #ffffff; padding: 17px 7px; line-height: 20px; text-align: center; white-space: nowrap; font-family: "microsoft yahei" ; cursor: default; color: #cccccc; text-decoration: none;
+    border-radius: 2px;
+}
+.lbf-date-picker .lbf-date-picker-month:hover,
+.lbf-date-picker .lbf-date-picker-year:hover { border: 1px solid #37adf0; background-color: #ffffff; text-decoration: none;}
+.lbf-date-picker .lbf-date-picker-month-enabled,
+.lbf-date-picker .lbf-date-picker-year-enabled { cursor: pointer; color: #444444;}
+.lbf-date-picker .lbf-date-picker-month-selected,
+.lbf-date-picker .lbf-date-picker-year-selected { border: 1px solid #cccccc; background-color: #f7f7f7; }
+
+/* year-mode */
+.lbf-date-picker .lbf-date-picker-year-first, .lbf-date-picker .lbf-date-picker-year-last { color: #646464;}

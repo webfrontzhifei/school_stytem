@@ -1,0 +1,184 @@
+@import '../base/variable';
+/* = Calendar = */
+/* reset the th because the range datepicker don't need the 1px #fff border */
+.lbf-date-picker.lbf-reset td, .lbf-date-picker.lbf-reset th { border: 0 none;}
+.lbf-date-picker {
+	display: none;
+	position: absolute; z-index: 2;
+	border: 1px solid #ccc; border: 0 rgba(0, 0, 0, 0);
+	border-radius: 2px;
+	background-color: #fff;
+	background-clip: padding-box;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	font-size: 14px;
+	text-align: center;
+   	&[data-tips]:after {
+		content: attr(data-tips);
+		display: block;
+		height: 40px; line-height: 40px;
+		margin-top: -5px;
+		text-align: center;
+		color: #A2A9B6; font-size: 12px;
+	}
+	/* date-picker-month-year-button */
+	&-btn-prev,
+	&-btn-next {
+		position: absolute; top: 10px; left: 10px;
+		width: 23px; height: 23px;
+		background: url('@{lbf-images}/DatePicker/date-picker-all.png') no-repeat 0 0;
+		cursor: pointer;
+		&.disabled:hover {
+			background-position: 0 0;
+		}
+	}
+	&-btn-prev:hover {
+		background-position: -46px 0;
+	}
+	&-btn-next {
+		left:auto; right:10px;
+		background-position: -23px 0;
+		&:hover {
+			background-position: -69px 0;
+		}
+		&.disabled:hover {
+			background-position: -23px 0;
+		}
+	}
+
+	.disabled {
+		opacity: 0.5; filter: alpha(opacity=50); pointer-events: none; cursor: default;
+	}
+
+	/* date-picker-month-year-panel */
+	&-viewport {
+		padding-bottom: 5px;
+		overflow: hidden;
+		&:after {
+			content:''; display:table; clear:both;
+		}
+	}
+	&-table {
+		float: left;
+		width: auto;
+		margin: 0 8px;
+		border-spacing: 0 7px; border-collapse: collapse;
+		font-size: 12px;
+	}
+	&-caption {
+		line-height:26px;
+		margin-bottom: 1px; padding-top: 10px;
+		text-align: center;
+		.lbf-reset & {
+			text-align: center;
+		}
+		color: @lbf-color;
+		&-link {
+			display: inline-block;
+			font-size: 12px;
+			text-decoration: none;
+			color: @lbf-color;
+			&:hover {
+				color: @lbf-link-color;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	/* date-mode */
+	&-weekday {
+		border: 1px solid #e1e1e1; *border-bottom-width: 2px;
+		-moz-border-radius: 0;
+		background: #f7f8fa;
+		font-weight: normal;
+		text-align: center;
+	}
+	&-date {
+		line-height: 20px;
+		padding: 4px 11px;
+		text-align: center;
+		font-family: "Tahoma";
+		color: #9e9e9e;
+		white-space: nowrap;
+		cursor: default;
+		&-enabled {
+			color: #000; cursor: pointer;
+			&:hover {
+				background-color: #f5f5f5;
+			}
+		}
+		&-highlight {
+			background-color: #0070c0; color: #fff;
+		}
+		&-selected, &-between, &-first, &-last {
+			background:url('@{lbf-images}/DatePicker/date-picker-all.png') no-repeat;
+		}
+		&-selected {
+			background-position: -92px 2px; color: #fff;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		&-between {
+			background-position: -164px 2px; color: #fff;
+		}
+		&-first {
+			background-position: -127px 2px; color: #37adf0;
+		}
+		&-last {
+			background-position: -202px 2px; color: #37adf0;
+		}
+	}
+
+    &-buttons {
+         clear: both;
+         text-align: right;
+         padding: 5px 10px 10px;
+        .lbf-button {
+            margin-left: 10px;
+            line-height: 30px;
+            border-radius: 2px;
+        }
+    }
+
+	&-month, &-year {
+		display: inline-block;
+		width: 56px; height: 36px; line-height: 36px;
+		padding: 1px; margin: 2.5px;
+		border: 1px solid #D9D9D9; background-color: #F5F5FA;
+		text-align: center; text-decoration: none;
+		font-family: "microsoft yahei";
+		color: #C2C3CB;
+		white-space: nowrap;
+		cursor: default;
+		&:hover {
+			text-decoration: none;
+			color: #C2C3CB;
+		}
+		&-table {
+			*width: 260px; margin:0 7px 0 8px;
+			th, td {
+				padding: 0;
+			}
+		}
+		&-enabled {
+			border: 1px solid #D9D9D9; background-color: #fff;
+			color: @lbf-color;
+			cursor: pointer;
+			&:hover {
+				padding: 0; border: 2px solid #1BC09A; background-color: #fff; text-decoration: none; color: @lbf-color;
+			}
+		}
+		&-selected {
+			padding: 0;
+			border: 2px solid #1BC09A; background-color: #fff;
+		}
+	}
+
+	/* month-mode */
+	&-month-table &-caption-link { font-size: 16px; }
+	/* override the default lbf-date-picker-table */
+
+	/* year-mode */
+	&-year-first, &-year-last { color: #c2c3cb;}
+}

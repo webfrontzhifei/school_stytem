@@ -1,0 +1,65 @@
+.lbf-loading{
+	padding-left:16px;
+	height:18px;
+	line-height:18px;
+	display:none;
+	overflow:hidden;
+	vertical-align:middle;
+	margin:0 -22px 0 6px;
+	_position:relative;
+	background: url(../images/FileUploader/loading.gif) no-repeat center center;
+}
+
+.lbf-draghover{
+	box-shadow:0 0 5px rgba(0,0,0,.3) inset;
+}
+.lbf-swfUpload{
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+.lbf-fileUpload-trigger{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+	*display:inline;
+    vertical-align: middle!important;
+}
+.lbf-fileUpload-container{
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    margin-right:26px;
+}
+.lbf-fileUpload-container .lbf-loading{
+    position: absolute;
+    right: -22px;
+    top: 7px;
+    margin: 0;
+}
+.lbf-fileUpload-input{
+    opacity: 0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 100px;
+}
+.lbf-fileUpload-form{
+     margin:0;
+ }
+.lbf-fileUpload-disabled,
+.lbf-fileUpload-disabled:hover,
+.lbf-fileUpload-disabled:active,
+.lbf-fileUpload-container .lbf-fileUpload-disabled,
+.lbf-fileUpload-container .lbf-fileUpload-disabled:hover,
+.lbf-fileUpload-container .lbf-fileUpload-disabled:active{
+    cursor: default;
+}
+.lbf-fileUpload-disabled .lbf-fileUpload-input,
+.lbf-fileUpload-disabled .lbf-swfUpload{
+    visibility: hidden;
+}

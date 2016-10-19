@@ -1,0 +1,81 @@
+.ui_tips[data-title] {
+  position: relative;
+  overflow: visible;
+}
+.ui_tips[data-title]::before,
+.ui_tips[data-title]::after {
+  position: absolute;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+.ui_tips[data-title]::before {
+  content: attr(data-title);
+  top: -42px;
+  padding: 6px 10px;
+  line-height: 18px;
+  border-radius: 3px;
+  background-color: #1e2330;
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-family: 'microsoft yahei';
+  white-space: nowrap;
+}
+.ui_tips[data-title]::after {
+  content: '';
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 6px solid transparent;
+  border-top-color: #1e2330;
+  top: -13px;
+}
+.ui_tips_multi[data-title]::before {
+  top: -60px;
+  width: 386px;
+  white-space: normal;
+}
+.ui_tips[data-title]:hover::before,
+.ui_tips[data-title]:hover::after {
+  -webkit-transition: visibility .1s .1s;
+  transition: visibility .1s .1s;
+  visibility: visible;
+}
+/* 下面是 IE7 IE8 玩耍的代码 */
+.ui_tips .ui_tips_before,
+.ui_tips .ui_tips_after {
+  display: none;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+}
+.ui_tips_before {
+  top: -42px;
+  max-width: 250px;
+  padding: 6px 10px;
+  line-height: 18px;
+  border-radius: 3px;
+  background-color: #1e2330;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  font-family: 'microsoft yahei';
+}
+.ui_tips_after {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 6px solid transparent;
+  border-top-color: #1e2330;
+  top: -13px;
+}
+.ui_tips:hover .ui_tips_before,
+.ui_tips:hover .ui_tips_after {
+  display: block;
+}

@@ -1,0 +1,32 @@
+@import '../base/variable';
+
+.lbf-iradio { 
+	display: inline-block; *display: inline; *zoom:1;
+	width: 20px; height: 20px; 
+	padding: 0;
+	border: 0 none; 
+	background: url('@{lbf-images}/ICheckbox/checkbox.png') no-repeat 0 -100px;
+	vertical-align:middle;
+	position:relative;
+	cursor: pointer;
+	&&-hover {
+		background-position: 0 -120px;
+	}
+	&&-checked {
+		background-position: 0 -140px;
+	}
+	&&-disabled {
+		background-position: 0 -160px;
+		cursor: default; pointer-events: none;
+	}
+	&-checked&-disabled {
+		background-position: 0 -180px;
+	}
+	& input {
+		position: absolute;
+		opacity: 0; filter: alpha(opacity=0);
+	}
+	& + label {
+		vertical-align: -2px;
+	}
+}

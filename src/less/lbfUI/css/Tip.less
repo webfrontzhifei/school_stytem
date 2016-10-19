@@ -1,0 +1,40 @@
+@import '../../base/variable';
+.lbf-tip { position:absolute; font-size:12px; border-radius: 2px; background-color: @dark; }
+.lbf-tip-content { padding:5px 10px; color: @white; line-height: 20px; }
+/* arrow */
+.lbf-tip .lbf-tip-arrow { position:absolute;}
+.lbf-tip-top .lbf-tip-arrow { left:50%; bottom:1px;}
+.lbf-tip-bottom .lbf-tip-arrow { left:50%; top:-6px;}
+.lbf-tip-right .lbf-tip-arrow { top:50%; left:-6px;}
+.lbf-tip-left .lbf-tip-arrow { top:50%; right:0;}
+
+/* 纯CSS实现三角方案，用背景图可忽略 */
+.lbf-tip-arrow-before,
+.lbf-tip-arrow-after { position:absolute; display:block; width:0; height:0; overflow:hidden; border:6px solid;}
+
+.lbf-tip-top .lbf-tip-arrow-before { left:-6px; top:1px; border-color:@dark transparent; border-bottom-width:0;}
+.lbf-tip-top .lbf-tip-arrow-after { left: -6px; border-color:@dark transparent; border-bottom-width: 0;}
+
+.lbf-tip-right .lbf-tip-arrow-before { top:-6px; border-left-width: 0; border-color:transparent @dark;}
+.lbf-tip-right .lbf-tip-arrow-after { left: 1px; top:-6px; border-left-width:0; border-color:transparent @dark;}
+
+.lbf-tip-bottom .lbf-tip-arrow-before { left:-6px; border-color:@dark transparent; border-top-width:0;}
+.lbf-tip-bottom .lbf-tip-arrow-after { left:-6px; top:1px; border-color:@dark transparent; border-top-width:0;}
+
+.lbf-tip-left .lbf-tip-arrow-after { top:-6px; left:-1px; border-color:transparent @dark; border-right-width:0;}
+.lbf-tip-left .lbf-tip-arrow-before { top:-6px; border-color:transparent @dark; border-right-width:0;}
+
+/* error */
+.lbf-tip-error { background-color: @red; }
+
+.lbf-tip-error.lbf-tip-top .lbf-tip-arrow-before { border-color:@red transparent; }
+.lbf-tip-error.lbf-tip-top .lbf-tip-arrow-after { border-color:@red transparent; }
+
+.lbf-tip-error.lbf-tip-right .lbf-tip-arrow-before { border-color:transparent @red;}
+.lbf-tip-error.lbf-tip-right .lbf-tip-arrow-after { border-color:transparent @red;}
+
+.lbf-tip-error.lbf-tip-bottom .lbf-tip-arrow-before  { border-color:@red transparent; }
+.lbf-tip-error.lbf-tip-bottom .lbf-tip-arrow-after { border-color:@red transparent; }
+
+.lbf-tip-error.lbf-tip-left .lbf-tip-arrow-after { border-color:transparent @red; }
+.lbf-tip-error.lbf-tip-left .lbf-tip-arrow-before {  border-color:transparent @red; }

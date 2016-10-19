@@ -1,0 +1,38 @@
+.lbf-pagination { overflow:hidden;}
+
+/* jump直达模块 */
+/*.lbf-pagination-jump { display: inline-block; *display: inline; zoom: 1; margin-left: 12px; padding-top:2px;}
+.lbf-pagination-input { width:24px; height:16px; padding:6px 3px; border: 1px solid #dddddd; vertical-align:middle; text-align:center; color:#666; border-radius: 2px; }
+.lbf-pagination-go  { display:inline-block; vertical-align:middle; padding: 4px 8px; line-height: 20px; border: 1px solid #dddddd; border-left-width:0;  border-radius: 2px; }*/
+
+.lbf-pagination-prev,
+.lbf-pagination-next {
+	font: 0/0 a; color: transparent;
+	background: url(../images/Pagination/icons-prev-next.png) no-repeat;
+	overflow: hidden;
+}
+.lbf-pagination-next { }
+.lbf-pagination-next:hover { background-position: 0 -30px; border-color: #CED1D9;  }
+.lbf-pagination-prev { background-position: 0 -90px; }
+.lbf-pagination-prev:hover { background-position: 0 -120px; border-color: #CED1D9;  }
+
+.lbf-pagination-page,
+.lbf-pagination-prev,
+.lbf-pagination-next {
+	display: inline-block; min-width: 16px; padding-left: 3px; padding-right: 3px; height: 26px; line-height: 26px; border: 1px solid transparent;
+}
+
+.lbf-pagination-ellipsis {
+	display: inline-block;
+}
+/* 列表 */
+.lbf-pagination-item-list { height: 28px; line-height: 28px; float: right; }
+.lbf-pagination-item { float: left; min-width: 32px; height: 100%; text-align: center; }
+.lbf-pagination-page { text-decoration: none; color: #A2A9B6; }
+.lbf-pagination-page:hover { border-color: #CED1D9; background-color: #f5f5fa; color: #545A6C; }
+.lbf-pagination-current,
+.lbf-pagination-current:hover { cursor: default; color: #fff; background-color: #1bc09a; border: 0; min-width: 18px; height: 100%;}
+.lbf-pagination-disabled,
+.lbf-pagination-disabled:hover { cursor: default; color: #ccc; pointer-events: none; }
+.lbf-pagination-prev.lbf-pagination-disabled { background-position: 0 -150px; }
+.lbf-pagination-next.lbf-pagination-disabled { background-position: 0 -60px; }

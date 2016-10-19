@@ -1,0 +1,97 @@
+@import '../base/variable';
+
+.lbf-overlay { background-color: #01050E; left: 0; top: 0; right: 0; bottom: 0; width: auto!important; min-height: 100%; }
+body > .lbf-overlay { height: auto!important; background-color:rgba(1, 5, 14, .7)!important; opacity:1!important; filter:alpha(opacity=70) !important; -webkit-animation: fadeIn .2s both; animation: fadeIn .2s both; }
+
+@-webkit-keyframes tinydown {
+    0%, 5% { opacity: 0; -webkit-transform: translateY(-10px); }
+	10% { opacity: 1; -webkit-transform: translateY(-10px); }
+    to { -webkit-transform: translateY(0); }
+}
+@keyframes tinydown {
+    0%, 5% { opacity: 0; transform: translateY(-10px); }
+	10% { opacity: 1; transform: translateY(-10px); }
+    to { transform: translateY(0); }
+}
+
+.lbf-panel { 
+	position: absolute; left: 48%; top: 100px;
+	min-width: 400px;
+	border: 1px solid #ccc; border: 0 rgba(0,0,0,0); border-radius: 2px;
+	background-color: #F5F5FA; 
+	box-shadow: 0 2px 8px rgba(0,0,0,.3); 
+	//-webkit-transition: 200ms opacity; transition: 200ms opacity;
+	-webkit-animation: tinydown .25s; animation: tinydown .25s;
+	//opacity: 1;
+	
+	&-head { 
+		padding: 15px 50px 0 25px;
+		font: bold 14px/30px "Segoe UI", "Microsoft Yahei", sans-serif; 
+		color: #545A6C; 
+		-webkit-user-select: none; -moz-user-select: none; user-select: none;
+		cursor:default;
+	}
+	&-body {
+		min-height: 60px;
+		padding: 10px 25px 20px;
+		*zoom: 1;
+		&:after { 
+			content: ''; display: table; clear: both;
+		}
+	}
+	&-foot {
+		padding: 0 25px 25px; text-align: right;
+		.lbf-button {
+			margin-left: 15px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		&:empty {
+			display: none;
+		}
+	}
+	&-foot-reverse {
+		overflow: hidden;
+		.lbf-button {
+			float: right;
+		}
+	}
+	&-close {
+		position: absolute; top: 18px; right: 17px;
+		width: 20px; height: 20px;
+		background: url('@{lbf-images}/nodes/closes.png') no-repeat;
+		&:hover {
+			background-position: 0 -20px;
+		}
+	}
+
+	&-warning {
+		background: url('@{lbf-images}/Panel/warning.png') no-repeat 0 35px;
+	}
+	&-remind {
+		background: url('@{lbf-images}/Panel/remind.png') no-repeat 0 35px;
+	}
+	&-success { 
+		background: url('@{lbf-images}/Panel/success.png') no-repeat 0 35px;
+	}
+
+	&-warning,
+	&-remind,
+	&-success {
+		padding: 30px 0 26px 60px;
+		& > h6 {
+			font-size: 16px;
+		}
+		& > h6 + p {
+			width: 294px; margin-top: 3px;
+		}
+	}
+	
+	
+	&-fill-color { border: 0; }
+	&-fill-color &-head { background-color: #5480e0; color: #fff; border-top-left-radius: 2px; border-top-right-radius: 2px;}
+	&-fill-color &-body { padding: 0; }
+	&-fill-color &-close,
+	&-fill-color &-close:hover { background-position: 0 -40px; }
+}

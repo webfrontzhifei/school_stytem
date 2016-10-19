@@ -1,0 +1,88 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+textarea.lbf-textarea,
+.lbf-textarea textarea {
+  min-height: 92px;
+  padding: 8px 8px 7px;
+  border: 1px solid #D0D0D5;
+  border-radius: 4px;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: none;
+  font-size: 100%;
+  font-family: 'microsoft yahei', arial, sans-serif;
+  color: #545a6c;
+  vertical-align: top;
+  position: relative;
+  overflow: auto;
+  resize: none;
+}
+textarea.lbf-textarea:hover,
+.lbf-textarea textarea:hover {
+  border-color: #ABABAF;
+}
+textarea.lbf-textarea:focus,
+.lbf-textarea textarea:focus {
+  border-color: #18c09d;
+}
+.lbf-textarea {
+  /* placeholder */
+  position: relative;
+}
+.lbf-textarea textarea {
+  width: 100%;
+}
+textarea.lbf-textarea-error,
+.lbf-textarea-error textarea,
+.lbf-textarea-error textarea:focus,
+textarea.lbf-textarea-error:focus {
+  border-color: #ff5237;
+}
+.lbf-textarea-flash-on,
+.lbf-textarea-flash-on:hover,
+.lbf-textarea-flash-on:focus {
+  border-color: #4d90fe;
+}
+.lbf-textarea-flash-off,
+.lbf-textarea-flash-off:hover {
+  border-color: #b9b9b9;
+  border-top-color: #a0a0a0;
+}
+textarea.lbf-textarea-disabled,
+.lbf-textarea-disabled textarea {
+  background: #eee;
+  pointer-events: none;
+  color: #bbb;
+}
+.lbf-textarea-placeholder {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  color: #a2a9b6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  cursor: text;
+}
+.lbf-textarea-focus .lbf-textarea-placeholder,
+textarea:focus + .lbf-textarea-placeholder {
+  opacity: 0.38;
+  filter: alpha(opacity=38);
+}
+@media screen\9 {
+  .lbf-textarea textarea,
+  textarea.lbf-textarea {
+    width: 94%;
+    min-height: 75px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}

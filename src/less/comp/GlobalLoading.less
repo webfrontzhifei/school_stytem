@@ -1,0 +1,28 @@
+@import '../base/mixin';
+
+.overlay {
+  &.overlay-white {
+    .bg(#fff);
+    .opacity(@opacity: 60);
+  }
+}
+.global-loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    margin: -50px 0 0 -100px;
+    .bg(#00a1f2);
+    .tc();
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    z-index: 1000;
+    .loading {
+      width: 20px;
+      height: 20px;
+      margin: 20px auto 15px auto;
+      font-size: 0;
+    }
+}

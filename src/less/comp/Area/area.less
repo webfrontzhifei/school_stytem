@@ -1,0 +1,179 @@
+@import '../../base/mixin';
+.item-selector{
+  .w(400px);
+  .bg(#fffff);
+  .title{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    div{
+      font-size: 16px;
+    }
+
+  }
+  .icon-srv-label-close{
+    cursor: pointer;
+  }
+  .selected{
+//    padding-left: 10px;
+//    padding-right: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 32px;
+    span{
+      color: #1171ee;
+      b{
+        font-weight: normal;
+      }
+    }
+    .items{
+      float: right;
+      margin-top: 0px;
+      .item{
+        float: left;
+        text-align: center;
+        border: 0px solid;
+        background: #e4e8ea;
+        border-radius: 25px;
+        margin-left: 10px;
+        padding-left: 12px;
+        padding-right: 20px;
+        height: 25px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        line-height: 25px;
+        position: relative;
+        font-size: 14px;
+        i{
+          position: absolute;
+          right: 6px;
+          top:8px
+        }
+      }
+    }
+
+  }
+
+  .list{
+
+//    padding-left: 10px;
+//    padding-right: 10px;
+    position: relative;
+    clear: both;
+    .lbf-autocomplete-panel{
+      width: 398px;
+      height: 277px;
+      overflow-y: auto;
+      margin-left: 1px;
+    }
+    .input{
+
+    }
+    .border{
+      border: 1px solid #0067ed;
+      border-top: 0;
+    }
+    .default-border{
+      border: 1px solid #dadee7;
+      border-top: 0;
+    }
+    .item-selector-content{
+      height: 277px;
+
+      .items-default{
+        position: relative;
+        font-size: 14px;
+        height: 227px;
+        width: 398px;
+        .default-left-section{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 277px;
+          width: 95px;
+          background-color: #f5f5f5;
+          .default-left-wrapper{
+            height: 277px;
+            width: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 277px;
+          }
+        }
+        .default-right-section{
+          position: absolute;
+          left: 95px;
+          top: 0;
+          height: 277px;
+          width: 303px;
+          width/*\**/:303px \9;
+          background: #fff;
+
+          .default-right-wrapper{
+            height: 277px;
+            width: 100%;
+            overflow: hidden;
+            z-index: 222;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 277px;
+          .classification-content{
+            li{
+              width: 100%;
+              z-index: 9999999999999999999999999;
+            }
+
+          }
+          }
+        }
+
+        .classification{
+          float: left;
+          width: 100%;
+          background: #f4f6f9;
+
+          li{
+            height: 35px;
+            padding-left: 20px;
+            line-height: 35px;
+            cursor: pointer;
+          }
+          li.selected{
+            background: #ffffff;
+          }
+          li:hover{
+            background: #ffffff;
+          }
+        }
+        .classification-content{
+          z-index: 3;
+          overflow: hidden;
+
+          position: relative;
+          li{
+            height: 35px;
+            line-height: 35px;
+            padding-left: 35px;
+            cursor: pointer;
+          }
+          li:hover{
+            background: #f5fafe;
+          }
+        }
+      }
+      .items-search{
+        clear: both;
+        background: #FFF6D9;
+        width: 100%;
+        top: -38px;
+        height: 277px;
+        overflow: hidden;
+        position: absolute;
+      }
+    }
+  }
+
+}

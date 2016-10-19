@@ -1,0 +1,26 @@
+@import '../base/mixin';
+
+@transitionTime: 1.3s;
+
+.overlay {
+	.abs();
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	.bg(#1a1d1f);
+    .opacity(@opacity: 90);
+
+/*
+	-o-transition: @transitionTime;
+	-opera-transition: @transitionTime;
+	-webkit-transition: .@transitionTime;
+	transition: @transitionTime;
+*/
+
+	
+}
+.overlay-content {
+	.tc();
+}

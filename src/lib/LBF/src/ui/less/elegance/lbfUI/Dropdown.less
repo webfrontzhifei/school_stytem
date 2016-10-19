@@ -1,0 +1,70 @@
+@import '../base/variable';
+
+.lbf-dropdown { 
+	display: none;
+	&-ul {
+		border-radius: 2px;
+		border: 1px solid @lbf-border-color;
+		border: 0 rgba(0,0,0,0);
+		background-color: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+		padding-top: 5px; padding-bottom: 5px;
+		& > li {
+			line-height: 35px; padding: 0 15px; white-space: nowrap; cursor: pointer;
+		}
+		& > li:hover {
+			background-color: @lbf-list-hover;
+		}
+		& > li a {
+			display: block; color: @lbf-color;
+		}
+	}
+	
+  	&-panel {
+		min-width: 350px; line-height: 1.4;
+		border: 1px solid #ccc; border: 0px rgba(200,200,200,.2); border-radius: 2px;
+		background-color: #fff;  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+		text-align: left;
+		position: relative;
+		&-head {
+			padding: 15px 50px 0 20px;
+			font: bold 14px/30px "Segoe UI", "Microsoft Yahei";
+			color: @lbf-color;  
+			-webkit-user-select: none; -moz-user-select: none; user-select: none;
+		}
+		&-body {
+			min-height: 60px;
+			padding: 10px 20px 20px;
+			*zoom: 1; 
+			&:after {
+				content: ''; display: table; clear: both;
+			}
+		}
+		&-foot {
+			padding: 0 20px 20px;
+			text-align: right;
+			overflow: hidden; _zoom: 1;
+		}
+		&-foot .lbf-button {
+			margin-left: 15px;
+		}
+		&-foot-reverse{
+			float: right;
+			& .lbf-button-link {
+				float: left;
+			}
+		}
+		&-close {
+			position: absolute; top: 13px; right: 12px; 
+			width: 20px; height: 20px;
+			background: url(../images/nodes/closes.png) no-repeat;
+			&:hover {
+				background-position: 0 -20px;
+			}
+		}
+	} 
+}
+
+
+
+

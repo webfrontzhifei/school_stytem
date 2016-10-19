@@ -1,0 +1,15 @@
+/* iCheck plugin Square skin, blue
+----------------------------------- */
+.lbf-icheckbox { position:relative; display: inline-block; *display: inline; zoom:1; margin: 0; padding: 0; width: 22px; height: 22px; border: none; background: url(http://combo.b.qq.com/lbf/0.7.7/ui/theme/default/lbfUI/images/ICheckbox/icheckbox.png) no-repeat; cursor: pointer;}
+.lbf-icheckbox { background-position: 0 0;}
+.lbf-icheckbox.lbf-icheckbox-hover { background-position: -24px 0;}
+.lbf-icheckbox.lbf-icheckbox-checked { background-position: -48px 0;}
+.lbf-icheckbox.lbf-icheckbox-disabled { background-position: -72px 0; cursor: default;}
+.lbf-icheckbox.lbf-icheckbox-checked.lbf-icheckbox-disabled,
+.lbf-icheckbox.lbf-icheckbox-disabled.lbf-icheckbox-checked {background-position: -96px 0;}
+.lbf-icheckbox.lbf-icheckbox-checked.lbf-icheckbox-halfchecked,
+.lbf-icheckbox.lbf-icheckbox-halfchecked { background-position: 0 -24px;}
+.lbf-icheckbox.lbf-icheckbox-halfchecked:hover { background-position: -24px -24px;}
+.lbf-icheckbox.lbf-icheckbox-halfchecked.lbf-icheckbox-disabled,
+.lbf-icheckbox.lbf-icheckbox-disabled.lbf-icheckbox-halfchecked { background-position: -72px -24px;}
+.lbf-icheckbox input { position: absolute; opacity: 0; filter: alpha(opacity=0);}

@@ -1,0 +1,70 @@
+@import '../base/variable';
+
+textarea.lbf-textarea, .lbf-textarea textarea {
+	min-height: 92px;
+	padding: 8px 8px 7px;
+	border: 1px solid #D0D0D5; border-radius: @lbf-border-radius;
+	-ms-box-sizing: border-box; box-sizing: border-box;
+	background-color: #fff;
+	outline: none; 
+	font-size: 100%; font-family: 'microsoft yahei', arial, sans-serif; 
+	color: @lbf-color;
+	vertical-align: top; 
+	position: relative;
+	overflow: auto;
+	resize: none;
+	&:hover {
+		border-color: #ABABAF;
+	}
+	&:focus {
+		border-color: @lbf-focus-color;
+	}
+}
+
+.lbf-textarea {
+	textarea {
+		width: 100%;
+	}
+	
+	textarea&-error,
+	&-error textarea,
+	&-error textarea:focus,
+	textarea&-error:focus {
+		border-color: @lbf-error-color;
+		// background-color: @lbf-error-background-error;
+	}
+	&-flash-on,
+	&-flash-on:hover,
+	&-flash-on:focus {
+		border-color: #4d90fe;
+	}
+	&-flash-off,
+	&-flash-off:hover { 
+		border-color: #b9b9b9; border-top-color: #a0a0a0;
+	}
+	textarea&-disabled,
+	&-disabled textarea {
+		background: #eee; pointer-events: none; color: #bbb;
+	}
+	
+	/* placeholder */
+	&-placeholder {
+		position: absolute; top: 8px; left: 8px; right: 8px;
+		color: @lbf-placeholder-color;
+		text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+		-webkit-transition: opacity .1s; transition: opacity .1s;
+		cursor: text;
+	}
+	&-focus &-placeholder, textarea:focus + &-placeholder {
+		opacity: 0.38; filter: alpha(opacity=38);
+	}
+	position: relative;
+}
+
+
+@ie7hack: screen\9;
+@media @ie7hack {
+	.lbf-textarea textarea , textarea.lbf-textarea {
+	   width: 94%; min-height: 75px; padding-left: 2.5%; padding-right: 2.5%;
+	}
+}

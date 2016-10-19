@@ -1,0 +1,41 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+.lbf-iradio {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0 none;
+  background: url('../images/ICheckbox/checkbox.png') no-repeat 0 -100px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+.lbf-iradio.lbf-iradio-hover {
+  background-position: 0 -120px;
+}
+.lbf-iradio.lbf-iradio-checked {
+  background-position: 0 -140px;
+}
+.lbf-iradio.lbf-iradio-disabled {
+  background-position: 0 -160px;
+  cursor: default;
+  pointer-events: none;
+}
+.lbf-iradio-checked.lbf-iradio-disabled {
+  background-position: 0 -180px;
+}
+.lbf-iradio input {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.lbf-iradio + label {
+  vertical-align: -2px;
+}

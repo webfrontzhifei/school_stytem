@@ -1,0 +1,34 @@
+@import '../base/variable';
+
+.lbf-icheckbox { 
+	position:relative;
+	display: inline-block; *display: inline; *zoom:1;
+	width: 16px; height: 16px;
+	padding: 2px; 
+	border: 0 none; background: url('@{lbf-images}/ICheckbox/checkbox.png') no-repeat;
+	vertical-align:middle;
+	cursor: pointer;
+	&&-hover {
+		background-position: 0 -20px;
+	}
+	&&-checked {
+		background-position: 0 -40px;
+	}
+	&&-disabled {
+		background-position: 0 -60px;
+		cursor: default; pointer-events: none;
+	}
+	/*&&-halfchecked { background-position: 0 0;}*/
+	&-checked&-disabled {
+		background-position: 0 -80px;
+		background-color: transparent;
+	}
+	input {
+		position: absolute;
+		opacity: 0; filter: alpha(opacity=0);
+	}
+	& + label {
+		vertical-align: -1px;
+	}
+}
+

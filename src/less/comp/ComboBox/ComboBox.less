@@ -1,0 +1,44 @@
+@import '../../base/mixin';
+@import 'ComboBoxPanel';
+.qidian-combobox{
+  min-width: 250px;
+  .lbf-combobox-on, .lbf-combobox-on:hover{
+    border: 1px solid #dadee7;
+  }
+}
+.qidian-combobox-panel {
+  .ComboBoxStaffSelector();
+}
+.qidian-combobox-panel{
+  margin: 5px 0 0;
+  border: 1px solid #dadee7;
+  border-radius: 2px;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,.15);
+  .lbf-combobox-item{
+  }
+  .members-select{
+    .members-select-search{
+
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-top: 9px;
+
+    }
+    .members-select-box{
+      border: 0px;
+      width: 248px;
+      max-height: 270px;
+      min-height: 50px;
+      height: auto !important;
+      li{
+        width: 245px;
+      }
+    }
+  }
+
+  .lbf-combobox-tag{
+    float: right;
+    color: #a8abb3;
+  }
+}
+

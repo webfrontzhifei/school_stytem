@@ -1,0 +1,11 @@
+/* iCheck plugin Square skin
+----------------------------------- */
+.lbf-iradio { position:relative; display: inline-block; *display: inline; zoom:1; margin: 0; padding: 0; width: 22px; height: 22px; background: url(//combo.b.qq.com/lbf/0.6.3/ui/theme/bootstrap/images/IRadio/iradio.png) no-repeat; border: none; cursor: pointer;
+}
+.lbf-iradio { background-position: -120px 0;}
+.lbf-iradio.lbf-iradio-hover { background-position: -144px 0;}
+.lbf-iradio.lbf-iradio-checked { background-position: -168px 0;}
+.lbf-iradio.lbf-iradio-disabled { background-position: -192px 0; cursor: default;}
+.lbf-iradio.lbf-iradio-checked.lbf-iradio-disabled,
+.lbf-iradio.lbf-iradio-disabled.lbf-iradio-checked { background-position: -216px 0;}
+.lbf-iradio input { position: absolute; opacity: 0; filter: alpha(opacity=0);}

@@ -1,0 +1,19 @@
+.lbf-menu { position:absolute; z-index:10; display:none;}
+.lbf-menu-panel { padding:5px 0; margin:0; list-style:none; background:#fff; font-size: 14px; outline: none; border: 1px solid #ccc;
+    border:1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+    -webkit-transition: opacity 0.218s;
+    -moz-transition: opacity 0.218s;
+    -ms-transition: opacity 0.218s;
+    -o-transition: opacity 0.218s;
+    transition: opacity 0.218s;}
+.lbf-menu .lbf-menu-item { position:relative; display:block;}
+.lbf-menu .lbf-menu-label { display:block; min-width:160px; _width:160px; height:20px; padding:3px 12px; line-height: 20px; color:#333; font-size:12px; text-decoration:none; white-space:nowrap;}
+.lbf-menu .lbf-menu-label:hover { background-color:#f5f5f5; color:#262626;}
+.lbf-menu .lbf-menu-split { margin:3px 4px; border-bottom:1px solid #dbdbdb; line-height:0; font-size:0;}

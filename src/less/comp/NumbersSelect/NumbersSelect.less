@@ -1,0 +1,31 @@
+@import '../../base/mixin';
+
+.numbers-select {
+	&-search {
+		.h(60);
+	}
+	&-box {
+		 text-align: justify; .ovh; .mb(-20);
+	}
+	&-list {
+		display: inline-block; .w(125); .lh(78px); .bd; .vt; .dark; .tc; .mb(10);
+		&:hover {
+			color: @black; border-color: #a8abb3;	
+		}
+		&.disabled {
+			.bg(@bg-gray); .gray; .bd(@border-gray); cursor: default; pointer-events: none;
+		}
+		i& {
+			.h(0); .ovh; border-width: 0 1px;
+		}
+	}
+	&-page {
+		.ovh;
+	}
+	&-check {
+		.abs; .mt(-22);
+		label {
+			vertical-align: -1px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@import '../base/variable';
+
+.lbf-light-tip { 
+	position:absolute; top: 0!important; 
+	min-width: 400px; height: 20px; line-height: 20px;
+	padding: 15px;
+	border-radius: 2px; 
+	outline: none;
+	background-color: #2EC7AB;
+	text-align: center; color: #fff;
+	z-index: 99;
+	& .icon {
+		vertical-align: -4px; margin-right: 6px; background: url(../images/LightTip/tip.png) no-repeat;
+	}
+	&-error .icon {
+		background-position: 0 -20px;
+	}
+	&-error{
+		background-color: #F4605C;
+	}
+	&-normal{
+		background-color:#fff;
+		color: @lbf-color;
+	}
+}

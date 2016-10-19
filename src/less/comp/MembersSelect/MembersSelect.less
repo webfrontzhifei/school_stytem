@@ -1,0 +1,97 @@
+@import '../../base/mixin';
+
+.members-select {
+	&-search {
+		.h(55);
+	}
+	&-box {
+		.ova; .bd; .bg;
+		.lbf-dropdown & {
+			.h(280);
+		}
+		.lbf-panel & {
+		}
+	    #memberSelectComp & {
+		  height: 448px; .rel;
+		}
+        a.curSelectedNode {
+			background: url(../../lbfUI/images/ICheckbox/checked.png) no-repeat 100%;
+		}
+	}
+	&-text {
+		.h(55); .lh(40px);
+	}
+	&-title {
+		.h(45); line-height: 45px; padding-left: 13px; border-bottom: 1px solid @light-gray; font-size: 16px;
+	}
+	&-container {
+		.abs; .bg; top: 46px; left: 0; right: 0; bottom: 0; overflow: auto;
+	}
+	&-list {
+		height: 20px; line-height: 20px; padding: 7px; position: relative; cursor: default;
+		&:hover {
+			.bg(@list-hover);
+			.icon-clear {
+				.vv;
+			}
+		}
+		.icon-clear {
+			background: url("@{images}/icon-clear.png") no-repeat center; position: absolute; top: 7px; right: 7px; visibility: hidden;
+		}
+		span.icon {
+			.vt; .mr(5);
+		}
+		&.disabled {
+			.opacity(35); .bg;
+			.icon-clear {
+				.vh;
+			}
+		}
+		
+	}
+}
+
+.depart-select {
+	&-title {
+		.h(40);
+		h5 {
+			.tc;
+			.mt(-20px);
+			.c(#b4b7bf);
+			font-size:14px;
+		}
+		h6 {
+			.l;
+		}
+		.highlight {
+			color: @green; .r;
+		}
+	}
+	&-box {
+		.h(250); .bd; .bg; .mb(20);
+		a.curSelectedNode {
+			background: url(../../lbfUI/images/ICheckbox/checked.png) no-repeat 100%;
+		}
+	}
+}
+
+.range-select {
+	&-title {
+		.h(25);
+		h6 {
+			.di;
+		}
+		.highlight {
+			.f; color: @green;
+		}
+	}
+	&-box {
+		.h(222); .bd; .bg;
+	}
+	&-selected {
+		.pb(15);
+		.selector {
+			.mr(10);
+		}
+	}
+}

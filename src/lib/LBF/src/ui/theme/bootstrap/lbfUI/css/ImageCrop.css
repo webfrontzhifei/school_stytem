@@ -1,0 +1,137 @@
+.lbf-crop{
+    width: 530px;
+    height: 302px;
+    position: relative;
+    overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.lbf-crop .lbf-crop-area{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border:1px solid #eee;
+    cursor: move;
+}
+.lbf-crop .lbf-crop-area img{
+    position: absolute;
+    left: 0;
+    top: 0;
+	display:none;
+}
+.lbf-crop .lbf-crop-cropBox{
+    width:360px;
+    height:270px;
+    border:1px solid #fff;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/blank.gif);
+}
+.lbf-crop .lbf-crop-top,
+.lbf-crop .lbf-crop-right,
+.lbf-crop .lbf-crop-bottom,
+.lbf-crop .lbf-crop-left{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #000;
+    opacity: .6;
+    filter:alpha(opacity=60);
+    z-index: 1;
+}
+.lbf-crop-zoombar{
+	position: absolute;
+	bottom: 7px;
+	right: 3px;
+	width: 4px;
+	height: 100px;
+	background-color: #eee;
+	border-radius: 2px;
+	z-index: 2;
+}
+.lbf-crop-zoombar .lbf-crop-handler{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	position:absolute;
+	left: -3px;
+	top: 50%;
+	margin-top: -5px;
+	cursor: pointer;
+	border-radius:3px;
+}
+.lbf-crop-zoombar .lbf-crop-zoomTip{
+	position:absolute;
+	left:-46px;
+	top:-3px;
+	height:12px;
+	line-height:12px;
+	background-color:#fff;
+	color:#888;
+	display:none;
+	font-size:10px;
+	font-family:arial;
+	white-space:nowrap;
+	border-radius:3px;
+	border:1px solid #eee;
+	padding:0 5px;
+}
+
+.lbf-winCrop .lbf-panel-foot{
+	position:relative;
+}
+.lbf-winCrop .lbf-crop-msgTip{
+	position:absolute;
+	left:20px;
+	top:14px;
+	height:30px;
+	line-height:30px;
+	display:block;
+}
+.lbf-winCrop .lbf-cropArea-loading{
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat center center;
+}
+.lbf-winCrop .lbf-crop-loading{
+	padding-left:16px;
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat 0 center;
+}
+.lbf-winCrop .lbf-crop-resize{
+	position:absolute;
+	left:154px;
+	bottom:20px;
+	font-size:12px;
+	color:#666;
+}
+.lbf-winCrop .lbf-crop-resize input{
+	border:1px solid #ccc;
+	padding:2px;
+	width:40px;
+	font-size:12px;
+	color:#666;
+	vertical-align:middle;
+	border-radius:3px;
+	margin-right:3px;
+	font-family:arial;
+}
+.lbf-winCrop .lbf-panel-body,
+.lbf-winCrop .lbf-panel-head,
+.lbf-winCrop .lbf-panel-foot{
+    padding:15px;
+}
+
+.lbf-loading{
+	padding-left:16px;
+	height:18px;
+	line-height:18px;
+	display:none;
+	overflow:hidden;
+	vertical-align:middle;
+	margin:0 -26px 0 6px;
+	_position:relative;
+	background: url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat center center;
+}
