@@ -1,0 +1,16 @@
+/* tabs */
+.lbf-tabview-tabs { height:40px; border-bottom:1px solid #dddddd;}
+.lbf-tabview-tab { position:relative; float:left; overflow:hidden; height:38px; padding:0 20px; line-height:38px; margin-right:2px; border:1px solid #ffffff; color:#999999; cursor:pointer; text-align:center; font-size:14px;
+    border-radius: 4px 4px 0 0;
+}
+.lbf-tabview-tab:hover,
+.lbf-tabview-tab-hover { border-color:#ddd; background:#eeeeee; border-color:#eeeeee;}
+.lbf-tabview-tab-selected,
+.lbf-tabview-tab-selected:hover { padding-bottom:2px; border-color:#dddddd; border-bottom:none; background:#ffffff; color:#333; cursor:default;}
+.lbf-tabview-tab-close { display:none; position:absolute; top:4px; right:4px; width:14px; height:14px; text-indent:9999px; line-height:1px; overflow:hidden;}
+.lbf-tabview-tab-hover .lbf-tabview-tab-close,
+.lbf-tabview-tab:hover .lbf-tabview-tab-close { display:inline-block;}
+/* contents */
+.lbf-tabview-contents { border:1px solid #dddddd; border-top:none;}
+.lbf-tabview-content { padding:12px;}
+.lbf-tabview-content-selected { display:block;}

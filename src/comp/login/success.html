@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+    try {
+        top && top.onPtlogin2success && top.onPtlogin2success();
+    } catch(e) {
+
+        // fix ie7 bug
+        // 当载入了营销QQ私有登陆框之后，这个页面不能获取top的方法，不知道为啥，在ie7下会这样。
+        var reloadUrl = /reloadUrl=([^&]*)/.exec(window.location.href);
+        if(reloadUrl[1]) {
+            top.location.href = reloadUrl[1];
+        }
+    }
+</script>
+</body>
+</html>

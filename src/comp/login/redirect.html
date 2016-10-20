@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+    var match = /host=([\w.]+)&protocol=([\w:]+)&url=(.+)/.exec(location.search),
+        host = match ? match[1] : 'qiye.qq.com',
+        protocol = match ? match[2] : 'https:',
+        url = match ? match[3] : '/';
+
+    //location.href= protocol + '//' + host + '/static_proxy/qidian/src/comp/login/success.html?reloadUrl=' + (protocol + '//' + host + '/cb') + '&t=' + (+new Date());
+
+
+    //ie下莫名其妙的问题，不设置domain会提示拒绝访问top
+    document.domain = host;
+
+    //location.href = protocol + '//' + host + '/static_proxy/qidian/src/comp/login/success.html?reloadUrl=' + url + '&t=' + (+new Date());
+
+    try {
+        top && top.onPtlogin2success && top.onPtlogin2success(url);
+    } catch(e) {
+        top.location.href = url
+    }
+
+</script>
+</body>
+</html>

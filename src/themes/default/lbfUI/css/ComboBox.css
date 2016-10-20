@@ -1,0 +1,21 @@
+.lbf-combobox { display: inline-block; *display: inline; zoom:1; font-family:'microsoft yahei', arial;}
+.lbf-combobox .lbf-combobox-label { position:relative; z-index:999; display:block; padding: 0 30px 0 12px; text-align:left; color:#333333; font-size:12px; line-height:26px; background-color: #fff; overflow:hidden;}
+.lbf-combobox .lbf-combobox-label:hover{ padding:0 29px 0 11px; border:2px solid #ffb636; line-height:24px; text-decoration:none; z-index:1000;}
+.lbf-combobox .lbf-combobox-label:hover .lbf-combobox-icon { display: inline-block; *display: inline; zoom:1; margin:-1px -1px 0 0; height:25px;}
+.lbf-combobox .lbf-combobox-label .lbf-combobox-caption { vertical-align: top; white-space: nowrap; display: inline-block; *display: inline; zoom:1;}
+.lbf-combobox .lbf-combobox-label .lbf-combobox-icon { position:absolute; right:0; top:0; width:22px; height:26px; background:url(../images/Combobox/combobox.png) no-repeat right 0 #f1f1f1; border-left:1px solid #ccc;}
+
+.lbf-combobox .lbf-dropdown-on,
+.lbf-combobox .lbf-dropdown-on:hover{ padding:0 29px 2px 11px; border:2px solid #ffb636; border-bottom:0; line-height:24px; background:url(../images/Combobox/splite.png) repeat-x 0 bottom; line-height:24px; z-index:1000;}
+.lbf-combobox .lbf-dropdown-on .lbf-combobox-icon { display: inline-block; *display: inline; zoom:1; margin:-1px -1px 0 0; height:25px;}
+
+.lbf-combobox .lbf-combobox-disabled {opacity: 0.65; filter: alpha(opacity=65);}
+
+.lbf-combobox-panel { display:none; overflow-y:auto; overflow-x:hidden; margin: -2px 0 0; font-size: 12px; list-style: none; background-color: #ffffff; border: 2px solid #ffb636; font-family:'microsoft yahei', arial;}
+.lbf-combobox-panel .lbf-combobox-options { list-style:none; zoom:1; margin:0; padding:0;}
+.lbf-combobox-panel .lbf-combobox-option{ height:34px; line-height:34px; margin:0; padding:0; list-style:none;}
+.lbf-combobox-panel .lbf-combobox-item { display: block; height:34px; padding: 0 12px; clear: both; font-weight: normal; line-height: 34px; overflow:hidden; color: #333333; white-space: nowrap; text-decoration:none;}
+.lbf-combobox-panel .lbf-combobox-item:hover { color: #fff; text-decoration: none; background-color: #ffb636;}
+
+/* select */
+.lbf-combobox select { position: absolute; height: 0px; width: 0px; opacity: 0; filter: alpha(opacity=0);}

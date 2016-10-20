@@ -1,0 +1,13 @@
+.lbf-overlay { opacity: 0.1!important; }
+
+.lbf-panel { position: absolute; border: 1px solid #ccc; background-color: #fafafa; box-shadow: 0 1px 1px rgba(0,0,0,.24); left: 48%; top: 48%; -webkit-transition: 200ms opacity; transition: 200ms opacity; opacity: 1; min-width:400px; }
+.lbf-panel-head { height: 18px; line-height: 18px; margin: 0; padding: 15px 20px; color: #2d3441; font-size: 16px; font-weight:normal; font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif; cursor:default; -webkit-user-select: none; -moz-user-select: none;}
+.lbf-panel-body { padding:10px 20px 30px; min-height:60px;}
+.lbf-panel-body, .lbf-panel-foot-reverse { _zoom: 1; }
+.lbf-panel-body:after, .lbf-panel-foot-reverse:after { content: ''; display: table; clear: both; }
+.lbf-panel-foot { padding: 0 20px; text-align:center; overflow: hidden; _zoom: 1; }
+.lbf-panel-foot .lbf-button { margin:0 8px 30px;}
+.lbf-panel-foot-reverse{ float: right; }
+.lbf-panel-foot-reverse .lbf-button-link { float: left; }
+.lbf-panel-close { position: absolute; top: 7px; right: 9px; width: 20px; height: 20px; background: no-repeat center; background-image: url(data:image/gif;base64,R0lGODlhCgAKAKIHAKGhoe/v76CgoPPz83d3d/T09I6Ojv///yH5BAEAAAcALAAAAAAKAAoAAAMjGFDXVyIIYtgzRAxcC2cb9TkhZTUeYZLcGFYvtB5hJJx0lAAAOw==);
+                   *background-image: url(../images/nodes/close.png);}

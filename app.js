@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var template = require('art-template/node/template-native.js');
+var template = require('./app/lib/template');
 var config = require('./config');
 // var $ = require('jquery');
 
@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, 'src/themes')));
+app.use('/static_proxy', express.static(path.join(__dirname, 'src')));
 
 app.use('/', routes);
 app.use('/users', users);

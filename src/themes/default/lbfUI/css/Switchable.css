@@ -1,0 +1,6 @@
+.lbf-switchable-tabs { height:52px; border-bottom: 1px solid #b2b2b2;}
+.lbf-switchable-contents { clear:left;}
+.lbf-switchable-tab { float:left; height:50px; margin-right:10px; padding:0 20px; border: 1px solid #fff; line-height:50px; text-align:center; color:#555; font-size:14px; cursor:pointer;}
+.lbf-switchable-tab-on { height:51px; margin-bottom:-1px; border: 1px solid #b2b2b2; border-bottom:1px solid #fff;}
+.lbf-switchable-tab-content { display:none;}
+.lbf-switchable-tab-content-on { display:block;}

@@ -1,0 +1,325 @@
+/** 通用脚手架 **/
+#wraper {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  margin-bottom: -50px;
+}
+#sidebar {
+  width: 230px;
+  background-color: #2d3441;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+#main {
+  padding-left: 250px;
+}
+#header {
+  height: 20px;
+  width: 910px;
+  line-height: 20px;
+  padding: 10px 0;
+  text-align: right;
+  margin-bottom: -40px;
+  position: relative;
+}
+.main {
+  padding-bottom: 80px;
+  width: 910px;
+}
+#footer {
+  padding: 10px 0 20px 250px;
+  height: 20px;
+  line-height: 20px;
+  color: #b0b3b5;
+}
+/** page head **/
+#header .unread,
+.header .unread {
+  position: absolute;
+  right: -35px;
+  top: 10px;
+  line-height: 31px;
+}
+#header .unread .ml20,
+.header .unread .ml20 {
+  margin-left: 20px;
+}
+#header .unread .logout,
+.header .unread .logout {
+  display: inline-block;
+  padding-left: 20px;
+  color: #545a6c;
+  background: url(images/logout.png) no-repeat 0 2px;
+}
+#header .unread .avatar,
+.header .unread .avatar {
+  vertical-align: middle;
+  display: block;
+}
+#header .unread .radius-cover,
+.header .unread .radius-cover {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+  background: url(images/head-radius-s.png);
+}
+#header .unread .unread-a,
+.header .unread .unread-a,
+#header .unread .icon-bell,
+.header .unread .icon-bell {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+#header .unread .unread-a,
+.header .unread .unread-a {
+  white-space: nowrap;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+#header .unread .unread-a:hover,
+.header .unread .unread-a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#header .unread .unread-a:hover .icon-bell,
+.header .unread .unread-a:hover .icon-bell {
+  background-position: 0 -20px;
+}
+#header .unread .icon-bell,
+.header .unread .icon-bell {
+  background: url(images/icon-bell.png);
+}
+#header .unread .unread-out,
+.header .unread .unread-out,
+#header .unread .unread-in,
+.header .unread .unread-in {
+  height: 18px;
+  background: url(images/icon-numbg.png) no-repeat;
+}
+#header .unread .unread-out,
+.header .unread .unread-out {
+  position: absolute;
+  padding-right: 9px;
+  background-position: right top;
+  margin: -7px 0 0 0;
+}
+#header .unread .unread-in,
+.header .unread .unread-in {
+  float: left;
+  display: inline;
+  zoom: 1;
+  line-height: 18px;
+  *line-height: 17px;
+  margin-left: -9px;
+  min-width: 9px;
+  text-align: right;
+  color: #fff;
+}
+#header .unread .unread-num,
+.header .unread .unread-num {
+  position: relative;
+  right: -4px;
+}
+/*点击头部头像开始*/
+.pop-avatar-info {
+  margin-left: -190px !important;
+}
+.pop-avatar-info .lbf-tip-arrow {
+  left: 87%!important;
+}
+.pop-avatar-info .lbf-tip-content {
+  padding: 0;
+  width: 235px;
+  background: #fff;
+  color: #3b424e;
+}
+.pop-avatar-info .lbf-tip-content .intro {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.pop-avatar-info .lbf-tip-content .intro .person-uin {
+  font-size: 12px;
+  color: #c0c2c6;
+}
+.pop-avatar-info .lbf-tip-content .intro .person-title {
+  margin-top: 8px;
+}
+.pop-avatar-info .lbf-tip-content .intro p {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.pop-avatar-info .lbf-tip-content .person-bottom {
+  background: #f5f5f5;
+  height: 38px;
+  line-height: 38px;
+  padding: 10px 15px;
+}
+.pop-avatar-info .lbf-tip-content .person-bottom .suggestion {
+  color: #9399aa;
+  margin-left: 5px;
+}
+.pop-avatar-info .lbf-tip-content .person-bottom .suggestion:hover {
+  color: #666;
+  text-decoration: none;
+}
+.pop-avatar-info .lbf-tip-content .person-bottom .quit {
+  padding: 0 25px;
+}
+.title {
+  color: #545a6c;
+  font-size: 24px;
+  padding: 30px 10px;
+  border-bottom: 1px solid #dadadb;
+  margin-bottom: 30px;
+}
+.title a {
+  color: #545a6c;
+}
+.title span {
+  font-size: 14px;
+  padding-left: 16px;
+  margin-left: 10px;
+  background: url(images/subarrow.png) no-repeat 0 4px !important;
+}
+.ahead {
+  height: 118px;
+  padding-top: 17px;
+  background-color: #ffb636;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.ahead .logo {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  overflow: hidden;
+}
+.ahead .tag {
+  font-size: 24px;
+  color: #2d3441;
+  padding-right: 18px;
+  background: url(images/ex.png) no-repeat right 16px;
+}
+.ahead .tag:hover {
+  text-decoration: none;
+}
+.ahead .tag.expand {
+  background-position: right -28px;
+}
+.ahead .navi {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  padding: 5px 0;
+  border: 1px solid #ffb636;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: none;
+}
+.ahead .navi a {
+  color: #2d3441;
+  font-size: 18px;
+  display: block;
+  line-height: 44px;
+  height: 44px;
+  overflow: hidden;
+  text-align: left;
+  padding: 0 25px;
+}
+.ahead .navi a:hover {
+  background-color: #fdf0dc;
+  text-decoration: none;
+}
+.ahead .navi .last {
+  border-top: 1px solid #dadada;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.searchbar {
+  width: 369px;
+  float: right;
+  padding-top: 30px;
+  position: relative;
+}
+.searchbar .input {
+  width: auto;
+  height: 32px;
+  float: left;
+}
+.searchbar .input input {
+  width: 208px;
+  margin-left: 33px;
+}
+.searchbar .input:hover input,
+.searchbar .input:focus input {
+  width: 206px;
+}
+.searchbar .input:hover .icon-search,
+.searchbar .input:focus .icon-search {
+  left: 9px;
+}
+.searchbar .icon-search {
+  position: absolute;
+  left: 10px;
+  margin-top: 5px;
+}
+.searchbar .simple {
+  width: 64px;
+  position: absolute;
+  right: 0;
+}
+/** sidebar **/
+.menu {
+  padding: 15px 0 50px 0;
+  background-color: #2d3441;
+}
+.menu dt span,
+.menu dt a,
+.menu li a {
+  padding: 0 10px 0 80px;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  color: #c4d3ef;
+  font-size: 14px;
+  position: relative;
+}
+.menu dt span {
+  color: #788395;
+}
+.menu .current a,
+.menu .current a:hover {
+  background-color: #222832;
+  color: #fff;
+  border-left: 4px solid #ffb636;
+  padding-left: 76px;
+}
+.menu a:hover {
+  text-decoration: none;
+  background-color: #404650;
+}
+.menu i {
+  position: absolute;
+  left: 43px;
+  top: 13px;
+  width: 25px;
+  height: 20px;
+  overflow: hidden;
+}
+.menu .current a i {
+  left: 39px;
+}
+.menu img {
+  display: block;
+}
+.menu dd {
+  padding-bottom: 15px;
+}

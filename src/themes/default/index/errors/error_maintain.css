@@ -1,0 +1,25 @@
+.maintain-error-wrapper {
+    position: relative;
+    min-height: calc(100vh - 131px);
+    min-height: 800px\9;
+}
+
+.maintain-error {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin: -105px 0 0 -100px;
+    text-align: center;
+}
+
+.maintain-error h1 {
+    color: #1d2330;
+    font-size: 24px;
+    line-height: 1;
+    padding: 35px 0 20px;
+}
+
+.maintain-error p {
+    color: #66686c;
+    font-size: 14px;
+}

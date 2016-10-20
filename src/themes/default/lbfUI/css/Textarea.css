@@ -1,0 +1,22 @@
+.lbf-textarea { position:relative; display:inline-block; width:200px; height:60px; padding:5px 6px 4px; border:1px solid #ccc; color:#222; vertical-align:top; outline:none; font:14px 'microsoft yahei',arial,sans-serif; overflow:hidden; border-radius:2px; background-color:#fff;}
+.lbf-textarea textarea { margin:0; padding:0; border:0 none; outline:none; color:#585858; overflow:auto; resize:none; font:12px arial,sans-serif; background-color:#fff;}
+.lbf-textarea-hover,
+.lbf-textarea:focus,
+.lbf-textarea:hover{ border:2px solid #ffb636; padding:4px 5px 3px;}
+.lbf-textarea-error,
+.lbf-textarea-error .lbf-textarea,
+.lbf-textarea-error:hover,
+.lbf-textarea-error:focus { border-color:#dd4b39;}
+.lbf-textarea-flash-on,
+.lbf-textarea-flash-on:hover,
+.lbf-textarea-flash-on:focus { border-color:#4d90fe;}
+.lbf-textarea-flash-off,
+.lbf-textarea-flash-off:hover,
+.lbf-textarea-flash-off { border-color:#b9b9b9; border-top-color:#a0a0a0;}
+.lbf-textarea-disabled { background:#eeeeee;}
+.lbf-textarea-disabled textarea { background:#eeeeee; color:#bbbbbb;}
+/* placeholder */
+.lbf-textarea .lbf-textarea-placeholder { position:absolute; top:2px; left:6px; color:#bbbbbb; cursor:text; line-height:20px;}
+.lbf-textarea:hover .lbf-textarea-placeholder,
+.lbf-textarea:focus .lbf-textarea-placeholder,
+.lbf-textarea-hover .lbf-textarea-placeholder{left:5px; top:1px;}

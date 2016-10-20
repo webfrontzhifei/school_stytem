@@ -27,10 +27,10 @@ var filepath = {
 gulp.task('styles', function () {
   return gulp.src(filepath.less)
     .pipe($.plumber())
-    .pipe($.sourcemaps.init())
+    // .pipe($.sourcemaps.init())
     .pipe($.less())
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
-    .pipe($.sourcemaps.write())
+    // .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.join(srcdir,'themes')))
     .pipe(reload({stream: true}));
 });
@@ -89,31 +89,45 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 //   })
 // });
 
-gulp.task('cssmin', function () {
-  return gulp.src(path.join(publicdir,'styles/*.css'))
-    .pipe($.cssnano())
-    .pipe($.rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest(path.join(publicdir,'styles')))
-});
+// gulp.task('cssmin', function () {
+//   return gulp.src(path.join(publicdir,'styles/*.css'))
+//     .pipe($.cssnano())
+//     .pipe($.rename({
+//       suffix: '.min'
+//     }))
+//     .pipe(gulp.dest(path.join(publicdir,'styles')))
+// });
 
-gulp.task('jsmin', function () {
-  return gulp.src(path.join(publicdir,'scripts/*.js'))
-    .pipe($.uglify())
-    .pipe($.rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest(path.join(publicdir,'scripts')));
-});
+// gulp.task('jsmin', function () {
+//   return gulp.src(path.join(publicdir,'scripts/*.js'))
+//     .pipe($.uglify())
+//     .pipe($.rename({
+//       suffix: '.min'
+//     }))
+//     .pipe(gulp.dest(path.join(publicdir,'scripts')));
+// });
 
 gulp.task('nodemon', function() {
   var called = false;
 
   return $.nodemon({
-    script: 'bin/www',
+    script: './bin/www',
+    ext: 'js css html',
+    ignore: ['node_modules/*', '.gitignore'],
     env: {
       'NODE_ENV': 'development'
+    },
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "events": {
+      "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
     }
   }).on('start', function() {
     if(!called) {
@@ -124,31 +138,33 @@ gulp.task('nodemon', function() {
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
-  browserSync.init(null, {
+  bs.init(null, {
     proxy: 'http://localhost:'+(process.env.PORT || '3000'),
-    files: ['dist/**/*'],
-    browser: 'google chrome',
     notify: false,
+    open: true,
     port: 5000
   });
-});
-
-gulp.task('build', ['cssmin', 'jsmin']);
-
-gulp.task('serve', function() {
-  runSequence(['clean'], ['styles', 'fonts'], ['browser-sync'], function() {
-
-    gulp.watch([
-      'app/*.html',
-      'app/images/**/*',
-      'app/fonts/**/*',
-      'app/scripts/**/*'
+  gulp.watch([
+      'src/'
     ]).on('change', reload);
-
-    gulp.watch('app/styles/**/*.css', ['styles']);
-    gulp.watch('app/fonts/**/*', ['fonts']);
-  });
 });
+
+// gulp.task('build', ['cssmin', 'jsmin']);
+
+// gulp.task('serve', function() {
+//   runSequence(['styles', 'fonts'], ['browser-sync'], function() {
+
+//     gulp.watch([
+//       'app/*.html',
+//       'app/images/**/*',
+//       'app/fonts/**/*',
+//       'app/scripts/**/*'
+//     ]).on('change', reload);
+
+//     gulp.watch('app/styles/**/*.css', ['styles']);
+//     gulp.watch('app/fonts/**/*', ['fonts']);
+//   });
+// });
 
 // // watching
 // gulp.task('watch', function () {

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+    var action = getHashValue('action');
+    switch (action) {
+        case 'close':
+            parent.parent.ptlogin2_onClose();
+            break;
+
+        case 'resize':
+            var width = parseInt(getHashValue('width')),
+                height = parseInt(getHashValue('height'));
+                parent.parent.ptlogin2_onResize(width, height);
+            break;
+    }
+
+    function getHashValue(n) {
+        var m = window.location.hash.replace(/^#/g, "");
+        m = m.match(new RegExp("(^|&)" + n + "=([^&]*)(&|$)"));
+        return !m ? "" : decodeURIComponent(m[2]);
+    }
+</script>
+</body>
+</html>

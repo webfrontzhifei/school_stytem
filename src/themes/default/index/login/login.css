@@ -1,0 +1,154 @@
+html,
+body {
+    height: 100%;
+    cursor: default;
+}
+body {
+    margin: 0 auto;
+    text-align: center;
+    font: 12px/1.5 'microsoft yahei', arial, sans-serif;
+    color: #585858;
+    background-color: #f5f5fa;
+}
+.page-login {
+  /*background: #2d3441;*/
+  background: #1f2123 url(images/bg.png) center top no-repeat;
+  background-size: cover;
+}
+
+.page-login #main {
+  margin: 0;
+  padding: 0;
+  /*background: #868887 url(images/bg.jpg) center top no-repeat;*/
+}
+
+.page-login .main {
+  width: 1020px;
+  margin: 0 auto;
+  padding-bottom:0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: -510px;
+  margin-top: -250px;
+  color:#fff;
+}
+
+.page-login .title {
+  width:1200px;
+  height:150px;
+  margin:0 auto;
+  padding:0;
+  border-bottom:none;
+  text-indent:-9999px;
+  background:url(images/logo.png) no-repeat 0 50%;
+  overflow:hidden;
+}
+
+.page-login .main h2,
+.page-login .main p {
+  width:630px;
+}
+
+.page-login .main h2 {
+  margin:60px 0 5px;
+  font-size:56px;
+  font-weight:100;
+}
+
+.page-login .main p {
+  font-size:26px;
+}
+
+.page-login .ptlogin {
+  width: 374px;
+  height:320px;
+  visibility: visible;
+  float:right;
+}
+
+/* footer setting */
+/* footer new add icons for trusty website */
+.footer {
+  padding: 50px 0;
+  max-height: 200px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .copyright {
+  color:#777a80;
+  text-align: center;
+}
+
+.footer .verified {
+  width: 360px;
+  height: 30px;
+  margin: 20px auto 0;
+  padding-bottom: 5px;
+}
+
+.footer .verified li {
+  float: left;
+  padding: 0 5px;
+}
+
+.footer .verified .veri-bg {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  line-height: 999px;
+  overflow: hidden;
+}
+
+.footer .verified .norton-verified {
+  width: 58px;
+  height: 30px;
+  background: url(images/nortonVerified.png) 0 -8px no-repeat;
+}
+
+.footer .verified .norton-verified:hover {
+  background-position: 0 -38px;
+}
+
+.footer .verified .veri-sign {
+  width: 48px;
+  height: 20px;
+  background: url(images/veriSign.png) no-repeat;
+}
+
+.footer .verified .veri-sign:hover {
+  background-position: 0 -19px;
+}
+
+.footer .verified .net-credit {
+  width: 27px;
+  height: 28px;
+  background: url(images/netTrusty.png) no-repeat;
+}
+
+.footer .verified .net-credit:hover {
+  background-position: 0 -28px;
+}
+
+.footer .verified .honesty-website {
+  width: 75px;
+  height: 26px;
+  background: url(images/honestyWebsite.png) no-repeat;
+}
+
+.footer .verified .honesty-website:hover {
+  background-position: 0 -25px;
+}
+
+.footer .verified .trusty-website {
+  width: 67px;
+  height: 26px;
+  background: url(images/trustyWebsite.png) no-repeat;
+}
+
+.footer .verified .trusty-website:hover {
+  background-position: 0 -25px;
+}

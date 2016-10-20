@@ -1,0 +1,22 @@
+.lbf-text-input { position:relative; display:inline-block; *display:inline; *zoom:1; width:200px; height:30px; padding:2px 6px; border:1px solid #ccc; color:#222; vertical-align:top; outline:none; font:14px/20px 'microsoft yahei',arial,sans-serif; border-radius:2px; background-color:#fff;}
+.lbf-text-input input { display:block; margin:0; border:0 none; outline:none; width:100%; height:18px; padding:6px 0; color:#222; font:14px arial,sans-serif; background:#fff;}
+.lbf-text-input input::-ms-clear{display:none;}
+
+.lbf-text-input-hover,
+.lbf-text-input:hover,
+.lbf-text-input:focus { border:2px solid #ffb636!important; padding:1px 5px;}
+.lbf-text-input-error,
+.lbf-text-input-error:hover,
+.lbf-text-input-error:focus { border-color:#dd4b39;}
+
+.lbf-text-input-disabled,
+.lbf-text-input-disabled:hover,
+.lbf-text-input-disabled:focus { border:1px solid #d9d9d9!important; padding:2px 6px; border-top-color:#a0a0a0; background:#eeeeee;}
+
+.lbf-text-input-disabled input { color:#bbbbbb;}
+
+/* placeholder */
+.lbf-text-input .lbf-text-input-placeholder { position:absolute; top:2px; left:6px; color:#bbbbbb; cursor:text; line-height:30px; display:inline-block;}
+.lbf-text-input:hover .lbf-text-input-placeholder,
+.lbf-text-input:focus .lbf-text-input-placeholder { left:5px; top:1px;}
+

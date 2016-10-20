@@ -1,0 +1,8 @@
+.lbf-iradio { position:relative; display: inline-block; *display: inline; zoom:1; padding: 0; width: 21px; height: 20px; background: url(../images/ICheckbox/icheckbox.png) no-repeat; border: none; cursor: pointer; vertical-align:middle;}
+.lbf-iradio { background-position: -120px 0;}
+.lbf-iradio.lbf-iradio-hover { background-position: -144px 0;}
+.lbf-iradio.lbf-iradio-checked { background-position: -168px 0;}
+.lbf-iradio.lbf-iradio-disabled { background-position: -192px 0; cursor: default;}
+.lbf-iradio.lbf-iradio-checked.lbf-iradio-disabled,
+.lbf-iradio.lbf-iradio-disabled.lbf-iradio-checked { background-position: -216px 0;}
+.lbf-iradio input { position: absolute; opacity: 0; filter: alpha(opacity=0);}

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>滴滴快递系统账户中心</title>
+    <% 
+    include('../../widget/commonCss',{
+        locals: local,
+        css: ['static_proxy/themes/default/lbfUI/css/inline.css', 
+            'static_proxy/themes/default/base/base.css']
+        
+    }); 
+    %>
+</head>
+
+<body class="page-login">
+<div id="wraper">
+
+    <h1 class="title">滴滴快递</h1>
+    <div class="lbf-search-input lbf-text-input">
+        <a href="javascript:">
+            <i class="icon icon-search">搜索</i>
+        </a>
+        <input id="searchInput" placeholder="姓名/手机号/QQ号" value="<%= searchQuery != '' ? searchQuery : '' %>"/>
+    </div>
+    <div class="footer">
+        <p class="copyright">Copyright 1998-2016 Tencent. All Rights Reserved. 公司 版权所有</p>
+    </div>
+</div>
+<% 
+    include('../../widget/bottom',{
+        locals: local
+    }); 
+%>
+<script type="text/javascript">
+    LBF.use('qidian.sites.ListController', function(ListController) {
+        new ListController();
+    });
+</script>

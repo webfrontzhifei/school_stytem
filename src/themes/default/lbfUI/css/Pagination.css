@@ -1,0 +1,35 @@
+.lbf-pagination {
+  overflow:hidden;
+  font-size:12px;
+  font-family:'microsoft yahei', arial;
+  height:30px;
+  position:relative;
+  overflow:hidden;
+  color:#333;
+}
+.lbf-pagination .lbf-pagination-prev,
+.lbf-pagination .lbf-pagination-next{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	overflow:hidden;
+	text-indent:-20000px;
+	*text-indent:0;
+	*font-size:0;
+	*line-height:0;
+	text-align:left;
+	vertical-align:middle;
+	background:url(../images/Pagination/nav.png) no-repeat;
+}
+.lbf-pagination .lbf-pagination-prev:hover{background-position:-60px 0;}
+.lbf-pagination .lbf-pagination-prev-disabled,
+.lbf-pagination .lbf-pagination-prev-disabled:hover{background-position:-120px 0; cursor:default;}
+.lbf-pagination .lbf-pagination-next{background-position:-30px 0;}
+.lbf-pagination .lbf-pagination-next:hover{background-position:-90px 0;}
+.lbf-pagination .lbf-pagination-next-disabled,
+.lbf-pagination .lbf-pagination-next-disabled:hover{background-position:-150px 0; cursor:default;}
+.lbf-pagination .lbf-pagination-jump{margin:0 8px;}
+.lbf-pagination .lbf-pagination-input{width:36px; text-align:center; border:1px solid #cdcdcd; padding:5px 1px; vertical-align:middle; font-family:arial; margin:0 2px;}
+.lbf-pagination .lbf-pagination-input:hover{border:2px solid #ffb636; padding:4px 0;}
+
+.lbf-pagination .overlay{position:absolute; left:0; top:0; bottom:0; width:100%; background:#fff; opacity:0; filter:alpha(opacity=0); display:none;}

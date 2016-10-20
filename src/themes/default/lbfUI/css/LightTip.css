@@ -1,0 +1,20 @@
+.lbf-light-tip { position:absolute; padding: 10px 20px 10px 35px; max-width: 200px; background:url(../images/LightTip/tip.png) 18px 14px #91c547 no-repeat; outline: none; color: #fff; display: inline-block; *display: inline; zoom:1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.lbf-light-tip-error{
+	background-color:#e25050;
+	background-position:18px -27px;
+}
+.lbf-light-tip-normal{
+	background-color:#fff;
+	padding:10px 20px;
+	color:#f00;
+}

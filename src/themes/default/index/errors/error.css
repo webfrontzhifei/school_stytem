@@ -1,0 +1,18 @@
+html,
+body{height:100%; overflow:hidden;}
+body{margin:0; font-size:12px; font-family:'microsoft yahei'; line-height:1.5; color:#41494c;}
+h1,p{margin:0;}
+.bold{font-weight:bold!important;}
+.refresh,.linkLogout,
+.backhome{display:inline-block; background:url(images/sprite.png) no-repeat; font-size:14px; color:#545a6c; padding-left:35px; line-height:26px; text-decoration:none;}
+.refresh:hover,.linkLogout:hover,
+.backhome:hover{text-decoration:underline;}
+.refresh{margin-right:50px; background-position:0 1px;}
+.backhome,.linkLogout{background-position:0 -34px;}
+.content{width:600px; height:300px; position:absolute; left:50%; top:50%; margin:-180px 0 0 -300px; text-align:center;}
+.content h1{font-size:60px; line-height:90px; margin-bottom:20px; font-weight:normal;}
+.content h1 img{vertical-align:bottom;}
+.content p{font-size:24px; line-height:1.7;}
+.content p.desc{font-size:22px;}
+.content .action{ margin-top:12px; }
+.content .action a { margin:0 8px; font-size:14px; color:#00a1f2; }

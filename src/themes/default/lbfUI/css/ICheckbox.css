@@ -1,0 +1,9 @@
+.lbf-icheckbox { position:relative; display: inline-block; *display: inline; zoom:1; padding: 0; width: 21px; height: 20px; border: none; background: url(../images/ICheckbox/icheckbox.png) no-repeat; cursor: pointer; vertical-align:middle;}
+.lbf-icheckbox { background-position: 0 0;}
+.lbf-icheckbox.lbf-icheckbox-hover { background-position: -24px 0;}
+.lbf-icheckbox.lbf-icheckbox-checked { background-position: -48px 0;}
+.lbf-icheckbox.lbf-icheckbox-disabled { background-position: -72px 0; cursor: default;}
+.lbf-icheckbox.lbf-icheckbox-halfchecked { background-position: -240px 0;}
+.lbf-icheckbox.lbf-icheckbox-checked.lbf-icheckbox-disabled,
+.lbf-icheckbox.lbf-icheckbox-disabled.lbf-icheckbox-checked {background-position: -96px 0;}
+.lbf-icheckbox input { position: absolute; opacity: 0; filter: alpha(opacity=0);}

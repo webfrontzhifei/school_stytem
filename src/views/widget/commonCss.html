@@ -1,0 +1,18 @@
+<%
+	var _domain = locals.domain,
+		_lbfSrc = locals.lbfSrc,
+		_theme = locals.lbfConf.vars.theme,
+		sslDomain = locals.sslDomain,
+		errorIe = ['Windows NT 6.2',  
+                    'Windows NT 5.2', 
+                    'Windows NT 5.1'
+                   ];
+%>
+
+<%
+	for (var i in css) {
+%>
+	<link rel="stylesheet" type="text/css" href="<%== css[i]%>" />	
+<%
+	}
+%>

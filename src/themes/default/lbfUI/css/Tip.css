@@ -1,0 +1,30 @@
+.lbf-tip,
+.lbf-tip * { margin:0; padding:0;}
+.lbf-tip { position:absolute; max-width:500px; display: inline-block; *display: inline; zoom:1; color:#333; font-size:12px; border:1px solid #bbb; background-color:#fff;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.lbf-tip-content { padding:8px 12px; display: inline-block; *display: inline; zoom:1;}
+/* arrow */
+.lbf-tip .lbf-tip-arrow { position:absolute;}
+.lbf-tip-top .lbf-tip-arrow { left:50%; bottom:0;}
+.lbf-tip-bottom .lbf-tip-arrow { left:50%; top:-8px;}
+.lbf-tip-right .lbf-tip-arrow { top:50%; left:-8px;}
+.lbf-tip-left .lbf-tip-arrow { top:50%; right:0;}
+
+/* 纯CSS实现三角方案，用背景图可忽略 */
+.lbf-tip-arrow-before,
+.lbf-tip-arrow-after { position:absolute; display:block; width:0; height:0; overflow:hidden; border:8px solid;}
+
+.lbf-tip-top .lbf-tip-arrow-before { left:-8px; top:1px; border-color:#aaa transparent; border-bottom-width:0;}
+.lbf-tip-top .lbf-tip-arrow-after { left: -8px; border-color:#fff transparent; border-bottom-width: 0;}
+
+.lbf-tip-right .lbf-tip-arrow-before { top:-8px; border-left-width: 0; border-color:transparent #aaa;}
+.lbf-tip-right .lbf-tip-arrow-after { left: 1px; top:-8px; border-left-width:0; border-color:transparent #fff;}
+
+.lbf-tip-bottom .lbf-tip-arrow-before  { left:-8px; border-color:#aaa transparent; border-top-width:0;}
+.lbf-tip-bottom .lbf-tip-arrow-after { left:-8px; top:1px; border-color:#fff transparent; border-top-width:0;}
+
+.lbf-tip-left .lbf-tip-arrow-after { top:-8px; left:-1px; border-color:transparent #fff; border-right-width:0;}
+.lbf-tip-left .lbf-tip-arrow-before { top:-8px; border-color:transparent #aaa; border-right-width:0;}

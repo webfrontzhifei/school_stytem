@@ -1,27 +1,26 @@
 module.exports = {
     "local": {
         "isLocal": true,
-        "domain": "local.qiye.qq.com",
-        "sslDomain": "local.qiye.qq.com",
-        "mobileDomain": "local.qiye.qq.com",
-        "base": "/static_proxy",
-        "mobileBase": "/static_proxy",
+        "domain": "local.school.express.com:3000",
+        "sslDomain": "local.school.express.com:3000",
+        "mobileDomain": "local.school.express.com:3000",
+        "base": "",
 
         "badjs": "//dev.gtimg.com/lbf/0.8.5/lib/badjs.js",
-        "lbfSrc": "//dev.gtimg.com/lbf/0.8.5/LBF.js",
+        "lbfSrc": "//local.school.express.com:3000/static_proxy/lib/LBF/src/LBF.js",
         "lbfConf": {
             "paths": {
-                "qidian": "//local.qiye.qq.com/static_proxy"
+                "qidian": "//local.school.express.com:3000/static_proxy"
             },
             "vars": {
-                "theme": "//local.qiye.qq.com/static_proxy/themes/default",
-                "qidianTheme": "//local.qiye.qq.com/static_proxy/themes/blue"
+                "theme": "//local.school.express.com:3000/static_proxy/themes/default",
+                "qidianTheme": "//local.school.express.com:3000/static_proxy/themes/blue"
             },
             "alias": {
-                "ueditor": "//local.qiye.qq.com/static_proxy/sites/comp/ueditor.all",
-                "ueditorConfig": "//local.qiye.qq.com/static_proxy/sites/comp/ueditor.config",
-                "ueditorParse": "//local.qiye.qq.com/static_proxy/sites/comp/ueditor.parse",
-                "zeroCopy": "//local.qiye.qq.com/static_proxy/sites/comp/third-party/zeroclipboard/ZeroClipboard.min"
+                "ueditor": "//local.school.express.com:3000/static_proxy/sites/comp/ueditor.all",
+                "ueditorConfig": "//local.school.express.com:3000/static_proxy/sites/comp/ueditor.config",
+                "ueditorParse": "//local.school.express.com:3000/static_proxy/sites/comp/ueditor.parse",
+                "zeroCopy": "//local.school.express.com:3000/static_proxy/sites/comp/third-party/zeroclipboard/ZeroClipboard.min"
             },
             "env": "local",
             "combo": false,
