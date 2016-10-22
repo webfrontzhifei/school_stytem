@@ -1,0 +1,580 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+/* 登录设置 */
+.set-input {
+  width: 360px;
+}
+.set-buttons .lbf-button {
+  margin-right: 15px;
+}
+.set-combobox {
+  height: 40px;
+}
+.set-combobox select {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  *zoom: 1;
+}
+.set-combobox .lbf-combobox-label {
+  width: 346px;
+}
+.set-null {
+  text-align: center;
+  padding-top: 88px;
+}
+.set-null-title {
+  font-size: 100%;
+  margin-top: 45px;
+  margin-bottom: 21px;
+}
+.set-null-desc {
+  width: 344px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.set-null-add {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.set-password-title {
+  padding-top: 37px;
+  padding-bottom: 20px;
+  font-size: 100%;
+}
+.set-password-content .set-input {
+  margin-right: 20px;
+}
+.set-password-check {
+  margin-top: 28px;
+}
+.set-password-check label {
+  margin-left: 2px;
+}
+.set-password-dl {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.set-password-dl dt {
+  width: 86px;
+  float: left;
+  line-height: 40px;
+}
+.set-password-dl dd {
+  padding-left: 86px;
+}
+.set-password-need {
+  color: #66686c;
+  margin-top: 4px;
+}
+.set-password-code {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.set-password-code img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.set-password .set-buttons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.set-password .set-buttons .lbf-button {
+  margin-right: 15px;
+}
+.set-domain-input {
+  padding-top: 10px;
+}
+.set-domain-input-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.set-domain-input-list .set-left-radio {
+  width: 30px;
+  float: left;
+}
+.set-domain-input-list .set-cell {
+  margin-left: 30px;
+}
+.set-domain-input-list .set-cell > label {
+  padding-top: 2px;
+  display: inline-block;
+  *display: inline;
+}
+.set-domain-input-list .set-cell > label.disabled {
+  color: #aab0b2;
+}
+.set-domain-input-list .icon-con-info {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.set-domain-input-input {
+  margin-top: 10px;
+}
+.set-domain-input .set-buttons {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 30px;
+}
+.set-domain-input .set-combobox {
+  margin-top: 10px;
+}
+.set-domain-verify {
+  padding-top: 20px;
+  min-height: 750px;
+}
+.set-domain-verify-dl {
+  margin-bottom: 40px;
+}
+.set-domain-verify-dl dt {
+  float: left;
+  width: 85px;
+}
+.set-domain-verify-dl dd {
+  margin-left: 85px;
+}
+.set-domain-verify-tab {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 264px;
+  height: 159px;
+  padding: 1px;
+  background-color: #ffffff;
+  margin-right: 15px;
+  border: 1px solid #dadee7;
+  cursor: pointer;
+  text-align: center;
+  color: #1e2330;
+  border-radius: 4px;
+}
+.selected.set-domain-verify-tab {
+  padding: 0px;
+  border: 2px solid #00cc26;
+}
+.selected.set-domain-verify-tab:hover {
+  border-color: #00cc26;
+}
+.set-domain-verify-tab i {
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+.set-domain-verify-tab:hover {
+  border-color: #66686c;
+}
+.set-domain-verify-method {
+  margin-top: 30px;
+  display: none;
+}
+.selected + a + .set-domain-verify-method,
+.selected + .set-domain-verify-method + .set-domain-verify-method {
+  display: block;
+}
+.set-domain-verify-ol {
+  border-left: 1px solid #d3d3d3;
+}
+.set-domain-verify-ol li {
+  padding-left: 83px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+.set-domain-verify-ol li > i {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: -5px;
+}
+.set-domain-verify-ol li > h6 {
+  font-size: 100%;
+  color: #0067ed;
+  margin-bottom: 5px;
+}
+.set-domain-verify-ol li > p > a {
+  margin-left: 2px;
+}
+.set-domain-sel {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  *max-width: 200px;
+}
+.set-domain-sel > div {
+  width: 100%;
+}
+.set-domain-edit-link {
+  margin-left: 15px;
+}
+.set-domain-result {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.set-domain-result-1,
+.set-domain-result-2,
+.set-domain-result-3 {
+  margin-top: 25px;
+  min-height: 70px;
+  _height: 70px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-right: 15px;
+  position: relative;
+}
+.set-domain-result-1 > i,
+.set-domain-result-2 > i,
+.set-domain-result-3 > i {
+  margin: 5px 20px 5px 15px;
+  float: left;
+}
+.set-domain-result-1 .set-cell,
+.set-domain-result-2 .set-cell,
+.set-domain-result-3 .set-cell {
+  padding-left: 90px;
+  padding-right: 120px;
+}
+.set-domain-result-1 .set-cell h6,
+.set-domain-result-2 .set-cell h6,
+.set-domain-result-3 .set-cell h6 {
+  font-size: 100%;
+}
+.set-domain-result-1 .set-cell h6 + p,
+.set-domain-result-2 .set-cell h6 + p,
+.set-domain-result-3 .set-cell h6 + p {
+  padding-bottom: 10px;
+}
+.set-domain-result-1 .set-buttons,
+.set-domain-result-2 .set-buttons,
+.set-domain-result-3 .set-buttons {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.set-domain-result-1,
+.set-domain-result-3 {
+  background-color: #d0f5ea;
+  color: #3bab8b;
+}
+.set-domain-result-1 .set-cell,
+.set-domain-result-3 .set-cell {
+  padding-top: 23px;
+}
+.set-domain-result-2 {
+  background-color: #ffe2df;
+  color: #ff5237;
+}
+.set-domain-result-2 .set-cell {
+  padding-top: 13px;
+}
+.set-domain-result-account {
+  background-color: #ffffff;
+  padding: 0 15px 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.1);
+  border: 1px solid #dadee7;
+  border-top: none;
+  border: 0 rgba(0, 0, 0, 0);
+}
+.set-domain-result-account h6 {
+  line-height: 40px;
+  border-bottom: 1px solid #b4b7bf;
+}
+.set-domain-result-account .name {
+  font-size: 100%;
+  padding-bottom: 25px;
+}
+.set-domain-result-account .icon {
+  margin-right: 20px;
+}
+.set-domain-result-title {
+  font-size: 100%;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.set-domain-result-guide {
+  color: #66686c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.set-domain-result-guide .left {
+  float: left;
+}
+.set-domain-result-guide .right {
+  float: right;
+}
+.set-domain-result-guide a {
+  margin-left: 25px;
+}
+.set-domain-result-table {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.1);
+  border: 1px solid #dadee7;
+  border: 0 rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+}
+.set-domain-result-table tr:last-child td {
+  border-bottom: 0;
+}
+.set-domain-result-table .col1 {
+  width: 36px;
+  text-align: center;
+}
+.set-domain-result-table .col2 {
+  width: 317px;
+}
+.set-domain-result-table .col3 {
+  width: 400px;
+  padding-left: 30px;
+}
+.dialog-bind-remove {
+  width: 500px;
+}
+.dialog-bind-ol {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.dialog-bind-ol li {
+  margin-bottom: 24px;
+}
+.dialog-bind-ol li > i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.dialog-bind-ol li .set-cell {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.dialog-bind-help-account {
+  border: 1px solid #dadee7;
+  font-family: simsun;
+  font-size: 100%;
+  padding: 8px 25px 0 16px;
+  margin-top: -4px;
+  background-color: #ffffff;
+}
+.dialog-bind-help-account .set-cell {
+  margin-left: 80px;
+}
+.dialog-bind-help-account .set-cell h6 {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.dialog-bind-help-account .set-cell .gray {
+  color: #66686c;
+}
+.dialog-bind-help-account .set-cell dl {
+  line-height: 22px;
+  margin-top: 11px;
+  margin-bottom: 9px;
+  overflow: hidden;
+}
+.dialog-bind-help-account .set-cell dt {
+  float: left;
+  width: 68px;
+}
+.dialog-bind-help-account .set-cell dd {
+  padding-left: 70px;
+  height: 22px;
+}
+.dialog-bind-help-account .set-cell dd > strong {
+  float: left;
+  font-size: 100%;
+  font-family: 'microsoft yahei';
+  color: #00cc26;
+}
+.dialog-bind-help-account .set-cell dd > a {
+  float: right;
+}
+.dialog-bind-edit {
+  width: 500px;
+}
+.dialog-bind-edit li:last-child {
+  margin-bottom: 10px;
+}
+.dialog-import {
+  width: 550px;
+}
+.dialog-import .start-step .lbf-panel-body {
+  padding-bottom: 0px;
+}
+.dialog-import .start-step .lbf-panel-foot {
+  margin-bottom: -30px;
+  padding-top: 35px;
+  padding-bottom: 0px;
+  clear: both;
+}
+.dialog-import .start-step .dialog-import-cell {
+  *zoom: 1;
+}
+.dialog-import .start-step .dialog-import-cell:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.dialog-import .start-step .dialog-import-cell .info-group {
+  float: left;
+  *zoom: 1;
+}
+.dialog-import .start-step .dialog-import-cell .info-group:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .number {
+  float: left;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  line-height: 34px;
+  margin-top: 3px;
+  margin-right: 12px;
+  font-size: 15px;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container {
+  float: left;
+  padding-top: 11px;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container .title {
+  font-size: 18px;
+  line-height: 1;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container .support {
+  margin-top: 12px;
+  color: #66686c;
+  font-size: 14px;
+  line-height: 1;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container .upload-result {
+  display: none;
+  position: relative;
+  margin-top: 14px;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container .upload-result .file-name {
+  font-size: 14px;
+  line-height: 20px;
+  color: #0067ed;
+}
+.dialog-import .start-step .dialog-import-cell .info-group .info-container .upload-result .lbf-panel-close {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  top: 5px;
+  right: 0;
+}
+.dialog-import .start-step .dialog-import-cell .btn-group {
+  float: right;
+}
+.dialog-import .loading-step {
+  display: none;
+}
+.dialog-import .loading-step .lbf-panel-body {
+  padding-top: 80px;
+}
+.dialog-import .loading-step .icon-import-loading {
+  height: 180px;
+  background: url(../org/images/icon-import-loading.gif) no-repeat center;
+}
+.dialog-import .loading-step .text-import-loading {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.dialog-import .result-step {
+  display: none;
+}
+.dialog-import .result-step .dialog-import-cell .info-group {
+  font-size: 14px;
+}
+.dialog-import .result-step .dialog-import-cell .info-group .info-label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #66686c;
+  width: 100px;
+}
+.dialog-import .result-step .dialog-import-cell .info-group .info-content {
+  color: #1d2331;
+}
+.dialog-import .result-step .dialog-import-cell .info-group .info-content.time {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.dialog-import .result-step .dialog-import-cell .info-group .info-content.num {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 50px;
+}
+.dialog-import .result-step .dialog-import-cell .info-group .info-content.num.fail {
+  color: #ff4222;
+}
+.dialog-import .result-step .dialog-import-cell .info-list {
+  padding: 20px 30px;
+  background-color: #ffece8;
+}
+.dialog-import .result-step .dialog-import-cell .info-list li {
+  *zoom: 1;
+  line-height: 35px;
+}
+.dialog-import .result-step .dialog-import-cell .info-list li:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.dialog-import .result-step .dialog-import-cell .info-list li .reason {
+  float: left;
+  color: #1d2331;
+}
+.dialog-import .result-step .dialog-import-cell .info-list li .num {
+  float: right;
+  color: #ff4222;
+}
+.dialog-import .result-step .lbf-panel-foot {
+  padding-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
+/* 非跨页面图标 */
+.icon-verity-txt,
+.icon-verity-cname {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  background: url(images/icons-verify.png) no-repeat;
+}
+.icon-verity-cname {
+  background-position: 0 -100px;
+}
+.icon-domain-del,
+.icon-domain-edit {
+  background: url(images/icons-domain.png) no-repeat;
+}
+.icon-domain-edit {
+  background-position: 0 -20px;
+}
+.icon-domain-email {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(images/icon-domain-email.png) no-repeat center;
+}
+.icon-circle {
+  background: url(images/icon-circle.png) no-repeat;
+}

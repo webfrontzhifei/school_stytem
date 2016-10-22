@@ -1,0 +1,438 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.user-guide.lbf-panel {
+  -webkit-animation: fadeIn 0.5s linear 0s;
+  -moz-animation: fadeIn 0.5s linear 0s;
+  -o-animation: fadeIn 0.5s linear 0s;
+  animation: fadeIn 0.5s linear 0s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+.user-guide.lbf-panel ::-webkit-scrollbar {
+  width: 6px;
+}
+.user-guide.lbf-panel ::-webkit-scrollbar-thumb {
+  background-color: #d4d7d9;
+  border-radius: 8px;
+}
+.user-guide.lbf-panel ::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.user-guide.lbf-panel ::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+/* 信息提示弹层Base样式 */
+.user-guide-general-panel.lbf-panel {
+  width: 600px;
+  border-radius: 4px;
+  background-color: #f0f1f2;
+}
+.user-guide-general-panel .lbf-panel-head {
+  display: none;
+}
+.user-guide-general-panel .lbf-panel-body {
+  padding: 70px 25px 45px;
+  color: #41494c;
+}
+.user-guide-general-panel .lbf-button-large {
+  font-size: 20px;
+}
+.user-guide-general-panel .lbf-panel-close {
+  right: 13px;
+  top: 13px;
+  background: url(images/icons-user-guide.png) -67px -238px no-repeat;
+}
+.user-guide-general-panel .lbf-panel-close:hover {
+  background-position: -67px -273px;
+}
+.user-guide-general-panel.user-guide-pubSuccess .lbf-panel-body {
+  padding-bottom: 35px;
+}
+.user-guide-general-panel .primary-msg {
+  font-size: 28px;
+  color: #41494c;
+  text-align: center;
+}
+.user-guide-general-panel .primary-msg .icon-succ {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 20px;
+  background: url(images/icons-user-guide.png) 0 -240px no-repeat;
+}
+.user-guide-general-panel .txt-guide {
+  color: #aab0b2;
+  font-size: 16px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.user-guide-general-panel .guideEntry {
+  margin: 0 50px;
+}
+.user-guide-general-panel .guideEntry li {
+  float: left;
+}
+.user-guide-general-panel .guideEntry li a {
+  display: block;
+  height: 136px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  -ms-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+.user-guide-general-panel .guideEntry li a:active,
+.user-guide-general-panel .guideEntry li a:hover {
+  border-color: #00a1f2;
+  background-color: #f2fafe;
+}
+.user-guide-general-panel .guideEntry li a .icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 25px auto 8px;
+  background-image: url(images/icons-user-guide.png);
+  background-repeat: no-repeat;
+}
+.user-guide-general-panel .guideEntry li a .icon-reply {
+  background-position: 6px -312px;
+}
+.user-guide-general-panel .guideEntry li a .icon-material {
+  background-position: 4px -385px;
+}
+.user-guide-general-panel .guideEntry li a .icon-qf {
+  background-position: 6px -453px;
+}
+.user-guide-general-panel .guideEntry li a .icon-client-down {
+  background-position: 5px -520px;
+}
+.user-guide-general-panel .guideEntry li a .icon-follow {
+  background-position: 15px -590px;
+}
+.user-guide-general-panel .guideEntry li a em {
+  font-size: 16px;
+  font-style: normal;
+  color: #41494c;
+  line-height: 1;
+}
+.user-guide-general-panel .guideEntry-2items li {
+  width: 50%;
+}
+.user-guide-general-panel .guideEntry-2items li a {
+  width: 201px;
+}
+.user-guide-general-panel .guideEntry-2items li a:hover {
+  width: 205px;
+}
+.user-guide-general-panel .guideEntry-3items li {
+  width: 33.3%;
+}
+.user-guide-general-panel .guideEntry-3items li a {
+  width: 126px;
+}
+.user-guide-general-panel .guideEntry-3items li a:hover {
+  width: 130px;
+}
+/* 引导1：企点新功能、声明内容 */
+.user-guide-feature-contract.lbf-panel {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 980px;
+}
+.user-guide-feature-contract .lbf-panel-head {
+  display: none;
+}
+.user-guide-feature-contract .lbf-panel-body {
+  padding: 0;
+  margin-top: 3px;
+  margin-right: 3px;
+  max-height: 497px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.user-guide-feature-contract .lbf-panel-foot {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #f0f1f2;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.user-guide-feature-contract .lbf-panel-foot .lbf-button {
+  width: 180px;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 0;
+  margin-left: 0;
+}
+.user-guide-feature-contract .lbf-panel-foot .lbf-button-disabled {
+  color: #fff;
+  border: 1px solid #F5F5FA;
+  background-color: #5480e0;
+  opacity: 0.38;
+  filter: alpha(opacity=38);
+}
+.user-guide-feature-contract .head-title {
+  padding-top: 45px;
+  text-align: center;
+  line-height: 1;
+  color: #41494c;
+  font-size: 28px;
+}
+.user-guide-feature-contract .sub-title {
+  padding-top: 15px;
+  text-align: center;
+  color: #aab0b2;
+  font-size: 14px;
+  line-height: 1;
+}
+.user-guide-feature-contract .feature-list {
+  padding: 30px 0 40px 80px;
+}
+.user-guide-feature-contract .feature-list li {
+  float: left;
+  width: 210px;
+  text-align: center;
+}
+.user-guide-feature-contract .feature-list li span {
+  display: block;
+  height: 130px;
+  width: 130px;
+  margin: 0 auto 10px;
+  background-image: url(images/icons-features.png);
+  background-repeat: no-repeat;
+}
+.user-guide-feature-contract .feature-list li .icon-1 {
+  background-position: 0 0;
+}
+.user-guide-feature-contract .feature-list li .icon-2 {
+  background-position: 0 -140px;
+}
+.user-guide-feature-contract .feature-list li .icon-3 {
+  background-position: 0 -280px;
+}
+.user-guide-feature-contract .feature-list li .icon-4 {
+  background-position: 0 -420px;
+}
+.user-guide-feature-contract .feature-list li label {
+  display: block;
+  color: #41494c;
+  font-size: 16px;
+  line-height: 1;
+}
+.user-guide-feature-contract .contract-section {
+  padding: 30px 0 40px;
+  border-top: 1px solid #ededed;
+}
+.user-guide-feature-contract .contract-section p {
+  text-align: center;
+}
+.user-guide-feature-contract .contract-section .title {
+  font-size: 20px;
+  color: #41494c;
+  line-height: 1;
+}
+.user-guide-feature-contract .contract-section .container-wrap {
+  margin: 30px 39px 0 50px;
+  border: 1px solid #d9d9d9;
+}
+.user-guide-feature-contract .contract-section .container {
+  height: 374px;
+  margin: 3px 3px 3px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.user-guide-feature-contract .contract-section .container p {
+  text-align: left;
+}
+.user-guide-feature-contract .contract-section .container .main-text {
+  padding: 0 15px;
+  color: #41494c;
+}
+.user-guide-feature-contract .contract-section .container .main-text h3 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+.user-guide-feature-contract .contract-section .container .main-text p {
+  padding-left: .5em;
+  padding-bottom: 1em;
+  line-height: 2;
+}
+.user-guide-feature-contract .contract-section .container .main-text p.tr {
+  text-align: right;
+}
+/* 引导2：绑定开号流程 -> "是否有QQ公众号的选择弹层" */
+.user-guide-qqaccount-action-chosen {
+  width: 750px;
+}
+.user-guide-qqaccount-action-chosen.lbf-panel {
+  background-color: #f0f1f2;
+  border-radius: 4px;
+}
+.user-guide-qqaccount-action-chosen .lbf-panel-head,
+.user-guide-qqaccount-action-chosen .lbf-panel-foot {
+  display: none;
+}
+.user-guide-qqaccount-action-chosen .lbf-panel-body {
+  padding: 0 0 55px;
+}
+.user-guide-qqaccount-action-chosen h3 {
+  color: #41494c;
+  text-align: center;
+  font-size: 28px;
+  line-height: 116px;
+}
+.user-guide-qqaccount-action-chosen .account-type {
+  margin-left: 35px;
+}
+.user-guide-qqaccount-action-chosen .account-type li {
+  float: left;
+  margin: 0 15px;
+  width: 310px;
+  height: 310px;
+  text-align: center;
+}
+.user-guide-qqaccount-action-chosen .account-type li a {
+  display: block;
+  width: 306px;
+  height: 306px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #41494c;
+  border-radius: 4px;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  -ms-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-bindQQ:active,
+.user-guide-qqaccount-action-chosen .account-type li a.button-bindQQ:hover {
+  background-color: #f2fafe;
+  border-color: #00a1f2;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ:active,
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ:hover {
+  background-color: #f4fdf7;
+  border-color: #23cf5f;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ-disabled {
+  position: relative;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ-disabled:active,
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ-disabled:hover {
+  cursor: default;
+  border-color: transparent;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ-disabled .disabled-cover {
+  display: block;
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  *zoom: 1;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+.user-guide-qqaccount-action-chosen .account-type li a.button-createQQ-disabled .stay-tuned {
+  display: block;
+  font-size: 16px;
+}
+.user-guide-qqaccount-action-chosen .account-type li a label {
+  display: block;
+  line-height: 70px;
+  text-align: center;
+}
+.user-guide-qqaccount-action-chosen .account-type li a .icon-bind,
+.user-guide-qqaccount-action-chosen .account-type li a .icon-create {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 19px auto;
+  background-image: url(images/icons-user-guide.png);
+}
+.user-guide-qqaccount-action-chosen .account-type li a .icon-bind {
+  background-position: 0 0;
+}
+.user-guide-qqaccount-action-chosen .account-type li a .icon-create {
+  background-position: 0 -120px;
+}
+.user-guide-qqaccount-action-chosen .account-type li a em {
+  color: #41494c;
+  font-size: 24px;
+  font-style: normal;
+}
+/* 引导3：绑定开号流程 -> "绑定完QQ号后，弹层用户点击‘绑定微信公众号’ " */
+.user-guide-general-panel.user-guide-wxaccount-bind-entry .action {
+  margin: 40px 0 15px;
+}
+.user-guide-general-panel.user-guide-wxaccount-bind-entry .button-bindWX {
+  line-height: 58px;
+  width: 278px;
+  padding: 0;
+}

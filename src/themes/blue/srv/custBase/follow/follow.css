@@ -1,0 +1,103 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.follow {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+#follow {
+  position: relative;
+  width: 802px;
+  overflow: hidden;
+}
+#follow textarea {
+  width: 800px;
+  height: 100px;
+}
+#follow .block-button {
+  overflow: hidden;
+}
+#follow .block-button #addFollow {
+  float: right;
+}
+#follow .block-button .text-limit {
+  position: relative;
+  top: -6px;
+  font-size: 12px;
+  color: #a8abb3;
+}
+#follow .block-button .text-limit .error {
+  color: #ff4222;
+}
+#follow .block-list {
+  position: relative;
+  text-align: left;
+}
+#follow .block-list .table-page {
+  border-top: none;
+}
+#follow .block-list .records {
+  position: relative;
+}
+#follow .block-list .records .follow-item {
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+  border-bottom: 1px solid #ebedf2;
+  padding-bottom: 20px;
+}
+#follow .block-list .records .follow-item .avatar {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+#follow .block-list .records .follow-item .detail {
+  color: #66686c;
+  padding-left: 55px;
+  position: relative;
+  font-size: 14px;
+}
+#follow .block-list .records .follow-item .detail .job {
+  padding-left: 10px;
+}
+#follow .block-list .records .follow-item .detail .createTime {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+}
+#follow .block-list .records .follow-item .message {
+  padding-left: 55px;
+  margin-top: 7px;
+  width: 610px;
+  word-wrap: break-word;
+}
+#follow .block-list .records .follow-item .action-del {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  cursor: pointer;
+}
+#follow .block-list .records .follow-item:first-child {
+  margin-top: 5px;
+}
+#follow .loading {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}

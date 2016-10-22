@@ -7,8 +7,9 @@
     <% 
     include('../../widget/commonCss',{
         locals: local,
-        css: ['static_proxy/themes/default/lbfUI/css/inline.css', 
-            'static_proxy/themes/default/base/base.css']
+        css: ['static_proxy/themes/blue/lbfUI/css/inline.css', 
+            'static_proxy/themes/default/index/login/login.css',
+            'static_proxy/themes/blue/base/base.css']
         
     }); 
     %>
@@ -18,14 +19,37 @@
 <div id="wraper">
 
     <h1 class="title">滴滴快递</h1>
-    <div class="lbf-search-input lbf-text-input">
-        <a href="javascript:">
-            <i class="icon icon-search">搜索</i>
-        </a>
-        <input id="searchInput" placeholder="姓名/手机号/QQ号" value="<%= searchQuery != '' ? searchQuery : '' %>"/>
+    <div id="main">
+        <div class="main">
+            <div id="ptlogin" class="ptlogin">
+                <div class="login" id="login">
+                    <div class="tips" id="tips">
+                        <div class="title2">
+                            账户密码登录
+                        </div>
+                        推荐使用
+                        <a href="javascript: void(0);" class="switch_btn_focue_link_tips">快速安全登录</a>，防止盗号。
+                    </div>
+                    <div class="login_form">
+                        <div class="lbf-text-input">
+                            <input type="text" id="username" name="username" placeholder="用户名/邮箱/手机号登录" value="" />
+                        </div>
+                        <div class="lbf-text-input text-password">
+                            <input type="text" id="password" name="password" placeholder="密码" value="" />
+                        </div>
+                        <div class="lbf-button-success" id="submit">
+                            登录
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="web_login">
+        
     </div>
     <div class="footer">
-        <p class="copyright">Copyright 1998-2016 Tencent. All Rights Reserved. 公司 版权所有</p>
+        <p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
     </div>
 </div>
 <% 
@@ -34,7 +58,7 @@
     }); 
 %>
 <script type="text/javascript">
-    LBF.use('qidian.sites.ListController', function(ListController) {
-        new ListController();
+    LBF.use('qidian.sites.index.login.loginController', function(loginController) {
+        new loginController();
     });
 </script>

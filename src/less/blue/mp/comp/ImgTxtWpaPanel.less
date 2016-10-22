@@ -1,0 +1,194 @@
+@import '../../base/mixin';
+.imgtxt-wpa-panel {
+  .beautiful-scrollbar();
+
+  .lbf-panel-head {
+    .tc();
+    font-size: 24px;
+    .c(#1e2330);
+    .mb(23);
+    .pt(25);
+    font-weight: normal;
+  }
+  .lbf-panel-body {
+    padding: 0 0 40px 10px;
+  }
+  h6{
+    .vh();
+    .h(0);
+    .ovh();
+  }
+
+  .tab-btns,
+  .tab-contents{
+    .cell;
+  }
+
+  .tab-btns {
+    .w(250);
+
+    ul {
+      .rel;
+      .w(250);
+    }
+
+    li {
+      .rel;
+      .w(220);
+      min-height: 48px;
+      .bk;
+      word-break: break-all;
+      .mb(2);
+      padding: 11px 15px;
+      .lh(48);
+
+      &:after {
+        .dib();
+        content:'';
+        .vm();
+      }
+
+
+      .imgtxt-title{
+        .vm();
+        .lh(24);
+        .dib();
+      }
+
+
+      &:hover {
+        .poi();
+        .c(#1e2330);
+        background-color: #f0f3fa;
+      }
+
+      &.tab-btn-current {
+         &:hover {
+           cursor: default;
+         }
+         background-color: #e4e9f5;
+      }
+
+      &.tp-selected {
+
+        .imgtxt-title{
+          &:before {
+            .dib;
+            .mr(5);
+            content: '[已投放]';
+            .c(@blue);
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .tab-contents {
+    .pl(18);
+    .rel;
+  }
+
+  .wpa-list {
+    min-height: 300px;
+    max-height: 624px;
+    overflow-y: auto;
+
+    ul {
+      .mt(-12);
+    }
+
+    .empty-info {
+      .abs();
+      .mt(-50);
+      right: 0;
+      left: 0;
+      top: 50%;
+    }
+
+    li {
+      .float(2);
+      .h(200);
+      .mt(12);
+
+      .item {
+        .rel;
+        .h(200);
+        margin: 0 18px 0 0;
+      }
+
+      .img {
+        .rel();
+        .h(156);
+        line-height: 156px;
+        .mb(5);
+        .tc;
+        .vm;
+        background-color: #f2f2f2;
+        border: 2px solid #f2f2f2;
+
+        img {
+          max-width: 256px;
+          .vm;
+        }
+      }
+
+      .name-text {
+        .tl;
+        .nowrap();
+        .ell();
+      }
+
+      .lbf-icheckbox{
+        .abs;
+        visibility:hidden;
+        right:10px;
+        top:10px;
+      }
+
+      &:hover {
+        .poi();
+
+        .lbf-icheckbox{
+          visibility: visible;
+          &-checked {
+            visibility:hidden;
+          }
+        }
+
+
+      }
+
+      &.selected,
+      &.selected:hover {
+        .img {
+          border-color: #0067ed;
+          .border-radius(3px);
+
+          &:before {
+            content:'';
+            .db();
+            .bg(@white);
+            .abs();
+            .opacity(40);
+            .w(100%);
+            .h(100%);
+            top:0;
+            left:0;
+          }
+        }
+        .lbf-icheckbox{
+          visibility: hidden;
+          &-checked {
+            visibility: visible;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+}

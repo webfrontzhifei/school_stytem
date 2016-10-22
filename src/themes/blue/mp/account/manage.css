@@ -1,0 +1,43 @@
+.reset-pwd {
+  width: 474px;
+}
+.reset-pwd li {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.reset-pwd .item-head {
+  float: left;
+  width: 94px;
+  height: 40px;
+  line-height: 40px;
+}
+.reset-pwd .tip {
+  padding-top: 3px;
+  color: #a2a9b6;
+}
+.reset-pwd .item-body {
+  float: right;
+  width: 380px;
+}
+.reset-pwd .pwd-new {
+  margin-bottom: 16px;
+}
+.reset-pwd .verify-code {
+  height: 53px;
+  margin-bottom: 0;
+}
+.reset-pwd .verify-code .item-head {
+  height: 53px;
+  line-height: 53px;
+}
+.reset-pwd .verify-code .item-body {
+  height: 53px;
+}
+.reset-pwd .verify-code .lbf-text-input {
+  float: left;
+  width: 152px;
+  margin-top: 6px;
+}
+.reset-pwd .verify-code .code-btn {
+  margin-top: 0;
+}

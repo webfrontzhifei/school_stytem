@@ -1,0 +1,60 @@
+@import '../../base/mixin';
+
+/* 管理权限 */
+.admin {
+	&-title {
+		.f(18); .pt(35); .mb(18);
+		&:first-child {
+			border-top: 1px solid @border-gray;
+		}
+	}
+	&-table {
+		box-shadow: 0 1px 3px rgba(0,0,1,.1);
+		.bd; border: 0 rgba(0,0,0,.3); .bg;
+		.col {
+			&1 {
+				.w(21%); .pl;
+				span > i, span > img {
+					.vm; .mr(12); width: 40px; height: 40px;
+				}
+			}			
+			&3 {
+				.w(140); .tc;
+			}
+		}
+		td {
+			.vm; .lh(1.5);
+			&.col2 {
+				& > span {
+					display: inline-block; .pt(10); .pb(10);/* max-height: 180px; overflow: hidden;*/
+				}
+			}
+			&.col3 {
+				span {
+					.dib; .h(70); .lh(70px); .pt(15); .pb(15);
+				}
+			}
+		}
+		tr:last-child {
+			td {
+				border-bottom: 0;
+			}
+		}
+		
+		.toggle {
+			display: inline-block; padding: 5px 0; position: relative; top: -10px;
+			i {
+				.vn;
+				background-position: -20px -140px;
+			}
+			&:hover {
+				color: @blue;
+			}
+		}
+		.flip {
+			i {
+				background-position: -20px -300px;
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- 企点素材编辑助手-编辑器 -->
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+  <title>Image Style</title> 
+  <script charset="utf-8" src="https://bqq.gtimg.com/common/js/jquery-1.4.4.min.2013030801.js"></script> 
+  <script charset="utf-8" src="selectimagestyle.js"></script> 
+  <style type="text/css">
+			 ::-webkit-scrollbar
+			{
+				width: 10px;
+				height: 10px;
+			}
+			::-webkit-scrollbar-track
+			{
+				background-color: #FFFFFF;
+				-webkit-border-radius: 15px;
+			}
+			::-webkit-scrollbar-thumb:vertical
+			{
+				height: 5px;
+				background-color: #C8C8C8;
+				-webkit-border-radius: 15px;
+			}
+			::-webkit-scrollbar-thumb:horizontal
+			{
+				width: 5px;
+				background-color: #C8C8C8;
+				-webkit-border-radius: 15px;
+			}
+			::-webkit-scrollbar-track:hover
+			{
+				background-color: #E8E8E8;
+				-webkit-border-radius: 15px;
+			}
+			::-webkit-scrollbar-thumb:vertical:hover
+			{
+				background-color:#9B9B9B;
+			}
+			::-webkit-scrollbar-thumb:horizontal:hover
+			{
+				background-color:#9B9B9B;
+			}
+			body {margin:0;border:0;padding:0;}
+			.selected-item {background-image:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/bg_selected.png);}
+			.selected-img {border: 4px solid #92a7dd !important;box-sizing:border-box !important;}
+			.select-item {margin:5px 0px 5px 0px;padding:5px 10px 5px 10px;}
+  </style> 
+ </head> 
+ <body>
+  <div style="width:220px;padding:0;margin:0 auto;"> 
+    <div class="select-item selected-item"> 
+       <div style="width:100%;border:0;text-align:center;">
+        <img style="width:100%;" src="http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default0.png" class="editable-item selected-img" />
+       </div>
+    </div>
+	
+	<div class="select-item"> 
+       <div style="width:100%;border:0;margin:0;padding:10px 0px 8px 0px;text-align:center;background-color:#efefef">
+        <fieldset style="border:0;width:100%;margin:0;padding:0;text-align:center;box-sizing: content-box;vertical-align:middle;">
+			<section style="margin:0;padding:0;width:100%;height:150px;display:inline-block;border:0;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default0.png) 50% 50% / cover no-repeat transparent;" class="editable-item"></section>
+		</fieldset>
+       </div>
+    </div>
+	
+	<div class="select-item"> 
+       <div style="border:0;background-color:#efefef;margin:0;padding:10px 10px 8px 10px;text-align:center;vertical-align:middle;">
+		<fieldset style="border:0;width:100%;margin:0;padding:0;text-align:center;box-sizing: content-box;vertical-align:middle;">
+			<section style="margin:0;padding:0;width:50%;float:left;text-align:center;">
+				<section style="margin:0;padding:0;width:84px;height:84px;display:inline-block;border:0;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default0.png) 50% 50% / cover no-repeat transparent;" class="editable-item"></section>
+			</section>
+			<section style="margin:0;padding:0;width:50%;float:right;text-align:center;">
+				<section style="margin:0;padding:0;width:84px;height:84px;display:inline-block;border:0;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default1.jpg) 50% 50% / cover no-repeat transparent;" class="editable-item"></section>
+			</section>
+		</fieldset>
+       </div>
+    </div>
+	
+	<div class="select-item"> 
+       <fieldset style="border:0;background-color:#efefef;margin:0;padding:10px 10px 8px 10px;text-align:center;vertical-align:middle;font:12px 'Microsoft YaHei';color:#333333;">
+		<section style="border:0;width:100%;margin:0;padding:0;text-align:center;box-sizing: content-box;vertical-align:middle;">
+			<section style="margin:0;padding:0;width:100%;height:auto;display:inline-block;border:0;"><img style="width:100%;" src="http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default3.jpg" class="editable-item" /></section>
+			<section style="margin:0;padding:0;width:100%;height:auto;display:inline-block;border:0;text-align:left;"><p><span>2015-7-30</br>这里可以输入文字</span></p></section>
+		</section>
+       </fieldset>
+    </div>
+	
+	<div class="select-item"> 
+       <div style="border:0;background-color:#efefef;margin:0;padding:10px 10px 8px 10px;text-align:center;vertical-align:middle;">
+		<fieldset style="border:0;width:100%;margin:0;padding:0;text-align:center;box-sizing: content-box;vertical-align:middle;">
+			<section style="margin:0;padding:0;width:100%;height:85px;display:inline-block;border:0;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default5.png) 50% 50% / cover no-repeat transparent;" class="editable-item"></section>
+			<section style="margin:0;padding:0;width:100%;height:5px;border:0;background-color: transparent;"></section>
+			<section style="margin:0;padding:0;width:100%;height:85px;display:inline-block;border:0;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default4.jpg) 50% 50% / cover no-repeat transparent;" class="editable-item"></section>
+		</fieldset>
+       </div>
+    </div>
+	
+	<div class="select-item"> 
+       <fieldset style="border:0;margin:0;padding:0;text-align:center;width:100%;font:14px 'Microsoft YaHei';color:white;">
+        <section style="width:100%;margin:0;padding:0;height:300px;background:url(http://bqq.gtimg.com/qidian/src/themes/blue/client/images/imagestyle_default2.png) 50% 50% / cover no-repeat transparent;text-align:center;" class="editable-item">
+			<section>  
+			  <section style="padding-top:15px;">
+				  <section style="background:rgba(0,0,0,0.2);display:inline-block;padding:0px 15px 0px 15px;"><p style="line-height:24px;margin:0">这里可以输入文字</p></section>
+			  </section>
+			</section>
+        </section>
+       </fieldset>
+    </div>
+	
+  </div>
+ </body>
+</html>

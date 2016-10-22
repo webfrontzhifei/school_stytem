@@ -1,0 +1,57 @@
+.manual-box{}
+.manual-box .manual-box-item { position:relative; min-height:63px; padding:30px; border:1px solid #ccc; background:#f4f5f6; overflow:hidden; margin-bottom:-1px;}
+.manual-box .vmiddle { display:inline-block; width:0; height:60px; vertical-align:middle; overflow:hidden;}
+.manual-box .manual-box-action { position:absolute; top:50%; height:58px; margin-top:-29px; right:8px; width:17px; line-height:20px;}
+.manual-box .manual-box-action .vmiddle{height:58px; width:0; margin-left:-4px;}
+.manual-box .manual-box-action .act{display:inline-block; vertical-align:middle;}
+.manual-box .manual-box-action .icon {}
+.manual-box .manual-box-action .icon-gray-del {cursor:pointer;}
+.manual-box .manual-box-action .icon-gray-edit {cursor:pointer;}
+.manual-box .manual-box-item:hover .icon{display:inline-block;}
+.manual-box .manual-box-item .link-to-setting{position:absolute; right:50px; top:50%; margin-top:-12px; line-height:20px;}
+
+.icon-text,
+.icon-imgtext,
+.icon-img{vertical-align:-4px;}
+
+/*.icon-text,
+.icon-imgtext,
+.icon-img,
+.icon-mobile{ display:inline-block; width:16px; height:16px; background:url(../frame/images/sprite.png) no-repeat;}
+
+.icon-text{ margin-top:4px; padding-bottom:2px; background-position:2px -668px; }
+.icon-imgtext{background-position:0 -688px;}
+.icon-img{background-position:0 -709px;}
+.icon-mobile{background-position:0 -1016px; width:10px; height:14px; vertical-align:middle;}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

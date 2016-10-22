@@ -1,0 +1,39 @@
+@import '../../base/mixin';
+@import '../comp/StatusOffContent';
+
+.anim-fadeIn(@duration:0.4s){
+  -webkit-animation: fadeIn @duration linear;
+  animation: fadeIn @duration linear;
+}
+.reply-welcome {
+  .anim-fadeIn();
+  .reply-box {
+    min-height: 230px;
+    .loading {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 580px;
+    }
+    .reply-box-item {
+      padding-right: 80px;
+    }
+  }
+
+}
+
+/*
+.reply-welcome { width:675px;}
+.reply-welcome .tip { color:#b3b5b8;}
+.reply-welcome .reply-box {min-height:125px;}
+.reply-welcome .add { width:476px; margin:10px auto 0 auto;}
+.reply-welcome .preview-img { display:inline-block; width:88px; height:60px; margin-right:15px; vertical-align:middle; overflow:hidden;}
+.reply-welcome .preview-img img { width:88px;}
+.reply-welcome .vmiddle { display:inline-block; width:0; height:60px; vertical-align:middle;}
+.reply-welcome .preview-txt { display:inline-block; width:500px; vertical-align:middle; word-break:break-all; word-wrap:break-word;}
+.reply-welcome .reply-box-typetxt .preview-txt { width:600px;}
+.reply-welcome .action { position:absolute; top:0; right:5px; width:17px; height:100%;}
+.reply-welcome .action .icon { position:absolute; cursor:pointer;}
+.reply-welcome .action .icon-del { top:5px;}
+.reply-welcome .action .icon-edit { display:none; bottom:5px;}
+.reply-welcome .reply-type-txt .icon-edit { display:inline-block;}
+*/

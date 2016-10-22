@@ -1,0 +1,92 @@
+.icon-info-cards,
+.icon-info-cards-auth-small,
+.icon-info-cards-auth,
+.icon-info-cards-call,
+.icon-info-cards-call1,
+.icon-info-cards-close,
+.icon-info-cards-email,
+.icon-info-cards-email1,
+.icon-info-cards-mark-wx,
+.icon-info-cards-min,
+.icon-info-cards-mp,
+.icon-info-cards-phone,
+.icon-info-cards-phone1,
+.icon-info-cards-view-close,
+.icon-info-cards-view-info {
+  display: inline-block;
+  font: 0/0 a;
+  color: transparent;
+  overflow: hidden;
+  background: url("../infoClient/images/info-cards-icons.png?201662") no-repeat;
+  background-size: 36px auto;
+}
+.icon-info-cards-auth-small {
+  width: 12px;
+  height: 13px;
+  background-position: 0px -174px;
+}
+.icon-info-cards-auth {
+  width: 16px;
+  height: 18px;
+  background-position: 0px -245px;
+}
+.icon-info-cards-call {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -42px;
+}
+.icon-info-cards-call1 {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -64px;
+}
+.icon-info-cards-close {
+  width: 11px;
+  height: 11px;
+  background-position: 0px 0px;
+}
+.icon-info-cards-email {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -86px;
+}
+.icon-info-cards-email1 {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -108px;
+}
+.icon-info-cards-mark-wx {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -221px;
+}
+.icon-info-cards-min {
+  width: 11px;
+  height: 11px;
+  background-position: 0px -21px;
+}
+.icon-info-cards-mp {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -197px;
+}
+.icon-info-cards-phone {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -152px;
+}
+.icon-info-cards-phone1 {
+  width: 12px;
+  height: 12px;
+  background-position: 0px -130px;
+}
+.icon-info-cards-view-close {
+  width: 36px;
+  height: 36px;
+  background-position: 0px -301px;
+}
+.icon-info-cards-view-info {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -273px;
+}

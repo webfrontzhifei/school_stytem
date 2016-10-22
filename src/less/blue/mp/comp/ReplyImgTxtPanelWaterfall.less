@@ -1,0 +1,314 @@
+@import "../../base/mixin";
+@import "../common/icons";
+
+@panelWidth: 900px;
+@spliterColor: #eaebee;
+
+
+
+body .img-txt-picker {
+
+	max-height: 780px;
+	min-height: 500px;
+
+	.lbf-panel-body {
+
+		.beautiful-scrollbar();
+		.pb(0);
+		top: 55px;
+
+		.lbf-panel-tip {
+			.pt(23px);
+		}
+	}
+}
+
+.reply-img-txt-panel-waterfall  {
+	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+	#createMaterial {
+		.c(@black);
+	}
+
+	.new-menu-link {
+		.w(60px);
+	}
+
+	.table-page {
+		border-top: none;
+		.pb(0);
+	}
+
+	.loading {
+		.abs();
+		top: 48%;
+		left: 50%;
+	}
+
+	.add-img-txt-msg {
+
+		.tr();
+		.w(125px);
+		.abs();
+		right: 20px;
+
+		.icon-reply-add {
+			.dib();
+			.w(16px);
+			.h(16px);
+			.vm();
+			background: url('images/icon-reply-add.png') no-repeat;
+		}
+
+		.text {
+			font-size: 16px;
+			.dib();
+			.vm();
+			.ml(2px);
+		}
+
+		&:hover {
+
+			.poi();
+
+			#createMaterial {
+				.c(@blue);
+			}
+
+			.icon-reply-add {
+				background: url('images/icon-reply-add-hover.png') no-repeat;
+			}
+		}
+	}
+
+	.img-txt-container, .reply-box-typeimgtxt {
+		background: #edeff2;
+		position: absolute; left: 0; right: 0; top: 30px; bottom: 40px;
+		height: auto!important;
+		overflow: auto;
+		//.pt(30px);
+		.tc();
+
+		& ~ .table-page {
+			position: absolute; left: 0; right: 0; bottom: 0;
+		}
+
+		.item {
+			.bg(@white);
+			.dib();
+			.w(315px);
+			.mr(30px);
+			.pt(10px);
+			.mb(30px);
+			border-radius: 2px;
+			.rel();
+			box-shadow: 0 0 0 1px #dadee7;
+
+			.item-mask {
+				border-radius: 4px;
+				.abs();
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				.bg(@white);
+				.dn();
+			}
+
+			.lbf-icheckbox {
+				.abs();
+				top:10px;
+				right: 10px;
+				.dn();
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.main-title {
+				.tl();
+				font-size: 16px;
+				.mb(2px);
+				.pl(13px);
+				.pr(15px);
+				.mt(5px);
+			}
+
+			.date {
+				.tl();
+				.c(#a8abb3);
+				font-size: 12px;
+				.pl(13px);
+				.pr(15px);
+				.mb(12px);
+			}
+
+			.item-pic {
+				.dib();
+				.pl(13px);
+				.pr(15px);
+				.pb(10px);
+				.rel();
+
+				.img {
+					.w(290px);
+					.h(160px);
+					.dib();
+
+					img {
+						.w(290px);
+						.h(160px);
+					}
+				}
+
+				
+
+				&.multi {
+					.multi-img-txt-title {
+						.abs();
+						.w(270px);
+						.lh(20px);
+						background: rgba(0, 0, 0, .8);
+						.c(@white);
+						.tl();
+						padding: 5px 10px;
+						bottom: 5px!important;
+					}
+					.pb(0);
+				}
+			}
+
+			.spliter {
+				.dib();
+				background: @spliterColor;
+				.w(100%);
+				.h(1px);
+			}
+
+			.intro {
+				.pl(13px);
+				.pr(13px);
+				.mb(10px);
+				.mt(-5px);
+				.tl();
+				.bk();
+				.c(@gray);
+
+				&.empty-summary {
+					.abs();
+				}
+			}
+
+			.sub-img-txt-container {
+
+				.mt(10px);
+				border-top: 1px solid #eaebee;
+
+				.sub-img-txt-item {
+					.dib();
+					.rel();
+					.h(90px);
+					.lh(90px);
+					.w(100%);
+					border-top: 1px solid @spliterColor;
+
+					p {
+						.w(220px);
+						.dib();
+						.vm();
+						.tl();
+						line-height: 1.4em;
+						.bk();
+						max-height: 60px;
+						.pr(60px);
+						.ovh();
+					}
+
+					.img {
+						.w(60px);
+						.h(60px);
+						.lh(60px);
+						.dib();
+						.abs();
+						right: 15px;
+						top: 15px;
+
+						img {
+							.w(60px);
+							.h(60px);
+							.vm();
+						}
+					}
+
+
+				}
+
+				.sub-img-txt-item:first-child {
+					border-top: 1px solid transparent;
+				}
+			}
+
+			&:hover {
+				box-shadow: 0 0 0 2px @blue;
+				border-radius: 4px;
+				.poi();
+			}
+
+			&.selected {
+				box-shadow: 0 0 0 2px @blue;
+				border-radius: 4px;
+
+				.item-mask {
+					.dib();
+					z-index: 999;
+					opacity: 0.6;
+                    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+                    filter: alpha(opacity=60);
+				}
+				
+				.lbf-icheckbox {
+					.dib();
+					z-index: 9999;
+				}
+			}
+		}
+	}
+
+	.empty-img-txt {
+		font-size: 20px;
+		.c(#1e2330);
+		.tc();
+		.rel();
+		height: 100%;
+
+		div {
+			.rel();
+			top: 40%;
+		}
+
+		p {
+			.vm();
+		}
+
+		span {
+			.mt(25px);
+			.poi();
+		}
+	}
+
+	.create-imgtxt-dropdown {
+		.w(158px);
+		li {
+			a {
+				.pl(30px);
+				background: left center no-repeat;
+				&.xiumi-link {
+					background-image: url(./images/xiumi.png);
+				}
+				&.editor-link {
+					background-image: url(./images/editor.png);
+				}
+			}
+		}
+	}
+}

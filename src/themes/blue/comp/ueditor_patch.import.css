@@ -1,0 +1,110 @@
+/* CSS Document */
+.edui-toolbar .edui-arrow {
+	border-right: 2px solid transparent;
+	background:url(images/ue_custom/combo_arrow.png) center no-repeat;
+}
+
+.edui-for-blockquote .edui-icon{
+	background:url(images/ue_custom/blockquote.png) center !important;
+}
+
+.edui-for-backcolor .edui-icon{
+	background:url(images/ue_custom/backcolor.png) center !important;
+}
+
+.edui-for-bold .edui-icon{
+	background:url(images/ue_custom/bold.png) center !important;
+}
+
+.edui-for-forecolor .edui-icon{
+	background:url(images/ue_custom/forecolor.png) center !important;
+}
+
+.edui-for-fullscreen .edui-icon{
+	background:url(images/ue_custom/fullscreen.png) center !important;
+}
+
+.edui-for-horizontal .edui-icon{
+	background:url(images/ue_custom/horizontal.png) center !important;
+}
+
+.edui-for-imagenone .edui-icon{
+	background:url(images/ue_custom/imagenone.png) center !important;
+}
+
+.edui-for-imageleft .edui-icon{
+	background:url(images/ue_custom/imageleft.png) center !important;
+}
+
+.edui-for-imageright .edui-icon{
+	background:url(images/ue_custom/imageright.png) center !important;
+}
+
+.edui-for-imagecenter .edui-icon{
+	background:url(images/ue_custom/imagecenter.png) center !important;
+}
+
+div.edui-for-insertimage .edui-icon{
+	background:url(images/ue_custom/insertimage.png);
+}
+
+.edui-for-insertvideo .edui-icon{
+	background:url(images/ue_custom/insertvideo.png) center !important;
+}
+
+.edui-for-insertorderedlist .edui-icon{
+	background:url(images/ue_custom/insertorderedlist.png) center !important;
+}
+
+.edui-for-insertunorderedlist .edui-icon{
+	background:url(images/ue_custom/insertunorderedlist.png) center !important;
+}
+
+.edui-for-italic .edui-icon{
+	background:url(images/ue_custom/italic.png) center !important;
+}
+
+.edui-for-justifycenter .edui-icon{
+	background:url(images/ue_custom/justifycenter.png) center !important;
+}
+
+.edui-for-justifyleft .edui-icon{
+	background:url(images/ue_custom/justifyleft.png) center !important;
+}
+
+.edui-for-justifyright .edui-icon{
+	background:url(images/ue_custom/justifyright.png) center !important;
+}
+
+.edui-for-italic .edui-icon{
+	background:url(images/ue_custom/italic.png) center !important;
+}
+
+.edui-for-lineheight .edui-icon{
+	background:url(images/ue_custom/lineheight.png) center !important;
+}
+
+.edui-for-link .edui-icon{
+	background:url(images/ue_custom/link.png) center !important;
+}
+
+.edui-for-unlink .edui-icon{
+	background:url(images/ue_custom/unlink.png) center !important;
+}
+
+.edui-for-removeformat .edui-icon{
+	background:url(images/ue_custom/removeformat.png) center !important;
+}
+
+.edui-for-rowspacingbottom .edui-icon{
+	background:url(images/ue_custom/rowspacingbottom.png) center !important;
+}
+
+div.edui-for-rowspacingtop .edui-icon{
+	background:url(images/ue_custom/rowspacingtop.png) 0 -1px;
+}
+
+div.edui-for-underline .edui-icon{
+	background:url(images/ue_custom/underline.png) 0 1px;
+}
+

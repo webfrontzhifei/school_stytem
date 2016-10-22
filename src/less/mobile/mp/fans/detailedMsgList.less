@@ -1,0 +1,259 @@
+@import "../../base/mixin.less";
+@import "../../base/reset.less";
+@grey-font: #777777;
+@dark-blue:#17a8df;
+@light-blue:#96d7f0 ;
+@line-color: #dedfe0;
+.detailed-fans-msg-list {
+  background: #fff;
+  #content{
+    height: 100%;
+
+    //padding-bottom: 50px;
+    //margin-bottom: -50px;
+    .ui-refresh-down{
+      display: none;
+    }
+  }
+  .account-img, .account-info {
+    display: table-cell;
+  }
+  .account-img {
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 10px 16px;
+      border-radius: 50px;
+    }
+  }
+  .account-info {
+    width: 100%;
+    min-height: 70px;
+    .borderBot();
+    vertical-align: middle;
+    padding: 8px 0;
+    dl>dd{
+      padding: 3px 0;
+    }
+    dd:last-child{
+      padding-bottom: 4px;
+    }
+    .multi-line {
+        color: #777;
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 4px 15px 0 0;
+        word-break: break-all;
+        line-height: 1.4;
+        text-align: justify;
+        img[alt='qq_face']{
+          vertical-align: middle;
+          width: 21px;
+          height: 21px;
+        }
+      }
+
+    .name-txt {
+      display:inline-block;
+      font-size: 16px;
+      font-weight: 400;
+      box-sizing: border-box;
+      padding-right: 50px;
+      padding-bottom: 3px;/*解决粉丝名称文字底部被截问题*/
+      margin-bottom: -3px;/*解决粉丝名称文字底部被截问题*/
+      //vertical-align: middle;
+      //@media  (min-device-width:800px){
+      //  max-width:478px;
+      //}
+      //@media (max-device-width:800px) {
+      //  max-width:478px;
+      //}
+      //此处的样式会继承reset.less里的同名样式，写在此处是为了防止干扰其他文件如qf相关
+      @media only screen and (max-width:600px) {
+        max-width:338px;
+        padding-right: 120px;
+      }
+
+      @media only screen and (max-width:414px) {
+        max-width:248px;
+        padding-right: 70px;
+      }
+      @media only screen and (max-width:375px) {
+        max-width:208px;
+        padding-right: 50px;
+      }
+      @media only screen and (max-width:320px) {
+        max-width:158px;
+        padding-right: 50px;
+      }
+
+    }
+    .msg-time{
+      //float: right;
+      //margin-right: 15px;
+      position: absolute;
+      right: 15px;
+      color:@grey-font;
+      margin-top:2px;
+      line-height: 16px;
+    }
+    .icon-authed {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      margin-left: 5px;
+      vertical-align: middle;
+      background-image: url(../images/icon-authed.svg?20151105.svg);
+      background-size: 17px 17px;
+    }
+  }
+.list-area{
+  padding-top:0;
+  transition:all 200ms 50ms   ease-out;
+  -webkit-transition:all  200ms 50ms  ease-out;
+}
+  .account-list {
+    //padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    u{//会出现下划线的tag--u   处理掉该样式
+      text-decoration: none;
+    }
+
+    //background: #fff;
+    .account-info {
+      .info-right {
+        .msg-time {
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+        }
+        .msg-status {
+          height: 35px;
+          line-height: 35px;
+          margin-top: -5px;
+        }
+        .name-txt{
+          display: block;
+          max-width: none!important;
+          padding-right: 120px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          box-sizing: border-box;
+        }
+      }
+
+      .info-right-status {
+        position: absolute;
+        vertical-align: bottom;
+        right: 40px;
+        height: 70px;
+        font-size: 14px;
+        line-height: 70px;
+        bottom: -10px;
+        color: #a6a6a6;
+      }
+    }
+    .no-result{
+      //background: #fafafa;
+      padding: 20px 10px;
+      color:#777;
+      text-align: center;
+    }
+  }
+  .bottom-area {
+    .borderBot();
+    display:block;
+    width:100%;
+    position:fixed;
+    left:0;
+    //top:0;
+    bottom: 0;
+    z-index:99;
+    height: 50px;
+    box-sizing: border-box;
+    background:#fff;
+    color:@grey-font;
+    .reply-content{
+      display: inline-block;
+      min-height: 50px;
+      width: 100%;
+      position: relative;
+      padding-right: 70px;
+      box-sizing: border-box;
+      vertical-align: middle;
+      .reply-input{
+        width: 100%;
+        vertical-align: middle;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-top: 1px;
+        padding: 15px 10px 1px;
+        font-size: 14px;
+      }
+    }
+    .reply-btn{
+      display: inline-block;
+      width: 70px;
+      height: 50px;
+      position: absolute;
+      background: #fff;
+      font-size: 16px;
+      top: 0;
+      //color:@grey-font;
+      color:@dark-blue;
+      right: 0;
+      border: 1px solid @line-color;
+      box-sizing: border-box;
+    }
+    .reply-disabled{
+      color:@line-color;
+    }
+    .reply-btn:focus{
+      outline-width: 0;
+    }
+    .pop-out-hint{
+      background:@light-blue ;
+      position: absolute;
+      width:80px;
+      height: 30px;
+      line-height: 30px;
+      vertical-align:middle;
+      right: 15px;
+      border-radius: 20px;
+      text-align: center;
+      //margin-top: 85px;
+      transform: translate3d(0,85px,0);
+      -webkit-transform:  translate3d(0,85px,0);
+      transition: transform  300ms  ease;
+      -webkit-transition: transform  300ms  ease;
+      color:#fff;
+    }
+    .pop-out-hint-up{
+      //margin-top: -35px;
+      transform: translate3d(0,-35px,0);
+      -webkit-transform:  translate3d(0,-35px,0);
+      -webkit-transition: transform  300ms  ease;
+    }
+  }
+  .keywords{
+    color:@dark-blue;
+  }
+  .loading-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    display: block;
+    z-index: 1000;
+    .loading-area{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}

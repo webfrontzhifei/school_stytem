@@ -1,0 +1,54 @@
+.p-da {
+    .main-map {
+        position: relative;
+        min-height: 300px;
+        border-top: 1px solid #EDEDED;
+
+        &-l {
+            position: absolute;
+            top: 22px;
+            left: 30px;
+            z-index: 1;
+            width: 170px;
+
+            h2 {
+                margin-bottom: 22px;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+        }
+
+        &-r {
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-table,
+        &-chart {
+            float: left;
+            padding-top: 30px;
+            width: 50%;
+        }
+        &-chart {
+            margin-bottom: 40px;
+        }
+    }
+
+    .main-map-small {
+        .main-map-l {
+            top: 30px;
+        }
+        .main-map-chart {
+            width: 33.33333333333%;
+        }
+        .main-table {
+            width: 33.33333333333%;
+
+            &:last-child {
+                border-left: 1px solid #EDEDED;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

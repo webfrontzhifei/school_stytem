@@ -1,0 +1,147 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.attr-main .title,
+.attr-addon .title,
+.lbf-panel .title {
+  font-size: 18px;
+}
+.attr-main .btn-edit,
+.attr-addon .btn-edit,
+.lbf-panel .btn-edit,
+.attr-main .btn-del,
+.attr-addon .btn-del,
+.lbf-panel .btn-del,
+.attr-main .btn-submit,
+.attr-addon .btn-submit,
+.lbf-panel .btn-submit,
+.attr-main .btn-cancel,
+.attr-addon .btn-cancel,
+.lbf-panel .btn-cancel {
+  float: right;
+  margin-left: 10px;
+  visibility: hidden;
+}
+.attr-main .attr-item,
+.attr-addon .attr-item,
+.lbf-panel .attr-item,
+.attr-main .attr-top,
+.attr-addon .attr-top,
+.lbf-panel .attr-top {
+  line-height: 40px;
+  border-bottom: 1px #ccc solid;
+}
+.attr-main .attr-item:hover .btn-edit,
+.attr-addon .attr-item:hover .btn-edit,
+.lbf-panel .attr-item:hover .btn-edit,
+.attr-main .attr-top:hover .btn-edit,
+.attr-addon .attr-top:hover .btn-edit,
+.lbf-panel .attr-top:hover .btn-edit,
+.attr-main .attr-item:hover .btn-del,
+.attr-addon .attr-item:hover .btn-del,
+.lbf-panel .attr-item:hover .btn-del,
+.attr-main .attr-top:hover .btn-del,
+.attr-addon .attr-top:hover .btn-del,
+.lbf-panel .attr-top:hover .btn-del,
+.attr-main .attr-item:hover .btn-submit,
+.attr-addon .attr-item:hover .btn-submit,
+.lbf-panel .attr-item:hover .btn-submit,
+.attr-main .attr-top:hover .btn-submit,
+.attr-addon .attr-top:hover .btn-submit,
+.lbf-panel .attr-top:hover .btn-submit,
+.attr-main .attr-item:hover .btn-cancel,
+.attr-addon .attr-item:hover .btn-cancel,
+.lbf-panel .attr-item:hover .btn-cancel,
+.attr-main .attr-top:hover .btn-cancel,
+.attr-addon .attr-top:hover .btn-cancel,
+.lbf-panel .attr-top:hover .btn-cancel {
+  visibility: visible;
+}
+.attr-main .editing,
+.attr-addon .editing,
+.lbf-panel .editing {
+  border-color: #00a1f2;
+}
+.lbf-panel .attr-item:hover .btn-submit {
+  visibility: hidden;
+}
+.attr-main {
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+.attr-main .attr-group {
+  float: left;
+  min-width: 300px;
+  margin-right: 50px;
+}
+.attr-main .add-wrap {
+  padding-top: 10px;
+}
+.attr-main .attr-item.attr-item-del .txt {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.attr-main .attr-item.attr-item-del:hover .btn-edit,
+.attr-main .attr-item.attr-item-del:hover .btn-del,
+.attr-main .attr-item.attr-item-del:hover .btn-submit,
+.attr-main .attr-item.attr-item-del:hover .btn-cancel {
+  visibility: hidden;
+}
+.attr-addon {
+  clear: both;
+}
+.attr-addon .attr-item {
+  width: 400px;
+}
+.attr-addon .attr-group {
+  margin-bottom: 20px;
+}
+.attr-addon .attr-group.adding .attr-sub {
+  display: none;
+}
+.attr-addon .btn-edit,
+.attr-addon .btn-del,
+.attr-addon .btn-submit,
+.attr-addon .btn-cancel {
+  padding: 0 10px;
+}
+.attr-addon .attr-sub ul {
+  overflow: hidden;
+  margin: 10px 0;
+}
+.attr-addon .attr-sub li {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 32px;
+  border: 1px #ccc solid;
+  margin-right: 10px;
+}
+.attr-addon .attr-sub li a {
+  float: none;
+  margin: 0;
+}
+.attr-addon .attr-sub li:hover .btn-edit,
+.attr-addon .attr-sub li:hover .btn-del,
+.attr-addon .attr-sub li:hover .btn-submit,
+.attr-addon .attr-sub li:hover .btn-cancel {
+  visibility: visible;
+}
+.attr-addon .attr-sub li.add-wrap {
+  border: none;
+}
+.attr-addon .attr-sub p {
+  clear: both;
+}
+.attr-addon .btn-wrap {
+  padding-top: 10px;
+}

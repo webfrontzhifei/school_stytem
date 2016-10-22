@@ -1,0 +1,51 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.replyTxt-main {
+  padding-bottom: 30px;
+  color: #1e2330;
+}
+.replyTxt-face {
+  position: relative;
+  clear: both;
+  width: 435px;
+  padding: 5px;
+  border: 1px solid #b4b5bb;
+  background: #ffffff url(images/qqicons.png) 5px 5px no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+.replyTxt-face span {
+  display: inline-block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  border-right: 1px solid #DFE6F6;
+  border-bottom: 1px solid #DFE6F6;
+}
+.replyTxt-face .borderRightNone {
+  border-right: none;
+}
+.replyTxt-face .borderBottomNone {
+  border-bottom: none;
+}
+.replyTxt-main .replyTxt-input {
+  padding: 0 35px;
+}
+.replyTxt-main .replyTxt-bar {
+  padding-right: 35px;
+  font-size: 12px;
+  color: #a8abb3;
+}
+.replyTxt-main .replyTxt-bar span {
+  margin-top: -20px;
+}

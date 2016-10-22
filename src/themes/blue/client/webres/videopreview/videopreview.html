@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- 视频预览，tevinyin -->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>VideoPreView</title>
+		<script src="https://bqq.gtimg.com/common/js/jquery-1.4.4.min.2013030801.js"></script>
+		<style type="text/css">
+			body {font-family:'Microsoft YaHei','SimSun';margin:0;border:0;padding:0}
+		</style>
+	</head>
+	<body>
+		<div id="divPreview" style="height:262px;width:550px;text-align:center;margin:0 auto;padding:0;background-color:#E0E3EE"></div>
+		<script>
+		function OnPreview(vUrl){
+			if (vUrl.indexOf("www.weishi.com") >= 0 || vUrl.indexOf("weishi.qq.com") >= 0) {
+				OnPreviewWeiShiVideo(vUrl);
+			}else if(vUrl.indexOf("v.qq.com") >= 0){
+				OnPreviewTXVideo(vUrl);
+			}else{
+				console.log("url is not from weishi.com or v.qq.com");
+				window.external.OnPreviewVideoFailed();
+			}
+		}
+		
+		function OnPreviewWeiShiVideo(vUrl){
+			var videoSrc = vUrl;
+			//判断是否包含/t
+			if(videoSrc.indexOf("/t/") > 0){
+				vedioId = videoSrc.split("/t/")[1];
+				var return_url = 'http://z.weishi.com/weixin/player.html?msgid='+vedioId+'&width=550&height=262&auto=0';
+				AppendPreviewHTML('<iframe style="background-color: #000;" height=262 width=550 frameborder=0 src="' + return_url + '" allowfullscreen="0"></iframe>');
+			}else{
+				window.external.OnPreviewVideoFailed();
+			}
+		}
+		
+		function OnPreviewTXVideo(vUrl){
+			var videoSrc = vUrl;
+			var return_url = '', vid = '';
+			if ( r = videoSrc.match(new RegExp("(^|&|\\\\?)vid=([^&]*)(&|$|#)"))) {
+				vid = encodeURIComponent(r[2]);
+				return_url = 'http://v.qq.com/iframe/player.html?vid=' + vid + '&width=550&height=262&auto=0';
+                AppendPreviewHTML('<iframe style="background-color: #000;" height=262 width=550 frameborder=0 src="' + return_url + '" allowfullscreen="0"></iframe>');
+			} else if ( r = videoSrc.match(new RegExp("(http://)?v\\.qq\\.com/cover[^/]*/\\w+/([^/]*)\\.html"))) {
+				var cid = encodeURIComponent(r[2]), path = 'http://sns.video.qq.com/fcgi-bin/dlib/dataout_ex?auto_id=137&cid=' + cid + '&otype=json';
+				path = '/mp/commonProxy/Proxy?url=' + encodeURIComponent(path);
+				REST.ajax({
+					url:path,
+					success: function() {
+						return_url = 'http://v.qq.com/iframe/player.html?vid=' + QZOutputJson['videos'][0]['vid'] + '&width=550&height=262&auto=0';
+						AppendHTML('<iframe style="background-color: #000;" height=262 width=550 frameborder=0 src="' + return_url + '" allowfullscreen="0"></iframe>');
+					}	
+				});
+			} else if ( r = videoSrc.match(new RegExp("(http://)?v\\.qq\\.com/(.*)/(.*)\\.html"))) {
+				vid = encodeURIComponent(r[3]);
+				return_url = 'http://v.qq.com/iframe/player.html?vid=' + vid + '&width=550&height=262&auto=0';
+				AppendPreviewHTML('<iframe style="background-color: #000;" height=262 width=550 frameborder=0 src="' + return_url + '" allowfullscreen="0"></iframe>');
+			} else {
+				window.external.OnPreviewVideoFailed();
+			}
+		}
+		
+		function AppendPreviewHTML(html){
+			var divshow = $("#divPreview");
+			divshow.text("");// 清空数据
+			divshow.append(html);
+			window.external.OnPreviewVideoSuccess();
+		}
+		</script>
+	</body>
+</html>

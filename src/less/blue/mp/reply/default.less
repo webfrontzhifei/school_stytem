@@ -1,0 +1,39 @@
+@import '../../base/mixin';
+@import '../comp/StatusOffContent';
+
+.anim-fadeIn(@duration:0.4s){
+  -webkit-animation: fadeIn @duration linear;
+  animation: fadeIn @duration linear;
+}
+.reply-default {
+  .anim-fadeIn();
+  .reply-box {
+    min-height: 230px;
+    .loading {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 580px;
+    }
+    .reply-box-item {
+      padding-right: 80px;
+    }
+  }
+
+}
+
+/*
+.reply-default { width:675px;}
+.reply-default .tip { color:#b3b5b8;}
+.reply-default .reply-box {min-height:125px;}
+.reply-default .add { width:476px; margin:10px auto 0 auto;}
+.reply-default .preview-img { display:inline-block; width:88px; height:60px; margin-right:15px; vertical-align:middle; overflow:hidden;}
+.reply-default .preview-img img { width:88px;}
+.reply-default .vmiddle { display:inline-block; width:0; height:60px; vertical-align:middle;}
+.reply-default .preview-txt { display:inline-block; width:500px; vertical-align:middle; word-break:break-all; word-wrap:break-word;}
+.reply-default .reply-box-typetxt .preview-txt { width:600px;}
+.reply-default .action { position:absolute; top:0; right:5px; width:17px; height:100%;}
+.reply-default .action .icon { position:absolute; cursor:pointer;}
+.reply-default .action .icon-del { top:5px;}
+.reply-default .action .icon-edit { display:none; bottom:5px;}
+.reply-default .reply-type-txt .icon-edit { display:inline-block;}
+*/

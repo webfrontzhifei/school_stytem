@@ -1,0 +1,58 @@
+.p-da-me-message {
+    .content-title {
+        border-bottom: none;
+    }
+
+    .main-hd {
+        margin-left: -10px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .main-hd-label {
+        margin: 0 10px 0 40px;
+    }
+
+    .lbf-combobox,
+    .lbf-text-input {
+        margin-top:0;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .lbf-combobox-label {
+        width: 96px;
+    }
+
+    .lbf-text-input {
+        padding-right: 32px;
+        input {
+            width: 198px;
+        }
+
+        .icon-search {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            margin-top: -9px;
+        }
+        &.lbf-text-input-focus {
+            .icon-search {
+                background-position: 0px -1853px;//暂时hard code
+            }
+            a:hover {
+                .icon-search {
+                    background-position: 0px -1853px;//暂时hard code
+                }     
+            }
+        }
+        // 充值active的样式
+        // .icon-search:active {
+        //     background-position: 0 0;
+        // }
+    }
+
+    .order-combo .lbf-combobox-label {
+        width: 46px;
+    }
+}

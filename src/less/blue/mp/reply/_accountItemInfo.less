@@ -1,0 +1,312 @@
+@import '../../base/mixin';
+.scrollbar-without-trackbg(@trackbg: transparent) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #d4d7d9;
+    border-radius: 8px;
+    &:hover {
+      background-color: #aaa;
+    }
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: @trackbg;
+  }
+}
+
+.no-auth, .icon-authed, .icon-wx-authed {
+	display: inline-block;
+	vertical-align: middle;
+}
+.no-auth {
+	display:none;
+	height:20px;
+	margin-left:5px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center;
+	line-height: 18px;
+	color:#f5f7fa;
+	font-size: 12px;
+	border-radius: 2px;
+	background-color: #545A6C;
+	&:hover {
+		color:#fff;
+	}
+}
+.no-auth-red {
+	background-color: #f4615c;
+}
+.no-auth-blue {
+	background-color: #00a1f2;
+}
+.icon-authed, .icon-wx-authed {
+	width:14px;
+	height:16px;
+	margin-left:3px;
+	background:url(images/icons-account-manage.png) no-repeat -51px top;
+}
+.icon-wx-authed {
+	background-position:-121px top;
+}
+.info-item {
+	overflow: hidden;
+	border-radius:4px;
+	vertical-align: top;
+	line-height: 1;
+	.avatar {
+		float:left;
+		margin-right:15px;
+		img {
+			border-radius: 50px;
+		}
+		.avatar-in {
+			display:block;
+			position: relative;
+			width:50px;
+			height:50px;
+			&:hover {
+				.avatar-cover, .avatar-edit {
+					visibility: visible;
+				}
+			}
+		}
+		.avatar-cover {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background:#000;
+			opacity:0.7;
+			border-radius:50px;
+			filter:alpha(opacity=70);
+			z-index: 1;
+			visibility: hidden;
+		}
+		.avatar-edit {
+			position: absolute;
+			top:16px;
+			left:16px;
+			width:16px;
+			height:16px;
+			background: url(images/icons-account-bind.png) no-repeat -125px -20px;
+			z-index: 2;
+			cursor:pointer;
+			visibility: hidden;
+		}
+		.lbf-loading {
+			position: absolute;
+			top:16px;
+			left:12px;
+		}
+	}
+	.info {
+		position: relative;
+		overflow: hidden;
+	}
+	.name {
+		padding:6px 0 5px 0;
+		*padding:3px 0 2px 0;
+		font-size: 16px;
+	}
+	.type {
+		color:#a2a9b6;
+	}
+}
+.sync-result, .import-action, .sync-action {
+	line-height: 1;
+	.icon-authed, .no-auth {
+		margin-top:-2px;
+		*margin-top:0;
+	}
+	.icon-wx-authed {
+		margin:-1px 0 0 5px;
+		*margin-top:0;
+	}
+}
+.import-action, .sync-action, .create-action, .sync-result {
+	.list {
+		*position: relative;
+		overflow-x:hidden;
+		overflow-y: auto;
+		max-height: 320px;
+		border:1px #DEDDDD solid;
+		background: #fff;
+	}
+	.info-item {
+		height:65px;
+		padding:15px 15px 0 18px;
+		cursor: pointer;
+	}
+	/*.selected, .selected:hover {
+		background-color: #f2fafe;
+	}*/
+	.lbf-iradio, .lbf-icheckbox {
+		float:right;
+		margin-top:15px;
+		*margin-right:15px;
+	}
+}
+.import-action, .sync-action, .sync-result {
+    width: 750px;/*IE7*/
+	.list {
+		width:714px;
+		max-height:230px;
+		padding:18px;
+		background:#e3e5e6;
+        & > ul {
+            margin-right: -20px;
+            margin-left: 1px;
+        }
+		li {
+			width:302px;
+			margin:8px;
+			float:left;
+			border:2px solid #e3e5e6;
+            &:hover {
+              border:2px solid #00a1f2;
+            }
+			&.selected {
+				border:2px solid #00a1f2;
+                background-color: #f2fbfe;
+			}
+		}
+	}
+	.info-item {
+		background:#fff;
+	}
+	.current-item, .current-item:hover {
+		margin-top: 8px;
+		margin-bottom: -10px;
+		padding: 15px 15px 0 50px;
+		background:#fff url(images/bg-current-item.png) no-repeat;
+		cursor:default;
+	}
+	.tit {
+		color:#aab0b2;
+	}
+}
+.import-action {
+    .current-item, .current-item:hover {
+		margin: 10px 205px auto;
+    }
+	.list {
+		margin-bottom:22px;
+	}
+	.tit {
+		padding-top:25px;
+		text-align:center;
+		background:url(images/pointer-bottom.png) no-repeat 50% 0;
+	}
+    .lbf-iradio {
+      background-image: none;
+    }
+}
+.sync-action {
+	padding-bottom:10px;
+	.current-item, .current-item:hover {
+		margin:10px 205px 18px;
+	}
+	.list {
+		margin-top: 8px;
+		margin-bottom: -10px;
+	}
+	.tit {
+		padding-top:25px;
+		text-align:center;
+		background:url(images/pointer-bottom.png) no-repeat 50% 0;
+	}
+}
+.create-action {
+    .scrollbar-without-trackbg;
+	.list {
+		max-height: 445px;
+		min-height: 438px;
+		margin-bottom:0;
+        .lbf-iradio {
+          &.lbf-iradio-disabled {
+             background-image: none;
+          }
+        }
+        .info-item {
+            &:hover {
+              background-color: #f2fbfe;
+            }
+        }
+	}
+	.title-create {
+		margin:5px 0 15px;
+		color:#a2a9b6;
+		i {
+			display:inline-block;
+			width:16px;
+			height:16px;
+			margin-left:5px;
+			vertical-align:middle;
+			background:url(images/icons-account-manage.png) no-repeat -164px 0;
+			cursor:pointer;
+		}
+	}
+	.account-create-null {
+		height:190px;
+		padding-top:240px;
+		font-size:18px;
+		text-align:center;
+		background:url(images/account-create-null.png) no-repeat 50% 142px;
+	}
+}
+.panel-openAccountWxList{
+    &.lbf-panel {
+      width: 500px;
+    }
+    .lbf-panel-foot {
+        .link-bindOtherWxPub {
+          border: none;
+          background-color: transparent;
+          color: #00a1f2;
+          margin-left:0;
+          padding: 1px 0;
+        }
+    }
+}
+.panel-openAccountNull {
+    &.lbf-panel {
+        width: 600px;
+        border-radius: 4px;
+    }
+    .msg-null {
+        font-size: 16px;
+        text-align: center;
+        color: #41494c;
+        margin-bottom: 16px;
+    }
+    .icon-openqqBindWx {
+        width: 226px;
+        height: 76px;
+        margin: 35px auto 22px;
+        background:url(images/icons-account-open-bind.png) no-repeat 50% 50%;
+    }
+    .lbf-panel-foot {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    & .lbf-button-primary {
+        font-size: 20px;
+        line-height: 58px;
+        margin-right: 15px;
+        padding: 0;
+        width: 278px;
+    }
+}
+.lbf-panel-foot{
+  .import-tip {
+    line-height: 38px;
+    .icon-tip-attention {
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-top: -2px;
+    }
+  }
+}

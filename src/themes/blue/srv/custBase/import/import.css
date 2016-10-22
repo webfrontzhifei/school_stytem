@@ -1,0 +1,429 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.cust-import {
+  display: table;
+  width: 100%;
+  line-height: 1;
+}
+.cust-import .lay-left,
+.cust-import .lay-mid,
+.cust-import .lay-right {
+  display: table-cell;
+  vertical-align: top;
+  width: 48%;
+}
+.cust-import .lay-mid {
+  width: 4%;
+}
+.cust-import .mod-select,
+.cust-import .mod-import {
+  width: 100%;
+  min-height: 498px;
+  border: 1px #dadee7 solid;
+}
+.cust-import .mod-import {
+  float: right;
+}
+.cust-import .select-hd,
+.cust-import .import-hd {
+  height: 51px;
+  line-height: 51px;
+  background: #f4f6f9;
+  border-bottom: 1px #dadee7 solid;
+  font-size: 16px;
+}
+.cust-import .select-hd .source {
+  float: left;
+  margin-left: 20px;
+}
+.cust-import .select-hd .selected-sum {
+  display: none;
+  float: right;
+  margin-right: 20px;
+}
+.cust-import .select-hd .selected-sum .sum {
+  margin: 0 5px 0 3px;
+  color: #0067ed;
+}
+.cust-import .mod-login {
+  position: relative;
+  height: 351px;
+  padding-top: 97px;
+  text-align: center;
+}
+.cust-import .mod-login dt {
+  display: inline-block;
+  width: 76px;
+  height: 87px;
+  background: url(images/penguin.png) no-repeat left top;
+  margin-bottom: 35px;
+}
+.cust-import .mod-login dd {
+  color: #66686c;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+.cust-import .mod-login .tip-login {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 0;
+}
+.cust-import .mod-list {
+  display: none;
+}
+.cust-import .mod-list .user-info {
+  position: relative;
+  height: 81px;
+  border-bottom: 1px #ebedf2 solid;
+}
+.cust-import .mod-list .user-info .nick {
+  display: inline-block;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cust-import .mod-list .user-info .num {
+  display: inline-block;
+  vertical-align: 1px;
+  font-size: 14px;
+}
+.cust-import .mod-list .info {
+  float: left;
+  width: 100%;
+  margin: 16px 0 0 20px;
+}
+.cust-import .mod-list .avatar {
+  float: left;
+  margin-right: 10px;
+}
+.cust-import .mod-list img {
+  border-radius: 50px;
+}
+.cust-import .mod-list dt {
+  padding: 5px 0 10px 0;
+  font-size: 16px;
+}
+.cust-import .mod-list dd {
+  color: #a8abb3;
+}
+.cust-import .mod-list .action {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.cust-import .mod-list .btn-refresh,
+.cust-import .mod-list .split-line,
+.cust-import .mod-list .btn-logout {
+  display: block;
+  float: left;
+}
+.cust-import .mod-list .split-line {
+  width: 0;
+  height: 20px;
+  margin: 0 20px 0 18px;
+  border-left: 1px #ebedf2 solid;
+}
+.cust-import .friends-list {
+  max-height: 564px;
+  overflow-y: auto;
+}
+.cust-import .friends-list .loading {
+  display: block;
+  margin: 170px auto;
+}
+.cust-import .friends-list li {
+  list-style: none;
+}
+.cust-import .friends-list .switch {
+  position: static;
+  display: inline-block;
+  padding: 2px;
+  width: 16px;
+  height: 16px;
+  margin-top: -3px;
+  margin-left: 15px;
+  vertical-align: middle;
+  background: url(images/icons.png) no-repeat left -60px;
+}
+.cust-import .friends-list .roots_open,
+.cust-import .friends-list .root_open,
+.cust-import .friends-list .center_open,
+.cust-import .friends-list .bottom_open {
+  background-position: left -80px;
+}
+.cust-import .friends-list .chk {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px;
+  width: 16px;
+  height: 16px;
+  margin-top: -3px;
+  margin-right: 9px;
+  margin-left: 2px;
+  background: url(images/icons.png) no-repeat;
+}
+.cust-import .friends-list .checkbox_false_full_focus {
+  background-position: 0 -40px;
+}
+.cust-import .friends-list .checkbox_true_full,
+.cust-import .friends-list .checkbox_true_full_focus,
+.cust-import .friends-list .checkbox_true_part,
+.cust-import .friends-list .checkbox_true_part_focus {
+  background-position: 0 -20px;
+}
+.cust-import .friends-list a.level0 {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  color: #1e2330;
+}
+.cust-import .friends-list a.level0:hover {
+  background-color: #F5FAFE;
+}
+.cust-import .friends-list a.level0:hover .ico_loading {
+  background-color: #F5FAFE;
+}
+.cust-import .friends-list a.level0 span.num {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.cust-import .friends-list a.level1 {
+  color: #1e2330;
+}
+.cust-import .friends-list a.level1 .switch {
+  display: none;
+}
+.cust-import .friends-list .ico_loading {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ffffff url('images/loading.gif') no-repeat left top;
+}
+.cust-import .friends-list li.level1 {
+  clear: both;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 35px;
+}
+.cust-import .friends-list li.level1:hover {
+  background-color: #F5FAFE;
+}
+.cust-import .friends-list li.level1:hover .ico_loading {
+  background-color: #F5FAFE;
+}
+.cust-import .friends-list .emoji {
+  margin-left: 3px;
+}
+.cust-import .import-hd {
+  position: relative;
+}
+.cust-import .import-hd li {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.cust-import .import-hd li.current .txt {
+  color: #0067ed;
+}
+.cust-import .import-hd .line {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 80px;
+  border-bottom: 1px #0067ed solid;
+}
+.cust-import .import-bd {
+  padding: 30px;
+}
+.cust-import .import-bd .tit,
+.cust-import .import-bd .tip-belong {
+  color: #66686c;
+}
+.cust-import .import-bd .lbf-combobox {
+  width: 100%;
+}
+.cust-import .import-bd .type-status {
+  height: 95px;
+  margin-right: -20px;
+}
+.cust-import .import-bd .type-status .tit {
+  margin-bottom: 10px;
+}
+.cust-import .import-bd .type-status .type,
+.cust-import .import-bd .type-status .status {
+  float: left;
+  width: 50%;
+}
+.cust-import .import-bd .type-bd,
+.cust-import .import-bd .status-bd {
+  padding-right: 20px;
+}
+.cust-import .owner {
+  display: none;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-bottom: 1px #ebedf2 solid;
+}
+.cust-import .owner .tip-belong {
+  display: none;
+}
+.cust-import .owner .tit,
+.cust-import .owner .tip-belong {
+  padding-bottom: 15px;
+}
+.cust-import .owner .set {
+  height: 69px;
+}
+.cust-import .owner .staff-list li {
+  width: 410px;
+  margin-right: 0;
+  padding-bottom: 0;
+}
+.cust-import .owner .staff-list .item .info dt {
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+.cust-import .owner .staff-list .item .overlay,
+.cust-import .owner .staff-list .item .btn-item-remove {
+  display: none;
+}
+.cust-import .owner .staff-list .item .avatar {
+  cursor: default;
+}
+.cust-import .owner .staff-list .btn-edit {
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 0;
+  border: none;
+}
+.cust-import .owner dt {
+  font-size: 16px;
+}
+.cust-import .owner dt .tip {
+  font-size: 14px;
+}
+.cust-import .owner.belongsea .tip-belong {
+  display: block;
+}
+.cust-import .owner.belongsea .tit {
+  display: none;
+}
+.cust-import .tags {
+  border-top: 1px #ebedf2 solid;
+}
+.cust-import .tag-item {
+  overflow: hidden;
+  border-bottom: 1px #ebedf2 solid;
+}
+.cust-import .tag-item .item-hd {
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+}
+.cust-import .tag-item .tit {
+  float: left;
+}
+.cust-import .tag-item .icon-srv-tag {
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+}
+.cust-import .tag-item .tag {
+  display: inline-block;
+  float: left;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 24px;
+  background-color: #E4E8EA;
+  color: #1e2330;
+  transition: background-color 0.2s 0s ease-in;
+}
+.cust-import .tag-item .tag:hover {
+  background-color: #DAE0E6;
+}
+.cust-import .tag-item .icon-srv-arr-down,
+.cust-import .tag-item .icon-srv-arr-up {
+  float: right;
+  margin-top: 27px;
+}
+.cust-import .tag-item .icon-srv-remove-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.cust-import .tag-item .item-hd .tag.selected {
+  position: relative;
+  margin: 18px 0 0 12px;
+  padding-right: 20px;
+  background-color: #0067ed;
+  color: #ffffff;
+}
+.cust-import .tag-item .item-bd {
+  overflow: hidden;
+  display: none;
+  padding-bottom: 15px;
+}
+.cust-import .tag-item .item-bd .tag.selected {
+  background-color: #0067ed;
+  color: #ffffff;
+}
+.cust-import .btn-import-wrap {
+  padding-top: 30px;
+  text-align: center;
+}
+.cust-import .btn-import-wrap #btn-import,
+.cust-import .btn-import-wrap .lbf-button-primary {
+  width: 118px;
+  line-height: 43px;
+  font-size: 16px;
+}
+.tip-login {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #F8FAFB;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 15px -25px -30px -25px;
+  color: #66686c;
+}
+.tip-login .icon-srv-tip-gray {
+  vertical-align: -4px;
+}
+.showloginagain {
+  position: relative;
+  display: inline-block;
+  color: #0067ed;
+  cursor: pointer;
+}
+.showloginagain .loading {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}

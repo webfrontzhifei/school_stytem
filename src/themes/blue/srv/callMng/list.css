@@ -1,0 +1,309 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.callmng-content {
+  margin-top: -2px;
+  padding-bottom: 60px;
+  line-height: 1;
+}
+.callmng-content .mod-empty {
+  display: none;
+}
+.callmng-content h4 {
+  font-size: 18px;
+  color: #1d2331;
+}
+.callmng-content .package-hd {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.callmng-content .package-hd h4 {
+  float: left;
+}
+.callmng-content .package-hd h4 span {
+  font-size: 14px;
+  color: #a8abb3;
+  line-height: 24px;
+}
+.callmng-content .package-hd .left-mins {
+  float: left;
+  margin-left: 90px;
+}
+.callmng-content .package-hd .left-mins .num {
+  font-size: 40px;
+  padding-right: 10px;
+}
+.callmng-content .package-hd .left-mins i {
+  font-style: normal;
+  font-size: 30px;
+  padding: 20px;
+  vertical-align: 5px;
+}
+.callmng-content .package-hd .left-mins .arrear {
+  font-size: 24px;
+  color: #ff4222;
+  vertical-align: 7px;
+}
+.callmng-content .package-hd .btn-detail {
+  float: right;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #1e2330;
+}
+.callmng-content .package-hd .btn-detail:hover {
+  color: #0067ed;
+}
+.callmng-content .package-hd .icon {
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+}
+.callmng-content .package-bd {
+  clear: both;
+  width: 620px;
+  margin-bottom: 85px;
+}
+.callmng-content .package-bd .detail {
+  overflow: hidden;
+  position: relative;
+}
+.callmng-content .package-bd .surplus {
+  font-size: 18px;
+}
+.callmng-content .package-bd .surplus .num {
+  color: #0067ED;
+}
+.callmng-content .package-bd .expire {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #a8abb3;
+}
+.callmng-content .package-bd .ratio-bar {
+  width: 620px;
+  height: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: #DADEE7;
+  font-size: 0;
+  line-height: 0;
+}
+.callmng-content .package-bd .usage {
+  display: inline-block;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #0067ED;
+}
+.callmng-content .package-bd span[style="width:100%"] {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.callmng-content .mod-list h4 {
+  margin-bottom: 35px;
+}
+.callmng-content .mod-list .list-hd {
+  position: relative;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.callmng-content .mod-list .list-hd .tit {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  font-size: 18px;
+}
+.callmng-content .mod-list .list-hd .btn-add-comtel {
+  float: right;
+}
+.callmng-content .mod-list .add-wrap {
+  margin-bottom: 30px;
+}
+.callmng-content .mod-list .btn-add-comtel .icon-srv-add-mini {
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+.callmng-content .mod-list .col0 {
+  width: 300px;
+}
+.callmng-content .mod-list .col1 {
+  width: 500px;
+}
+.callmng-content .mod-list .col3 {
+  width: 80px;
+}
+.callmng-content .mod-list .avatar-list {
+  float: left;
+  height: 44px;
+  margin-left: 10px;
+  padding: 12px 0;
+}
+.callmng-content .mod-list .avatar-list li {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: -10px;
+}
+.callmng-content .mod-list .avatar-list li img {
+  border: 2px #fff solid;
+  border-radius: 44px;
+}
+.callmng-content .mod-list .avatar-list li.sum {
+  width: 44px;
+  height: 44px;
+  margin: 0 0 0 5px;
+  background-color: #EBEDF2;
+  border-radius: 44px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 44px;
+  color: #66686c;
+}
+.callmng-content .mod-list .avatar-list .avatar0 {
+  z-index: 15;
+}
+.callmng-content .mod-list .avatar-list .avatar1 {
+  z-index: 10;
+}
+.callmng-content .mod-list .avatar-list .avatar2 {
+  z-index: 5;
+}
+.callmng-content .mod-list .owner,
+.callmng-content .mod-list .invalid {
+  float: left;
+  margin-left: 10px;
+  line-height: 68px;
+}
+.callmng-content .mod-list .invalid {
+  color: #ff4222;
+}
+.callmng-content .mod-list .btn-edit,
+.callmng-content .mod-list .btn-del {
+  margin-right: 12px;
+}
+.callmng-content .mod-list .icon-srv-call-small-disabled {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.callmng-content .table-null {
+  height: 280px;
+}
+.callmng-content .table-null .icon-null {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: url(images/null.png) no-repeat left top;
+}
+.callmng-content .table-null dt {
+  margin: 30px 0 20px 0;
+  font-size: 24px;
+}
+.callmng-content .mod-comtel .table-null .icon-null {
+  margin: 20px auto 0 auto;
+}
+.callmng-content .mod-stafftel {
+  margin-top: 30px;
+}
+.callmng-content .mod-stafftel .btn-edit {
+  margin-left: 30px;
+}
+.callmng-content .mod-stafftel .tip {
+  margin-right: 24px;
+  margin-left: -125px;
+  color: #a8abb3;
+}
+.stafftel-setup {
+  padding: 0 5px 13px 5px;
+  line-height: 1;
+}
+.stafftel-setup h6 {
+  padding: 29px 0 27px 0;
+  text-align: center;
+  font-size: 24px;
+}
+.stafftel-setup .title {
+  font-size: 16px;
+}
+.stafftel-setup .receptionist .detail {
+  height: 50px;
+  padding: 20px 0 50px 0;
+}
+.stafftel-setup .receptionist .avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.stafftel-setup .receptionist .avatar img {
+  border-radius: 50px;
+}
+.stafftel-setup .receptionist dl {
+  float: left;
+}
+.stafftel-setup .receptionist dt {
+  padding: 5px 0 10px 0;
+  font-size: 16px;
+}
+.stafftel-setup .receptionist dd {
+  color: #a8abb3;
+}
+.stafftel-setup .receptionist .tip {
+  float: right;
+  margin-top: 18px;
+  color: #a8abb3;
+}
+.stafftel-setup .reception-time {
+  padding-bottom: 50px;
+}
+.stafftel-setup .reception-time .title {
+  padding-bottom: 30px;
+}
+.stafftel-setup .reception-time ul {
+  overflow: hidden;
+  margin-right: -15px;
+  margin-bottom: 23px;
+}
+.stafftel-setup .reception-time li {
+  float: left;
+  margin-right: 10px;
+}
+.stafftel-setup .select-wrap p {
+  float: left;
+  width: 34px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.stafftel-setup .select-wrap .lbf-combobox {
+  float: left;
+  width: 150px;
+}
+/* 充值流水浮层 */
+.charge-popup-panel .charge-range-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.charge-popup-panel .charge-range-wrap > input {
+  width: 260px;
+}
+.charge-popup-panel .table-null {
+  height: 280px;
+  line-height: 280px;
+  padding-top: 0;
+  font-size: 24px;
+}
+.charge-popup-panel .lbf-panel-body {
+  padding-bottom: 0;
+}

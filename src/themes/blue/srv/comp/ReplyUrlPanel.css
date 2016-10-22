@@ -1,0 +1,40 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.replyUrl-main {
+  padding-bottom: 30px;
+  *width: 650px;
+  /* fix ie7 */
+  color: #a2a9b6;
+}
+.replyUrl-main .lbf-textarea,
+.replyUrl-main .lbf-textarea textarea {
+  width: 636px;
+  height: 265px;
+}
+.lbf-panel-head {
+  position: relative;
+}
+.lbf-panel-head .sub-title {
+  font-size: 14px;
+  color: #a8abb3;
+  margin-top: -52px;
+}
+.lbf-text-input {
+  position: relative;
+}
+.lbf-text-input .tip-wrong-url {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: #ff4222;
+}

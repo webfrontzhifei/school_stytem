@@ -1,0 +1,259 @@
+@import 'userGuideBase';
+
+/* 引导1：企点新功能、声明内容 */
+.user-guide-feature-contract {
+  &.lbf-panel{
+    background-color: #fff;
+    border-radius: 4px;
+    width: 980px;
+  }
+  .lbf-panel-head {
+    display: none;
+  }
+  .lbf-panel-body {
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 3px;
+    max-height: 497px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .lbf-panel-foot {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #f0f1f2;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    .lbf-button {
+      width: 180px;
+      font-size: 16px;
+      line-height: 48px;
+      padding: 0;
+      margin-left: 0;
+    }
+    .lbf-button-disabled {
+      color: #fff;
+      border: 1px solid #F5F5FA;
+      background-color: rgb(84, 128, 224);
+      opacity: 0.38;
+      filter: alpha(opacity=38);
+    }
+  }
+
+  .head-title {
+    padding-top: 45px;
+    text-align: center;
+    line-height: 1;
+    color: @textColor;
+    font-size: 28px;
+  }
+  .sub-title {
+    padding-top: 15px;
+    text-align: center;
+    color: #aab0b2;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .feature-list {
+     padding:30px 0 40px 80px;
+     li {
+      float: left;
+      width: 210px;
+      text-align: center;
+      span {
+        display: block;
+        height: 130px;
+        width: 130px;
+        margin: 0 auto 10px;
+        background-image: url(images/icons-features.png);
+        background-repeat: no-repeat;
+      }
+      .icon {
+        &-1{
+          background-position: 0 0;
+        }
+        &-2{
+          background-position: 0 -140px;
+        }
+        &-3{
+          background-position: 0 -280px;
+        }
+        &-4{
+          background-position: 0 -420px;
+        }
+      }
+      label {
+         display: block;
+         color: @textColor;
+         font-size: 16px;
+         line-height: 1;
+      }
+    }
+  }
+  
+  .contract-section {
+    padding:30px 0 40px;
+    border-top: 1px solid #ededed;
+    p {
+      text-align: center;
+    }
+    .title {
+      font-size: 20px;
+      color: @textColor;
+      line-height: 1;
+    }
+    .container-wrap {
+      margin: 30px 39px 0 50px;
+      border: 1px solid #d9d9d9;
+    }
+    .container {
+      height: 374px;
+      margin: 3px 3px 3px 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      p {
+        text-align: left;
+      }
+
+      .main-text {
+        padding: 0 15px;
+        color: @textColor;
+        h3 {
+          font-size: 15px;
+          font-weight: bold;
+          padding-bottom: .5em;
+        }
+        p {
+          padding-left: .5em;
+          padding-bottom: 1em;
+          line-height: 2;
+          &.tr {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 引导2：绑定开号流程 -> "是否有QQ公众号的选择弹层" */
+.user-guide-qqaccount-action-chosen {
+  &.lbf-panel {
+    background-color: #f0f1f2;
+    border-radius: 4px;
+  }
+  width: 750px;
+  .lbf-panel-head,
+  .lbf-panel-foot{
+    display: none;
+  }
+  .lbf-panel-body {
+    padding: 0 0 55px;
+  }
+  h3 {
+    color: @textColor;
+    text-align: center;
+    font-size: 28px;
+    line-height: 116px;
+  }
+  .account-type {
+    margin-left: 35px;
+    li {
+      float: left;
+      margin: 0 15px;
+      width: 310px;
+      height: 310px;
+      text-align: center;
+      a {
+        display: block;
+        width: 306px;
+        height: 306px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        color: @textColor;
+        border-radius: 4px;
+        -moz-box-sizing: padding-box;
+        -webkit-box-sizing: padding-box;
+        -ms-box-sizing: padding-box;
+        box-sizing: padding-box;
+        &.button-{
+          &bindQQ {
+            &:active,
+            &:hover {
+              background-color: #f2fafe;
+              border-color: @blueBoderColor;
+            }
+          }
+          &createQQ {
+            &:active,
+            &:hover {
+              background-color: #f4fdf7;
+              border-color: #23cf5f;
+            }
+            &-disabled {
+              .rel;
+              &:active,
+              &:hover {
+                .def;
+                border-color:transparent;
+              }
+              .disabled-cover {
+                .db;
+                .def;
+                .w(100%);
+                .h(100%);
+                .bg(#fff);
+                .opacity(60);
+                .abs;
+                .zx(2);
+                left:0;
+              }
+              .stay-tuned {
+                .db;
+                font-size:16px;
+              }
+            }
+          }
+        }
+        label {
+          display: block;
+          line-height: 70px;
+          text-align: center;
+        }
+        .icon-bind,
+        .icon-create{
+          display: block;
+          width: 100px;
+          height: 100px;
+          margin: 19px auto;
+          background-image: url(images/icons-user-guide.png);
+        }
+        .icon-bind{
+          background-position: 0 0;
+        }
+        .icon-create{
+          background-position: 0 -120px;
+        }
+        em {
+          color: @textColor;
+          font-size: 24px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+/* 引导3：绑定开号流程 -> "绑定完QQ号后，弹层用户点击‘绑定微信公众号’ " */
+.user-guide-general-panel {
+  &.user-guide-wxaccount-bind-entry {
+      .action {
+        margin: 40px 0 15px;
+      }
+      .button-bindWX {
+        line-height: 58px;
+        width: 278px;
+        padding: 0;
+      }
+  }
+}

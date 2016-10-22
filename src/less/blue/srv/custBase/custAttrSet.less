@@ -1,0 +1,104 @@
+@import '../../base/mixin';
+.attr-main, .attr-addon, .lbf-panel {
+	.title {
+		font-size: 18px;
+	}
+	.btn-edit, .btn-del, .btn-submit, .btn-cancel {
+		float:right;
+		margin-left:10px;
+		visibility: hidden;
+	}
+	.attr-item, .attr-top {
+		line-height: 40px;
+		border-bottom:1px #ccc solid;
+		&:hover {
+			.btn-edit, .btn-del, .btn-submit, .btn-cancel {
+				visibility: visible;
+			}
+		}
+	}
+	.editing {
+		border-color:#00a1f2;
+	}
+}
+.lbf-panel {
+	.attr-item:hover {
+		.btn-submit {
+			visibility: hidden;
+		}
+	}
+}
+.attr-main {
+	overflow: hidden;
+	padding-bottom: 40px;
+	.attr-group {
+		float:left;
+		min-width: 300px;
+		margin-right:50px;
+	}
+	.add-wrap {
+		padding-top:10px;
+	}
+	.attr-item {
+		&.attr-item-del {
+			.txt {
+				text-decoration: line-through;
+				color:#ccc;
+			}
+			&:hover {
+				.btn-edit, .btn-del, .btn-submit, .btn-cancel {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+.attr-addon {
+	clear:both;
+	.attr-item {
+		width:400px;
+	}
+	.attr-group {
+		margin-bottom: 20px;
+		&.adding {
+			.attr-sub {
+				display: none;
+			}	
+		}
+	}
+	.btn-edit, .btn-del, .btn-submit, .btn-cancel {
+		padding:0 10px;
+	}
+	.attr-sub {
+		ul {
+			overflow: hidden;
+			margin:10px 0;
+		}
+		li {
+			float:left;
+			height:32px;
+			line-height: 32px;
+			border-radius: 32px;
+			border:1px #ccc solid;
+			margin-right: 10px;
+			a {
+				float: none;
+				margin:0;
+			}
+			&:hover {
+				.btn-edit, .btn-del, .btn-submit, .btn-cancel {
+					visibility: visible;
+				}
+			}
+			&.add-wrap {
+				border:none;
+			}
+		}
+		p {
+			clear:both;
+		}
+	}
+	.btn-wrap {
+		padding-top:10px;
+	}
+}

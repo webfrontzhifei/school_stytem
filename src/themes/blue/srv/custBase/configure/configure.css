@@ -1,0 +1,390 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.tabview {
+  margin-top: -21px;
+}
+.mod-ruleset .table-size {
+  position: static;
+}
+.mod-ruleset .byadder form,
+.mod-ruleset .byrule .txt {
+  display: none;
+}
+.mod-ruleset .table-base tbody td {
+  line-height: 65px;
+}
+.mod-ruleset .table-base tr:hover td {
+  background-color: transparent;
+}
+.mod-ruleset .col2 {
+  width: 500px;
+}
+.mod-ruleset .belong-set {
+  display: none;
+  vertical-align: -2px;
+  margin-left: 11px;
+  line-height: 1;
+}
+.mod-ruleset .btn-staff-edit {
+  vertical-align: 1px;
+}
+.staff-selector .members-select-box {
+  overflow-x: hidden;
+  border: 1px #dadee7 solid;
+  width: 310px;
+  height: 270px!important;
+}
+.staff-selector .members-select-box li {
+  width: 310px;
+  height: 35px;
+  border-bottom: none;
+}
+.staff-selector .members-select-box li .lbf-icheckbox {
+  margin-top: 7px;
+}
+.staff-selector .members-select-box .info {
+  padding-left: 15px;
+  line-height: 35px;
+}
+.staff-selector .members-select-box .tip {
+  color: #a8abb3;
+}
+.staff-selector .members-select-box dt,
+.staff-selector .members-select-box dd {
+  float: left;
+}
+.staff-selector .members-select-box dt {
+  margin: 8px 5px 0 0;
+}
+#attr-set {
+  text-align: center;
+  line-height: 300px;
+}
+.attr-set {
+  text-align: left;
+  clear: both;
+  line-height: 1;
+}
+.attr-set .tit {
+  font-size: 18px;
+}
+.attr-set .tit .tip {
+  font-size: 14px;
+  color: #a8abb3;
+}
+.attr-set .follow-bd {
+  position: relative;
+  height: 142px;
+}
+.attr-set .follow-bd .item {
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #E4E8EA;
+  text-align: center;
+  font-size: 16px;
+}
+.attr-set .follow-bd .arr-left,
+.attr-set .follow-bd .arr-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 50px;
+  background: url(images/icons.png) no-repeat left top;
+}
+.attr-set .follow-bd .arr-right {
+  left: auto;
+  right: 0;
+  background-position: -24px top;
+}
+.attr-set .follow-bd .last {
+  background-color: #00CC26;
+  color: #fff;
+}
+.attr-set .follow-bd .last .arr-left {
+  background-position: -12px top;
+}
+.attr-set .follow-bd .item-add {
+  float: left;
+  position: relative;
+  height: 50px;
+  margin: 0 10px;
+  line-height: 50px;
+  text-align: center;
+}
+.attr-set .follow-bd .item-add .add-wrap {
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 50px;
+  background-color: #fff;
+}
+.attr-set .follow-bd .item-add .btn-add {
+  margin-top: 12px;
+}
+.attr-set .follow-bd .border-line {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  height: 2px;
+  background: url(images/border-bg.png) repeat-x left top;
+}
+.attr-set .follow-bd .icon-srv-arr-down {
+  position: absolute;
+  top: 23px;
+  right: 17px;
+}
+.attr-set .follow-bd.status3 .item-add,
+.attr-set .follow-bd.status4 .item-add {
+  margin: 0;
+}
+.attr-set .follow-bd.status3 .border-line,
+.attr-set .follow-bd.status4 .border-line {
+  display: none;
+}
+.attr-set .follow-bd .tip {
+  position: absolute;
+  top: 69px;
+  left: 0;
+  color: #a8abb3;
+}
+.attr-set .follow-bd .tip-right {
+  left: auto;
+  right: 0;
+  line-height: 1.5;
+}
+.attr-set .follow-bd .normal {
+  cursor: pointer;
+}
+.attr-set .follow-bd .normal:hover {
+  background-color: #ebedf0;
+}
+.attr-set .follow-bd .normal:hover .arr-right {
+  background-position: -48px top;
+}
+.attr-set .follow-bd .normal:hover .arr-left {
+  background-position: -36px top;
+}
+.attr-set .follow-bd .menu {
+  width: 140px;
+  height: 80px;
+  padding: 5px 0;
+  border: 1px #dadee7 solid;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+.attr-set .follow-bd .menu a {
+  vertical-align: top;
+  display: block;
+  width: 119px;
+  height: 40px;
+  padding-left: 21px;
+  line-height: 40px;
+  text-align: left;
+  color: #1e2330;
+  font-size: 14px;
+}
+.attr-set .follow-bd .menu a:hover {
+  background-color: #f5fafe;
+}
+.attr-set .follow-bd .menu .icon-srv-edit-highlight,
+.attr-set .follow-bd .menu .icon-srv-del-highlight {
+  vertical-align: middle;
+  margin: -3px 8px 0 0;
+}
+.attr-set .follow-bd .btn-del.lbf-button-disabled {
+  pointer-events: auto;
+}
+.attr-set .follow-bd .btn-del.lbf-button-disabled:hover {
+  background-color: #fff;
+}
+.attr-set .deleted-attr {
+  margin-bottom: 60px;
+}
+.attr-set .deleted-attr .tit {
+  padding-bottom: 18px;
+}
+.attr-set .deleted-attr li {
+  line-height: 60px;
+  border-bottom: 1px #ebedf2 solid;
+}
+.attr-set .deleted-attr span {
+  display: inline-block;
+}
+.attr-set .deleted-attr .name {
+  width: 240px;
+}
+.attr-set .deleted-attr .sum {
+  width: 440px;
+}
+.attr-set .addon-attr .example {
+  height: 280px;
+  background-color: #F5F8FA;
+}
+.attr-set .addon-attr .example dt {
+  float: left;
+  width: 538px;
+  height: 252px;
+  margin: 28px 0 0 205px;
+  background: url(images/example.jpg) no-repeat left top;
+}
+.attr-set .addon-attr .example dd {
+  float: left;
+  margin: 115px 0 0 35px;
+  font-size: 16px;
+  color: #66686c;
+  line-height: 30px;
+}
+.attr-set .addon-attr .btn-add-group .icon-srv-add-mini {
+  vertical-align: middle;
+  margin: -2px 8px 0 0;
+}
+.attr-set .group-list .group-item {
+  margin-bottom: 30px;
+  border-bottom: 1px #ebedf2 solid;
+}
+.attr-set .group-list .tit {
+  display: inline-block;
+  font-size: 14px;
+  color: #a8abb3;
+}
+.attr-set .group-list .name {
+  display: inline-block;
+  font-size: 16px;
+}
+.attr-set .group-list .name .btn-edit,
+.attr-set .group-list .name .btn-del {
+  visibility: hidden;
+  position: relative;
+  bottom: -3px;
+  margin-right: 10px;
+}
+.attr-set .group-list .name .btn-edit {
+  margin-left: 13px;
+}
+.attr-set .group-list .name:hover .btn-edit,
+.attr-set .group-list .name:hover .btn-del {
+  visibility: visible;
+}
+.attr-set .group-list .group-bd {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.attr-set .group-list .group-bd .btn-add {
+  float: left;
+  margin-top: 3px;
+}
+.attr-set .group-list ul {
+  display: inline;
+}
+.attr-set .group-list li {
+  float: left;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0 30px;
+  border-radius: 30px;
+  background-color: #E4E8EA;
+}
+.attr-set .group-list li .btn-edit,
+.attr-set .group-list li .btn-del {
+  display: none;
+  position: absolute;
+  top: 7px;
+}
+.attr-set .group-list li .btn-edit {
+  left: 9px;
+}
+.attr-set .group-list li .btn-del {
+  right: 9px;
+}
+.attr-set .group-list li:hover .btn-edit,
+.attr-set .group-list li:hover .btn-del {
+  display: inline-block;
+}
+.attr-set .group-list .tip {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-bottom: 15px;
+  color: #a8abb3;
+}
+.addonattr-edit-tip {
+  margin-top: -20px;
+  text-align: center;
+  color: #a8abb3;
+}
+.panel-edit {
+  width: 320px;
+  padding: 0 60px;
+}
+.restore-panel {
+  line-height: 1;
+}
+.restore-panel .tip {
+  margin-top: -16px;
+  text-align: center;
+  font-size: 14px;
+  color: #a8abb3;
+}
+.restore-panel .status-list {
+  overflow: hidden;
+  padding: 80px 0;
+}
+.restore-panel .status-list .status0 {
+  margin-left: 55px;
+}
+.restore-panel .status-list li {
+  float: left;
+  position: relative;
+}
+.restore-panel .status-list li.first,
+.restore-panel .status-list li.normal,
+.restore-panel .status-list li.last {
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #E4E8EA;
+}
+.restore-panel .status-list .arr-left,
+.restore-panel .status-list .arr-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 35px;
+  background: url(images/icons.png) no-repeat -60px top;
+}
+.restore-panel .status-list .arr-right {
+  left: auto;
+  right: 0;
+  background-position: -72px top;
+}
+.restore-panel .status-list .btn-select {
+  margin: 5px 8px 0 8px;
+}
+.restore-panel .status-list .btn-select.selected {
+  background: url(images/icons.png) no-repeat -84px top;
+}

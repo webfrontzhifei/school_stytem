@@ -1,0 +1,303 @@
+.p-da-me-message .content-title {
+  border-bottom: none;
+}
+.p-da-me-message .main-hd {
+  margin-left: -10px;
+  height: 80px;
+  line-height: 80px;
+}
+.p-da-me-message .main-hd-label {
+  margin: 0 10px 0 40px;
+}
+.p-da-me-message .lbf-combobox,
+.p-da-me-message .lbf-text-input {
+  margin-top: 0;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.p-da-me-message .lbf-combobox-label {
+  width: 96px;
+}
+.p-da-me-message .lbf-text-input {
+  padding-right: 32px;
+}
+.p-da-me-message .lbf-text-input input {
+  width: 198px;
+}
+.p-da-me-message .lbf-text-input .icon-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -9px;
+}
+.p-da-me-message .lbf-text-input.lbf-text-input-focus .icon-search {
+  background-position: 0px -1853px;
+}
+.p-da-me-message .lbf-text-input.lbf-text-input-focus a:hover .icon-search {
+  background-position: 0px -1853px;
+}
+.p-da-me-message .order-combo .lbf-combobox-label {
+  width: 46px;
+}
+.p-da-me-message-detail .main-pack {
+  margin-bottom: 0;
+  background: transparent;
+}
+.p-da-me-message-detail .content-main {
+  position: relative;
+  margin: 30px auto 60px;
+}
+.p-da-me-message-detail .content-main:before,
+.p-da-me-message-detail .content-main:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.p-da-me-message-detail .main-tip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+.p-da-me-message-detail .main-tip .lbf-tip {
+  left: -130px !important;
+}
+.p-da-me-message-detail .main-tip .lbf-tip-arrow {
+  margin-left: 130px !important;
+}
+.p-da-me-message-detail .main-tip-knowledge {
+  padding: 20px;
+  width: 270px;
+}
+.p-da-me-message-detail .main-tip-knowledge dt {
+  margin-top: 20px;
+}
+.p-da-me-message-detail .main-tip-knowledge dt:first-child {
+  margin-top: 0;
+}
+.p-da-me-message-detail .main-hd {
+  margin: 35px 30px;
+  height: 24px;
+  line-height: 24px;
+}
+.p-da-me-message-detail .main-hd h1 {
+  display: inline;
+  margin-right: 14px;
+  font-size: 18px;
+}
+.p-da-me-message-detail .main-hd span {
+  color: #A2A9B6;
+}
+.p-da-me-message-detail .main-sex {
+  border-top: 1px solid #EDEDED;
+}
+.p-da-me-userprop .no-data-gb-container {
+  border-top: none;
+}
+.p-da-me-userprop #accounts {
+  float: right;
+}
+.p-da-me-userprop .main-loyalty {
+  position: relative;
+}
+.p-da-me-userprop .main-tip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+.p-da-me-userprop .main-tip .lbf-tip {
+  left: -130px !important;
+}
+.p-da-me-userprop .main-tip .lbf-tip-arrow {
+  margin-left: 130px !important;
+}
+.p-da-me-userprop .main-tip dl {
+  padding: 10px;
+  width: 295px;
+}
+.p-da-me-userprop .main-tip dt {
+  margin-top: 20px;
+}
+.p-da-me-userprop .main-tip dt:first-child {
+  margin-top: 0;
+}
+.p-da-me-usergrowth .content-title {
+  border-bottom: none;
+}
+.p-da-me-usergrowth .main-hd .da-select-container {
+  float: right;
+}
+.p-da-me-usergrowth .main-bd {
+  position: relative;
+}
+.p-da-me-usergrowth .main-tip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+.p-da-me-usergrowth .main-tip .lbf-tip {
+  left: -130px !important;
+}
+.p-da-me-usergrowth .main-tip .lbf-tip-arrow {
+  margin-left: 130px !important;
+}
+.p-da-me-usergrowth .main-tip-growth {
+  padding: 20px;
+  width: 270px;
+}
+.p-da-me-usergrowth .main-tip-growth dt {
+  margin-top: 20px;
+}
+.p-da-me-usergrowth .main-tip-growth dt:first-child {
+  margin-top: 0;
+}
+.p-da-me-usergrowth .main-yesterday {
+  padding: 30px;
+  margin-bottom: 0;
+}
+.p-da-me-usergrowth .main-yesterday-bd {
+  margin-top: 30px;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse\9;
+}
+.p-da-me-usergrowth .main-yesterday-bd th {
+  text-align: left;
+  font-weight: normal;
+}
+.p-da-me-usergrowth .main-yesterday-bd th,
+.p-da-me-usergrowth .main-yesterday-bd td {
+  padding-left: 100px;
+}
+.p-da-me-usergrowth .main-yesterday-bd thead th {
+  padding-left: 0;
+  text-align: center;
+}
+.p-da-me-usergrowth .main-yesterday-bd-num {
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.p-da-me-usergrowth .main-yesterday-bd-num td {
+  padding-bottom: 25px;
+  padding-left: 0;
+  text-align: center;
+}
+.p-da-me-usergrowth .main-yesterday-bd-label {
+  margin-right: 15px;
+}
+.p-da-me-usergrowth .main-other {
+  padding: 30px;
+  margin-bottom: 0;
+}
+.p-da-me-usergrowth .main-other-charts {
+  margin-top: 20px;
+}
+.p-da-me-usergrowth .main-other-charts .main-hd-date-label {
+  display: none;
+}
+.p-da-me-usergrowth .main-other-charts .da-range-picker {
+  margin-right: 6px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.p-da-me-usergrowth .main-other-charts-time {
+  margin-top: 30px;
+}
+.p-da-me-usergrowth .main-other-charts-time-cp {
+  display: none;
+  height: 40px;
+  line-height: 40px;
+}
+.p-da-me-usergrowth .main-other-charts-time-cp-label {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+.p-da-me-usergrowth .main-other-charts-time-btn {
+  float: right;
+}
+.p-da-me-usergrowth .main-other-charts-from {
+  margin-top: 20px;
+}
+.p-da-me-usergrowth .main-other-charts-from .da-buttons .lbf-button {
+  width: auto;
+  padding: 0 30px;
+}
+.p-da-me-usergrowth .main-other-charts-bd {
+  margin: 70px 0 20px;
+  height: 330px;
+}
+.p-da-me-usergrowth .main-other-charts-cp .main-other-charts-time .da-buttons {
+  display: none;
+}
+.p-da-me-usergrowth .main-other-charts-cp .main-other-charts-time-cp {
+  display: inline-block;
+  vertical-align: middle;
+}
+.p-da-me-userkeep .content-title {
+  border-bottom: none;
+}
+.p-da-me-userkeep .main-hd {
+  margin-left: 0;
+}
+.p-da-me-userkeep .main-hd .da-select-container {
+  float: right;
+}
+.p-da-me-userkeep .main-hd .main-hd-date-label {
+  display: none;
+}
+.p-da-me-userkeep .main-hd .da-range-picker {
+  margin-left: 0;
+  margin-right: 8px;
+  padding-left: 15px;
+  vertical-align: middle;
+  line-height: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  top: -1px;
+}
+.p-da-me-userkeep .main-bd {
+  position: relative;
+}
+.p-da-me-userkeep .main-tip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+.p-da-me-userkeep .main-tip .lbf-tip {
+  left: -130px !important;
+}
+.p-da-me-userkeep .main-tip .lbf-tip-arrow {
+  margin-left: 130px !important;
+}
+.p-da-me-userkeep .main-tip-keep {
+  padding: 20px;
+  width: 270px;
+}
+.p-da-me-userkeep .main-tip-keep dt {
+  margin-top: 20px;
+}
+.p-da-me-userkeep .main-tip-keep dt:first-child {
+  margin-top: 0;
+}
+.p-da-me-userkeep .main-charts {
+  padding: 30px;
+  margin-bottom: 0;
+}
+.p-da-me-userkeep .main-charts-from {
+  margin-top: 10px;
+}
+.p-da-me-userkeep .main-charts-from .da-buttons .lbf-button {
+  width: auto;
+  padding: 0 30px;
+}
+.p-da-me-userkeep .main-charts-bd {
+  margin: 70px 0 20px;
+  height: 330px;
+}

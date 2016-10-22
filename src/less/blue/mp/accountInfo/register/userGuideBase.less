@@ -1,0 +1,192 @@
+@import '../../../base/mixin';
+@textColor: #41494c;
+@lightTextColor: #aab0b2;
+@blueBoderColor: #00a1f2;
+
+.user-guide.lbf-panel {
+  -webkit-animation: fadeIn 0.5s linear 0s;
+  -moz-animation: fadeIn 0.5s linear 0s;
+  -o-animation: fadeIn 0.5s linear 0s;
+  animation: fadeIn 0.5s linear 0s;
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #d4d7d9;
+    border-radius: 8px;
+    &:hover {
+      background-color: #aaa;
+    }
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+  }
+
+}
+
+/* 信息提示弹层Base样式 */
+.user-guide-general-panel {
+  &.lbf-panel {
+    width: 600px;
+    border-radius: 4px;
+    background-color: #f0f1f2;
+  }
+  .lbf-panel-head {
+    display: none;
+  }
+  .lbf-panel-body {
+    padding: 70px 25px 45px;
+    color: @textColor;
+  }
+  .lbf-button-large {
+    font-size: 20px;
+  }
+  .lbf-panel-close {
+    right: 13px;
+    top: 13px;
+    background: url(images/icons-user-guide.png) -67px -238px no-repeat;
+    &:hover {
+      background-position: -67px -273px;
+    }
+  }
+  &.user-guide-pubSuccess {
+    .lbf-panel-body {
+      padding-bottom: 35px;
+    }
+  }
+
+  .primary-msg {
+    font-size: 28px;
+    color: @textColor;
+    text-align: center;
+    .icon-succ {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 20px;
+      background: url(images/icons-user-guide.png) 0 -240px no-repeat;
+    }
+  }
+  .txt-guide {
+    color: @lightTextColor;
+    font-size: 16px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .guideEntry {
+    margin: 0 50px;
+    li {
+      float: left;
+      a {
+        display: block;
+        height: 136px;
+        margin: 0 auto;
+        border: 2px solid #fff;
+        background-color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        -moz-box-sizing: padding-box;
+        -webkit-box-sizing: padding-box;
+        -ms-box-sizing: padding-box;
+        box-sizing: padding-box;
+        &:active,
+        &:hover {
+          border-color: @blueBoderColor;
+          background-color: #f2fafe;
+        }
+        .icon {
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin: 25px auto 8px;
+          background-image: url(images/icons-user-guide.png);
+          background-repeat: no-repeat;
+          &-reply {
+            background-position: 6px -312px;
+          }
+          &-material {
+            background-position: 4px -385px;
+          }
+          &-qf {
+            background-position: 6px -453px;
+          }
+          &-client-down {
+            background-position: 5px -520px;
+          }
+          &-follow {
+            background-position: 15px -590px;
+          }
+        }
+        em {
+          font-size: 16px;
+          font-style: normal;
+          color: @textColor;
+          line-height: 1;
+        }
+      }
+    }
+    &-2items {
+      li {
+        width: 50%;
+        a {
+          width: 201px;
+          &:hover {
+            width: 205px;
+          }
+        }
+      }
+    }
+    &-3items {
+      li {
+        width: 33.3%;
+        a {
+          width: 126px;
+          &:hover {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}

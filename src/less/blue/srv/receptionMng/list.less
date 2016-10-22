@@ -1,0 +1,104 @@
+@import '../../base/variable';
+.mng-content {
+  line-height: 1;
+  .mod-list {
+    .list-hd {
+      font-size: 16px;
+    }
+    .btn-add-comtel {
+      .icon-srv-add-mini {
+        vertical-align:middle;
+        margin-top:-4px;
+        margin-right: 5px;
+      }
+    }
+    .table-size {
+      td {
+        height: 50px;
+        padding-top:25px;
+        padding-bottom: 25px;
+      }
+      .col0 {
+        max-width: 400px;
+      }
+      .col2 {
+        width:250px;
+        text-align: right;
+        padding-right:20px;
+      }
+      .icon-listen {
+        vertical-align: middle;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right:15px;
+        background: url(images/icons.png) no-repeat left top;
+      }
+      .name {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    .data-empty {
+      line-height: 1;
+      padding:20px 0 0 0;
+      text-align: center;    
+      dt {
+        display: inline-block;
+        width:100px;
+        height:100px;
+        margin-bottom: 30px;
+        background: url(images/avatar.png) no-repeat center center;
+      }
+      dd {
+        font-size: 24px;
+      }
+    }
+    .avatar-list {
+      float:left;
+      margin-left:10px;
+      li {
+        position: relative;
+        float:left;
+        width:40px;
+        height:40px;
+        margin-left:-10px;
+        img {
+          border:2px #fff solid;
+          border-radius: 44px;
+        }
+        &.sum {
+          width:44px;
+          height:44px;
+          margin:0 0 0 5px;
+          background-color: #EBEDF2;
+          border-radius: 44px;
+          font-size: 12px;
+          text-align: center;
+          line-height: 44px;
+          color:@gray;
+        }
+      }
+      .avatar0 {
+        z-index: 15;
+      }
+      .avatar1 {
+        z-index: 10;
+      }
+      .avatar2 {
+        z-index: 5;
+      }
+    }
+    .owner {
+      float: left;
+      margin-left: 10px;
+      line-height: 44px;
+    }
+    .btn-edit, .btn-del {
+      margin-right:12px;
+    }
+  }
+  .table-base tbody tr:hover td {
+    background-color: transparent;
+  }
+}

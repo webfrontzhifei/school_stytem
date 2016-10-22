@@ -1,0 +1,356 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.dis {
+  display: none;
+}
+.comp-manual-group .menu-group-list {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.reply-action {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.reply-action .lbf-button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.rule-table .rules {
+  border-radius: 0;
+}
+.rule-table .rule-edit:hover td {
+  background-color: #ffffff;
+}
+.rule-table .rule-edit .edit-anchor {
+  position: absolute;
+  margin-top: -50px;
+}
+.rule-table .rule-edit td {
+  *position: relative;
+  /* IE7 bug fix: make tds on edit tr relative*/
+  border-top: 2px solid #0067ed;
+  border-bottom: 2px solid #0067ed;
+}
+.rule-table .rule-edit .rules {
+  vertical-align: top;
+  padding-top: 25px;
+  border-left: 2px solid #0067ed;
+}
+.rule-table .rule-edit .rules .error {
+  color: #ff4222;
+  line-height: 14px;
+}
+.rule-table .rule-edit .words {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  vertical-align: top;
+}
+.rule-table .rule-edit .words .error {
+  color: #ff4222;
+  line-height: 14px;
+}
+.rule-table .rule-edit .status-edit {
+  line-height: 30px;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 20px;
+  vertical-align: top;
+  /* Hack for other IEs (IE8-9) */
+  /* IEs hack End */
+}
+.rule-table .rule-edit .status-edit.with3btns {
+  padding-bottom: 200px;
+}
+.rule-table .rule-edit .status-edit:before,
+.rule-table .rule-edit .status-edit:after {
+  display: none;
+  display: block\9;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #0067ed;
+}
+.rule-table .rule-edit .status-edit:before {
+  top: -1px;
+}
+.rule-table .rule-edit .status-edit:after {
+  bottom: -1px;
+}
+.rule-table .rule-edit .status-edit .action-save {
+  position: absolute;
+  bottom: 25px;
+}
+.rule-table .rule-edit .op {
+  border-right: 2px solid #0067ed;
+}
+.rule-table .rules {
+  padding-left: 25px;
+  padding-right: 50px;
+  width: 250px;
+}
+.rule-table .rules .rule {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 98%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.rule-table .words {
+  line-height: 30px;
+  width: 502px;
+  padding-right: 50px;
+}
+.rule-table .words .tag {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.rule-table .words .keywords-reply-box .loading {
+  position: absolute;
+  margin-left: 220px;
+}
+.rule-table .words .keywords-reply-box .reply-box-trigger {
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #f5f7fa;
+}
+.rule-table .words .keywords-reply-box .reply-box-trigger .lbf-button {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item {
+  border: 1px solid #dbdbdb;
+  padding: 15px 80px 15px 19px;
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item .vmiddle {
+  height: 60px;
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item .preview-img {
+  width: 106px;
+  height: 60px;
+  background-image: url(images/decoration.png);
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item .preview-img img {
+  width: 106px;
+  height: 60px;
+  border: none;
+  margin-top: 0;
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item .reply-box-action {
+  margin-top: -24px;
+}
+.rule-table .words .keywords-reply-box .reply-box-list .reply-box-item .reply-box-action .icon-del {
+  margin-top: 8px;
+}
+.rule-table .words .manual-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+.rule-table .words .manual-box .loading {
+  position: absolute;
+  margin-left: 220px;
+}
+.rule-table .words .manual-box .group {
+  margin-left: 20px;
+}
+.rule-table .words .manual-box .auto {
+  margin-left: 20px;
+}
+.rule-table .words .manual-box .manual-box-item {
+  border: none;
+  text-align: left;
+}
+.rule-table .words .manual-box .manual-box-action {
+  right: 10px;
+}
+.rule-table .words .reply-box .reply-box-typeimgtxt .preview-txt,
+.rule-table .words .reply-box .reply-box-typeactivity .preview-txt {
+  width: 55%;
+}
+.rule-table thead .status {
+  padding-left: 35px;
+}
+.rule-table .status {
+  width: 100px;
+  padding-left: 20px;
+}
+.rule-table .status .switch {
+  vertical-align: middle;
+}
+.rule-table tr:hover .op .action {
+  visibility: visible;
+}
+.rule-table .op {
+  padding-right: 20px;
+  text-align: right;
+}
+.rule-table .op .action .editRule,
+.rule-table .op .action .delRule {
+  vertical-align: middle;
+}
+.rule-table tbody tr:hover .empty {
+  background-color: #fff;
+}
+.rule-table .empty {
+  padding: 50px;
+  text-align: center;
+  color: #e4e6e7;
+}
+.rule-table .empty .icon-empty {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  background: url('images/icon-reply-empty.png');
+}
+.rule-table .empty p {
+  color: #585858;
+}
+.rule-table .empty .msg {
+  font-size: 24px;
+  color: #606a7a;
+}
+.rule-table .table-page {
+  margin-top: -1px;
+}
+.tag {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 24px;
+  line-height: 24px;
+  background-color: #ebedf2;
+  padding: 0 10px;
+  margin: 1px 0;
+  color: #1e2330;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 12px;
+  max-width: 90%;
+}
+.pop-btn .lbf-button {
+  color: #1e2330;
+  margin-right: 12px;
+}
+.pop-btn .lbf-button i {
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+div.reply-box {
+  position: relative;
+  height: auto;
+  min-height: 63px;
+  padding: 15px 40px 15px 22px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+div.reply-box .vmiddle {
+  height: 63px;
+}
+div.reply-box .preview-txt {
+  font-size: 16px;
+  overflow: visible;
+}
+div.reply-box .preview-txt label {
+  font-size: 14px;
+  color: #aaa;
+  display: block;
+  margin-bottom: 5px;
+}
+/*
+.page-reply-keywords .error { color:#e25050;}
+.page-reply-keywords .dis { display:none;}
+.page-reply-keywords .tip { color:#bbb;}
+.page-reply-keywords .vmiddle { display:inline-block; width:0; height:100%; vertical-align:middle;}
+
+.page-reply-keywords .pagebar{padding:19px 5px; height:30px;}
+.page-reply-keywords .pagebar .lbf-pagination{text-align:right;}
+*/
+/*
+.rule-table .status { width:160px; vertical-align:middle; text-align:center;}
+.rule-table .status-edit{width:160px;}
+.rule-table .status-text { display:inline-block; margin-right:40px; text-indent:60px;}
+.rule-table .status .action { visibility:hidden; position:relative; width:18px; vertical-align:middle; display:inline-block;  margin:0 -38px 0 20px;}
+.rule-table tr:hover .status .action { display:inline-block; visibility:visible;}
+.rule-table .status .action .icon {cursor:pointer;}
+.rule-table .status .action .icon-edit {}
+.rule-table .status .switch{vertical-align:middle; left:0;}*/
+/** edit mode **/
+/*
+.rule-edit .block { display:block;}
+.rule-edit .lbf-textarea,
+.rule-edit .lbf-textarea textarea{width:231px; height:60px;}
+.rule-edit .lbf-textarea textarea{position:static;}
+.rule-edit .rule-input { width:auto; font-size:12px;}
+.rule-edit tr { border:2px solid #cf5113;}
+.rule-edit td { text-align:left; vertical-align:top;}
+
+.rule-edit td { border-top:2px solid #ffb636; border-bottom:2px solid #ffb636;}
+.rule-edit .ck { border-left:2px solid #ffb636;}
+.rule-edit .status-edit { padding-left:40px; border-right:2px solid #ffb636;}
+.rule-edit .content { position:relative; min-height:63px; padding:15px; border:1px solid #ccc; border-bottom:none; background:#f4f5f6; overflow:hidden;}
+.rule-edit .reply-list .content:last-child { border-bottom:1px solid #ccc;}
+.rule-edit .reply-box .reply-box-trigger { padding:10px 6px; border:1px dashed #babcc4; min-height:38px; background-color:#fff;}
+.rule-edit .reply-box .reply-box-trigger .lbf-button { padding:0 8px;}
+.rule-edit .reply-box .reply-box-trigger .ml10{margin-left:5px;}
+.rule-edit .reply-box .reply-box-item{padding:15px; min-height:63px;}
+.rule-edit .reply-box .preview-txt{width:260px;}
+.rule-edit .reply-box .reply-box-typetxt .preview-txt{width:350px;}
+.rule-edit .preview-img { display:inline-block; width:88px; height:60px; margin-right:15px; vertical-align:middle; overflow:hidden;}
+.rule-edit .preview-img img { width:88px;}
+.rule-edit .preview-txt { display:inline-block; width:225px; vertical-align:middle; word-break:break-all; word-wrap:break-word;}
+.rule-edit .reply-type-txt .preview-txt { width:328px;}
+.rule-edit .words dl{padding-bottom:5px;}
+.rule-edit .words .action { display:none; position:absolute; top:0; right:5px; width:17px; height:100%;}
+.rule-edit .words .content:hover .action { display:block;}
+.rule-edit .words .action .icon { position:absolute; cursor:pointer;}
+.rule-edit .words .action .icon-del { top:5px;}
+.rule-edit .words .action .icon-edit { display:none; bottom:5px;}
+.rule-edit .words .reply-type-txt .icon-edit { display:inline-block;}
+.rule-edit .action-save { display:block; margin-top:218px;}
+.rule-edit .action-save .lbf-button{vertical-align:middle;}
+*/
+/*.rule-table-edit .multiple-del,
+.rule-table-edit .multiple-enable,
+.rule-table-edit .multiple-disable,
+.rule-table-edit tr:hover .status .action { display:none;}*/
+div.members-select-box {
+  border: 0;
+}
+div.members-select-search {
+  height: 40px;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #c1c1c1;
+}
+div::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}

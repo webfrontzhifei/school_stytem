@@ -1,0 +1,33 @@
+.p-da {
+    .da-buttons {
+        display: inline-block;
+        vertical-align: middle;
+
+        .lbf-button {
+            float: left;
+            width: 120px;
+            height: 40px;
+            border-radius: 0;
+            border-right-width: 0;
+            box-sizing: border-box;
+
+            &.current {
+                color: #00a1f2;
+            }
+
+            &:hover {
+                // reset border color
+                border-color: #D0D0D5;
+                border-color: rgba(0, 0, 0, .15);
+                background-color: #EDEDED;
+            }
+        }
+        .lbf-button:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        .lbf-button:last-child {
+            border-right-width: 1px;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}

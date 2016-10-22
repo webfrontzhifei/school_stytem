@@ -1,0 +1,257 @@
+@import '../../base/mixin';
+@import '../../common/tips';
+@import 'icons';
+
+.lbf-button{
+    .icon-add{
+        vertical-align: -2px;
+        margin-right: 5px;
+    }
+}
+
+.lbf-combobox{
+    width: 148px;
+}
+
+.table{
+    table-layout: auto;
+    
+    th{
+        white-space: nowrap;
+    }
+    
+    tr{
+        &:hover{
+            td{
+                background-color: #fff;
+            }
+        }
+    }
+    
+    .tb-view{
+        width: 330px;
+        
+        .view{
+            width: 280px;
+            height: 120px;
+            background-color: #f2f2f2;
+            text-align: center;
+            position: relative;
+            
+            .vline{
+                width: 1px;
+                height: 120px;
+                display: inline-block;
+                overflow: hidden;
+                margin-right: -1px;
+                vertical-align: middle;
+            }
+            
+            .mark{
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                line-height: 120px;
+                background-color: #000;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                transition: opacity .36s;
+                
+                a{
+                    color: #f2f2f2;
+                    border: 1px solid #f2f2f2;
+                    display: inline-block;
+                    border-radius: 2px;
+                    line-height: 38px;
+                    padding: 0 25px;
+                }
+            }
+            
+            &:hover .mark{
+                opacity: .8;
+                filter: alpha(opacity=80);
+            }
+        }
+        
+        img{
+            max-width: 90%;
+            max-height: 80%;
+            vertical-align: middle;
+        }
+    }
+    
+    .tb-name{
+        width: 310px;
+        line-height: 26px;
+        
+        word-break: break-all;
+        word-wrap: break-word;
+        
+        span{
+            color: #ff4222;
+            margin-left: 4px;
+        }
+        
+        .lbf-popup{
+            background-color: #fff;
+            border:1px solid #dadee7;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+            
+            .lbf-tip-content{
+                color: #1e2330;
+            }
+            
+            .lbf-tip-arrow-before{
+                border-color: #dadee7 transparent;
+            }
+            
+            .lbf-tip-arrow-after{
+                border-color: #fff transparent;
+            }
+        }
+    }
+    
+    .tb-scene{
+        width: 150px;
+    }
+    
+    .tb-time{
+        line-height: 22px;
+        
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    
+    .tb-action{
+        width: 150px;
+        text-align: right;
+        padding-right: 30px;
+        
+        a{
+            margin-left: 6px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        
+    }
+    
+    p{
+        color: #a8abb3;
+    }
+
+}
+
+.table-null{
+    h2{
+        font-size: 24px;
+        margin-top: 18px;
+    }
+}
+
+body .wpa-preview-panel {
+
+    .previewer {
+        height: 320px;
+        background: #ebebeb;
+        text-align: center;
+
+        .vertical {
+            .dib();
+            vertical-align: middle;
+            line-height: 320px;
+            width: 1px;
+            height: 320px;
+        }
+
+        #wpa-viewer {
+            min-width: 360px;
+            .dib();
+            vertical-align: middle;
+
+        }   
+    }
+
+    .intro {
+        font-size: 14px;
+        color: #a2a9b6;
+        .mt(10px);
+    }
+
+    .wpa-tip {
+        
+        .dib();
+        background: #fff;
+        line-height: 36px;
+        padding: 0 15px;
+        border-radius:3px;
+        color: #555;
+
+        i{
+          font-style: normal;
+          margin: 0 3px;
+        }
+    }
+    
+    .lbf-panel-head{
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 30px;
+        padding: 25px 0;
+    }
+    
+    .lbf-panel-body{
+        padding: 0 25px 30px;
+    }
+    
+    .lbf-panel-foot{
+        .dn
+    }
+}
+
+.code-view-panel {
+    
+    .lbf-panel-head{
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        padding: 25px 0;
+    }
+    
+    .lbf-panel-body{
+        padding: 0 25px 30px;
+    }
+    
+    .lbf-panel-foot{
+        
+    }
+
+    .textarea {
+        height: 160px;
+
+        textarea {
+            padding: 15px;
+            width: 518px;
+            height: 130px;
+            border-color:#dadee7;
+            color: #1e2331;   
+        }
+    }
+
+    h4 {
+        color: #999;
+    }
+
+    ul {
+        color: #a8abb3;
+        
+        li{
+            padding-bottom: 3px;
+        }
+    }
+    
+}

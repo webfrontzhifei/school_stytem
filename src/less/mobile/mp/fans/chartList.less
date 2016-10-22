@@ -1,0 +1,233 @@
+@import "../../base/mixin.less";
+@import "../../base/reset.less";
+
+@chartGridColor: rgb(252,252,252);
+@chartGridColorAlter: rgb(250,250,250);
+.account-list{
+  background-color: transparent;
+  &>li{
+    .borderBot;
+    .borderTop;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+  .account-info{
+    &:after {
+      border-bottom: none;
+    }
+    .info-left{
+      right: 6em;
+      left:0;
+      &.short {
+        right: 7em;
+      }
+    }
+    .name-txt {
+      position: relative;
+      max-width:100%;
+      padding-bottom: .2em;
+      margin-bottom: -.2em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      &.authed {
+        padding-right: 20px;/*space for verify icon*/
+      }
+    }
+    /* .name-txt-short {
+      @media (max-device-width:800px) {
+        max-width:458px;
+      }
+      @media (max-device-width:600px) {
+        max-width:388px;
+      }
+      @media (max-device-width:414px) {
+        max-width:227px;
+      }
+      @media (max-device-width:375px) {
+        max-width:175px;
+      }
+      @media (max-device-width:320px) {
+        max-width:123px;
+      }
+    }*/
+    .message-entry {
+      color: #777;
+      margin-top:1px;
+      .right-arrow {
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        margin-left: 5px;
+        vertical-align: middle;
+        margin-top: -.28em;
+        background-image: url('../images/ico_arrow.png?20151021.png');
+        background-size: 8px;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), not all, not all {
+          background-image:url(../images/ico_arrow@2x.png?20151021.png);
+        }
+        @media only screen and (-webkit-device-pixel-ratio: 3) {
+          background-image:url(../images/ico_arrow@3x.png?20151021.png);
+        }
+      }
+      .num {
+        display: inline-block;
+        margin-left: 4px;
+        overflow: hidden;
+        border-radius: 1em;
+        margin-top: -.28em;
+        color: #fff;
+        font-size: 12px;
+        height: 18px;
+        line-height: 1.5;
+        padding: 0 6px;
+        vertical-align: middle;
+        /*background-color: #96d7f0;*/
+        background-color: #ff2a00;
+        background-clip: padding-box;
+        white-space: nowrap;
+        &:before {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 0;
+            bottom: 0;
+            left: -10px;
+            min-width: 44px;
+            background-color: transparent;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), not all, not all {
+          margin-top: -3px;
+        }
+        @media only screen and (-webkit-device-pixel-ratio: 3) {
+          margin-top: -4px;
+        }
+      }
+    }
+    .icon-authed,
+    .icon-wx-authed {
+      position: absolute;
+      top: 50%;
+      right:0;
+      margin-top: -8px;
+      @media only screen and (-webkit-device-pixel-ratio: 3) {
+          margin-top: -8px;
+      }
+    }
+    .icon-wx-authed {
+      background-image: url('../images/icon_wxpass.png?20151021.png');
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), not all, not all {
+        background-image:url(../images/icon_wxpass@2x.png?20151021.png);
+      }
+      @media only screen and (-webkit-device-pixel-ratio: 3) {
+        background-image:url(../images/icon_wxpass@3x.png?20151021.png);
+      }
+    }
+
+  }
+  .fans-info {
+    .borderTop;
+    background-color: #fafafa;
+    .info-head {
+      color: #777;
+      padding: 1em 1.5em;
+    }
+    .chart-container {
+      position: relative;
+      padding:0 1.5em .3em;
+      height: 10em;
+      &:before {
+        display: inline-block;
+        content: '加载中...';
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        color: #999;
+        text-align: center;
+        z-index: 0;
+      }
+      .fans-trends-label {
+        position: absolute;
+        display: inline-block;
+        z-index: 8;
+        overflow: hidden;
+        border-radius: 1em;
+        color: #fff;
+        left: 83.3%;
+        font-size: 12px;
+        height: 18px;
+        line-height: 1.5;
+        padding: 0 8px;
+        vertical-align: middle;
+        background-clip: padding-box;
+        white-space: nowrap;
+        &.topIn{
+          top: -100%;
+          margin-top: -10px;
+        }
+        &.bottomIn{
+          top: 100%;
+          margin-top: 10px;
+        }
+        .icon-trend-arrow {
+          float: left;
+          display: inline-block;
+          position: relative;
+          width: 11px;
+          height: 10px;
+          top: 50%;
+          background-size: 8px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          margin: -5px 3px 0 -1px;
+          &.down {
+            background-image: url(../images/down-arrow-white.svg);
+          }
+          &.up {
+            background-image: url(../images/up-arrow-white.svg);
+          }
+        }
+      }
+      .highcharts-container {
+        &:before{
+          position: absolute;
+          display: block;
+          content: "";
+          z-index: -1;
+          left: 0;
+          right: 1px;
+          top: 0;
+          bottom: 9px;
+          background-image: -webkit-repeating-linear-gradient(left, @chartGridColor, @chartGridColor 16.67%, @chartGridColorAlter 16.67%, @chartGridColorAlter 33.33%);
+          background-image: linear-repeating-gradient(left, @chartGridColor, @chartGridColor 16.67%, @chartGridColorAlter 16.67%, @chartGridColorAlter 33.33%);
+          background-color: transparent;
+          background-origin: 0 0;
+        }
+      }
+      .highcharts-background {
+         & ~ path {
+            border: 0.5px solid #eee;
+         }
+      }
+      clippath rect {
+        height: 100%;
+      }
+      .highcharts-axis {
+        display: none;
+      }
+      .highcharts-markers{
+        path{
+          display: none;
+          &:first-of-type{
+            display: block;
+          }
+        }
+
+      }
+    }
+
+  }
+}

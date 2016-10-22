@@ -1,0 +1,66 @@
+.p-da {
+    .lbf-tabview-tabs {
+        height: 42px;
+        line-height: 40px;
+        border-bottom: 1px solid #E6E6E6;
+        position: relative;
+
+        &.has-padding {
+            padding: 0 30px;
+        }
+
+        li {
+            float: left;
+            overflow: hidden;
+            margin-right: 46px;
+            margin-bottom: -1px;
+            color: #555A6C;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            border-bottom: 3px solid transparent;
+
+            & a {
+                color: inherit;
+                *color: #555A6C ;
+            }
+        }
+
+        li:hover,
+        li:hover a,
+        .lbf-tabview-tab-hover {
+            color: #00a1f2;
+        }
+
+        .lbf-tabview-tab-selected,
+        .lbf-tabview-tab-selected a,
+        .lbf-tabview-tab-selected:hover {
+            color: #00a1f2;
+            cursor: default;
+            border-bottom-color: #00a1f2;
+        }
+        .lbf-tabview-tab-close {
+            display: none;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 14px;
+            height: 14px;
+            text-indent: 999em;
+            line-height: 1px;
+            overflow: hidden;
+        }
+        .lbf-tabview-tab-hover .lbf-tabview-tab-close,
+        li:hover .lbf-tabview-tab-close {
+            display: inline-block;
+        }
+    }
+    /* contents */
+    .lbf-tabview-contents {}
+    .lbf-tabview-contents li {
+        display: none;
+    }
+    li.lbf-tabview-content-selected {
+        display: block;
+    }
+}

@@ -1,0 +1,125 @@
+@import "../base/mixin.less";
+@import "../base/reset.less";
+@import "../base/common.less";
+
+@light-gray: #a6a6a6;
+@background: #eeeeee;
+@logo-border: rgba(255, 255, 255, .3);
+@line-color: #dedfe0;
+@blue-color: #0067ed;
+@blue-color-disabled: #94bdf2;
+@content-width: 320px;
+@light-text-color: #a6a6a6;
+
+.phone-bind-area, .vericode-area,.check-mobile-area {
+  margin-top: 15px;
+  .desc {
+    color: @light-gray;
+    font-size: 14px;
+
+
+  }
+
+  .phone-num-edit-wrap {
+    margin-top: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    //border-bottom: 1px solid @line-color;
+    //height: 14px;
+    text-align: left;
+    .phone-num, .code-num {
+      //margin-right: 50px;
+      background: #fff;
+      //max-width: 200px;
+      font-size: 18px;
+      //text-align: center;
+      width: 100%;
+      height: 45px;
+      border-top: 1px solid @line-color;
+      border-bottom: 1px solid @line-color;
+      padding-left: 15px;
+      box-sizing: border-box;
+      //border-radius: ;
+    }
+    .bind-phone {
+      padding-right: 40px;
+
+    }
+
+    .error {
+      display: none;
+      color: red;
+      font-size: 12px;
+      position: absolute;
+      right: 28px;
+      margin-top: 3px;
+    }
+    .clear-btn, .clear-btn-code {
+      position: relative;
+      right: 5px;
+      float: right;
+      display: none;
+      margin-top: -32px;
+    }
+    .clear-btn-code {
+      right: 125px;
+
+    }
+
+    .send-vericode {
+      position: relative;
+      width: 120px;
+      height: 45px;
+      //right: 1px;
+      font-size: 16px;
+      float: right;
+      margin-top: -45px;
+      color: #222222;
+      border: none;
+      border-left: 1px solid @line-color;
+
+    }
+
+    .send-vericode-disabled {
+      background: #fff;
+      color: @light-gray;
+      //border: none;
+      //border-left: 1px solid ;
+      border: 1px solid @line-color;
+
+    }
+
+  }
+  .action-wrap {
+    padding: 10px;
+    .next-btn {
+      width: 100%;
+      height: 45px;
+      background-color: @blue-color;
+      display: block;
+      color: #fff;
+      border-radius: 3px;
+      border: none;
+      font-size: 16px;
+    }
+  }
+
+}
+.dis{
+  display: none;
+}
+
+.next-btn-disabled {
+  background-color: @blue-color-disabled !important;
+
+}
+
+.tc {
+  text-align: center;
+}
+
+.icon-clear{//根据层级进行调整
+  background-image: url(../images/icon-clear.svg);
+}

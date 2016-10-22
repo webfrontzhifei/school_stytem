@@ -1,0 +1,325 @@
+@import '../../../base/mixin';
+@textColor: #41494c;
+@light-text-color: #7e8ba2;
+#newQQ-content {
+  .content-main {
+    background-color: #fff;
+    margin-top: 0;
+  }
+  .part-content {
+    padding: 0 30px 10px;
+    border-top: 1px solid #ededed;
+  }
+  .part-content:first-child {
+    border: none;
+  }
+  .content-part-title {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .formsub {
+    .item-body {
+      .dib;
+      position: relative;
+      .desc-text {
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+      .lbf-tip-top {
+        top: -36px !important;
+      }
+    }
+    .upload-wxinfo-demo {
+      margin-left:20px;
+    }
+
+    li {
+      margin: 20px 0 25px;
+      font-size: 14px;
+      .icon-ol {
+        .mr(5px);
+      }
+    }
+    .lbf-text-input {
+      width: 330px;
+      .dib;
+      &-error {
+        &:focus,&:hover{
+          background-color: #fff;
+        }
+        background-color: #fff;
+      }
+    }
+
+    .varified-user {
+      width: 15px;
+      height: 15px;
+      .dib;
+      vertical-align: middle;
+      margin-left: 5px;
+      background: url(./images/verifiedIcon.jpg) top left no-repeat;
+    }
+    .label-text {
+      .dib;
+      padding-top: 10px;
+      width: 170px;
+      max-width: 200px;
+      vertical-align: top;
+    }
+    .label-p {
+      padding-top:0;
+    }
+    .avatar-area {
+      .dib;
+    }
+    .plain-text {
+      padding-top: 10px;
+      .dib;
+    }
+    .subtitude {
+      padding-left: 5px;
+    }
+    .for-text-area {
+      .dib;
+      .ck_summary {
+        .dib;
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 135px;
+        color: #a2a9b6;
+        font-size: 12px;
+      }
+      .checktip {
+        color: #ff0000;
+      }
+    }
+    .qq-num-over-flow {
+      .dib;
+      .warning-img {
+        .dib;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-top;
+        .mt(2px);
+        .ml(25px);
+        .mr(5px);
+        background: url(./images/warning-img.jpg) left top no-repeat;
+      }
+
+    }
+    .no-display{
+      .dn();
+    }
+
+    .upload-avatar {
+      .dib;
+      position: relative;
+      .mt(5px);
+
+      .avatar-img {
+        .dib;
+        position: relative;
+        border: 1px solid #ededed;
+        //border-radius: 50%;
+        .radius(100);
+        background: #bcc3cc;
+        overflow: hidden;
+      }
+
+      .upload-avatar-btn{
+        bottom: 5px;
+      }
+
+      .to-modify-face {
+        .dib;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        position: absolute;
+        .ml(-82px);
+        //.mt(-76px);
+        z-index: 10;
+
+      }
+    }
+    .admin-qq-show{
+      .dib;
+    }
+    .admin-qq-input{
+      .dib;
+      display: none;
+    }
+    .desc-text {
+      color: #a2a9b6;
+      font-size: 14px;
+      display: block;
+      margin-left: 175px;
+      margin-top: 5px;
+      &.red {
+        .red;
+      }
+    }
+    .upload-idcard,
+    .upload-wxinfo {
+      margin-top: 20px;
+    }
+    .upload-idcard-result,
+    .upload-wxinfo-result {
+      .dib;
+      margin-top: 20px;
+      height: 40px;
+      vertical-align: middle;
+      line-height: 40px;
+      margin-left: 20px;
+      display: none;
+      color: #00a1f2;
+      .upload-idcard-close,
+      .upload-wxinfo-close {
+        font-size: 22px;
+        color: @light-text-color;
+        vertical-align:middle;
+      }
+      a.picname {
+        position:relative;
+        .pic-view {
+          display:none; width:140px; border-radius:2px; -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); position:absolute; bottom:25px; left:0; background:#fff;
+          img {
+            width:130px; margin:5px;
+          }
+        }
+        &:hover {
+          .pic-view { display:block; }
+        }
+      }
+    }
+    .lbf-textarea {
+      width: 583px;
+      height: 145px;
+      padding: 8px;
+      textarea {
+        padding: 0;
+      }
+      &-error {
+        &:focus,&:hover{
+          background-color: #fff;
+        }
+        background-color: #fff;
+      }
+    }
+
+    .desc-text-idcard,
+    .desc-text-wxinfo {
+      .dib;
+      .desc-text {
+        margin-left: 0;
+      }
+    }
+    .demo-idcard,
+    .demo-wxinfo {
+      .dib;
+      vertical-align: top;
+      margin-left: 160px;
+      position: relative;
+      .word{
+        .dib;
+        position: absolute;
+      }
+      .idcard-img,
+      .wxinfo-img {
+        .dib;
+        background: url(./images/idcarddemo.jpg) right top no-repeat;
+        width: 160px;
+        height: 120px;
+        margin-left: 35px;
+      }
+    }
+
+  }
+
+  .formsub-type {
+    padding-top:10px;
+    .label-text {
+      font-size:18px;
+    }
+    .plain-text {
+      padding-top:5px;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+    .type-list {
+      .dib;
+      border:1px solid #dcdddd;
+      -moz-border-radius:4px;
+      -webkit-border-radius:4px;
+      border-radius:4px;
+      li {
+        width:120px;
+        height:40px;
+        margin:0;
+        border-left:1px solid #dcdddd;
+        line-height:40px;
+        text-align:center;
+        vertical-align:middle;
+        float:left;
+        &.type-list-first {
+          border-left:0;
+        }
+        a {
+          display:block;
+          height:100%;
+          color:#545a6c;
+          &.cur {
+            color:#00a1f2;
+          }
+        }
+      }
+    }
+    .type-list-intro {
+      margin-top:5px;
+      margin-bottom:15px;
+      color:#a2a9b6;
+    }
+  }
+
+  .action {
+    margin-left: 204px;
+    margin-top: 50px;
+    .btn_confirm {
+      padding: 0 30px;
+    }
+  }
+
+  .resubmit-info {
+    margin-bottom:30px;
+    padding:13px 16px 13px 90px;
+    border-radius:4px;
+    font-size:16px;
+    color:#ff5237;
+    background:#ffe2df url(images/icon-err.png) no-repeat 30px 50%;
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px
+    }
+  }
+}
+/* Create QQ Publish Account Success Popup */
+.msg-succ-createQQPub {
+  h6 {
+    font-size: 16px;
+    color: @textColor;
+    & + p {
+      margin-top: 7px;
+      color: @textColor;
+      line-height: 1.714;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.bdgray {
+  border-bottom: 1px solid #a8abb3;
+}
+.content .content-title a {
+  visibility: visible;
+  margin-left: 0px;
+  vertical-align: 0px;
+}
+.step {
+  position: relative;
+}
+.step .lbf-button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.bind-wechat-step-x {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bind-wechat-li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding-right: 80px;
+  font-size: 16px;
+}
+.bind-wechat-li .icon-ol {
+  margin-right: 5px;
+}
+.bind-wechat-ol .selected {
+  color: #0067ed;
+}
+.bind-wechat-ol .selected .icon-ol {
+  background-position: 0 -20px;
+}
+.bind-wechat-step-detail {
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 415px;
+}
+.bind-wechat-step-header {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bind-wechat-step-input-row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bind-wechat-step-input-row-last {
+  position: absolute;
+  top: 500px;
+}
+.bind-wechat-step-input-row-finish {
+  position: absolute;
+  top: 380px;
+}
+.bind-wechat-step-left {
+  float: left;
+  width: 80px;
+}
+label.bind-wechat-step-left {
+  padding-top: 10px;
+}
+.bind-wechat-row-half {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 35%;
+}
+.bind-wechat-step-img {
+  position: absolute;
+  left: 500px;
+  top: 110px;
+}
+.bind-wechat-step-success {
+  position: relative;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bind-wechat-step-successinfo {
+  position: absolute;
+  margin-left: -30px;
+  padding-top: 150px;
+  background: url('images/bind-success.png') center 70px no-repeat;
+}
+.bind-wechat-step-success-desc {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.bind-wechat-step-success-ret {
+  margin-top: 40px;
+}
+.step3 .clip-input {
+  width: 200px;
+}
+#step1Form .bind-wechat-step-input-row .lbf-text-input input,
+#step4Form .bind-wechat-step-input-row .lbf-text-input input {
+  position: absolute;
+}

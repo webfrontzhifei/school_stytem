@@ -1,0 +1,470 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.content-main {
+  padding-bottom: 0;
+}
+.remind-info-wrap {
+  margin-right: 50px;
+}
+.eprofile-wrap {
+  margin-top: 30px;
+}
+.remind-info-error li:before {
+  content: "-";
+  position: absolute;
+  margin-left: -15px;
+}
+/*企业资料
+*/
+.eprofile-container {
+  width: 100%;
+  position: relative;
+}
+.eprofile-container .title {
+  color: #a8abb3;
+  font-size: 14px;
+}
+.eprofile-container ul {
+  padding: 0 50px 0 10px;
+}
+.eprofile-container .eprofile-left-wrapper {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.eprofile-container .eprofile-left-wrapper .required {
+  color: #ff4222;
+  margin-top: 2px;
+  position: absolute;
+  left: -5px;
+}
+.eprofile-container .eprofile-left-wrapper .title-contain {
+  font-size: 100%;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain {
+  margin-top: 30px;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap {
+  margin-top: 25px;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc li {
+  box-sizing: border-box;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc .desc {
+  color: #b4b7bf;
+  height: 20px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc .upload-logo-container {
+  box-sizing: border-box;
+  max-height: 20px;
+  line-height: 18px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc .upload-logo {
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+.eprofile-container .eprofile-left-wrapper .logo-contain .logo-wrap .logo-desc input[type="file"] {
+  cursor: pointer;
+}
+.eprofile-container .eprofile-left-wrapper .desc-contain {
+  margin-top: 40px;
+}
+.eprofile-container .eprofile-left-wrapper .desc-contain .e-introduction {
+  font-size: 16px;
+}
+.eprofile-container .eprofile-left-wrapper .desc-contain .lbf-textarea {
+  margin-top: 0;
+}
+.eprofile-container .eprofile-left-wrapper .desc-contain .word-count {
+  color: #a8abb3;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.eprofile-container .eprofile-left-wrapper .desc-contain .word-count .error {
+  color: #ff4222;
+}
+.eprofile-container .eprofile-left-wrapper .belong-contain {
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+.eprofile-container .eprofile-left-wrapper .belong-contain .select-industry {
+  margin-top: 10px;
+}
+.eprofile-container .eprofile-left-wrapper .belong-contain .select-industry .industry-selector {
+  max-width: 250px;
+  min-width: 150px;
+}
+.eprofile-container .eprofile-left-wrapper .belong-contain .select-industry-second {
+  margin-left: 5px;
+}
+.eprofile-container .eprofile-right-wrapper {
+  float: left;
+  width: 50%;
+  margin-top: 15px;
+}
+.eprofile-container .eprofile-right-wrapper .address-container {
+  overflow: hidden;
+}
+.eprofile-container .eprofile-right-wrapper .address-container .required {
+  color: #ff4222;
+  position: absolute;
+  margin-left: -12px;
+  margin-top: 2px;
+}
+.eprofile-container .eprofile-right-wrapper .address-container .select-address {
+  margin-top: 10px;
+  width: 200px;
+}
+.eprofile-container .eprofile-right-wrapper .address-container .lbf-textarea {
+  margin-top: 10px;
+}
+.eprofile-container .eprofile-right-wrapper .address-container .address-detail {
+  font-size: 16px;
+}
+.eprofile-container .eprofile-right-wrapper .address-container .desc {
+  color: #a8abb3;
+  font-size: 14px;
+}
+.eprofile-container .eprofile-right-wrapper .phone-container,
+.eprofile-container .eprofile-right-wrapper .email-container,
+.eprofile-container .eprofile-right-wrapper .home-container {
+  margin-top: 50px;
+}
+.eprofile-container .eprofile-right-wrapper .phone-container .lbf-text-input-number,
+.eprofile-container .eprofile-right-wrapper .email-container .lbf-text-input-number,
+.eprofile-container .eprofile-right-wrapper .home-container .lbf-text-input-number {
+  display: none;
+}
+.eprofile-container:after {
+  display: block;
+  clear: both;
+  height: 0;
+  content: '';
+  zoom: 1;
+}
+.contact-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+  position: relative;
+}
+.contact-container .title,
+.contact-container .info {
+  color: #a8abb3;
+  font-size: 14px;
+}
+.contact-container ul {
+  padding: 0 50px 0 10px;
+}
+.contact-container .digit {
+  font-size: 16px;
+}
+.contact-container .contact-left-wrapper {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.contact-container .contact-left-wrapper p {
+  padding-top: 10px;
+}
+.contact-container .contact-left-wrapper li:last-child {
+  margin-top: 50px;
+}
+.contact-container .contact-right-wrapper {
+  float: left;
+  width: 50%;
+  margin-top: 5px;
+}
+.contact-container .contact-right-wrapper p {
+  padding-top: 7px;
+}
+.contact-container .contact-right-wrapper a {
+  float: right;
+  cursor: pointer;
+}
+.contact-container .contact-right-wrapper li:last-child {
+  margin-top: 40px;
+}
+.contact-container:after {
+  display: block;
+  clear: both;
+  height: 0;
+  content: '';
+  zoom: 1;
+}
+.bottom-area {
+  margin-top: 50px;
+  text-align: center;
+}
+.bottom-area .desc {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  color: #a8abb3;
+}
+.bottom-area .last-audit {
+  margin-top: 20px;
+  color: #a8abb3;
+}
+.bottom-area .update-eprofile {
+  min-width: 118px;
+}
+.remind-info-wrap {
+  display: none;
+  -webkit-animation: fadeIn 0.4s linear;
+  animation: fadeIn 0.4s linear;
+}
+.remind-info-wrap.hide {
+  -webkit-animation: fadeOut 0.4s linear;
+  animation: fadeOut 0.4s linear;
+}
+.editPanel {
+  width: 620px;
+}
+.editPanel .head-desc-for-pt {
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #1e2330;
+}
+.editPanel .mpop_step {
+  background: #f4f6f9;
+  border: none;
+}
+.editPanel .mpop_mg_dialog {
+  width: 370px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.editPanel .mpop_mg_dialog-qq {
+  width: 100%;
+  margin-top: 20px;
+}
+.editPanel .mpop_mg_dialog #phone-panel {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.editPanel .phone-warp {
+  margin-top: 40px;
+}
+.editPanel .phone-warp .head {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100px;
+  text-align: left;
+}
+.editPanel .phone-warp .phone-num-input-wrap {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 255px;
+  position: relative;
+}
+.editPanel .phone-warp .lbf-text-input-number {
+  display: none;
+}
+.editPanel .phone-warp .error {
+  top: 0;
+}
+.editPanel .phone-warp .phone-num-input {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 255px;
+}
+.editPanel .phone-warp-step2 {
+  margin-top: 20px;
+}
+.editPanel .vericode-wrap {
+  margin-top: 30px;
+}
+.editPanel .vericode-wrap .head {
+  float: left;
+  margin-top: 10px;
+  width: 100px;
+  text-align: left;
+}
+.editPanel .vericode-wrap .veri-code-input-wrap {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 140px;
+  margin-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+.editPanel .vericode-wrap .veri-code-input-wrap-qq {
+  width: 120px;
+}
+.editPanel .vericode-wrap > lbf-button,
+.editPanel .vericode-wrap > img {
+  vertical-align: top;
+}
+.editPanel .vericode-wrap .veri-code-input-qq {
+  width: 120px;
+}
+.editPanel .vericode-wrap .error {
+  top: 0;
+}
+.editPanel .vericode-wrap .send-veri-code {
+  width: 100px;
+}
+.editPanel .vericode-wrap .veri-code-img {
+  width: 130px;
+  height: 53px;
+}
+.editPanel .vericode-wrap-step2 {
+  margin-top: 20px;
+}
+.qq-foot-panel-warp {
+  margin-bottom: 40px;
+}
+.qq-foot-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #66686c;
+  background: #f8fafb;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  vertical-align: middle;
+}
+.qq-foot-panel a {
+  cursor: pointer;
+}
+.fix-error {
+  top: -25px !important;
+}
+.content-small-title {
+  font-size: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color: #b4b7bf;
+}
+.content-title {
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.lbf-tabview-tabs {
+  margin-right: 50px;
+}
+.form-container {
+  position: relative;
+  width: 420px;
+  min-height: 500px;
+  min-height: calc(100vh - 231px);
+  margin: 50px auto;
+}
+.form-container .content-title {
+  padding-bottom: 5px;
+}
+.form-container .content-tips {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.form-container .dialog-create-cell {
+  position: relative;
+}
+.form-container .dialog-create-cell .lbf-text-input {
+  width: 420px;
+}
+.form-container .dialog-create-cell .sendcode-btn {
+  position: absolute;
+  right: -110px;
+  top: 0;
+}
+.form-container .dialog-create-cell .lbf-text-input:last-child {
+  margin-top: 50px;
+}
+.form-container .dialog-create-cell .lbf-text-input-remind {
+  line-height: 20px;
+  padding-top: 5px;
+}
+.form-container .box-foot {
+  text-align: center;
+  margin: 80px 0;
+}
+.form-container .box-foot .lbf-button {
+  font-size: 16px;
+  min-width: 118px;
+}
+.form-container .resetpwd-box {
+  display: none;
+  -webkit-transform: translateY(150px);
+  transform: translateY(150px);
+  opacity: 0;
+}
+.form-container form {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.form-container .findpwd-box {
+  /*display: none;*/
+}
+.form-container .slide-down-fadeout {
+  -webkit-transform: translateY(150px);
+  transform: translateY(150px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  *zoom: 1;
+}
+.form-container .slide-up-fadeIn {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.no-login-state .header-wrap {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.no-login-state .header-wrap .header-logo {
+  padding: 0;
+}
+.no-login-state .header-wrap .header-info {
+  margin-right: 0;
+}
+.no-login-state .header-wrap .header-info-links {
+  margin-right: 0;
+}

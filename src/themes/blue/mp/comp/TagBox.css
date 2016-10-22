@@ -1,0 +1,82 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.lbf-tag-box {
+  min-height: 100px;
+  *height: auto;
+  width: 500px;
+  border: 1px solid #b6b6b6;
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: text;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.lbf-tag-box.tag-box-focus {
+  border-color: #00a1f2;
+}
+.lbf-tag-box .lbf-text-input {
+  float: left;
+  width: auto;
+  max-width: 380px;
+  border: none;
+  margin-top: -4px;
+  background-color: transparent;
+  font-size: 12px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.lbf-tag-box .lbf-text-input input {
+  display: block;
+  float: none;
+}
+.lbf-tag-box .lbf-text-input:focus,
+.lbf-tag-box .lbf-text-input:hover,
+.lbf-tag-box .lbf-text-input-hover {
+  border: 0!important;
+  padding: 2px 6px;
+  box-shadow: none;
+}
+.lbf-tag-box .lbf-tag-box-tag-ct {
+  padding-bottom: 3px;
+  *zoom: 1;
+}
+.lbf-tag-box .lbf-tag-box-tag-ct:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.lbf-tag-box .lbf-tag-box-tag {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #dadee7;
+  color: #1e2330;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: #ffffff;
+  cursor: pointer;
+  max-width: 90%;
+}
+.lbf-tag-box .lbf-tag-box-tag:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.lbf-tag-box .lbf-tag-box-tag-selected {
+  background-color: #CBDAF0;
+}

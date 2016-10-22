@@ -1,0 +1,141 @@
+@import '../../base/mixin';
+
+.textColor(){
+  color: #41494c;
+}
+.textGrayColor(){
+  color: #aab0b2;
+}
+.tabview-box {
+  .reply-switch {
+    position: relative;
+    z-index: 2;
+    *margin-left: -45px;
+    .switch {
+      left: 0;
+      .label {
+        display: block;
+        left: -80px;
+        margin-right: 50px;
+        font-size: 14px;
+      }
+    }
+    .label-icon {
+      &-on, &-off {
+        display: inline-block;
+        width: 16px;
+        height: 17px;
+        margin-right: 10px;
+        vertical-align: middle;
+        margin-top: -4px;
+        background: url(images/label-icon-on.png) no-repeat;
+      }
+      &-on {
+        background-position: 0 -34px;
+      }
+      &-off {
+        background-position: 0 0;
+      }
+
+    }
+  }
+}
+
+.reply-content-area {
+  background-color: #fff;
+  padding: 30px;
+  .reply-box-content{
+    dt{
+      display: block;
+      margin-top: 5px;
+      color: #494b4c;
+    }
+    .tip {
+      color: #aab0b2;
+    }
+  }
+}
+
+.content-switchoff {
+  background-color: #fff;
+  padding: 30px;
+  -webkit-animation: fadeIn 0.4s linear;
+  animation: fadeIn 400ms linear;
+  .msg {
+    font-size: 24px;
+    .textColor();
+    text-align: center;
+    .mt(55px);
+    .mb(17px);
+  }
+  dt {
+    font-size: 16px;
+    display: block;
+    .textGrayColor();
+    text-align: center;
+    .mb(22px);
+  }
+  dd {
+    padding-bottom:70px;
+    *text-align: center;
+    *padding-bottom:90px;
+  }
+  ul {
+    text-align: center;
+    *display: inline;
+  }
+  li {
+    display: inline-block;
+    *float:left;
+    width: 190px;
+    margin: 0 50px;
+    a {
+      display: block;
+      width: 190px;
+      height: 200px;
+      text-align: center;
+      border-radius: 5px;
+      overflow: hidden;
+      -webkit-transition: all .4s linear;
+      transition: all .4s linear;
+      &:hover,&:active{
+        background-color: #f5f7f7;
+      }
+      &.disabled{
+        .rel;
+        &:hover,&:active{
+          cursor: default;
+          background-color: transparent;
+        }
+      }
+      .disabled-cover {
+        .db;
+        .def;
+        .w(100%);
+        .h(100%);
+        .bg(#fff);
+        .opacity(60);
+        .abs;
+        .zx(2);
+        left:0;
+      }
+      i {
+        display: block;
+        height: 96px;
+        width: 96px;
+        margin:30px auto 20px;
+        background: url(../comp/images/icons-guide.png) 0 0 no-repeat;
+        &.icon-import {
+          background-position: 0 0;
+        }
+        &.icon-switchon {
+          background-position: 0 -106px;
+        }
+      }
+      span {
+        .textColor();
+        font-size: 16px;
+      }
+    }
+  }
+}

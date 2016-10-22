@@ -37,10 +37,14 @@ body {
 .page-login .title {
   width:1200px;
   height:150px;
+  line-height: 150px;
+  font-size: 50px;
+  color: white;
   margin:0 auto;
   padding:0;
   border-bottom:none;
-  text-indent:-9999px;
+  text-indent: 60px;
+  text-align: left;
   background:url(images/logo.png) no-repeat 0 50%;
   overflow:hidden;
 }
@@ -62,11 +66,52 @@ body {
 
 .page-login .ptlogin {
   width: 374px;
-  height:320px;
+  height:340px;
   visibility: visible;
   float:right;
 }
 
+.page-login .ptlogin .login{
+  background: #ffffff;
+  height: 336px;
+  border-radius: 4px;
+  border: 2px solid #eee;
+  position: relative;
+}
+.page-login .ptlogin .login .tips{
+  margin: 20px auto 36px;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+.page-login .ptlogin .login .tips .title2 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.page-login .ptlogin .login .tips .switch_btn_focue_link_tips {
+  color: #3481cf;
+  text-decoration: none;
+}
+.page-login .ptlogin .login .login_form {
+  width: 272px;
+  margin: 0 auto;
+}
+.page-login .ptlogin .login .login_form .lbf-button-success {
+  height: 40px;
+  line-height: 35px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #86ce2f;
+}
+.page-login .ptlogin .login .login_form .text-password {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 /* footer setting */
 /* footer new add icons for trusty website */
 .footer {
@@ -152,3 +197,5 @@ body {
 .footer .verified .trusty-website:hover {
   background-position: 0 -25px;
 }
+
+

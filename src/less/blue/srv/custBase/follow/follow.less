@@ -1,0 +1,114 @@
+@import '../../../base/mixin';
+
+.follow {
+	.abs();
+	top: 0;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+
+#follow {
+
+	.rel();
+	.w(802px);
+	.ovh();
+
+	textarea {
+		.w(800px);
+		.h(100px);
+	}
+
+	.block-button {
+		.ovh();
+		#addFollow {
+			float: right;
+		}
+
+		.text-limit {
+			.rel();
+			top: -6px;
+			font-size: 12px;
+			.c(#a8abb3);
+
+			.error {
+				.c(@red);
+			}
+		}
+	}
+
+	.block-list {
+
+		.rel();
+		.tl();
+
+		.table-page {
+			border-top: none;
+		}
+
+		.records {
+
+			.rel();
+
+			.follow-item {
+				.rel();
+				.ovh();
+				.mt(25px);
+				border-bottom: 1px solid @light;
+				.pb(20px);
+
+				.avatar {
+					.w(40px);
+					.h(40px);
+					.abs();
+					top: 0;
+					left: 0;
+					border-radius: 50%;
+				}
+
+				.detail {
+					.c(#66686c);
+					.pl(55px);
+					.rel();
+					font-size: 14px;
+
+					.job {
+						.pl(10px);
+					}
+
+					.createTime {
+						.abs();
+						right: 0;
+						font-size: 12px;
+					}
+				}
+
+				.message {
+					.pl(55px);
+					.mt(7px);
+					.w(610px);
+					.bk();
+				}
+
+				.action-del {
+					.abs();
+					top: 25px;
+					right: 0;
+					.poi();
+				}
+
+				&:first-child {
+					.mt(5px);
+				}
+			}
+		}
+	}
+
+	.loading {
+		.abs();
+		left: 50%;
+		top: 30%;
+	}
+
+}

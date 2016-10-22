@@ -1,0 +1,336 @@
+@import '_accountItemInfo';
+
+.select-type {
+	height:100px;
+	text-align:left;
+	li {
+		overflow: hidden;
+		position: relative;
+		display:inline-block;
+		width:32%;
+		height:98px;
+		border:1px solid #cacdd0;
+		border-radius: 5px;
+		font-size: 18px;
+		background-color: #fff;
+		cursor: pointer;
+        *float:left;
+		.icon {
+			margin:18px 18px 0 55px;
+			float:left;
+			
+		}
+		.txt {
+			display:block;
+			margin:20px 0 5px;
+            text-align: left;
+		}
+		.txt-under {
+            display:block;
+			font-size:14px;
+			color:#aab0b2;
+            text-align: left;
+		}
+		&.type-open {
+			margin-right:7px;
+            *margin-right:12px;
+			.icon {
+				width:54px;
+				height:59px;
+				background-position: -235px 0;
+			}
+		}
+		&.type-wx {
+			.icon {
+                .ml(30px);
+                .mt(13px);
+				width:70px;
+				height:70px;
+                background: url(images/icon-wx.png) no-repeat;
+			}
+		}
+		&.type-qq {
+            .ml(16px);
+			.icon {
+                .mt(13px);
+                .ml(30px);
+                width:70px;
+				height:70px;
+                background: url(images/icon-qq.png) no-repeat;
+            }
+		}
+		&.selected, &:hover {
+			height:98px;
+			border:1px #a8abb3 solid;
+			.txt {
+				margin:20px 0 5px;
+			}
+			&.type-open {
+				margin-right:5px;
+                *margin-right:10px;
+				.icon {
+					margin:17px 18px 0 54px;
+				}
+			}
+		}
+	}
+
+}
+
+.bind-table {
+    tr:last-of-type {
+        td {
+          //.lastItemNoBorderBottom;
+        }
+    }
+	.loading-line {
+		&:hover td {
+			background-color: #fff;
+		}
+		i.icon-mp-edit { display:none; }
+		.avatar-loading {
+			text-align:center;
+			color:#00a1f2;
+			span {
+				line-height: 200%;
+			}
+		}
+	}
+	.mp-name {
+		width: 390px;
+		padding:0 10px 0 35px;
+	}
+	.mp-type {
+		width:170px;
+	}
+	.mp-info {
+
+	}
+    .mp-op {
+        width: 180px;
+        padding-left:110px;
+    }
+    .mp-op-in {
+    	position:relative;
+    }
+    .mp-op-wxFunc .lbf-tip-top .lbf-tip-arrow {
+    	left: 80%;
+    }
+	.icon-mp-edit {
+		visibility: hidden;
+		vertical-align:middle;
+		margin:0 0 0 5px;
+		cursor: pointer;
+	}
+	.info-item-content { position:relative; }
+	.info-item {
+		position: relative;
+		// min-height:150px;
+		.info {
+			// position: absolute;
+			// top:50%;
+			// left:0;
+			// right:0;
+			// margin-top:-25px;
+			word-break:break-all;
+			dl {
+				overflow:hidden;
+
+				dt.name {
+					max-width: 250px;
+				}
+			}
+		}
+		.icon-authed, .icon-wx-authed, .no-auth {
+			margin-top:-3px;
+			*margin-top: 0;
+		}
+		.remark {
+			margin-left:5px;
+			color:#a2a9b6;
+		}
+		.name {
+			padding-top:4px;
+			padding-bottom: 7px;
+			*padding-top:2px;
+			*padding-bottom: 3px;
+			line-height: 1.4;
+			&:hover {
+				.icon-mp-edit {
+					visibility: visible;
+                    vertical-align: -2px;
+				}
+			}
+		}
+		.type {
+			line-height: 18px;
+		}
+	}
+	tbody {
+		.mp-info {
+			&:hover {
+				.icon-mp-edit {
+					visibility: visible;
+				}
+			}
+			line-height:1.6;
+			vertical-align: middle;
+            .bk();
+            word-break: break-all;
+		}
+		.mp-op  {
+			line-height:160%;
+		}
+		td {
+			padding-top:44px!important;
+			padding-bottom:44px!important;
+		}
+		.text-err {
+			color:#ff4222;
+			line-height:16px;
+		}
+		.icon-text-err {
+			display:inline-block;
+			width:16px;
+			height:16px;
+			margin-left:4px;
+			vertical-align:middle;
+			background:url(images/icons-account-manage.png) no-repeat -103px;
+		}
+
+
+        /* 公众号管理列表为空 */
+        tr:hover {
+            .bind-empty {
+              background-color: #fff;
+            }
+        }
+
+        .bind-empty {
+           padding-top: 90px !important;
+           padding-bottom: 90px !important;
+
+           .icon-null-pubacc {
+              width: 100px;
+              height: 100px;
+              display: block;
+              margin: 8px auto;
+              background: url(images/icon-empty-account.png) no-repeat;
+           }
+
+           .msg {
+              font-size: 24px;
+              color: #494b4c;
+           }
+
+        }
+	}
+}
+.remark-dropdown {
+	min-width:280px!important;
+	top:0!important;
+	background:#fff!important;
+	.add-remark {
+		height:40px;
+		margin:10px 0 0;
+		*margin-top:25px;
+		line-height: 40px;
+		.lbf-text-input {
+			width:250px;
+		}
+		a {
+			display: inline-block;
+			height:40px;
+			margin-left:10px;
+		}
+	}
+	.lbf-panel-body {
+	    padding:10px 20px 20px;
+	}
+	.lbf-panel-foot {
+		padding:0 20px 18px;
+	}
+}
+
+.bind-action {
+	.select-all {
+		.lbf-icheckbox {
+			float:none;
+			vertical-align:middle;
+			margin:-2px 3px 0 -2px;
+		}
+	}
+	.list {
+		margin-top: 13px;
+		margin-bottom: 0;
+	}
+	.tip {
+		margin-bottom: -10px;
+		padding-top:10px;
+		line-height: 1.4;
+		color:#a2a9b6;
+	}
+	.empty {
+		padding:35px 0 10px 0;
+		text-align:center;
+		font-size: 18px;
+		dt {
+			width:92px;
+			height:92px;
+			margin:0 auto 20px auto;
+			background: url(images/icons-account-bind.png) no-repeat -143px top;
+		}
+	}
+}
+.bind-action-only {
+	width:436px;
+	.list-only {
+		padding:0;
+		border:0;
+		background:transparent;
+		.info-item-only {
+			&:hover {
+				border:2px solid #e3e5e6;
+				cursor:auto;
+			}
+		}
+		li {
+			width:398px;
+			margin-left:0;
+			margin-right:0;
+		}
+	}
+}
+.bind-action-none {
+	width:auto;
+}
+.lbf-tip-content .info-item-tips {
+	width: 300px;
+	margin: 8px;
+	font-size:14px;
+	p {
+		margin:10px 0 0;
+	}
+	.info-item-tips-foot {
+		margin:20px 0;
+		float:right;
+		.lbf-button-primary {
+			margin-right:10px;
+		}
+	}
+}
+
+//绑定QQ公众号弹框
+body .bind-qq-acc {
+    .lbf-panel-head {
+        .tc();
+        font-size: 24px;
+        font-weight: normal;
+        .mb(28px);
+        .pt(25px);
+    }
+
+    .lbf-panel-foot {
+    	.pb(0);
+    }
+}

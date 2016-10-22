@@ -1,0 +1,32 @@
+.p-da {
+    .da-pager {
+        padding-left: 30px;
+        height: 50px;
+        background-color: #F5F7FA;
+
+        .da-pager-l {
+            float: left;
+            line-height: 50px;
+        }
+        .da-pager-count {
+            margin-left: 5px;
+            vertical-align: middle;
+
+            .icon-da-arrow {
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+            &:hover .icon-con-arrow {
+                background-position: 0px -16px;
+            }
+        }
+        @pager-top: (50px - 28px) / 2;
+        .da-pager-r {
+            float: right;
+            margin: @pager-top 20px @pager-top;
+            height: 28px;
+            line-height: 28px;
+        }
+    }
+}
+

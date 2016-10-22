@@ -1,0 +1,157 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.mobile-tabview-content {
+  margin-top: 30px;
+  border: 1px solid #a8abb3;
+  background-color: #ffffff;
+}
+.mobile-display .mobile-tabview-header {
+  height: 50px;
+  line-height: 50px;
+}
+.mobile-display .mobile-tabview-header .lbf-tabview-tab {
+  padding-left: 60px;
+}
+.mobile-content .mobile-nav-tree {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: #f4f6f9;
+}
+.mobile-content .mobile-nav-tree .switch {
+  left: 0;
+}
+.mobile-content .mobile-nav-tree .page-tree-loading {
+  height: 100%;
+}
+.mobile-content .mobile-page-guide,
+.mobile-content .mobile-act-guide {
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #a8abb3;
+}
+.mobile-content .mobile-display-main {
+  text-align: center;
+  height: 500px;
+}
+.mobile-icon-a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  line-height: 20px;
+  color: #545a6c;
+  /*&:hover {
+    .c(@blue);
+  }*/
+}
+.mobile-icon-a .icon-a {
+  padding-right: 5px;
+  vertical-align: -2px;
+}
+.table .ck {
+  text-align: center;
+  width: 50px;
+}
+.table .cate {
+  width: 210px;
+  text-align: center;
+}
+.table .tit {
+  text-align: left;
+  border-left: 0;
+  min-width: 360px;
+}
+.table .tit a {
+  margin-right: 25px;
+}
+.table .op {
+  width: 180px;
+  text-align: right;
+  padding-right: 20px;
+}
+.table .op-ckall {
+  color: #585858;
+}
+.table .hour,
+.table .time {
+  line-height: 21px;
+  text-align: left;
+}
+.table .act {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 17px;
+  vertical-align: middle;
+  visibility: hidden;
+  text-align: left;
+  line-height: 16px;
+}
+.table tr:hover .act {
+  visibility: visible;
+}
+.table .hover .act {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.table .lbf-combobox {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 140px;
+  float: left;
+  margin-left: 35px;
+}
+.table .empty {
+  text-align: center;
+}
+.material-view {
+  padding: 20px;
+}
+.material-view .li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.material-view .img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 20px;
+  width: 108px;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+.material-view .img img {
+  width: 60px;
+}
+.material-view .first .img img {
+  width: 108px;
+}
+.material-view .info {
+  max-height: 60px;
+  line-height: 20px;
+  width: 210px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.disabled .lbf-button-primary {
+  color: #fff!important;
+  cursor: pointer;
+}

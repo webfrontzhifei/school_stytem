@@ -1,0 +1,155 @@
+@import '../../base/mixin';
+
+.no-auth, .icon-authed, .icon-wx-authed {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  *margin-top:0;
+}
+.no-auth {
+  width:46px;
+  height:20px;
+  margin-left:5px;
+  text-align: center;
+  line-height: 18px;
+  color:#f5f7fa;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #545A6C;
+}
+.icon-authed, .icon-wx-authed {
+  width:14px;
+  height:14px;
+  margin-left:3px;
+  background:url(../reply/images/icons-account-manage.png) no-repeat -51px top;
+}
+.icon-wx-authed {
+  margin-top: -1px;
+  *margin-top:0;
+  background-position:-121px top;
+}
+.acount-list {
+  max-height:294px;
+  margin-bottom:30px;
+  padding:20px;
+  border:0;
+  overflow:auto;
+  background:#f7f9fa;
+
+  .avatar {
+    float:left;
+    width:50px;
+    height:50px;
+    margin-right:15px;
+    img {
+      border-radius: 50px;
+    }
+  }
+
+  .name {
+    padding:6px 0 5px 0;
+    *padding:3px 0 2px 0;
+    font-size: 16px;
+  }
+
+  .type {
+    color:#a2a9b6;
+  }
+
+  li {
+    vertical-align: top;
+    width:100%;
+    height:auto;
+    padding: 0;
+    float:left;
+
+    & > .wrap {
+        overflow: hidden;
+        height:62px;
+        padding:13px 20px 0 20px;
+        line-height: 1;
+        margin:9px;
+        border:1px solid #e3e5e6;
+        border-radius:4px;
+        background:#fff;
+    }
+
+    &:hover {
+            background-color: transparent;
+            & > .wrap {
+              border: 2px solid #00a1f2;
+              margin: 8px;
+              cursor: pointer;
+            }
+    }
+    &.selected {
+          background-color: transparent;
+          & > .wrap {
+            border: 2px solid #00a1f2;
+            margin: 8px;
+            background-color: #e5f6ff;
+          }
+    }
+        &.info-item-disabled {
+          & > .wrap {
+            border-color: #f3f3f3;
+          }
+          &:hover {
+            & > .wrap {
+              border: 1px solid #f3f3f3;
+              margin: 9px;
+              cursor: default;
+            }
+          }
+          .avatar, .name, .type{
+            opacity: .3;
+            *filter: alpha(opacity=30);
+          }
+        }
+  }
+  .action, .lbf-icheckbox {
+    float:right;
+    text-align: right;
+  }
+  .lbf-icheckbox {
+    margin-top:15px;
+  }
+  .action {
+        *margin-bottom: -100%;
+        *line-height: 1.2;
+    dt, dd, .action-text { color:#a2a9b6; }
+    dt, dd { margin-top:15px; float:left; }
+    dt { margin-right: 8px; }
+    a {
+      *line-height: 20px;
+    }
+    .action-text {
+      margin:7px 20px 0 0;
+      float:left;
+            *float: right;
+            *margin-top: 15px;
+
+            .fan-number {
+              .mt(10px);
+              .rel();
+              top: 6px;
+            }
+
+            .icon-tips-info {
+              margin: -3px 0;
+            }
+    }
+  }
+  .bind-empty {
+    padding:105px 0;
+    text-align: center;
+    background:#f7f9fa;
+    dt {
+      display:none;
+    }
+    dd {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.group-panel .lbf-panel-head {
+  height: 85px;
+  text-align: center;
+  font-size: 24px;
+  color: #1e2330;
+  font-weight: normal;
+  padding: 25px;
+}
+.group-panel .lbf-panel-body {
+  padding: 0 25px;
+}
+.group-panel .lbf-panel-foot {
+  padding: 30px 25px 45px;
+}
+.group-panel .lbf-panel-body .link_new {
+  position: absolute;
+  height: 24px;
+  right: 25px;
+  top: 56px;
+  font-size: 16px;
+}
+.group-panel .lbf-panel-body .link_new .icon-srv-add-blue {
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+.group-panel .lbf-panel-body .list-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.group-panel .lbf-panel-body ul {
+  clear: both;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 1px solid #ebedf2;
+}
+.group-panel .lbf-panel-body ul::-webkit-scrollbar {
+  width: 8px;
+}
+.group-panel .lbf-panel-body ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.group-panel .lbf-panel-body ul::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+.group-panel .lbf-panel-body ul li {
+  height: 79px;
+  position: relative;
+  padding: 0 20px;
+  border-bottom: 1px solid #ebedf2;
+}
+.group-panel .lbf-panel-body ul li a {
+  display: block;
+  color: #1e2330;
+  line-height: 79px;
+}
+.group-panel .lbf-panel-body ul li a .group-name {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.group-panel .lbf-panel-body ul li a .icon-gp {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.group-panel .lbf-panel-body ul li .icon-del {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -9px;
+  display: none;
+}
+.group-panel .lbf-panel-body ul li .icon-edit {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  margin-top: -9px;
+  display: none;
+}
+.group-panel .lbf-panel-body ul li.new_blt:hover .icon-del,
+.group-panel .lbf-panel-body ul li.new_blt:hover .icon-edit {
+  display: block;
+}
+.group-panel .lbf-panel-body ul li.selected,
+.group-panel .lbf-panel-body ul li.selected:hover {
+  background-color: #d3e9ff;
+}
+.group-panel .lbf-panel-body ul li.empty {
+  height: 399px;
+  text-align: center;
+  font-size: 20px;
+  color: #1e2330;
+  border-bottom: none;
+}
+.group-panel .lbf-panel-body ul li.empty p {
+  padding: 145px 0 25px;
+}
+.group-panel .lbf-panel-body ul li.empty span {
+  display: block;
+}
+.group-panel .lbf-panel-body ul li.empty a {
+  font-size: 16px;
+  display: inline-block;
+  line-height: 20px;
+  color: #0067ed;
+}
+.group-panel .lbf-panel-body ul li.empty a:hover {
+  color: #0056c7;
+}
+.group-panel .lbf-panel-body ul li.empty .loading i {
+  visibility: hidden;
+}
+.group-panel .lbf-panel-body ul li:hover {
+  background-color: #f5fafe;
+}
+.group-panel .lbf-panel-body ul li.empty:hover {
+  background: none;
+}
+.group-panel .edit_panel {
+  width: 350px;
+}
+.group-panel .edit_panel .lbf-dropdown-panel-head {
+  font-weight: normal;
+  font-size: 16px;
+}
+.group-panel .edit_panel .btn_group {
+  margin-top: 10px;
+}

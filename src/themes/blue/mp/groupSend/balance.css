@@ -1,0 +1,248 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.main-container {
+  border: none;
+}
+.balance-container .block-title {
+  font-size: 18px;
+  color: #494b4d;
+}
+.balance-container .table-balance {
+  margin-bottom: 34px;
+}
+.balance-container .table-balance td:first-child {
+  padding-left: 30px;
+}
+.balance-container .table-balance .view-balance-detail {
+  padding-left: 15px;
+}
+.balance-container .table-balance tbody tr {
+  /*&:last-child {
+				td {
+					border-bottom: 0px solid transparent;
+				}
+			}*/
+}
+.balance-container .table-balance tbody tr td {
+  height: 69px;
+  line-height: 69px;
+}
+.balance-container .table-balance tbody tr td .avatar {
+  float: left;
+  margin-right: 15px;
+}
+.balance-container .table-balance tbody tr td .avatar img {
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.balance-container .table-balance tbody tr td .name .icon-authed,
+.balance-container .table-balance tbody tr td .name .icon-wx-authed {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  *margin-top: 0;
+  margin-left: 3px;
+  background: url(../reply/images/icons-account-manage.png) no-repeat -51px top;
+}
+.balance-container .table-balance tbody tr td .name .icon-wx-authed {
+  margin-top: -1px;
+  *margin-top: 0;
+  background-position: -121px top;
+}
+.balance-container .table-balance tbody tr:hover td {
+  background-color: #ffffff;
+}
+.balance-container .block-qf-rule {
+  margin-left: 500px;
+}
+.balance-container .block-qf-rule > h3 {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.balance-container .block-qf-rule .block-qf-type {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.balance-container .block-qf-rule .block-qf-type .qf-type-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+}
+.balance-container .block-qf-rule .block-qf-type .qf-type-icon-small {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+.balance-container .block-qf-rule .block-qf-type .qf-type-desc {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.balance-container .block-qf-rule .block-qf-type .qf-type-desc .qf-type-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.balance-container .block-qf-rule .block-qf-type .qf-type-desc .qf-type-tip span {
+  color: #66686c;
+}
+.balance-container .qf-type-text {
+  color: #66686c;
+  line-height: 1.5;
+}
+.balance-container .quota-definition {
+  width: 500px;
+  float: left;
+}
+.balance-container .quota-definition > h3 {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.balance-container .quota-definition .quota-title {
+  font-size: 16px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+.balance-container .quota-definition .quota-title ~ p {
+  color: #66686c;
+  line-height: 1.5;
+}
+.balance-container .quota-definition .icon-coin {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.balance-range-wrap {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+}
+.balance-range-wrap > input {
+  width: 260px;
+}
+body .table-balance .no-data td {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+}
+body .table-balance .no-data td h2 {
+  font-size: 24px;
+  line-height: 35px;
+}
+body .table-balance .no-data td:hover {
+  background-color: #ffffff;
+}
+body .table-balance-detail .no-data td {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0 !important;
+}
+body .table-balance-detail .no-data td h2 {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  font-size: 24px;
+}
+body .table-balance-detail .no-data td:hover {
+  background-color: #ffffff;
+}
+.icon-coin {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+  background: url(images/icon-coin.png) no-repeat;
+}
+.balance-detail {
+  position: relative;
+}
+.balance-detail .table-page-a {
+  margin-left: 0px;
+}
+.balance-detail .table-page {
+  box-shadow: none;
+  margin-bottom: -20px;
+  padding-left: 30px;
+}
+.balance-detail.empty-content .empty-tbody td {
+  height: 300px;
+  background-color: #ffffff;
+}
+.balance-detail .type-select {
+  height: 40px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+.balance-detail .type-select > .item {
+  vertical-align: top;
+}
+.balance-detail .table-count-text {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.balance-detail .table-balance-detail tr td.quotaTime {
+  padding-left: 30px;
+  width: 210px;
+}
+.balance-detail .table-balance-detail tr td.quotaChange {
+  text-align: right;
+}
+.balance-detail .table-balance-detail tr td.quotaLeft {
+  text-align: right;
+  width: 190px;
+  padding-right: 50px;
+}
+.balance-detail .table-balance-detail tbody tr:hover td {
+  background-color: #ffffff;
+}
+.balance-detail .table-balance-detail .icon-coin {
+  margin: -2px 0;
+  margin-right: 5px;
+}
+.balance-detail .table-balance-detail .increase {
+  color: #00cc26;
+}
+.balance-detail .table-balance-detail .decrease {
+  color: #ff4222;
+}
+.icon-no-coin {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100px;
+  height: 100px;
+  background: url(images/icon-no-coin.png) no-repeat;
+}
+.balance-popup-panel {
+  top: 10%!important;
+}
+.balance-popup-panel .lbf-panel-body {
+  padding-bottom: 0px;
+}
+.balance-popup-panel .table-loading {
+  position: relative;
+}

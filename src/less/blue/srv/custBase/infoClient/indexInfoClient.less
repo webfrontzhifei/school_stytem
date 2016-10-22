@@ -1,0 +1,227 @@
+@import '../../../base/base';
+@import 'icons.css';
+@import 'infoClient.css';
+
+.info-cards {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  background: transparent;
+  font-family: 'microsoft yahei';
+
+  .info-cards-row-brief {
+    position: relative;
+    height: 210px;
+    color: #ffffff;
+    background: #1e2330;
+
+    .info-cards-opt {
+      text-align: right;
+      height: 0;
+      padding-bottom: 21px;
+      >i{
+      }
+    }
+
+    .info-cards-brief {
+      height: 123px;
+      .head{
+        >img{
+          border-radius: 4px;
+        }
+      }
+      .brief{
+        margin-left: 115px;
+        margin-right: 10px;
+        .name{
+          font-size: 24px;
+          line-height: 24px;
+          height: 36px;
+        }
+        .company{
+          font-size: 14px;
+          line-height: 20px;
+          height: auto;
+          max-height: 57px;
+          overflow: hidden;
+          margin-bottom: 15px;
+          >i{
+            margin-bottom: -3px;
+            margin-left: 3px;
+          }
+        }
+        .contact{
+          font-size: 12px;
+          line-height: 12px;
+          height: 24px;
+          >p{
+            >i{
+              margin-bottom: -2px;
+            }
+          }
+        }
+        .email{
+          font-size: 12px;
+          line-height: 12px;
+          height: auto;
+          >i{
+            margin-bottom: -3px;
+          }
+        }
+      }
+
+    }
+
+    .info-cards-btns {
+      position: absolute;
+      text-align: right;
+      right: 0;
+      bottom: 10px;
+
+      .info-cards-btn{
+        display: inline-block;
+        border: 1px solid;
+        font-size: 12px;
+        padding: 5px 10px;
+        line-height: 13px;
+        border-radius: 3px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .has-mp{
+    width: 263px;
+  }
+  .info-cards-row-info {
+    background: #f2f5fa;
+    height: auto;
+    position: absolute;
+    //overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 210px;
+    line-height: 1.75;
+    &::-webkit-scrollbar-track-piece {
+      background-color: transparent;
+    }
+    .info-cards-info {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      .info-cards-info-item {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        .ctx{
+          display: inline-block;
+          float: right;
+          text-align: left;
+          width: 100%;
+          min-height: 14px;
+          .ctx-c{
+            margin-left: 87px;
+            color: #000000;
+            font-size: 12px;
+            word-wrap: break-word;
+            word-break: normal;
+            >a{
+              color: #000000;
+            }
+          }
+        }
+        .title{
+          position: absolute;
+          left: 20px;
+          top: 0;
+          font-size: 12px;
+          color: #696969;
+        }
+
+      }
+.info-cards-info-item:last-child{
+  margin-bottom: 0;
+}
+.info-cards-info-slider{
+        width: 191px;
+        height: auto;
+        overflow: hidden;
+        font-size: 12px;
+        padding-bottom: 25px;
+
+        .info-cards-info-slider-title{
+          margin-left: 20px;
+          border-bottom: 0px solid #e6e6e8;
+          margin-right: 12px;
+          height: 14px;
+          line-height: 20px;
+          color: #696969;
+          font-size: 12px;
+        }
+
+        .info-cards-info-slider-items{
+          margin-left: 20px;
+          margin-right: 12px;
+          margin-top: 0;
+          margin-bottom: 15px;
+          position: relative;
+          .info-cards-info-slider-item{
+            margin-top: 12px;
+            margin-bottom: 0;
+            height: auto;
+            overflow: hidden;
+
+            .icon-info-cards-mp {
+              margin-bottom: -2px;
+              margin-left: 2px;
+            }
+
+            .head{
+              float: left;
+              margin-right:10px ;
+              >img{
+                border-radius: 40px;
+              }
+            }
+            .title{
+              float: left;
+              max-width: 6.9em;
+              color: #000000;
+              overflow:hidden;
+              white-space:nowrap;
+              text-overflow:ellipsis;
+            }
+            >i{
+              margin-bottom: -1px;
+              margin-left: 5px;
+            }
+            .type{
+              float: left;
+              width: 100px;
+              color: #777777;
+            }
+          }
+          .info-cards-qun-rec{
+            .head{
+              >img{
+                height:40px;
+                width:40px;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+

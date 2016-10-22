@@ -1,0 +1,61 @@
+@import 'icons.css';
+
+html,body { overflow:hidden;}
+body { text-align:left; font-family: 'microsoft yahei'; font-size:12px; background:#fff; color:#000; margin:0; padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd ,p{ margin:0; padding:0; border:0;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+ul,ol { list-style:none;}
+
+.min-info-cards {
+	width:275px;
+	height:162px;
+	background:#1e2330;
+	.head{
+		float:left;
+		padding:15px 10px 10px 11px;
+		img{
+			width:80px;
+			height:80px;
+			border-radius: 4px;
+		}
+	}
+	.info{
+		float:left;
+		width: 166px;
+		color: #fff;
+		position: relative;
+		height:163px;
+		.name{
+			margin-top:18px;
+			font-size:16px;
+			line-height:16px;
+			height:21px;
+			margin-bottom:0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            span:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+		}
+		.signature{
+			font-size:12px;
+			height: 84px;
+            line-height: 21px;
+			overflow: hidden;
+            word-wrap: break-word;
+            word-break: break-all;
+		}
+		.company{
+			font-size:12px;
+			position: absolute;
+			bottom: 9px;
+			right: 2px;
+			>i{
+				margin-bottom: -1px;
+				margin-left: 5px;
+			}
+		}
+	}
+}

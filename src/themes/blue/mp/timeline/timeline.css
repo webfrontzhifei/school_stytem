@@ -1,0 +1,114 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+html,
+body {
+  height: auto;
+  overflow-y: auto;
+  background-color: #292f3b;
+}
+.page {
+  min-height: 1173px;
+  min-width: 705px;
+  background: #292f3b url("images/bg-timeline.jpg") 50% 0 no-repeat;
+}
+.intro-section {
+  position: relative;
+  width: 705px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 10px;
+  padding-top: 490px;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+.intro-section .main-title {
+  font-size: 40px;
+  color: #81c3ec;
+  padding-left: 180px;
+  margin-bottom: 30px;
+}
+.intro-section .version-list {
+  padding-top: 24px;
+}
+.intro-section dt {
+  display: block;
+  font-size: 24px;
+  color: #81c3ec;
+  position: absolute;
+  left: 0;
+  margin-top: -24px;
+  font-weight: normal;
+}
+.intro-section dt em {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-style: normal;
+}
+.intro-section dt em.date {
+  width: 150px;
+  margin-right: 67px;
+  margin-left: -17px;
+  text-align: right;
+  white-space: nowrap;
+}
+.intro-section dd {
+  font-size: 15px;
+  position: relative;
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-bottom: 50px;
+  margin-left: 165px;
+  margin-bottom: 9px;
+  border-left: 1px solid #79b5dc;
+  *zoom: 1;
+}
+.intro-section dd:last-of-type {
+  padding-bottom: 20px;
+}
+.intro-section dd h2 {
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.intro-section dd .item-list {
+  margin-bottom: 25px;
+  color: #cccccc;
+}
+.intro-section dd .item-list li {
+  padding-bottom: 5px;
+  padding-left: 1.5em;
+}
+.intro-section dd .item-list label {
+  width: 1.5em;
+  position: absolute;
+  margin-left: -1.5em;
+}
+.intro-section dd .icon-dot {
+  position: absolute;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -9px;
+  background: url("images/icons-timeline.png") 0 -20px no-repeat;
+}
+.intro-section dd.latest .icon-dot {
+  width: 11px;
+  height: 11px;
+  left: -6px;
+  top: -11px;
+  background-position: 0 0;
+}

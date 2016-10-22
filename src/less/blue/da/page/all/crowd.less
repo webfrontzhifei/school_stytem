@@ -1,0 +1,73 @@
+@import "../../base/mixin";
+
+.p-da-all-crowd {
+
+    .main-table {
+        overflow: hidden;
+
+        .main-map {
+            float: left;
+            width: 66.66666%;
+            border-top: none;
+        }
+
+        .main-city {
+            td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            tbody {
+                tr {
+                    border: none;
+                }
+                tr:nth-child(2n) {
+                    background-color: #F6F8FA;
+                }
+            }
+        }
+    }
+
+
+    .main-tip {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+
+        .lbf-tip {
+            left: -130px !important;
+        }
+        .lbf-tip-arrow {
+            margin-left: 130px !important;
+        }
+
+        dl {
+            padding: 10px;
+            width: 295px;
+        }
+        dt {
+            margin-top: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+.industryCombobox {
+    width: 180px;
+
+    .lbf-combobox-item {
+        .bg(#fff);
+
+        &:hover {
+            .bg(#f2fbff);
+        }
+
+        &.lbf-combobox-item-selected {
+            .bg(#e5f6ff);
+        }
+    }
+}

@@ -1,0 +1,407 @@
+@import '../../base/mixin';
+
+@bg-gray: #F5F7FA;
+
+.dis {
+  .dn;
+}
+.comp-manual-group {
+  .menu-group-list {
+    .mt(10px);
+    .mb(20px);
+  }
+}
+
+// 新建规则按钮
+.reply-action {
+  .rel;
+  .mt(20px);
+  .mb(20px);
+  .lbf-button {
+    .pl(25px);
+    .pr(25px);
+  }
+}
+
+.rule-table {
+  .rules {
+    .border-radius(0);
+  }
+  .rule-edit {
+    &:hover td {
+      background-color: @white;
+    }
+
+    .edit-anchor {
+      .abs;
+      .mt(-50px);
+    }
+
+     td {
+       *position:relative;/* IE7 bug fix: make tds on edit tr relative*/
+       border-top:2px solid @blue;
+       border-bottom:2px solid @blue;
+     }
+    .rules {
+      .vt;
+      .pt(25px);
+      border-left:2px solid @blue;
+
+      .error {
+        .c(@error-red);
+        .lh(14px);
+      }
+    }
+    .words {
+      .pt(25px);
+      .pb(25px);
+      .vt;
+
+      .keywordsTagBox {
+      }
+
+      .error {
+        .c(@error-red);
+        .lh(14px);
+      }
+    }
+    .status-edit {
+      line-height: 30px;
+      
+      .rel;
+      .pt(10px);
+      .pl(20px);
+      .vt;
+
+      &.with3btns {
+        .pb(200px);
+      }
+
+      /* Hack for other IEs (IE8-9) */
+      &:before, &:after {
+        display: none;
+        display: block\9;
+        .abs;
+        .ovh;
+        left:0;
+        content: '';
+        width: 100%;
+        .h(1px);
+        background-color: @blue;;
+      }
+      &:before{
+        top:-1px;
+      }
+      &:after{
+        bottom:-1px;
+      }
+      /* IEs hack End */
+
+      .action-save {
+        .abs;
+        bottom: 25px;
+      }
+    }
+    .op{
+      border-right: 2px solid @blue;
+    }
+
+  }
+  .rules {
+    .pl(25px);
+    .pr(50px);
+    .w(250px);
+    .rule {
+      .dib;
+      .w(98%);
+      .ell;
+      .vm;
+    }
+  }
+
+  .words {
+    line-height: 30px;
+    
+    .w(502px);
+    .pr(50px);
+    .tag {
+      .mr(5px);
+      .vm;
+    }
+
+    // override default
+    .keywords-reply-box {
+      .loading {
+          .abs();
+          .ml(220px;);
+      }
+
+      .reply-box-trigger {
+        .pt(8px);
+        .pl(10px);
+        .pr(10px);
+        .pb(8px);
+        background-color: @bg-gray;
+
+        .lbf-button {
+          .ml(5px);
+          .mr(5px);
+          .pl(28px);
+          .pr(28px);
+        }
+      }
+
+      .reply-box-list {
+        .reply-box-item {
+           border: 1px solid #dbdbdb;
+           padding: 15px 80px 15px 19px;
+           .vmiddle {
+             height: 60px;
+           }
+          .preview-img {
+            width: 106px;
+            height: 60px;
+            background-image: url(images/decoration.png);
+            
+            img {
+              width: 106px;
+              height: 60px;
+              border: none;
+              margin-top: 0;
+            }
+          }
+          .reply-box-action{
+            margin-top: -24px;
+            .icon-del {
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+
+
+    .manual-box {
+      .loading {
+        .abs();
+        .ml(220px;);
+      }
+      .pt(10px);
+      .pb(10px);
+      background-color: @bg-gray;
+      .tc;
+
+      .kf-ext {
+      }
+
+      .group {
+        .ml(20px);
+      }
+
+      .auto {
+        .ml(20px);
+      }
+
+      // override default box item
+      .manual-box-item {
+        border: none;
+        .tl;
+      }
+
+      .manual-box-action {
+        right: 10px;
+      }
+    }
+    // override default
+    .reply-box .reply-box-typeimgtxt .preview-txt,
+    .reply-box .reply-box-typeactivity .preview-txt { width: 55%;}
+  }
+
+  thead .status {
+    .pl(35px);
+  }
+  .status {
+    .w(100px);
+    .pl(20px);
+    .switch {
+      .vm;
+    }
+  }
+  
+  tr:hover{
+    .op .action {
+        visibility: visible;
+      }   
+  }
+
+  .op {
+    .pr(20px);
+    .tr;
+    .action {
+      .editRule, .delRule {
+        .vm;
+      }
+    }
+    
+  }
+
+  //Empty
+  tbody tr:hover .empty {
+    background-color: #fff;
+  }
+  .empty{
+    padding:50px;
+    text-align:center;
+    color:#e4e6e7;
+
+    .icon-empty{
+      .db();
+      margin-left: auto;
+      margin-right: auto;
+      .w(100px);
+      .h(100px);
+      background: url('images/icon-reply-empty.png') ;
+    }
+
+    p {
+      .c(#585858);
+    }
+
+    .msg {
+      font-size: 24px;
+      .c(#606a7a);
+    }
+  }
+
+  .table-page {
+    .mt(-1px);
+  }
+
+}
+
+.tag {
+  .rel;
+  .dib;
+
+  .h(24);
+  .lh(24);
+  .bg(@light);
+  padding: 0 10px;
+  margin: 1px 0;
+  .c(@dark);
+  .ell;
+  .border-radius(12px);
+
+  max-width: 90%;
+}
+
+.pop-btn{
+    .lbf-button{
+        color:#1e2330;
+        margin-right: 12px;
+        
+        i{
+            vertical-align: -3px;
+            margin-right: 5px;
+        }
+    }
+}
+
+div.reply-box{
+  position: relative;
+  height: auto;
+  min-height: 63px;
+  padding: 15px 40px 15px 22px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  
+  .vmiddle{
+      height: 63px;
+  }
+  
+  .preview-txt{
+      font-size: 16px;
+      overflow: visible;
+      
+      label{
+          font-size: 14px;
+          color: #aaa;
+          display: block;
+          margin-bottom: 5px;
+      }
+      
+  }
+  
+}
+
+/*
+.page-reply-keywords .error { color:#e25050;}
+.page-reply-keywords .dis { display:none;}
+.page-reply-keywords .tip { color:#bbb;}
+.page-reply-keywords .vmiddle { display:inline-block; width:0; height:100%; vertical-align:middle;}
+
+.page-reply-keywords .pagebar{padding:19px 5px; height:30px;}
+.page-reply-keywords .pagebar .lbf-pagination{text-align:right;}
+*/
+
+/*
+.rule-table .status { width:160px; vertical-align:middle; text-align:center;}
+.rule-table .status-edit{width:160px;}
+.rule-table .status-text { display:inline-block; margin-right:40px; text-indent:60px;}
+.rule-table .status .action { visibility:hidden; position:relative; width:18px; vertical-align:middle; display:inline-block;  margin:0 -38px 0 20px;}
+.rule-table tr:hover .status .action { display:inline-block; visibility:visible;}
+.rule-table .status .action .icon {cursor:pointer;}
+.rule-table .status .action .icon-edit {}
+.rule-table .status .switch{vertical-align:middle; left:0;}*/
+
+
+/** edit mode **/
+/*
+.rule-edit .block { display:block;}
+.rule-edit .lbf-textarea,
+.rule-edit .lbf-textarea textarea{width:231px; height:60px;}
+.rule-edit .lbf-textarea textarea{position:static;}
+.rule-edit .rule-input { width:auto; font-size:12px;}
+.rule-edit tr { border:2px solid #cf5113;}
+.rule-edit td { text-align:left; vertical-align:top;}
+
+.rule-edit td { border-top:2px solid #ffb636; border-bottom:2px solid #ffb636;}
+.rule-edit .ck { border-left:2px solid #ffb636;}
+.rule-edit .status-edit { padding-left:40px; border-right:2px solid #ffb636;}
+.rule-edit .content { position:relative; min-height:63px; padding:15px; border:1px solid #ccc; border-bottom:none; background:#f4f5f6; overflow:hidden;}
+.rule-edit .reply-list .content:last-child { border-bottom:1px solid #ccc;}
+.rule-edit .reply-box .reply-box-trigger { padding:10px 6px; border:1px dashed #babcc4; min-height:38px; background-color:#fff;}
+.rule-edit .reply-box .reply-box-trigger .lbf-button { padding:0 8px;}
+.rule-edit .reply-box .reply-box-trigger .ml10{margin-left:5px;}
+.rule-edit .reply-box .reply-box-item{padding:15px; min-height:63px;}
+.rule-edit .reply-box .preview-txt{width:260px;}
+.rule-edit .reply-box .reply-box-typetxt .preview-txt{width:350px;}
+.rule-edit .preview-img { display:inline-block; width:88px; height:60px; margin-right:15px; vertical-align:middle; overflow:hidden;}
+.rule-edit .preview-img img { width:88px;}
+.rule-edit .preview-txt { display:inline-block; width:225px; vertical-align:middle; word-break:break-all; word-wrap:break-word;}
+.rule-edit .reply-type-txt .preview-txt { width:328px;}
+.rule-edit .words dl{padding-bottom:5px;}
+.rule-edit .words .action { display:none; position:absolute; top:0; right:5px; width:17px; height:100%;}
+.rule-edit .words .content:hover .action { display:block;}
+.rule-edit .words .action .icon { position:absolute; cursor:pointer;}
+.rule-edit .words .action .icon-del { top:5px;}
+.rule-edit .words .action .icon-edit { display:none; bottom:5px;}
+.rule-edit .words .reply-type-txt .icon-edit { display:inline-block;}
+.rule-edit .action-save { display:block; margin-top:218px;}
+.rule-edit .action-save .lbf-button{vertical-align:middle;}
+*/
+
+/*.rule-table-edit .multiple-del,
+.rule-table-edit .multiple-enable,
+.rule-table-edit .multiple-disable,
+.rule-table-edit tr:hover .status .action { display:none;}*/
+
+div.members-select-box{
+    border: 0;
+}
+div.members-select-search{
+    height: 40px;
+}
+div::-webkit-scrollbar-thumb{ background-color: #d9d9d9;}
+div::-webkit-scrollbar-thumb:hover { background-color: #c1c1c1; }
+div::-webkit-scrollbar-track-piece{background-color:#fff;}

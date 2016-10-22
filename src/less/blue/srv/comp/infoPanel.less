@@ -1,0 +1,133 @@
+@import '../../base/mixin';
+@import '../wpa/icons';
+
+.info-panel{
+    .lbf-panel-head{
+        text-align: center;
+        font-size: 24px;
+        color: #1e2330;
+        font-weight: normal;
+        padding: 25px;
+    }
+    
+    .lbf-panel-body{
+        padding: 0 25px;
+    }
+    
+    .lbf-panel-foot{
+        padding: 30px 25px 45px;
+    }
+    
+    .lbf-panel-body ul{
+        height: 415px;//400->415
+        overflow: auto;
+        border-top: 1px solid #ebedf2;
+        
+        li{
+            height: 74px;
+            position: relative;
+            padding: 0 20px;
+            border-bottom: 1px solid #ebedf2;
+            a{
+                display: block;
+                color: #1e2330;
+                line-height: 75px;
+            }
+            .icon-ckbox{
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                margin-top: -9px;
+                display: none;
+            }
+            
+            .icon-gp,
+            .icon-phone{
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            
+            &.selected,
+            &.selected:hover{
+                background-color: #d3e9ff;
+                
+                //.icon-ckbox{
+                //    display: block;
+                //}
+            }
+            
+            &.empty{
+                height: 399px;
+                text-align: center;
+                font-size: 20px;
+                color: #1e2330;
+                border-bottom: none;
+                
+                p{
+                    padding: 145px 0 25px;
+                }
+                
+                span{
+                    display: block;
+                }
+                
+                a{
+                    font-size: 16px;
+                    display: inline-block;
+                    line-height: 20px;
+                    color: #0067ed;
+                    
+                    &:hover{
+                        color: #0056c7;
+                    }
+                }
+                
+                .loading i{
+                    visibility: hidden;
+                }
+            }
+            
+            &:hover{
+                background-color: #f5fafe;
+            }
+            
+            &.empty:hover{
+                background: none;
+            }
+        }
+        
+        .avatar-info{
+            display: inline-block;
+            height: 40px;
+            position: relative;
+            padding:5px 0 5px 60px;
+            vertical-align: middle;
+            margin-right: 15px;
+            line-height: 20px;
+            font-size: 16px;
+            
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            
+            .gray{
+                color: #b4b7bf;
+                display: block;
+                font-size: 14px;
+                
+                i{
+                    font-style: normal;
+                }
+            }
+        }
+    }
+    
+}
+
+
+

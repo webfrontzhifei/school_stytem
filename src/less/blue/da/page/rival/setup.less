@@ -1,0 +1,80 @@
+
+@import "rival-panels.less";
+
+.p-da-rival-setup {
+    .content-title {
+        border-bottom: none;
+    }
+    .content-main {
+    }
+    .lbf-tabview-tabs {
+        margin-bottom: 20px;
+    }
+
+    .main-hd {
+        margin-left: 0;
+        border-bottom: 1px solid #EDEDED;
+        background: #FFF;
+
+        .lbf-text-input {
+            margin-left: 30px;
+            &.lbf-search-input {
+                width: 172px!important;
+            }
+
+            ::-webkit-input-placeholder {
+                font-size: 14px;
+            }
+
+            ::-moz-placeholder {
+                font-size: 14px;
+            }
+
+            :-ms-input-placeholder {
+                font-size: 14px;
+            }
+
+            input:-moz-placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .lbf-text-input {
+        margin: 0;
+        padding-right: 32px;
+        vertical-align: middle;
+
+        input {
+            width: 198px;
+            font-size: 14px;
+        }
+
+        .icon-search {
+            position: static!important;
+            margin-top: 0!important;
+            /*top: 50%;
+            right: 10px;
+            margin-top: -9px;*/
+        }
+        // 充值active的样式
+        .icon-search:active {
+            background-position: 0 0;
+        }
+    }
+
+    .main-search,
+    .main-recommends {
+        padding: 30px;
+        margin-bottom: 0;
+
+        &-switch {
+            float: right;
+        }
+    }
+
+    .da-pager {
+        margin-bottom: 20px;
+    }
+}
+

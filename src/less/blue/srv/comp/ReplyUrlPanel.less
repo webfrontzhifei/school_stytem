@@ -1,0 +1,28 @@
+@import '../../base/mixin';
+
+.replyUrl-main { padding-bottom:30px; *width:650px; /* fix ie7 */ color:#a2a9b6;}
+.replyUrl-main .lbf-textarea,
+.replyUrl-main .lbf-textarea textarea { width:636px; height:265px;}
+
+.lbf-panel-head {
+
+	.rel();
+
+	.sub-title {
+		font-size: 14px;
+		.c(#a8abb3);
+		.mt(-52px);
+	}
+}
+
+//added by vergil
+.lbf-text-input {
+	.rel();
+
+	.tip-wrong-url {
+		.abs();
+		top: -20px;
+		right: 0;
+		.c(#ff4222);
+	}
+}

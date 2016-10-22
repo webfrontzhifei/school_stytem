@@ -1,0 +1,80 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+/* 管理权限 */
+.admin-title {
+  font-size: 100%;
+  padding-top: 35px;
+  margin-bottom: 18px;
+}
+.admin-title:first-child {
+  border-top: 1px solid #a8abb3;
+}
+.admin-table {
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.1);
+  border: 1px solid #dadee7;
+  border: 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+.admin-table .col1 {
+  width: 21%;
+  padding-left: 20px;
+}
+.admin-table .col1 span > i,
+.admin-table .col1 span > img {
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+.admin-table .col3 {
+  width: 140px;
+  text-align: center;
+}
+.admin-table td {
+  vertical-align: middle;
+  line-height: 1.5px;
+}
+.admin-table td.col2 > span {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* max-height: 180px; overflow: hidden;*/
+}
+.admin-table td.col3 span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 70px;
+  line-height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.admin-table tr:last-child td {
+  border-bottom: 0;
+}
+.admin-table .toggle {
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  top: -10px;
+}
+.admin-table .toggle i {
+  vertical-align: -4px;
+  background-position: -20px -140px;
+}
+.admin-table .toggle:hover {
+  color: #0067ed;
+}
+.admin-table .flip i {
+  background-position: -20px -300px;
+}

@@ -1,0 +1,377 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+#newQQ-content .content-main {
+  background-color: #fff;
+  margin-top: 0;
+}
+#newQQ-content .part-content {
+  padding: 0 30px 10px;
+  border-top: 1px solid #ededed;
+}
+#newQQ-content .part-content:first-child {
+  border: none;
+}
+#newQQ-content .content-part-title {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+#newQQ-content .formsub .item-body {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+}
+#newQQ-content .formsub .item-body .desc-text {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+#newQQ-content .formsub .item-body .lbf-tip-top {
+  top: -36px !important;
+}
+#newQQ-content .formsub .upload-wxinfo-demo {
+  margin-left: 20px;
+}
+#newQQ-content .formsub li {
+  margin: 20px 0 25px;
+  font-size: 14px;
+}
+#newQQ-content .formsub li .icon-ol {
+  margin-right: 5px;
+}
+#newQQ-content .formsub .lbf-text-input {
+  width: 330px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .lbf-text-input-error {
+  background-color: #fff;
+}
+#newQQ-content .formsub .lbf-text-input-error:focus,
+#newQQ-content .formsub .lbf-text-input-error:hover {
+  background-color: #fff;
+}
+#newQQ-content .formsub .varified-user {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  margin-left: 5px;
+  background: url(images/verifiedIcon.jpg) top left no-repeat;
+}
+#newQQ-content .formsub .label-text {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding-top: 10px;
+  width: 170px;
+  max-width: 200px;
+  vertical-align: top;
+}
+#newQQ-content .formsub .label-p {
+  padding-top: 0;
+}
+#newQQ-content .formsub .avatar-area {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .plain-text {
+  padding-top: 10px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .subtitude {
+  padding-left: 5px;
+}
+#newQQ-content .formsub .for-text-area {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .for-text-area .ck_summary {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 135px;
+  color: #a2a9b6;
+  font-size: 12px;
+}
+#newQQ-content .formsub .for-text-area .checktip {
+  color: #ff0000;
+}
+#newQQ-content .formsub .qq-num-over-flow {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .qq-num-over-flow .warning-img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-top: 2px;
+  margin-left: 25px;
+  margin-right: 5px;
+  background: url(images/warning-img.jpg) left top no-repeat;
+}
+#newQQ-content .formsub .no-display {
+  display: none;
+}
+#newQQ-content .formsub .upload-avatar {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  margin-top: 5px;
+}
+#newQQ-content .formsub .upload-avatar .avatar-img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  border: 1px solid #ededed;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: #bcc3cc;
+  overflow: hidden;
+}
+#newQQ-content .formsub .upload-avatar .upload-avatar-btn {
+  bottom: 5px;
+}
+#newQQ-content .formsub .upload-avatar .to-modify-face {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  position: absolute;
+  margin-left: -82px;
+  z-index: 10;
+}
+#newQQ-content .formsub .admin-qq-show {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .admin-qq-input {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  display: none;
+}
+#newQQ-content .formsub .desc-text {
+  color: #a2a9b6;
+  font-size: 14px;
+  display: block;
+  margin-left: 175px;
+  margin-top: 5px;
+}
+#newQQ-content .formsub .desc-text.red {
+  color: #ff4222;
+}
+#newQQ-content .formsub .upload-idcard,
+#newQQ-content .formsub .upload-wxinfo {
+  margin-top: 20px;
+}
+#newQQ-content .formsub .upload-idcard-result,
+#newQQ-content .formsub .upload-wxinfo-result {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 20px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-left: 20px;
+  display: none;
+  color: #00a1f2;
+}
+#newQQ-content .formsub .upload-idcard-result .upload-idcard-close,
+#newQQ-content .formsub .upload-wxinfo-result .upload-idcard-close,
+#newQQ-content .formsub .upload-idcard-result .upload-wxinfo-close,
+#newQQ-content .formsub .upload-wxinfo-result .upload-wxinfo-close {
+  font-size: 22px;
+  color: #7e8ba2;
+  vertical-align: middle;
+}
+#newQQ-content .formsub .upload-idcard-result a.picname,
+#newQQ-content .formsub .upload-wxinfo-result a.picname {
+  position: relative;
+}
+#newQQ-content .formsub .upload-idcard-result a.picname .pic-view,
+#newQQ-content .formsub .upload-wxinfo-result a.picname .pic-view {
+  display: none;
+  width: 140px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  background: #fff;
+}
+#newQQ-content .formsub .upload-idcard-result a.picname .pic-view img,
+#newQQ-content .formsub .upload-wxinfo-result a.picname .pic-view img {
+  width: 130px;
+  margin: 5px;
+}
+#newQQ-content .formsub .upload-idcard-result a.picname:hover .pic-view,
+#newQQ-content .formsub .upload-wxinfo-result a.picname:hover .pic-view {
+  display: block;
+}
+#newQQ-content .formsub .lbf-textarea {
+  width: 583px;
+  height: 145px;
+  padding: 8px;
+}
+#newQQ-content .formsub .lbf-textarea textarea {
+  padding: 0;
+}
+#newQQ-content .formsub .lbf-textarea-error {
+  background-color: #fff;
+}
+#newQQ-content .formsub .lbf-textarea-error:focus,
+#newQQ-content .formsub .lbf-textarea-error:hover {
+  background-color: #fff;
+}
+#newQQ-content .formsub .desc-text-idcard,
+#newQQ-content .formsub .desc-text-wxinfo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#newQQ-content .formsub .desc-text-idcard .desc-text,
+#newQQ-content .formsub .desc-text-wxinfo .desc-text {
+  margin-left: 0;
+}
+#newQQ-content .formsub .demo-idcard,
+#newQQ-content .formsub .demo-wxinfo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  margin-left: 160px;
+  position: relative;
+}
+#newQQ-content .formsub .demo-idcard .word,
+#newQQ-content .formsub .demo-wxinfo .word {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: absolute;
+}
+#newQQ-content .formsub .demo-idcard .idcard-img,
+#newQQ-content .formsub .demo-wxinfo .idcard-img,
+#newQQ-content .formsub .demo-idcard .wxinfo-img,
+#newQQ-content .formsub .demo-wxinfo .wxinfo-img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: url(images/idcarddemo.jpg) right top no-repeat;
+  width: 160px;
+  height: 120px;
+  margin-left: 35px;
+}
+#newQQ-content .formsub-type {
+  padding-top: 10px;
+}
+#newQQ-content .formsub-type .label-text {
+  font-size: 18px;
+}
+#newQQ-content .formsub-type .plain-text {
+  padding-top: 5px;
+}
+#newQQ-content .formsub-type li {
+  margin-bottom: 20px;
+}
+#newQQ-content .formsub-type .type-list {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border: 1px solid #dcdddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+#newQQ-content .formsub-type .type-list li {
+  width: 120px;
+  height: 40px;
+  margin: 0;
+  border-left: 1px solid #dcdddd;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+}
+#newQQ-content .formsub-type .type-list li.type-list-first {
+  border-left: 0;
+}
+#newQQ-content .formsub-type .type-list li a {
+  display: block;
+  height: 100%;
+  color: #545a6c;
+}
+#newQQ-content .formsub-type .type-list li a.cur {
+  color: #00a1f2;
+}
+#newQQ-content .formsub-type .type-list-intro {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #a2a9b6;
+}
+#newQQ-content .action {
+  margin-left: 204px;
+  margin-top: 50px;
+}
+#newQQ-content .action .btn_confirm {
+  padding: 0 30px;
+}
+#newQQ-content .resubmit-info {
+  margin-bottom: 30px;
+  padding: 13px 16px 13px 90px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ff5237;
+  background: #ffe2df url(images/icon-err.png) no-repeat 30px 50%;
+}
+#newQQ-content .resubmit-info h2 {
+  font-size: 16px;
+}
+#newQQ-content .resubmit-info p {
+  font-size: 14px;
+}
+/* Create QQ Publish Account Success Popup */
+.msg-succ-createQQPub h6 {
+  font-size: 16px;
+  color: #41494c;
+}
+.msg-succ-createQQPub h6 + p {
+  margin-top: 7px;
+  color: #41494c;
+  line-height: 1.714;
+}

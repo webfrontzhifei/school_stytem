@@ -1,0 +1,162 @@
+@import '../../base/mixin';
+
+
+//Targets Filter Component
+
+//筛选选项item基础样式
+.sel-item(@bg:#e4e8ea,@border:@bg-gray){
+  .dib;
+  .border-radius(25px);
+  .pl(12);
+  .pr(12);
+  .bg(@bg);
+  //jerry说不需要border
+  //border: 1px solid @border;
+  &.has-action {
+    .pr(20);
+  }
+
+}
+
+
+//筛选条件选择器
+.targets-selector {
+  .bg(@white);
+  border:0;
+  overflow:auto;
+
+  .sel-cell {
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+  }
+
+  .col2-cell {
+    .float(2);
+  }
+
+  .sel-label {
+    .cell;
+    .vm;
+    .nowrap;
+    .pr(75);
+    width: auto;
+    min-width: 4em;
+  }
+
+  .sel-cont {
+    display:table-cell; *display:inline-block;
+    .c(#0067ed);
+    i{
+      margin-bottom:-3px;
+    }
+  }
+
+  .sel-item {
+    .sel-item();
+    .rel();
+    .mr(10);
+    .c(#1e2330);
+    height: 25px;
+    line-height: 25px;
+    .icon-srv-label-close {
+      .abs();
+      right: 6px;
+      top: 8px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+//筛选条件选项Panel弹层
+.targets-selector-panel {
+  .bg(@white) !important;
+
+  .lbf-dropdown-panel-close {
+    z-index: 10;
+  }
+  
+  .lbf-button-disabled {
+    opacity: 1;
+  }
+
+  .lbf-panel {
+    .bg(@white)
+  }
+
+  .sel-cont {
+    padding: 20px;
+  }
+
+  .sel-item {
+    .sel-item();
+    //.pl(15);
+    //.pr(15);
+    .mr(10);
+    min-width: auto;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &:hover,
+    &-checked,
+    &.lbf-button-disabled{
+      .sel-item(@blue,@blue);
+      .c(@white);
+      //.pl(15);
+      //.pr(15);
+    }
+
+  }
+
+}
+
+.targets-selector-panel{
+  z-index: 1999;
+}
+.targets-selector-panel-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+//added by vergil
+.targets-selector-panel {
+
+    .lbf-dropdown-panel-body {
+
+        .pb(5px);
+
+        .tag-dropdown-panel {
+            .rel();
+
+            max-width: 350px;
+
+            .tag-title {
+                font-size: 14px;
+                .c(#1d2331);
+                .rel();
+                bottom: 8px;
+                .mb(8px);
+            }
+
+            .sel-item {
+                .mb(10px);
+                border: none;
+
+                &.no-limit {
+                    margin-right: 77%;
+                    .mb(15px);
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,67 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.reception-set {
+  padding-bottom: 100px;
+  line-height: 1;
+}
+.reception-set .back-list {
+  padding-top: 20px;
+}
+.reception-set .link-mng {
+  color: #a8abb3;
+  font-size: 18px;
+}
+.reception-set .link-mng .icon-srv-left-black {
+  vertical-align: -4px;
+  margin: 10px 0 0;
+}
+.reception-set .link-mng:hover {
+  color: #1e2330;
+}
+.reception-set .content-title {
+  font-size: 24px;
+  height: auto;
+  padding: 40px 0 50px 0;
+}
+.reception-set .name-set {
+  width: 500px;
+  margin-top: 15px;
+}
+.reception-set .title {
+  font-size: 16px;
+}
+.reception-set .receptionist-set {
+  padding-top: 50px;
+}
+.reception-set .receptionist-set .title {
+  padding-bottom: 20px;
+}
+.reception-set .receptionist-set .items-list {
+  overflow: hidden;
+}
+.reception-set .receptionist-set .allowpriority-check {
+  display: none;
+}
+.reception-set .set-action {
+  clear: both;
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 1px #EBEDF2 solid;
+  text-align: center;
+}
+.reception-set .set-action .lbf-button {
+  width: 118px;
+  margin: 0 10px;
+  line-height: 43px;
+  font-size: 16px;
+}

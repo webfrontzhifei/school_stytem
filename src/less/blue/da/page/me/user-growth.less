@@ -1,0 +1,154 @@
+.p-da-me-usergrowth {
+    .content-title {
+        border-bottom: none;
+    }
+
+    .main-hd {
+        .da-select-container {
+            float: right;
+        }
+    }
+
+    .main-bd {
+        position: relative;
+    }
+    .main-tip {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+
+        .lbf-tip {
+            left: -130px !important;
+        }
+        .lbf-tip-arrow {
+            margin-left: 130px !important;
+        }
+
+        &-growth {
+            padding: 20px;
+            width: 270px;
+
+            dt {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .main-yesterday {
+        padding: 30px;
+        margin-bottom: 0;
+
+        &-bd {
+            margin-top: 30px;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 0;
+            border-collapse: collapse\9;
+
+            th {
+                text-align: left;
+                font-weight: normal;
+            }
+
+            th,
+            td {
+                padding-left: 100px;
+            }
+
+            thead th {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            &-num {
+                line-height: 60px;
+                font-size: 60px;
+                font-weight: 100;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+                td {
+                    padding-bottom: 25px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+
+            &-label {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .main-other {
+        padding: 30px;
+        margin-bottom: 0;
+
+        &-charts {
+            margin-top: 20px;
+
+            .main-hd-date-label {
+                display: none;
+            }
+
+            .da-range-picker {
+                margin-right: 6px;
+                //width: 240px;
+                height: 40px;
+                //padding-left: 15px;
+                //padding-right: 15px;
+                box-sizing: border-box;
+            }
+
+            &-time {
+                margin-top: 30px;
+
+                &-cp {
+                    display: none;
+                    height: 40px;
+                    line-height: 40px;
+
+                    &-label {
+                        display: inline-block;
+                        width: 70px;
+                        text-align: center;
+                    }
+                }
+
+                &-btn {
+                    float: right;
+                }
+            }
+
+            &-from {
+                margin-top: 20px;
+
+                .da-buttons .lbf-button {
+                    width: auto;
+                    padding: 0 30px;
+                }
+            }
+
+            &-bd {
+                margin: 70px 0 20px;
+                height: 330px;
+            }
+        }
+
+        &-charts-cp {
+            .main-other-charts-time .da-buttons {
+                display: none;
+            }
+
+            .main-other-charts-time-cp {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+

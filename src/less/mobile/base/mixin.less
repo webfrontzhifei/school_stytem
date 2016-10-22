@@ -1,0 +1,53 @@
+//单行文字超出显示...
+.ellipsis() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+//retina边框
+//param scaleRatio .5||.33
+.retinaBorTop(@borColor:#ccc, @scaleRatio:.5) {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scaleY(@scaleRatio);
+    transform: scaleY(@scaleRatio);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    top: 0;
+    border-top: 1px @borColor solid;
+}
+.retinaBorBot(@borColor:#ccc, @scaleRatio:.5) {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scaleY(@scaleRatio);
+    transform: scaleY(@scaleRatio);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    bottom: 0;
+    //should be bottom instead of top --modified by byronbinli
+    border-bottom: 1px @borColor solid;
+}
+//retina边框默认带圆角
+.retinaBox(@borColor:#ccc, @scaleRatio:1, @radiusVal:0, @areaRatio:100%) {
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    -webkit-transform:scale(@scaleRatio);
+    transform:scale(@scaleRatio);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:@areaRatio;
+    height:@areaRatio;
+    background-color:#fff;
+    border:1px @borColor solid;
+    border-radius:@radiusVal;
+}

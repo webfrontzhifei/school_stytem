@@ -1,0 +1,309 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.bdgray {
+  border-bottom: 1px solid #a8abb3;
+}
+.content-main .account-setting-failed {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  color: #f4615c;
+  background-color: #ffe2df;
+}
+.content-main .account-setting-infocard {
+  border-radius: 5px;
+  margin-top: 25px;
+  height: 150px;
+  padding-left: 130px;
+  background-color: #e1e4e6;
+}
+.content-main .account-setting-infocard-content {
+  padding-top: 40px;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.content-main .account-setting-infocard-content .infocard-title {
+  width: 60px;
+}
+.content-main .account-setting-infocard-content .icon-quest {
+  margin-bottom: -2px;
+  margin-left: 4px;
+}
+.content-main .account-setting-avatar {
+  position: absolute;
+  margin-left: -110px;
+  margin-top: 23px;
+}
+.content-main .account-setting-avatar img {
+  width: 110px;
+  border-radius: 55px;
+}
+.content-main .account-setting-content-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.content-main .account-setting-content-desc {
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.content-main .account-setting-content .api-info-table .col1 {
+  padding-left: 30px;
+}
+.content-main .account-setting-content .api-info-table .col1,
+.content-main .account-setting-content .api-info-table .col2 {
+  width: 20%;
+}
+.content-main .account-setting-content .api-info-table .col3 {
+  width: 100px;
+}
+.content-main .account-setting-content .capability-list-table .col1 {
+  padding-left: 30px;
+  width: 400px;
+}
+.content-main .account-setting-content .capability-list-table .col2 {
+  width: 100px;
+}
+.content-main .account-setting-api-info,
+.content-main .account-setting-capability-list {
+  font-size: 14px;
+  line-height: 50px;
+}
+.content-main .account-setting-api-info a,
+.content-main .account-setting-capability-list a {
+  font-size: 12px;
+}
+.content-main .account-setting-capability-list {
+  padding-top: 20px;
+}
+.toolbar-block {
+  background-color: #ffffff;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+  margin-top: 35px;
+  position: relative;
+}
+.toolbar-block .toolbar-item {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  cursor: pointer;
+  height: 24px;
+  line-height: 24px;
+}
+.toolbar-block .toolbar-item .toolbar-item-icon {
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+.toolbar-block .toolbar-item .toolbar-text {
+  font-size: 16px;
+  color: #1e2330;
+}
+.toolbar-block .toolbar-item.disable {
+  cursor: default;
+  opacity: .38;
+  filter: alpha(opacity=38);
+}
+.toolbar-block .toolbar-buttons {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  float: right;
+  margin-right: 20px;
+}
+.toolbar-block .toolbar-buttons #create i {
+  margin: -3px 0;
+  margin-right: 5px;
+}
+#membersList tr.empty-member-table {
+  text-align: center;
+}
+#membersList tr.empty-member-table td {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#membersList tr.empty-member-table td:hover {
+  background-color: #ffffff;
+}
+#membersList tr.empty-member-table td h2 {
+  font-size: 24px;
+}
+#membersList .col0 {
+  padding-left: 15px;
+  width: 30px;
+}
+#membersList .col1 {
+  width: 180px;
+  padding-left: 0!important;
+}
+#membersList .col2 {
+  width: 150px;
+}
+#membersList .col3 {
+  width: 30%;
+  padding-right: 20px;
+}
+#membersList .col4 {
+  text-align: left;
+}
+#membersList .col5 {
+  width: 100px;
+}
+#membersList tr td {
+  line-height: 180%;
+  position: relative;
+}
+#membersList tr .member-toolbar {
+  float: right;
+  position: relative;
+  top: 3px;
+  right: 10px;
+}
+#membersList tr .member-toolbar span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#membersList tr .perm-texts .perm-block {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#membersList tr .perm-texts .perm-block .sub-perm {
+  color: #66686c;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+#membersList tr .remark-text {
+  position: absolute;
+  top: 20%;
+  width: 90%;
+  max-height: 40px;
+  overflow: hidden;
+}
+#membersList tr .remark-text p {
+  padding: 15px;
+  border: 1px solid transparent;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#membersList tr .remark-text p p.ell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#membersList tr .remark-text p:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+}
+#membersList tr .has-remark:hover {
+  overflow: visible;
+  z-index: 999;
+}
+#membersList tr .has-remark:hover p {
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  white-space: normal!important;
+}
+#membersList tr:hover .member-toolbar {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+#adminTable .col1 {
+  padding-left: 40px!important;
+  width: 185px!important;
+}
+#adminTable .col2 {
+  width: 186px!important;
+}
+.edit-panel {
+  position: relative;
+  padding-left: 15px;
+  top: -10px;
+}
+.edit-panel .row {
+  position: relative;
+  overflow: hidden;
+}
+.edit-panel .row .item-value {
+  display: inline-block;
+}
+.edit-panel .row-title {
+  float: left;
+  width: 60px;
+}
+label.edit-panel .row-title {
+  margin-top: 10px;
+}
+.edit-panel .panel-permissions-block {
+  position: relative;
+  margin-left: -3px;
+}
+.edit-panel .panel-permissions-block .panel-permission {
+  margin-top: 30px;
+}
+.edit-panel .panel-permissions-block .panel-permission .sub-permissions {
+  margin-top: 10px;
+  margin-left: 30px;
+  line-height: 40px;
+}
+.edit-panel .panel-permissions-block .panel-permission .sub-permissions .sub-permission {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 58px;
+}
+.edit-panel .input-long {
+  width: 545px;
+}
+.edit-panel .input-member-name {
+  width: 240px;
+}
+.edit-panel .lbf-tip-error {
+  top: -30px !important;
+}
+.edit-panel #panelResetPwd {
+  position: relative;
+  top: 2px;
+}
+.text-gray {
+  color: #66686c;
+}
+.unauthorized-container {
+  text-align: center;
+}
+.unauthorized-container img {
+  margin-top: 70px;
+}
+.unauthorized-container h2 {
+  margin-top: 40px;
+  font-size: 24px;
+}
+.unauthorized-container p {
+  margin-top: 10px;
+}
+.icon-empty-member {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100px;
+  height: 100px;
+  background: url(images/icon-empty-member.png) no-repeat;
+}

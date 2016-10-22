@@ -1,0 +1,100 @@
+@import '../../base/mixin';
+@textBlue: #81c3ec;
+html,body {
+    height: auto;
+    overflow-y: auto;
+    background-color:  #292f3b;
+}
+.page{
+    min-height: 1173px;
+    min-width: 705px;
+    background: #292f3b url("images/bg-timeline.jpg") 50% 0 no-repeat;
+}
+.intro-section {
+    .rel();
+    .w(705px);
+    .auto;
+    left: 10px;
+    .pt(490px);
+    .pb(50px);
+    .c(#fff);
+    .main-title {
+        font-size: 40px;
+        .c(@textBlue);
+        .pl(180px);
+        .mb(30px);
+    }
+    .version-list {
+        padding-top: 24px;
+    }
+    dt {
+        .db();
+        font-size: 24px;
+        .c(@textBlue);
+        .abs();
+        left: 0;
+        .mt(-24px);
+        font-weight: normal;
+        em {
+            .dib();
+            font-style: normal;
+            &.date {
+                .w(150px);
+                .mr(67px);
+                .ml(-17px);
+                text-align: right;
+                .nowrap();
+            }
+        }
+    }
+    dd {
+        font-size: 15px;
+        .rel();
+        .pt(35px);
+        .pl(35px);
+        .pb(50px);
+        .ml(165px);
+        .mb(9px);
+        border-left: 1px solid #79b5dc;
+        .z();
+        &:last-of-type {
+          .pb(20px);
+        }
+        h2 {
+            font-size: 17px;
+            .mt(8px);
+            .mb(10px);
+        }
+        .item-list {
+            .mb(25px);
+            .c(#ccc);
+            li {
+               .pb(5px);
+               padding-left: 1.5em;
+            }
+            label {
+               width: 1.5em;
+               .abs();
+               margin-left: -1.5em;
+            }
+        }
+        .icon-dot {
+            .abs();
+            .dib();
+            .w(9px);
+            .h(9px);
+            left: -5px;
+            top: -9px;
+            background: url("images/icons-timeline.png") 0 -20px no-repeat;
+        }
+        &.latest {
+            .icon-dot {
+                .w(11px);
+                .h(11px);
+                left: -6px;
+                top: -11px;
+                background-position: 0 0;
+            }
+        }
+    }
+}

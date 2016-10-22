@@ -1,0 +1,79 @@
+@import '../../../base/mixin';
+
+.bar() {
+	.dib();
+	.h(8px);
+	border-radius: 20px;
+}
+
+.keyword-page {
+
+	.table-content {
+		.rel();
+
+		.table-loading {
+			.abs();
+			left: 45%;
+			top: 0;
+		}
+	}
+	
+}
+
+body {
+
+	.table-keyword {
+
+		.rank {
+			.w(15%);
+		}
+
+		.keyword {
+			.w(30%);
+		}
+
+		.count {
+			.w(15%);
+		}
+
+		tbody {
+
+			td:first-child {
+				.pl(30px);
+			}
+
+			.keyword {
+				.ell();
+				word-break: break-all;
+				word-wrap: break-word;
+			}
+
+			.percentage {
+
+				.percentage-bar {
+
+					.bar();
+					.w(100px);	
+					.bg(#e1e4e6);
+					.rel();
+					.vm();
+
+					.actual-percentage {
+						.bar();
+						.bg(#00a1f2);
+						.abs();
+						left: 0;
+						top: 0;
+					}
+				}
+
+				.text-percentage {
+					.dib();
+					.ml(5px);
+					.vm();
+				}
+			}
+
+		}
+	}
+}

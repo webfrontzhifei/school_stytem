@@ -1,0 +1,180 @@
+@import '../../base/mixin';
+
+
+.mobile-tabview-content {
+  .mt(30px);
+  .bd(@border-gray);
+
+  // by default, white color
+  .bg();
+}
+
+.mobile-display {
+  .mobile {
+    &-tabview-header {
+      .h(50px);
+      .lh(50px);
+
+
+      .lbf-tabview-tab {
+        .pl(60px);
+      }
+    }
+  }
+}
+
+.mobile-content {
+  .mobile {
+    &-nav-tree {
+      .rel;
+      .w(300px);
+      .h(500px);
+      .bg(@bg-gray);
+
+      .switch {
+        left: 0;
+      }
+
+      .page-tree-loading {
+        .h(100%);
+      }
+    }
+
+    &-page-guide, &-act-guide {
+      .lh(60px);
+      .pl(20px);
+      .pr(20px);
+      border-bottom: 1px solid @border-gray;
+    }
+
+    &-display-main {
+      .tc();
+      .h(500px);
+    }
+  }
+}
+
+// mobile icon a
+.mobile-icon-a {
+  .dib();
+  .lh(20px);
+  .c(#545a6c);
+  
+  /*&:hover {
+    .c(@blue);
+  }*/
+
+  .icon-a {
+    .pr(5px);
+    vertical-align: -2px;
+  }
+}
+
+.table {
+  .ck {
+    .tc();
+    .w(50px);
+  }
+  .cate {
+    .w(210px);
+    .tc;
+  }
+  .tit {
+    .tl;
+    border-left: 0;
+    min-width: 360px;
+    a {
+      .mr(25px);
+    }
+  }
+  .op {
+    .w(180px);
+    .tr;
+    padding-right:20px;
+  }
+  .op-ckall {
+    .c(#585858);
+  }
+
+  .hour, .time {
+    .lh(21px);
+    .tl;
+  }
+
+  .act {
+    .dib;
+    .w(17px);
+    .vm;
+    .vh;
+    .tl;
+    line-height:16px;
+  }
+
+  tr:hover {
+    .act {
+      .vv;
+    }
+  }
+
+  .hover {
+    .act {
+      .dib;
+    }
+  }
+
+  .lbf-combobox {
+    .dib;
+    .w(140px);
+    .l;
+    .ml(35px);
+  }
+
+  .empty {
+    .tc;
+  }
+}
+
+// materail view
+.material-view {
+  .p(20px);
+
+  .li {
+    .pt(10px);
+    .pb(10px);
+  }
+
+  .img {
+    .dib;
+    .mr(20px);
+    .w(108px);
+    .h(60px);
+    .vm;
+    .tc;
+    .ovh;
+    img {
+      .w(60px);
+    }
+  }
+
+  .first {
+    .img {
+      img {
+        .w(108px);
+      }
+    }
+  }
+
+  .info {
+    max-height: 60px;
+    line-height:20px;
+    .w(210px);
+    .dib;
+    .vm;
+    .ovh;
+  }
+}
+
+.disabled .lbf-button-primary{
+    color:#fff!important;
+    cursor:pointer;
+}

@@ -1,0 +1,650 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.no-auth,
+.icon-authed,
+.icon-wx-authed {
+  display: inline-block;
+  vertical-align: middle;
+}
+.no-auth {
+  display: none;
+  height: 20px;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  line-height: 18px;
+  color: #f5f7fa;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #545A6C;
+}
+.no-auth:hover {
+  color: #fff;
+}
+.no-auth-red {
+  background-color: #f4615c;
+}
+.no-auth-blue {
+  background-color: #00a1f2;
+}
+.icon-authed,
+.icon-wx-authed {
+  width: 14px;
+  height: 16px;
+  margin-left: 3px;
+  background: url(images/icons-account-manage.png) no-repeat -51px top;
+}
+.icon-wx-authed {
+  background-position: -121px top;
+}
+.info-item {
+  overflow: hidden;
+  border-radius: 4px;
+  vertical-align: top;
+  line-height: 1;
+}
+.info-item .avatar {
+  float: left;
+  margin-right: 15px;
+}
+.info-item .avatar img {
+  border-radius: 50px;
+}
+.info-item .avatar .avatar-in {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.info-item .avatar .avatar-in:hover .avatar-cover,
+.info-item .avatar .avatar-in:hover .avatar-edit {
+  visibility: visible;
+}
+.info-item .avatar .avatar-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  border-radius: 50px;
+  filter: alpha(opacity=70);
+  z-index: 1;
+  visibility: hidden;
+}
+.info-item .avatar .avatar-edit {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(images/icons-account-bind.png) no-repeat -125px -20px;
+  z-index: 2;
+  cursor: pointer;
+  visibility: hidden;
+}
+.info-item .avatar .lbf-loading {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+}
+.info-item .info {
+  position: relative;
+  overflow: hidden;
+}
+.info-item .name {
+  padding: 6px 0 5px 0;
+  *padding: 3px 0 2px 0;
+  font-size: 16px;
+}
+.info-item .type {
+  color: #a2a9b6;
+}
+.sync-result,
+.import-action,
+.sync-action {
+  line-height: 1;
+}
+.sync-result .icon-authed,
+.import-action .icon-authed,
+.sync-action .icon-authed,
+.sync-result .no-auth,
+.import-action .no-auth,
+.sync-action .no-auth {
+  margin-top: -2px;
+  *margin-top: 0;
+}
+.sync-result .icon-wx-authed,
+.import-action .icon-wx-authed,
+.sync-action .icon-wx-authed {
+  margin: -1px 0 0 5px;
+  *margin-top: 0;
+}
+.import-action,
+.sync-action,
+.create-action,
+.sync-result {
+  /*.selected, .selected:hover {
+		background-color: #f2fafe;
+	}*/
+}
+.import-action .list,
+.sync-action .list,
+.create-action .list,
+.sync-result .list {
+  *position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 320px;
+  border: 1px #DEDDDD solid;
+  background: #fff;
+}
+.import-action .info-item,
+.sync-action .info-item,
+.create-action .info-item,
+.sync-result .info-item {
+  height: 65px;
+  padding: 15px 15px 0 18px;
+  cursor: pointer;
+}
+.import-action .lbf-iradio,
+.sync-action .lbf-iradio,
+.create-action .lbf-iradio,
+.sync-result .lbf-iradio,
+.import-action .lbf-icheckbox,
+.sync-action .lbf-icheckbox,
+.create-action .lbf-icheckbox,
+.sync-result .lbf-icheckbox {
+  float: right;
+  margin-top: 15px;
+  *margin-right: 15px;
+}
+.import-action,
+.sync-action,
+.sync-result {
+  width: 750px;
+  /*IE7*/
+}
+.import-action .list,
+.sync-action .list,
+.sync-result .list {
+  width: 714px;
+  max-height: 230px;
+  padding: 18px;
+  background: #e3e5e6;
+}
+.import-action .list > ul,
+.sync-action .list > ul,
+.sync-result .list > ul {
+  margin-right: -20px;
+  margin-left: 1px;
+}
+.import-action .list li,
+.sync-action .list li,
+.sync-result .list li {
+  width: 302px;
+  margin: 8px;
+  float: left;
+  border: 2px solid #e3e5e6;
+}
+.import-action .list li:hover,
+.sync-action .list li:hover,
+.sync-result .list li:hover {
+  border: 2px solid #00a1f2;
+}
+.import-action .list li.selected,
+.sync-action .list li.selected,
+.sync-result .list li.selected {
+  border: 2px solid #00a1f2;
+  background-color: #f2fbfe;
+}
+.import-action .info-item,
+.sync-action .info-item,
+.sync-result .info-item {
+  background: #fff;
+}
+.import-action .current-item,
+.sync-action .current-item,
+.sync-result .current-item,
+.import-action .current-item:hover,
+.sync-action .current-item:hover,
+.sync-result .current-item:hover {
+  margin-top: 8px;
+  margin-bottom: -10px;
+  padding: 15px 15px 0 50px;
+  background: #ffffff url(images/bg-current-item.png) no-repeat;
+  cursor: default;
+}
+.import-action .tit,
+.sync-action .tit,
+.sync-result .tit {
+  color: #aab0b2;
+}
+.import-action .current-item,
+.import-action .current-item:hover {
+  margin: 10px 205px auto;
+}
+.import-action .list {
+  margin-bottom: 22px;
+}
+.import-action .tit {
+  padding-top: 25px;
+  text-align: center;
+  background: url(images/pointer-bottom.png) no-repeat 50% 0;
+}
+.import-action .lbf-iradio {
+  background-image: none;
+}
+.sync-action {
+  padding-bottom: 10px;
+}
+.sync-action .current-item,
+.sync-action .current-item:hover {
+  margin: 10px 205px 18px;
+}
+.sync-action .list {
+  margin-top: 8px;
+  margin-bottom: -10px;
+}
+.sync-action .tit {
+  padding-top: 25px;
+  text-align: center;
+  background: url(images/pointer-bottom.png) no-repeat 50% 0;
+}
+.create-action ::-webkit-scrollbar {
+  width: 6px;
+}
+.create-action ::-webkit-scrollbar-thumb {
+  background-color: #d4d7d9;
+  border-radius: 8px;
+}
+.create-action ::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.create-action ::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+.create-action .list {
+  max-height: 445px;
+  min-height: 438px;
+  margin-bottom: 0;
+}
+.create-action .list .lbf-iradio.lbf-iradio-disabled {
+  background-image: none;
+}
+.create-action .list .info-item:hover {
+  background-color: #f2fbfe;
+}
+.create-action .title-create {
+  margin: 5px 0 15px;
+  color: #a2a9b6;
+}
+.create-action .title-create i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: url(images/icons-account-manage.png) no-repeat -164px 0;
+  cursor: pointer;
+}
+.create-action .account-create-null {
+  height: 190px;
+  padding-top: 240px;
+  font-size: 18px;
+  text-align: center;
+  background: url(images/account-create-null.png) no-repeat 50% 142px;
+}
+.panel-openAccountWxList.lbf-panel {
+  width: 500px;
+}
+.panel-openAccountWxList .lbf-panel-foot .link-bindOtherWxPub {
+  border: none;
+  background-color: transparent;
+  color: #00a1f2;
+  margin-left: 0;
+  padding: 1px 0;
+}
+.panel-openAccountNull.lbf-panel {
+  width: 600px;
+  border-radius: 4px;
+}
+.panel-openAccountNull .msg-null {
+  font-size: 16px;
+  text-align: center;
+  color: #41494c;
+  margin-bottom: 16px;
+}
+.panel-openAccountNull .icon-openqqBindWx {
+  width: 226px;
+  height: 76px;
+  margin: 35px auto 22px;
+  background: url(images/icons-account-open-bind.png) no-repeat 50% 50%;
+}
+.panel-openAccountNull .lbf-panel-foot {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.panel-openAccountNull .lbf-button-primary {
+  font-size: 20px;
+  line-height: 58px;
+  margin-right: 15px;
+  padding: 0;
+  width: 278px;
+}
+.lbf-panel-foot .import-tip {
+  line-height: 38px;
+}
+.lbf-panel-foot .import-tip .icon-tip-attention {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -2px;
+}
+.select-type {
+  height: 100px;
+  text-align: left;
+}
+.select-type li {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  height: 98px;
+  border: 1px solid #cacdd0;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  *float: left;
+}
+.select-type li .icon {
+  margin: 18px 18px 0 55px;
+  float: left;
+}
+.select-type li .txt {
+  display: block;
+  margin: 20px 0 5px;
+  text-align: left;
+}
+.select-type li .txt-under {
+  display: block;
+  font-size: 14px;
+  color: #aab0b2;
+  text-align: left;
+}
+.select-type li.type-open {
+  margin-right: 7px;
+  *margin-right: 12px;
+}
+.select-type li.type-open .icon {
+  width: 54px;
+  height: 59px;
+  background-position: -235px 0;
+}
+.select-type li.type-wx .icon {
+  margin-left: 30px;
+  margin-top: 13px;
+  width: 70px;
+  height: 70px;
+  background: url(images/icon-wx.png) no-repeat;
+}
+.select-type li.type-qq {
+  margin-left: 16px;
+}
+.select-type li.type-qq .icon {
+  margin-top: 13px;
+  margin-left: 30px;
+  width: 70px;
+  height: 70px;
+  background: url(images/icon-qq.png) no-repeat;
+}
+.select-type li.selected,
+.select-type li:hover {
+  height: 98px;
+  border: 1px #a8abb3 solid;
+}
+.select-type li.selected .txt,
+.select-type li:hover .txt {
+  margin: 20px 0 5px;
+}
+.select-type li.selected.type-open,
+.select-type li:hover.type-open {
+  margin-right: 5px;
+  *margin-right: 10px;
+}
+.select-type li.selected.type-open .icon,
+.select-type li:hover.type-open .icon {
+  margin: 17px 18px 0 54px;
+}
+.bind-table .loading-line:hover td {
+  background-color: #fff;
+}
+.bind-table .loading-line i.icon-mp-edit {
+  display: none;
+}
+.bind-table .loading-line .avatar-loading {
+  text-align: center;
+  color: #00a1f2;
+}
+.bind-table .loading-line .avatar-loading span {
+  line-height: 200%;
+}
+.bind-table .mp-name {
+  width: 390px;
+  padding: 0 10px 0 35px;
+}
+.bind-table .mp-type {
+  width: 170px;
+}
+.bind-table .mp-op {
+  width: 180px;
+  padding-left: 110px;
+}
+.bind-table .mp-op-in {
+  position: relative;
+}
+.bind-table .mp-op-wxFunc .lbf-tip-top .lbf-tip-arrow {
+  left: 80%;
+}
+.bind-table .icon-mp-edit {
+  visibility: hidden;
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+.bind-table .info-item-content {
+  position: relative;
+}
+.bind-table .info-item {
+  position: relative;
+}
+.bind-table .info-item .info {
+  word-break: break-all;
+}
+.bind-table .info-item .info dl {
+  overflow: hidden;
+}
+.bind-table .info-item .info dl dt.name {
+  max-width: 250px;
+}
+.bind-table .info-item .icon-authed,
+.bind-table .info-item .icon-wx-authed,
+.bind-table .info-item .no-auth {
+  margin-top: -3px;
+  *margin-top: 0;
+}
+.bind-table .info-item .remark {
+  margin-left: 5px;
+  color: #a2a9b6;
+}
+.bind-table .info-item .name {
+  padding-top: 4px;
+  padding-bottom: 7px;
+  *padding-top: 2px;
+  *padding-bottom: 3px;
+  line-height: 1.4;
+}
+.bind-table .info-item .name:hover .icon-mp-edit {
+  visibility: visible;
+  vertical-align: -2px;
+}
+.bind-table .info-item .type {
+  line-height: 18px;
+}
+.bind-table tbody {
+  /* 公众号管理列表为空 */
+}
+.bind-table tbody .mp-info {
+  line-height: 1.6;
+  vertical-align: middle;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.bind-table tbody .mp-info:hover .icon-mp-edit {
+  visibility: visible;
+}
+.bind-table tbody .mp-op {
+  line-height: 160%;
+}
+.bind-table tbody td {
+  padding-top: 44px!important;
+  padding-bottom: 44px!important;
+}
+.bind-table tbody .text-err {
+  color: #ff4222;
+  line-height: 16px;
+}
+.bind-table tbody .icon-text-err {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  vertical-align: middle;
+  background: url(images/icons-account-manage.png) no-repeat -103px;
+}
+.bind-table tbody tr:hover .bind-empty {
+  background-color: #fff;
+}
+.bind-table tbody .bind-empty {
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+}
+.bind-table tbody .bind-empty .icon-null-pubacc {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 8px auto;
+  background: url(images/icon-empty-account.png) no-repeat;
+}
+.bind-table tbody .bind-empty .msg {
+  font-size: 24px;
+  color: #494b4c;
+}
+.remark-dropdown {
+  min-width: 280px!important;
+  top: 0!important;
+  background: #fff!important;
+}
+.remark-dropdown .add-remark {
+  height: 40px;
+  margin: 10px 0 0;
+  *margin-top: 25px;
+  line-height: 40px;
+}
+.remark-dropdown .add-remark .lbf-text-input {
+  width: 250px;
+}
+.remark-dropdown .add-remark a {
+  display: inline-block;
+  height: 40px;
+  margin-left: 10px;
+}
+.remark-dropdown .lbf-panel-body {
+  padding: 10px 20px 20px;
+}
+.remark-dropdown .lbf-panel-foot {
+  padding: 0 20px 18px;
+}
+.bind-action .select-all .lbf-icheckbox {
+  float: none;
+  vertical-align: middle;
+  margin: -2px 3px 0 -2px;
+}
+.bind-action .list {
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+.bind-action .tip {
+  margin-bottom: -10px;
+  padding-top: 10px;
+  line-height: 1.4;
+  color: #a2a9b6;
+}
+.bind-action .empty {
+  padding: 35px 0 10px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.bind-action .empty dt {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 20px auto;
+  background: url(images/icons-account-bind.png) no-repeat -143px top;
+}
+.bind-action-only {
+  width: 436px;
+}
+.bind-action-only .list-only {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.bind-action-only .list-only .info-item-only:hover {
+  border: 2px solid #e3e5e6;
+  cursor: auto;
+}
+.bind-action-only .list-only li {
+  width: 398px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.bind-action-none {
+  width: auto;
+}
+.lbf-tip-content .info-item-tips {
+  width: 300px;
+  margin: 8px;
+  font-size: 14px;
+}
+.lbf-tip-content .info-item-tips p {
+  margin: 10px 0 0;
+}
+.lbf-tip-content .info-item-tips .info-item-tips-foot {
+  margin: 20px 0;
+  float: right;
+}
+.lbf-tip-content .info-item-tips .info-item-tips-foot .lbf-button-primary {
+  margin-right: 10px;
+}
+body .bind-qq-acc .lbf-panel-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 28px;
+  padding-top: 25px;
+}
+body .bind-qq-acc .lbf-panel-foot {
+  padding-bottom: 0px;
+}

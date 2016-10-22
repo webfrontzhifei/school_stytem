@@ -1,0 +1,190 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.imgtxt-wpa-panel div::-webkit-scrollbar {
+  width: 8px;
+}
+.imgtxt-wpa-panel div::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.imgtxt-wpa-panel div::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.imgtxt-wpa-panel div::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+.imgtxt-wpa-panel .lbf-panel-head {
+  text-align: center;
+  font-size: 24px;
+  color: #1e2330;
+  margin-bottom: 23px;
+  padding-top: 25px;
+  font-weight: normal;
+}
+.imgtxt-wpa-panel .lbf-panel-body {
+  padding: 0 0 40px 10px;
+}
+.imgtxt-wpa-panel h6 {
+  visibility: hidden;
+  height: 0px;
+  overflow: hidden;
+}
+.imgtxt-wpa-panel .tab-btns,
+.imgtxt-wpa-panel .tab-contents {
+  display: table-cell;
+  *display: inline-block;
+  width: 2000px;
+  *width: auto;
+}
+.imgtxt-wpa-panel .tab-btns {
+  width: 250px;
+}
+.imgtxt-wpa-panel .tab-btns ul {
+  position: relative;
+  width: 250px;
+}
+.imgtxt-wpa-panel .tab-btns li {
+  position: relative;
+  width: 220px;
+  min-height: 48px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 2px;
+  padding: 11px 15px;
+  line-height: 48px;
+}
+.imgtxt-wpa-panel .tab-btns li:after {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  content: '';
+  vertical-align: middle;
+}
+.imgtxt-wpa-panel .tab-btns li .imgtxt-title {
+  vertical-align: middle;
+  line-height: 24px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.imgtxt-wpa-panel .tab-btns li:hover {
+  cursor: pointer;
+  color: #1e2330;
+  background-color: #f0f3fa;
+}
+.imgtxt-wpa-panel .tab-btns li.tab-btn-current {
+  background-color: #e4e9f5;
+}
+.imgtxt-wpa-panel .tab-btns li.tab-btn-current:hover {
+  cursor: default;
+}
+.imgtxt-wpa-panel .tab-btns li.tp-selected .imgtxt-title:before {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 5px;
+  content: '[已投放]';
+  color: #0067ed;
+}
+.imgtxt-wpa-panel .tab-contents {
+  padding-left: 18px;
+  position: relative;
+}
+.imgtxt-wpa-panel .wpa-list {
+  min-height: 300px;
+  max-height: 624px;
+  overflow-y: auto;
+}
+.imgtxt-wpa-panel .wpa-list ul {
+  margin-top: -12px;
+}
+.imgtxt-wpa-panel .wpa-list .empty-info {
+  position: absolute;
+  margin-top: -50px;
+  right: 0;
+  left: 0;
+  top: 50%;
+}
+.imgtxt-wpa-panel .wpa-list li {
+  float: left;
+  width: 50%;
+  height: 200px;
+  margin-top: 12px;
+}
+.imgtxt-wpa-panel .wpa-list li .item {
+  position: relative;
+  height: 200px;
+  margin: 0 18px 0 0;
+}
+.imgtxt-wpa-panel .wpa-list li .img {
+  position: relative;
+  height: 156px;
+  line-height: 156px;
+  margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.imgtxt-wpa-panel .wpa-list li .img img {
+  max-width: 256px;
+  vertical-align: middle;
+}
+.imgtxt-wpa-panel .wpa-list li .name-text {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.imgtxt-wpa-panel .wpa-list li .lbf-icheckbox {
+  position: absolute;
+  visibility: hidden;
+  right: 10px;
+  top: 10px;
+}
+.imgtxt-wpa-panel .wpa-list li:hover {
+  cursor: pointer;
+}
+.imgtxt-wpa-panel .wpa-list li:hover .lbf-icheckbox {
+  visibility: visible;
+}
+.imgtxt-wpa-panel .wpa-list li:hover .lbf-icheckbox-checked {
+  visibility: hidden;
+}
+.imgtxt-wpa-panel .wpa-list li.selected .img,
+.imgtxt-wpa-panel .wpa-list li.selected:hover .img {
+  border-color: #0067ed;
+  border-radius: 3px;
+}
+.imgtxt-wpa-panel .wpa-list li.selected .img:before,
+.imgtxt-wpa-panel .wpa-list li.selected:hover .img:before {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  *zoom: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.imgtxt-wpa-panel .wpa-list li.selected .lbf-icheckbox,
+.imgtxt-wpa-panel .wpa-list li.selected:hover .lbf-icheckbox {
+  visibility: hidden;
+}
+.imgtxt-wpa-panel .wpa-list li.selected .lbf-icheckbox-checked,
+.imgtxt-wpa-panel .wpa-list li.selected:hover .lbf-icheckbox-checked {
+  visibility: visible;
+}

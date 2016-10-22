@@ -1,0 +1,227 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.no-auth,
+.icon-authed,
+.icon-wx-authed {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  *margin-top: 0;
+}
+.no-auth {
+  width: 46px;
+  height: 20px;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 18px;
+  color: #f5f7fa;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #545A6C;
+}
+.icon-authed,
+.icon-wx-authed {
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+  background: url(../reply/images/icons-account-manage.png) no-repeat -51px top;
+}
+.icon-wx-authed {
+  margin-top: -1px;
+  *margin-top: 0;
+  background-position: -121px top;
+}
+.acount-list {
+  max-height: 294px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 0;
+  overflow: auto;
+  background: #f7f9fa;
+}
+.acount-list .avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.acount-list .avatar img {
+  border-radius: 50px;
+}
+.acount-list .name {
+  padding: 6px 0 5px 0;
+  *padding: 3px 0 2px 0;
+  font-size: 16px;
+}
+.acount-list .type {
+  color: #a2a9b6;
+}
+.acount-list li {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  float: left;
+}
+.acount-list li > .wrap {
+  overflow: hidden;
+  height: 62px;
+  padding: 13px 20px 0 20px;
+  line-height: 1;
+  margin: 9px;
+  border: 1px solid #e3e5e6;
+  border-radius: 4px;
+  background: #fff;
+}
+.acount-list li:hover {
+  background-color: transparent;
+}
+.acount-list li:hover > .wrap {
+  border: 2px solid #00a1f2;
+  margin: 8px;
+  cursor: pointer;
+}
+.acount-list li.selected {
+  background-color: transparent;
+}
+.acount-list li.selected > .wrap {
+  border: 2px solid #00a1f2;
+  margin: 8px;
+  background-color: #e5f6ff;
+}
+.acount-list li.info-item-disabled > .wrap {
+  border-color: #f3f3f3;
+}
+.acount-list li.info-item-disabled:hover > .wrap {
+  border: 1px solid #f3f3f3;
+  margin: 9px;
+  cursor: default;
+}
+.acount-list li.info-item-disabled .avatar,
+.acount-list li.info-item-disabled .name,
+.acount-list li.info-item-disabled .type {
+  opacity: .3;
+  *filter: alpha(opacity=30);
+}
+.acount-list .action,
+.acount-list .lbf-icheckbox {
+  float: right;
+  text-align: right;
+}
+.acount-list .lbf-icheckbox {
+  margin-top: 15px;
+}
+.acount-list .action {
+  *margin-bottom: -100%;
+  *line-height: 1.2;
+}
+.acount-list .action dt,
+.acount-list .action dd,
+.acount-list .action .action-text {
+  color: #a2a9b6;
+}
+.acount-list .action dt,
+.acount-list .action dd {
+  margin-top: 15px;
+  float: left;
+}
+.acount-list .action dt {
+  margin-right: 8px;
+}
+.acount-list .action a {
+  *line-height: 20px;
+}
+.acount-list .action .action-text {
+  margin: 7px 20px 0 0;
+  float: left;
+  *float: right;
+  *margin-top: 15px;
+}
+.acount-list .action .action-text .fan-number {
+  margin-top: 10px;
+  position: relative;
+  top: 6px;
+}
+.acount-list .action .action-text .icon-tips-info {
+  margin: -3px 0;
+}
+.acount-list .bind-empty {
+  padding: 105px 0;
+  text-align: center;
+  background: #f7f9fa;
+}
+.acount-list .bind-empty dt {
+  display: none;
+}
+.acount-list .bind-empty dd {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.div-title {
+  margin-bottom: 16px;
+  padding-left: 0px;
+  background-color: transparent;
+  font-size: 18px;
+}
+.div-body {
+  padding: 0px;
+}
+.acount-list {
+  background-color: #e6e9eb;
+  max-height: 324px;
+}
+.acount-list li {
+  width: 50%;
+}
+.acount-list li .wrap {
+  height: 68px;
+  padding: 20px 20px 0;
+}
+.acount-list li:hover .wrap {
+  margin: 9px;
+  border: 1px solid #e3e5e6;
+  cursor: auto;
+}
+.acount-list .name {
+  padding: 6px 0 7px;
+}
+.info-item .action {
+  margin-top: 5px;
+}
+.info-item .action .action-text {
+  margin-top: 12px;
+}
+.marketing-info {
+  overflow: hidden;
+  color: #494b4c;
+  margin: 50px 0;
+}
+.marketing-info dl {
+  width: 50%;
+  float: left;
+  margin: 10px 0 20px;
+}
+.marketing-info dl dt {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.marketing-info dl dd {
+  line-height: 180%;
+}
+.acount-list-empty p {
+  padding-top: 155px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  background: url(images/icon-empty.png) no-repeat 50% 35px;
+}

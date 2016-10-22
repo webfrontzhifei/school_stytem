@@ -1,0 +1,771 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.no-auth,
+.icon-authed,
+.icon-wx-authed {
+  display: inline-block;
+  vertical-align: middle;
+}
+.no-auth {
+  display: none;
+  height: 20px;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  line-height: 18px;
+  color: #f5f7fa;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #545A6C;
+}
+.no-auth:hover {
+  color: #fff;
+}
+.no-auth-red {
+  background-color: #f4615c;
+}
+.no-auth-blue {
+  background-color: #00a1f2;
+}
+.icon-authed,
+.icon-wx-authed {
+  width: 14px;
+  height: 16px;
+  margin-left: 3px;
+  background: url(images/icons-account-manage.png) no-repeat -51px top;
+}
+.icon-wx-authed {
+  background-position: -121px top;
+}
+.info-item {
+  overflow: hidden;
+  border-radius: 4px;
+  vertical-align: top;
+  line-height: 1;
+}
+.info-item .avatar {
+  float: left;
+  margin-right: 15px;
+}
+.info-item .avatar img {
+  border-radius: 50px;
+}
+.info-item .avatar .avatar-in {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.info-item .avatar .avatar-in:hover .avatar-cover,
+.info-item .avatar .avatar-in:hover .avatar-edit {
+  visibility: visible;
+}
+.info-item .avatar .avatar-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  border-radius: 50px;
+  filter: alpha(opacity=70);
+  z-index: 1;
+  visibility: hidden;
+}
+.info-item .avatar .avatar-edit {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(images/icons-account-bind.png) no-repeat -125px -20px;
+  z-index: 2;
+  cursor: pointer;
+  visibility: hidden;
+}
+.info-item .avatar .lbf-loading {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+}
+.info-item .info {
+  position: relative;
+  overflow: hidden;
+}
+.info-item .name {
+  padding: 6px 0 5px 0;
+  *padding: 3px 0 2px 0;
+  font-size: 16px;
+}
+.info-item .type {
+  color: #a2a9b6;
+}
+.sync-result,
+.import-action,
+.sync-action {
+  line-height: 1;
+}
+.sync-result .icon-authed,
+.import-action .icon-authed,
+.sync-action .icon-authed,
+.sync-result .no-auth,
+.import-action .no-auth,
+.sync-action .no-auth {
+  margin-top: -2px;
+  *margin-top: 0;
+}
+.sync-result .icon-wx-authed,
+.import-action .icon-wx-authed,
+.sync-action .icon-wx-authed {
+  margin: -1px 0 0 5px;
+  *margin-top: 0;
+}
+.import-action,
+.sync-action,
+.create-action,
+.sync-result {
+  /*.selected, .selected:hover {
+		background-color: #f2fafe;
+	}*/
+}
+.import-action .list,
+.sync-action .list,
+.create-action .list,
+.sync-result .list {
+  *position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 320px;
+  border: 1px #DEDDDD solid;
+  background: #fff;
+}
+.import-action .info-item,
+.sync-action .info-item,
+.create-action .info-item,
+.sync-result .info-item {
+  height: 65px;
+  padding: 15px 15px 0 18px;
+  cursor: pointer;
+}
+.import-action .lbf-iradio,
+.sync-action .lbf-iradio,
+.create-action .lbf-iradio,
+.sync-result .lbf-iradio,
+.import-action .lbf-icheckbox,
+.sync-action .lbf-icheckbox,
+.create-action .lbf-icheckbox,
+.sync-result .lbf-icheckbox {
+  float: right;
+  margin-top: 15px;
+  *margin-right: 15px;
+}
+.import-action,
+.sync-action,
+.sync-result {
+  width: 750px;
+  /*IE7*/
+}
+.import-action .list,
+.sync-action .list,
+.sync-result .list {
+  width: 714px;
+  max-height: 230px;
+  padding: 18px;
+  background: #e3e5e6;
+}
+.import-action .list > ul,
+.sync-action .list > ul,
+.sync-result .list > ul {
+  margin-right: -20px;
+  margin-left: 1px;
+}
+.import-action .list li,
+.sync-action .list li,
+.sync-result .list li {
+  width: 302px;
+  margin: 8px;
+  float: left;
+  border: 2px solid #e3e5e6;
+}
+.import-action .list li:hover,
+.sync-action .list li:hover,
+.sync-result .list li:hover {
+  border: 2px solid #00a1f2;
+}
+.import-action .list li.selected,
+.sync-action .list li.selected,
+.sync-result .list li.selected {
+  border: 2px solid #00a1f2;
+  background-color: #f2fbfe;
+}
+.import-action .info-item,
+.sync-action .info-item,
+.sync-result .info-item {
+  background: #fff;
+}
+.import-action .current-item,
+.sync-action .current-item,
+.sync-result .current-item,
+.import-action .current-item:hover,
+.sync-action .current-item:hover,
+.sync-result .current-item:hover {
+  margin-top: 8px;
+  margin-bottom: -10px;
+  padding: 15px 15px 0 50px;
+  background: #ffffff url(images/bg-current-item.png) no-repeat;
+  cursor: default;
+}
+.import-action .tit,
+.sync-action .tit,
+.sync-result .tit {
+  color: #aab0b2;
+}
+.import-action .current-item,
+.import-action .current-item:hover {
+  margin: 10px 205px auto;
+}
+.import-action .list {
+  margin-bottom: 22px;
+}
+.import-action .tit {
+  padding-top: 25px;
+  text-align: center;
+  background: url(images/pointer-bottom.png) no-repeat 50% 0;
+}
+.import-action .lbf-iradio {
+  background-image: none;
+}
+.sync-action {
+  padding-bottom: 10px;
+}
+.sync-action .current-item,
+.sync-action .current-item:hover {
+  margin: 10px 205px 18px;
+}
+.sync-action .list {
+  margin-top: 8px;
+  margin-bottom: -10px;
+}
+.sync-action .tit {
+  padding-top: 25px;
+  text-align: center;
+  background: url(images/pointer-bottom.png) no-repeat 50% 0;
+}
+.create-action ::-webkit-scrollbar {
+  width: 6px;
+}
+.create-action ::-webkit-scrollbar-thumb {
+  background-color: #d4d7d9;
+  border-radius: 8px;
+}
+.create-action ::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.create-action ::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+.create-action .list {
+  max-height: 445px;
+  min-height: 438px;
+  margin-bottom: 0;
+}
+.create-action .list .lbf-iradio.lbf-iradio-disabled {
+  background-image: none;
+}
+.create-action .list .info-item:hover {
+  background-color: #f2fbfe;
+}
+.create-action .title-create {
+  margin: 5px 0 15px;
+  color: #a2a9b6;
+}
+.create-action .title-create i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: url(images/icons-account-manage.png) no-repeat -164px 0;
+  cursor: pointer;
+}
+.create-action .account-create-null {
+  height: 190px;
+  padding-top: 240px;
+  font-size: 18px;
+  text-align: center;
+  background: url(images/account-create-null.png) no-repeat 50% 142px;
+}
+.panel-openAccountWxList.lbf-panel {
+  width: 500px;
+}
+.panel-openAccountWxList .lbf-panel-foot .link-bindOtherWxPub {
+  border: none;
+  background-color: transparent;
+  color: #00a1f2;
+  margin-left: 0;
+  padding: 1px 0;
+}
+.panel-openAccountNull.lbf-panel {
+  width: 600px;
+  border-radius: 4px;
+}
+.panel-openAccountNull .msg-null {
+  font-size: 16px;
+  text-align: center;
+  color: #41494c;
+  margin-bottom: 16px;
+}
+.panel-openAccountNull .icon-openqqBindWx {
+  width: 226px;
+  height: 76px;
+  margin: 35px auto 22px;
+  background: url(images/icons-account-open-bind.png) no-repeat 50% 50%;
+}
+.panel-openAccountNull .lbf-panel-foot {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.panel-openAccountNull .lbf-button-primary {
+  font-size: 20px;
+  line-height: 58px;
+  margin-right: 15px;
+  padding: 0;
+  width: 278px;
+}
+.lbf-panel-foot .import-tip {
+  line-height: 38px;
+}
+.lbf-panel-foot .import-tip .icon-tip-attention {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -2px;
+}
+.account-manage ~ .content-full {
+  min-height: calc(100vh - 131px - 81px);
+}
+.content-body {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.account-manage {
+  z-index: 1;
+  overflow: hidden;
+  height: 80px;
+  background-color: #f8fafb;
+  position: relative;
+}
+.account-manage .account-list,
+.account-manage .account-action {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.account-manage .account-list {
+  /*left:30px;*/
+  left: 0;
+  height: 80px;
+  right: 160px;
+  overflow: hidden;
+}
+.account-manage .account-list.over {
+  left: 30px;
+}
+.account-manage .account-list ul {
+  height: 100%;
+  position: absolute;
+}
+.account-manage .account-list li {
+  position: relative;
+  /*top:1px;*/
+  width: 250px;
+  height: 100%;
+  vertical-align: top;
+  cursor: pointer;
+  float: left;
+}
+.account-manage .account-list li .avator {
+  position: relative;
+  margin: 14px 10px 8px 20px;
+  font-size: 0;
+  float: left;
+}
+.account-manage .account-list li .avator-mask-text,
+.account-manage .account-list li .avator-mask {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+}
+.account-manage .account-list li .avator-mask-text {
+  z-index: 3;
+  font-size: 12px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+.account-manage .account-list li .avator-mask {
+  z-index: 2;
+  border-radius: 50px;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  *zoom: 1;
+}
+.account-manage .account-list li .mask {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  *zoom: 1;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 9;
+}
+.account-manage .account-list li img {
+  border-radius: 50px;
+}
+.account-manage .account-list li .name {
+  font-size: 14px;
+  *line-height: 18px;
+  margin-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.account-manage .account-list li .name span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 140px;
+  height: 18px;
+  margin-right: 2px;
+  overflow: hidden;
+}
+.account-manage .account-list li .name .icon-authed,
+.account-manage .account-list li .name .icon-wx-authed {
+  height: 14px;
+  vertical-align: baseline;
+}
+.account-manage .account-list li .list-type {
+  font-size: 12px;
+  color: #a2a9b6;
+}
+.account-manage .account-list li:hover,
+.account-manage .account-list li.selected,
+.account-manage .account-list li.disabled {
+  z-index: 5;
+  -webkit-transition: background-color 0.15s 0s ease-out;
+  transition: background-color 0.15s 0s ease-out;
+}
+.account-manage .account-list li:hover,
+.account-manage .account-list li.selected {
+  background-color: #EDF0F2;
+}
+.account-manage .account-list li.disabled:hover {
+  background-color: #fff;
+}
+.account-manage .account-list li.selected {
+  z-index: 10;
+}
+.account-manage .account-list li.selected .line-wx,
+.account-manage .account-list li.selected .line-qq {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  /*height:3px;*/
+  overflow: hidden;
+}
+.account-manage .account-list li.selected .line-wx {
+  background: #23cf5f;
+}
+.account-manage .account-list li.selected .line-qq {
+  background: #00a1f2;
+}
+.account-manage .account-list li.disabled {
+  cursor: default;
+}
+.account-manage .account-list li.disabled .mask {
+  display: block;
+}
+.account-manage .account-list li.sync .img-sync {
+  margin-top: -40px;
+  *margin-top: -43px;
+}
+.account-manage .account-list-turnleft,
+.account-manage .account-list-turnright {
+  display: none;
+  width: 29px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  background: #f8fafb url(images/pointer-x.png) no-repeat;
+}
+.account-manage .account-list-turnleft-dis,
+.account-manage .account-list-turnright-dis {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  *zoom: 1;
+  cursor: default;
+  border-left: none!important;
+}
+.account-manage .account-list-turnleft-dis:hover {
+  background-position: -28px 50% !important;
+}
+.account-manage .account-list-turnright-dis:hover {
+  background-position: -57px 50% !important;
+}
+.account-manage .account-list-turnleft {
+  border-right: 1px solid #DADEE7;
+  left: 0;
+  background-position: -28px 50%;
+}
+.account-manage .account-list-turnleft:hover {
+  background-position: 1px 50%;
+}
+.account-manage .account-list-turnright {
+  border-left: 1px solid #DADEE7;
+  right: 130px;
+  background-position: -57px 50%;
+}
+.account-manage .account-list-turnright:hover {
+  background-position: -86px 50%;
+}
+.account-manage .account-action {
+  right: 0;
+  width: 70px;
+  height: 25px;
+  margin: 10px 0;
+  padding: 20px 35px 16px 25px;
+  border-left: 1px solid #DADEE7;
+}
+.account-manage .account-action a {
+  display: block;
+  clear: both;
+  height: 16px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #1e2330;
+}
+.account-manage .account-action a:hover {
+  color: #0067ed;
+}
+.account-manage .account-action .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-right: 7px;
+}
+.account-manage .account-action .btn-import:hover .icon {
+  background-position: 0px -848px;
+}
+.account-manage .account-action .btn-import .icon {
+  width: 16px;
+}
+.account-manage .account-action .btn-sync .icon {
+  width: 16px;
+  height: 16px;
+  background: url(images/icons-account-manage.png) no-repeat left top;
+}
+.account-manage .account-action .btn-sync:hover .icon {
+  background-position: -17px top;
+}
+.account-manage .account-action.disabled {
+  /*.btn-sync, .btn-sync:hover {
+				.icon {
+					background-position:-34px top;
+				}
+			}*/
+}
+.account-manage .account-action.disabled a,
+.account-manage .account-action.disabled a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: default;
+}
+.account-manage .account-action.disabled a.btn-go,
+.account-manage .account-action.disabled a:hover.btn-go,
+.account-manage .account-action.disabled a.btn-go:hover,
+.account-manage .account-action.disabled a:hover.btn-go:hover {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #00a1f2!important;
+  cursor: pointer;
+}
+.account-manage .account-action.disabled .btn-import .icon,
+.account-manage .account-action.disabled .btn-import:hover .icon {
+  background: url(images/icons-account-manage.png) no-repeat -67px top;
+}
+.account-manage .account-action .lbf-tip-left .lbf-tip-content {
+  white-space: nowrap;
+}
+.account-info-tip {
+  padding: 0 7px;
+}
+.account-info-tip dt {
+  padding-bottom: 3px;
+  font-size: 12px;
+  color: #fff;
+}
+.account-info-tip dd {
+  font-size: 12px;
+  color: #a2a9b6;
+}
+.account-info-tip.account-noauth-tip dd {
+  padding-bottom: 8px;
+  border-bottom: 1px #545A6C solid;
+}
+.account-info-tip.account-noauth-tip .tip {
+  font-size: 12px;
+}
+.account-info-tip.account-noauth-tip .tip .icon-warn {
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+  *margin-top: 0;
+}
+.account-info-tip.account-noauth-tip .tip .btn-go,
+.account-info-tip.account-noauth-tip .tip .btn-go:hover {
+  margin-left: 20px;
+  color: #00a1f2;
+}
+.sync-result {
+  *width: 350px;
+}
+.sync-result .status {
+  height: 50px;
+  margin: 0 -25px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.sync-result .status.complate,
+.sync-result .status.fail,
+.sync-result .status.success {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #41494c;
+}
+.sync-result .status .icon-success,
+.sync-result .status .icon-fail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background: url(../../base/images/icons20154.png) no-repeat;
+}
+.sync-result .status .icon-success {
+  background-position: 0 -2006px;
+}
+.sync-result .status .icon-fail {
+  background-position: 0 -2056px;
+}
+.sync-result .list .tip-success,
+.sync-result .list .tip-fail {
+  float: right;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 17px;
+  background: url(images/icons-account-manage.png) no-repeat -103px top;
+}
+.sync-result .list .tip-success {
+  cursor: default;
+  background-position: -85px top;
+}
+.sync-result .info-item {
+  margin-bottom: 30px;
+}
+.sync-mask {
+  z-index: 1;
+  position: absolute;
+  top: 151px;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+}
+.sync-mask .mask-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  *zoom: 1;
+}
+.sync-mask .mask-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  margin: -50px 0 0 -100px;
+  background-color: #00a1f2;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.sync-mask dt {
+  width: 20px;
+  height: 20px;
+  margin: 20px auto 15px auto;
+  font-size: 0;
+  /*Loading样式请在页面中使用class="loading whiteSpin"*/
+}
+@media screen and (max-width: 1340px) {
+  .sync-mask {
+    left: 70px;
+  }
+}
+@media screen and (max-width: 1610px) {
+  .account-manage .list-5 {
+    left: 30px;
+  }
+  .account-manage .list-6 {
+    left: 30px;
+  }
+  .account-manage .list-7 {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 1860px) {
+  .account-manage .list-6 {
+    left: 30px;
+  }
+  .account-manage .list-7 {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 2110px) {
+  .account-manage .list-7 {
+    left: 30px;
+  }
+}

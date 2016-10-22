@@ -1,0 +1,382 @@
+@import '../../../base/variable';
+.tabview {
+	margin-top: -21px;
+}
+.mod-ruleset {
+	.table-size {
+		position: static;
+	}
+	.byadder form, .byrule .txt {
+		display: none;
+	}
+	.table-base tbody td {
+		line-height: 65px;
+	}
+	.table-base tr:hover td {
+		background-color: transparent;
+	}
+	.col2 {
+		width: 500px;
+	}
+	.belong-set {
+		display: none;
+		vertical-align: -2px;
+		margin-left: 11px;
+		line-height: 1;
+	}
+	.btn-staff-edit {
+		vertical-align: 1px;
+	}
+}
+.staff-selector {
+	.members-select-box {
+		overflow-x: hidden;
+		border:1px @border-color solid;
+		width: 310px;
+		height:270px!important;
+		li {
+			width: 310px;
+			height: 35px;
+			border-bottom: none;
+			.lbf-icheckbox {
+				margin-top: 7px;
+			}
+		}
+		.info {
+			padding-left:15px;
+			line-height: 35px;
+		}
+		.tip {
+			color:@border-gray;
+		}
+		dt, dd {
+			float: left;
+		}
+		dt {
+			margin:8px 5px 0 0;
+		}
+	}
+}
+#attr-set {
+	text-align: center;
+	line-height: 300px;
+}
+.attr-set {
+	text-align: left;
+	clear: both;
+	line-height: 1;
+	.tit {
+		font-size: 18px;
+		.tip {
+			font-size: 14px;
+			color:@border-hover;
+		}
+	}
+	.follow-bd {
+		position: relative;
+		height: 142px;
+		.item {
+			float:left;
+			position: relative;
+			width:200px;
+			height:50px;
+			display: inline-block;
+			line-height: 50px;
+			background-color: #E4E8EA;
+			text-align: center;
+			font-size: 16px;
+		}
+		.arr-left, .arr-right {
+			position: absolute;
+			top:0;
+			left:0;
+			width:10px;
+			height: 50px;
+			background: url(images/icons.png) no-repeat left top;
+		}
+		.arr-right {
+			left: auto;
+			right:0;
+			background-position: -24px top;
+		}
+		.last {
+			background-color: #00CC26;
+			color:#fff;
+			.arr-left {
+				background-position: -12px top;
+			}
+		}
+		.item-add {
+			float: left;
+			position: relative;
+			height: 50px;
+			margin: 0 10px;
+			line-height: 50px;
+			text-align: center;
+			.add-wrap {
+				overflow:hidden;
+				z-index: 5;
+				position: relative;
+				display: inline-block;
+				width:42px;
+				height: 50px;
+				background-color: #fff;
+			}
+			.btn-add {
+				margin-top: 12px;
+			}
+		}
+		.border-line {
+			position: absolute;
+			top:24px;
+			left:0;
+			right:0;
+			display: inline-block;
+			height:2px;
+			background: url(images/border-bg.png) repeat-x left top;
+		}
+		.icon-srv-arr-down {
+			position: absolute;
+			top:23px;
+			right:17px;
+		}
+		&.status3, &.status4 {
+			.item-add {
+				margin:0;
+			}
+			.border-line {
+				display: none;
+			}
+		}
+		.tip {
+			position: absolute;
+			top:69px;
+			left:0;
+			color:@border-gray;
+		}
+		.tip-right {
+			left:auto;
+			right:0;
+			line-height: 1.5;
+		}
+		.normal {
+			cursor: pointer;
+			&:hover {
+				background-color: #ebedf0;
+				.arr-right {
+					background-position: -48px top;
+				}
+				.arr-left {
+					background-position: -36px top;
+				}
+			}
+		}
+		.menu {
+			width: 140px;
+			height: 80px;
+			padding: 5px 0;
+			border:1px @border-color solid;
+			box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+			background-color: #fff;
+			a {
+				vertical-align: top;
+				display:block;
+				width: 119px;
+				height: 40px;
+				padding-left: 21px;
+				line-height: 40px;
+				text-align: left;
+				color:@dark;
+				font-size: 14px;
+				&:hover {
+					background-color: @bg-hover;
+				}
+			}
+			.icon-srv-edit-highlight, .icon-srv-del-highlight {
+				vertical-align: middle;
+				margin:-3px 8px 0 0;
+			}
+		}
+		.btn-del.lbf-button-disabled {
+			pointer-events: auto;
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+	.deleted-attr {
+		margin-bottom: 60px;
+		.tit {
+			padding-bottom: 18px;
+		}
+		li {
+			line-height: 60px;
+			border-bottom: 1px @light solid;
+		}
+		span {
+			display: inline-block;
+		}
+		.name {
+			width: 240px;
+		}
+		.sum {
+			width: 440px;
+		}
+	}
+	.addon-attr {
+		.example {
+			height:280px;
+			background-color: #F5F8FA;
+			dt {
+				float: left;
+				width: 538px;
+				height: 252px;
+				margin: 28px 0 0 205px;
+				background: url(images/example.jpg) no-repeat left top;
+			}
+			dd {
+				float: left;
+				margin: 115px 0 0 35px;
+				font-size: 16px;
+				color:@gray;
+				line-height: 30px;
+			}
+		}
+		.btn-add-group {
+			.icon-srv-add-mini {
+				vertical-align: middle;
+				margin: -2px 8px 0 0;
+			}
+		}
+	}
+	.group-list {
+		.group-item {
+			margin-bottom: 30px;
+			border-bottom: 1px @light solid;
+		}
+		.tit {
+			display: inline-block;
+			font-size:14px;
+			color: @border-hover;
+		}
+		.name {
+			display: inline-block;
+			font-size: 16px;
+			.btn-edit, .btn-del {
+				visibility: hidden;
+				position: relative;
+				bottom: -3px;
+				margin-right: 10px;
+			}
+			.btn-edit {
+				margin-left: 13px;
+			}
+			&:hover {
+				.btn-edit, .btn-del {
+					visibility: visible;
+				}
+			}
+		}
+		.group-bd {
+			overflow: hidden;
+			padding-bottom: 20px;
+			.btn-add {
+				float: left;
+				margin-top: 3px;
+			}
+		}
+		ul {
+			display: inline;
+		}
+		li {
+			float: left;
+			position: relative;
+			height: 30px;
+			line-height: 30px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			padding:0 30px;
+			border-radius: 30px;
+			background-color: #E4E8EA;
+			.btn-edit, .btn-del {
+				display: none;
+				position: absolute;
+				top:7px;
+			}
+			.btn-edit {
+				left:9px;
+			}
+			.btn-del {
+				right: 9px;
+			}
+			&:hover {
+				.btn-edit, .btn-del {
+					display: inline-block;
+				}
+			}
+		}
+		.tip {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 8px;
+			margin-left:8px;
+			padding-bottom: 15px;
+			color:@border-hover;
+		}
+	}
+}
+.addonattr-edit-tip {
+	margin-top: -20px;
+	text-align: center;
+	color:@border-hover;
+}
+.panel-edit {
+	width:320px;
+	padding:0 60px;
+}
+.restore-panel {
+	line-height: 1;
+	.tip {
+		margin-top: -16px;
+		text-align: center;
+		font-size: 14px;
+		color:@border-gray;
+	}
+	.status-list {
+		overflow: hidden;
+		padding:80px 0;
+		.status0 {
+			margin-left: 55px;
+		}
+		li {
+			float:left;
+			position: relative;
+			&.first, &.normal, &.last {
+				width: 120px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				background-color: #E4E8EA;
+			}
+		}
+		.arr-left, .arr-right {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 10px;
+			height: 35px;
+			background: url(images/icons.png) no-repeat -60px top;
+		}
+		.arr-right {
+			left:auto;
+			right:0;
+			background-position: -72px top;
+		}
+		.btn-select {
+			margin:5px 8px 0 8px;
+			&.selected {
+				background: url(images/icons.png) no-repeat -84px top;
+			}
+		}
+	}
+}

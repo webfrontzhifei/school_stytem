@@ -1,0 +1,134 @@
+@import '../../base/mixin';
+@import 'eprofile';
+
+.content-small-title {
+  //font-size: 22px;
+  .f();
+  .tc();
+  .mt(50);
+  color: @light-gray;
+}
+
+.content-title {
+  .pt(5);
+  //.f();
+  .tc();
+  .pb(30);
+}
+
+.lbf-tabview-tabs {
+  margin-right: 50px;
+}
+
+.form-container {
+    position: relative;
+    width: 420px;
+    min-height: 500px;
+    /*min-height: 500px;
+    min-height: ~'calc(100vh - 231px)';*/
+    margin: 50px auto;
+    
+    .content-title {
+        padding-bottom: 5px;
+    }
+    
+    .content-tips {
+       text-align: center; 
+       margin-bottom: 80px;
+    }
+    
+    .dialog-create-cell {
+        position: relative;
+        .lbf-text-input {
+            width: 420px;
+        }
+        .sendcode-btn {
+            position: absolute;
+            right: -110px;
+            top: 0;
+        }
+        
+        .lbf-text-input:last-child {
+            margin-top: 50px;
+        }
+        
+        .lbf-text-input-remind {
+            line-height: 20px;
+            padding-top: 5px;
+        }
+    }
+    
+    .box-foot {
+        text-align: center;
+        margin: 80px 0;
+        
+        .lbf-button {
+            font-size: 16px;
+            min-width: 118px;
+            line-height: 43px;
+        }
+    }
+    
+    .resetpwd-box {
+        display: none;
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    
+    form {
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 400ms ease;
+        transition: all 400ms ease; 
+        
+    }
+    .findpwd-box {
+        /*display: none;*/
+    }
+    
+    .slide-down-fadeout{
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+        .opacity(0);
+    }
+    
+    .slide-up-fadeIn{
+        -webkit-transform:translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+     
+}
+
+.no-login-state {
+   .header-wrap {
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+        
+        
+        .header-logo {
+           padding: 0;
+        }
+        
+        .header-info {
+            margin-right: 0;
+            &-links {
+                margin-right: 0;
+            }
+        }
+
+    }
+    
+    + .page {
+       background: #000;
+    }
+   
+}
+
+.form-warp {
+   min-height: ~'calc(100vh - 231px)'; 
+}
+
+

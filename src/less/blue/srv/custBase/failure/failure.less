@@ -1,0 +1,103 @@
+@import '../../../base/mixin';
+
+// less variable
+
+.lbf-combobox {
+  width: 200px;
+}
+
+.table-null h2 {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+.search-action {
+  width: 200px;
+}
+
+.table-content {
+
+  .col- {
+    &cust {
+      .w(300);
+    }
+    &source {
+      .w(15%);
+      .pl(10);
+    }
+    &failure {
+      .w(20%);
+      .pl(10);
+    }
+    &visit {
+      .w(12%);
+      .pl(10);
+    }
+
+    &recept {
+      .w(15%);
+      .pl(10);
+    }
+  }
+
+  .cust-avatar {
+    .dib();
+    .w(45);
+    .h(45);
+    .mr(7);
+    .radius(45);
+    .ovh();
+    .vm();
+    &:hover {
+      .poi;
+    }
+
+    img {
+      .w(45);
+      .h(45);
+    }
+  }
+
+  .cust-name {
+    .dib();
+    .vm();
+    white-space: normal;
+    span {
+      .rel();
+      .pr(11);
+      .dib();
+      max-width: 200px;
+      word-wrap: break-word;
+      word-break: break-all;
+      .trans(160ms);
+
+      .keyword-highlight {
+        font-style: normal;
+        .c(@blue);
+      }
+
+      .gender-icon-holder {
+        .abs();
+        .w(0);
+      }
+
+      .icon-srv-male,
+      .icon-srv-female{
+        .abs();
+        top: 4px;
+        .ml(7);
+      }
+
+      &:hover {
+        .poi();
+        .c(@link-hover);
+      }
+    }
+  }
+
+  .time {
+    font-size: 12px;
+    .c(@light-gray);
+  }
+}
+

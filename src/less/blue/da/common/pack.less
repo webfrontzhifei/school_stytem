@@ -1,0 +1,49 @@
+.p-da {
+    .main-pack {
+        margin-bottom: 20px;
+        background: #FFF;
+        box-sizing: border-box;
+    }
+
+    .main-pack-hd {
+        height: 30px;
+        line-height: 30px;
+
+        h2 {
+            display: inline;
+            line-height: 30px;
+            font-size: 16px;
+        }
+        span {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #A2A9B6;
+        }
+    }
+
+    .main-pack-two {
+        background: transparent;
+
+        &:after {
+            display: table;
+            content: '';
+            clear: both;
+        }
+
+        > .fl,
+        > .fr {
+            width: 50%;
+            box-sizing: border-box;
+        }
+        > .fl {
+            padding-right: 10px;
+        }
+        > .fr {
+            padding-left: 10px;
+        }
+
+        .main-pack {
+            margin-bottom: 0;
+        }
+    }
+}

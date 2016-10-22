@@ -2,17 +2,22 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var template = require('./app/lib/template');
 var config = require('./config');
+var setting = require('./setting');
+
 // var $ = require('jquery');
 
 template.config('base', '');
 template.config('extname', '.html');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var index = require('./routes/index');
+var routes = require('./routes/route');
+
+// var login = require('./app/routes/user.common.route');
 
 var app = express();
 app.locals = config;
@@ -28,11 +33,18 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({
+  secret: setting.cookieSecret,
+  name: setting.key,
+  resave: false,
+  saveUninitialized: true
+}));
 
 app.use('/static_proxy', express.static(path.join(__dirname, 'src')));
 
-app.use('/', routes);
-app.use('/users', users);
+app.use('/', index);
+app.use(routes);
+// app.use('/login', login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

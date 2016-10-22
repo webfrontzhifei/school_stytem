@@ -1,0 +1,462 @@
+.icon-track,
+.icon-back,
+.icon-certi,
+.icon-nav-next-disabled,
+.icon-nav-next,
+.icon-nav-prev-disabled,
+.icon-nav-prev,
+.icon-next-disabled,
+.icon-next,
+.icon-none-min,
+.icon-none,
+.icon-prev-disabled,
+.icon-prev,
+.icon-web-large,
+.icon-web {
+  display: inline-block;
+  font: 0/0 a;
+  color: transparent;
+  overflow: hidden;
+  background: url("track/images/track-icons.png?201662") no-repeat;
+  background-size: 100px auto;
+}
+.icon-back {
+  width: 9px;
+  height: 15px;
+  background-position: 0px -120px;
+}
+.icon-certi {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -72px;
+}
+.icon-nav-next-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-nav-next,
+a:hover .icon-nav-next,
+a:hover .icon-nav-next-disabled,
+.disabled:hover .icon-nav-next,
+.icon-nav-next-disabled:hover,
+.icon-nav-next-disabled {
+  background-position: 0px -229px;
+}
+.icon-nav-next {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -201px;
+}
+.icon-nav-prev-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-nav-prev,
+a:hover .icon-nav-prev,
+a:hover .icon-nav-prev-disabled,
+.disabled:hover .icon-nav-prev,
+.icon-nav-prev-disabled:hover,
+.icon-nav-prev-disabled {
+  background-position: 0px -173px;
+}
+.icon-nav-prev {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -145px;
+}
+.icon-next-disabled {
+  width: 14px;
+  height: 14px;
+}
+.disabled .icon-next,
+a:hover .icon-next,
+a:hover .icon-next-disabled,
+.disabled:hover .icon-next,
+.icon-next-disabled:hover,
+.icon-next-disabled {
+  background-position: 0px -96px;
+}
+.icon-next {
+  width: 14px;
+  height: 14px;
+  background-position: 0px 0px;
+}
+.icon-none-min {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -367px;
+}
+.icon-none {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -432px;
+}
+.icon-prev-disabled {
+  width: 14px;
+  height: 14px;
+}
+.disabled .icon-prev,
+a:hover .icon-prev,
+a:hover .icon-prev-disabled,
+.disabled:hover .icon-prev,
+.icon-prev-disabled:hover,
+.icon-prev-disabled {
+  background-position: 0px -48px;
+}
+.icon-prev {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -24px;
+}
+.icon-web-large {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -307px;
+}
+.icon-web {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -257px;
+}
+.track {
+  position: relative;
+  overflow: hidden;
+}
+.track.track-bg {
+  background: #f5f8fa;
+}
+.track .empty {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin: -100px 0 0 -200px;
+  font-size: 24px;
+}
+.track .empty p {
+  margin-top: 20px;
+}
+.track .loading {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin: -10px 0 0 -10px;
+}
+.track .vm {
+  vertical-align: middle;
+}
+.track .track-left {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  bottom: 1px;
+  width: 410px;
+  overflow: hidden;
+  background: #fff;
+  border-right: 1px solid #dadee7;
+  transform: translateX(-411px);
+  transition: transform .22s;
+}
+.track .track-left.show {
+  transform: translateX(0);
+}
+.track .track-left .loading {
+  top: auto;
+  bottom: 10px;
+}
+.track .track-list {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  padding: 20px;
+}
+.track .track-right {
+  position: absolute;
+  left: 410px;
+  right: 0;
+  top: 1px;
+  bottom: 0;
+  overflow: hidden;
+}
+.track .track-right .null {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15%;
+}
+.track .overview {
+  padding: 5px 0 35px;
+  text-align: center;
+  font-size: 14px;
+  color: #1d2331;
+}
+.track .overview .item {
+  display: inline-block;
+  min-width: 120px;
+  margin: 0 10px;
+}
+.track .overview .item i {
+  font-size: 50px;
+  font-style: normal;
+  display: block;
+}
+.track .seprator {
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  background: #dadee7;
+  text-align: center;
+  overflow: visible;
+  margin: 25px 0;
+}
+.track .seprator.first {
+  margin-top: 15px;
+}
+.track .seprator span {
+  color: #a8abb3;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 10px;
+  background: #fff;
+  margin-top: -10px;
+}
+.track .section {
+  position: relative;
+}
+.track .section h1 {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 120px 0 20px;
+  color: #a8abb3;
+  background-color: #f5f8fa;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.track .section h1 span {
+  display: inline-block;
+  float: left;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track .section h1 i {
+  display: inline-block;
+  max-width: 90px;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track .section h2 {
+  color: #1e2330;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.track .section i {
+  font-style: normal;
+}
+.track .section .icon {
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+.track .section .time {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 12px;
+  color: #a8abb3;
+}
+.track .list {
+  margin-bottom: 10px;
+}
+.track .list .icon-certi {
+  vertical-align: -1px;
+  margin-left: 2px;
+}
+.track .list li {
+  position: relative;
+  padding-left: 85px;
+  min-height: 80px;
+  cursor: pointer;
+}
+.track .list li:hover {
+  background-color: #f5fafe;
+}
+.track .list li.current {
+  background-color: #d3e9ff;
+}
+.track .list li .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  background-color: #ebedf2;
+}
+.track .list li .img img {
+  width: 50px;
+}
+.track .list li .inner {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 20px;
+  padding: 18px 30px 18px 0;
+}
+.track .list li .inner h2 {
+  margin-bottom: 6px;
+}
+.track .list li .inner p {
+  color: #66686c;
+  margin-top: 4px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track .list li.single .inner {
+  line-height: 40px;
+}
+.track .list li.single .inner h2 {
+  margin-bottom: 0;
+}
+.track .list li:last-child .inner {
+  border-bottom: 0;
+}
+.track .list li label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #808080;
+}
+.track .list li .icon-arrow-r {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -8px;
+}
+.track .list li a {
+  display: block;
+  padding-right: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track .list-single li {
+  padding-left: 15px;
+}
+.track .list-single li .inner {
+  line-height: 40px;
+}
+.track .list-single li .inner h2 {
+  margin-bottom: 0;
+}
+.track .list-single li.multi .inner {
+  line-height: 20px;
+}
+.track .track-right .seprator span {
+  background-color: #f5f8fa;
+}
+.track .track-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60px;
+  overflow: auto;
+  padding: 25px 20px;
+}
+.track .track-detail .seprator {
+  background: none;
+}
+.track .track-detail .seprator.atvisit {
+  background: #dadee7;
+  font-size: 14px;
+}
+.track i {
+  font-style: normal;
+}
+.track .chat {
+  padding: 10px 20px;
+}
+.track .chat .inner {
+  padding-top: 5px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.track .chat .inner img {
+  max-width: 100%;
+}
+.track .toc .name {
+  color: #00cc26;
+}
+.track .tob .name {
+  color: #0067ed;
+}
+.track .notice {
+  padding: 10px 20px;
+  background-color: #e8ebed;
+  margin: 15px 0;
+  line-height: 26px;
+}
+.track .notice p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.track .web-item {
+  padding: 10px 20px;
+}
+.track .web-item p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #217aef;
+  margin-bottom: 2px;
+}
+.track .web-item .sub-info {
+  color: #a8abb3;
+}
+.track .web-item .sub-info i {
+  margin-left: 5px;
+}
+.track .disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.track .disabled i {
+  cursor: default;
+}
+.track .page-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  padding: 25px 20px 15px;
+  text-align: right;
+}
+.track .page-nav a {
+  line-height: 20px;
+  margin-left: 8px;
+}
+.track .page-nav a:hover {
+  opacity: .8;
+}
+.track .page-nav a .disabled:hover {
+  opacity: 1;
+}

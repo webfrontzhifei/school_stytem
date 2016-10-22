@@ -1,0 +1,134 @@
+@import '../../base/mixin';
+
+.bdgray {
+  border-bottom: 1px solid @border-gray;
+}
+
+//reset previous value
+.content {
+  .content-title {
+    a {
+      .vv;
+      .ml(0px);
+      vertical-align: 0px;
+
+    }
+  }
+}
+
+.step {
+  .rel;
+
+  // reset
+  .lbf-button {
+    .pl(30px);
+    .pr(30px);
+  }
+}
+
+.bind-wechat {
+  &-step-x {
+    .pt(10px);
+    .pb(10px);
+  }
+
+  &-li {
+    .dib;
+    .pr(80px);
+    font-size: 16px;
+    .icon-ol {
+      .mr(5px);
+    }
+  }
+
+  &-ol {
+    .selected {
+      .c(@blue);
+      .icon-ol {
+        background-position: 0 -20px;
+      }
+    }
+  }
+
+  &-step-detail {
+    .pt(50px);
+    .pl(20px);
+    .w(415px);
+  }
+
+  &-step-header {
+    .mb(10px);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-step-input-row {
+    .mt(30px);
+    .mb(30px);
+
+    &-last {
+      .abs;
+      top: 500px;
+    }
+
+    &-finish {
+      .abs;
+      top: 380px;
+    }
+  }
+
+  &-step-left {
+    .l;
+    .w(80px);
+    label& {
+      .pt(10px);
+    }
+  }
+
+  &-row-half {
+    .dib;
+    .w(35%);
+  }
+
+  &-step-img {
+    .abs;
+    left: 500px;
+    top: 110px;
+  }
+
+  &-step-success {
+    .rel;
+    .w(600px);
+    .auto;
+  }
+
+  &-step-successinfo {
+    .abs;
+    .ml(-30px);
+    .pt(150px);
+    background: url('images/bind-success.png') center 70px no-repeat;
+  }
+
+  &-step-success-desc {
+    .mt(40px);
+    .mb(40px);
+    font-size: 16px;
+    font-weight: bold;
+    .tc;
+  }
+
+  &-step-success-ret {
+    .mt(40px);
+  }
+}
+
+.step3 .clip-input {
+  .w(200px);
+}
+
+#step1Form .bind-wechat-step-input-row,
+#step4Form .bind-wechat-step-input-row {
+  .lbf-text-input input {
+    position:absolute;
+  }
+}

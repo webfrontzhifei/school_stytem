@@ -1,0 +1,69 @@
+@import '../../base/mixin';
+@import '../../mp/account/acountList';
+
+
+.div-title {
+	.mb(16px);
+	.pl(0);
+	.bg(transparent);
+	font-size:18px;
+}
+
+.div-body {
+	.p(0);	
+}
+
+.acount-list {
+	.bg(#e6e9eb);
+	max-height: 324px;
+	li {
+		width:50%;
+		.wrap {
+			height: 68px;
+			padding: 20px 20px 0;
+		}
+		&:hover .wrap {
+			margin:9px;
+			border:1px solid #e3e5e6;
+			cursor:auto;
+		}
+	}
+	.name {
+		padding: 6px 0 7px;
+	}
+}
+
+.info-item .action {
+	.mt(5px);
+	.action-text {
+		.mt(12px);
+	}
+}
+
+.marketing-info {
+	.ovh;
+	.c(#494b4c);
+	margin:50px 0;
+	dl {
+		.w(50%);
+		.l;
+		margin:10px 0 20px;
+		dt {
+			.mb(8px);
+			font-size:24px;
+		}
+		dd {
+			line-height:180%;
+		}
+	}
+}
+
+.acount-list-empty {
+	p {
+		.pt(155px);
+		.pb(30px);
+		.tc;
+		font-size:24px;
+		background: url(images/icon-empty.png) no-repeat 50% 35px;
+	}
+}

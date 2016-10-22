@@ -1,0 +1,430 @@
+@import '../../base/mixin';
+@import '_accountItemInfo';
+@borderColor: #e6e6e6;
+@listLeft: 30px;
+
+.generate-list(@n, @i: 1) when (@i <= @n) {
+  .list-@{i} {
+    left: @listLeft;
+  }
+  .generate-list(@n, (@i + 1));
+}
+
+//在顶部有公众账号列表的页面重新设置content-full的最小高度计算试
+.account-manage ~ .content-full {
+  min-height: ~'calc(100vh - 131px - 81px)';
+}
+
+.content-body {
+	position:absolute;
+	top:120px;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:auto;
+}
+
+.account-manage {
+	z-index: 1;
+	overflow: hidden;
+	height:80px;
+	background-color: #f8fafb;
+	position: relative;
+  
+    
+	.account-list, .account-action {
+		position: absolute;
+		top:0;
+		z-index:0;
+	}
+	.account-list {
+		/*left:30px;*/
+        left: 0;
+		height:80px;
+		right:160px;
+		overflow:hidden;
+        
+        &.over {
+          left: @listLeft;  
+        }
+        
+		ul {
+			height:100%;
+			position: absolute;
+		}
+		li {
+			position: relative;
+			/*top:1px;*/
+			width:250px;
+			height:100%;
+			vertical-align: top;
+			cursor: pointer;
+			float:left;
+			.avator {
+				position: relative;
+				margin:14px 10px 8px 20px;
+				font-size: 0;
+				float:left;
+			}
+			.avator-mask-text,
+			.avator-mask {
+				position: absolute;
+				left:50%;
+				margin-left:-25px;
+				width:50px;
+				height:50px;
+			}
+			.avator-mask-text {
+				z-index:3;
+				font-size:12px;
+				color:#fff;
+				line-height:50px;
+				text-align:center;
+				vertical-align:middle;
+			}
+			.avator-mask {
+				z-index:2;
+				border-radius: 50px;
+				background:#000;
+				.opacity(@opacity: 80);
+			}
+			.mask {
+				display: none;
+				overflow: hidden;
+				width:100%;
+				height:100%;
+				background:#fff;
+				.opacity(@opacity: 60);
+				position: absolute;
+				top:1px;
+				left:0;
+				z-index:9;
+			}
+			img {
+				border-radius: 50px;
+			}
+			.name {
+				font-size: 14px;
+				*line-height:18px;
+				margin-top:18px;
+				padding-left:10px;
+				padding-right:10px;
+				span {
+					.ell;
+					display:inline-block;
+					max-width:140px;
+					height:18px;
+					margin-right:2px;
+					overflow: hidden;
+				}
+				.icon-authed, .icon-wx-authed {
+					height: 14px;
+					vertical-align: baseline;
+				}
+			}
+			.list-type {
+				font-size:12px;
+				color:#a2a9b6;
+			}
+			&:hover, &.selected, &.disabled {
+				z-index: 5;
+				-webkit-transition:background-color .15s 0s ease-out;
+				transition:background-color .15s 0s ease-out;
+			}
+			&:hover, &.selected {
+				background-color: #EDF0F2;
+			}
+			&.disabled:hover {
+				background-color: #fff;
+			}
+			&.selected {
+				z-index: 10;
+				.line-wx,
+				.line-qq {
+					position: absolute;
+					bottom:1px;
+					left:0;
+					right:0;
+					/*height:3px;*/
+					overflow:hidden;
+				}
+				.line-wx {
+					background:#23cf5f;
+				}
+				.line-qq {
+					background:#00a1f2;
+				}
+			}
+			&.disabled {
+				cursor: default;
+				.mask {
+					display: block;
+				}
+			}
+			&.sync {
+				.img-sync {
+					margin-top:-40px;
+					*margin-top:-43px;
+				}
+			}
+		}		
+	}
+	.account-list-turnleft,
+	.account-list-turnright {
+		display:none;
+		width:29px;
+		height:60px;
+		position:absolute;
+		top:10px;
+		cursor:pointer;
+		background:#f8fafb url(images/pointer-x.png) no-repeat;
+	}
+	.account-list-turnleft-dis,
+	.account-list-turnright-dis {
+		.opacity(50);
+		cursor:default;
+        border-left: none!important;
+	}
+	.account-list-turnleft-dis {
+		&:hover {
+			background-position:-28px 50%!important;
+		}
+	}
+	.account-list-turnright-dis {
+		&:hover {
+			background-position:-57px 50%!important;
+		}
+	}
+	.account-list-turnleft {
+		border-right:1px solid #DADEE7;
+		left:0;
+		background-position:-28px 50%;
+		&:hover {
+			background-position:1px 50%;
+		}
+	}
+	.account-list-turnright {
+		border-left:1px solid #DADEE7;
+		right:130px;
+		background-position:-57px 50%;
+		&:hover {
+			background-position:-86px 50%;
+		}
+	}
+	.account-action {
+		right:0;
+		width:70px;
+		height:25px;
+		margin:10px 0;
+		padding: 20px 35px 16px 25px;
+		border-left: 1px solid #DADEE7;
+		a {
+			display:block;
+			clear:both;
+			height:16px;
+			margin-bottom: 20px;
+			padding-left:5px;
+			line-height: 16px;
+			font-size:16px;
+			color:#1e2330;
+			&:hover {
+				color:@blue;
+			}
+		}
+		.icon {
+			display:inline-block;
+			vertical-align: middle;
+			margin-top: -1px;
+			margin-right:7px;
+		}
+		.btn-import:hover {
+			.icon {
+				background-position: 0px -848px;
+			}
+		}
+		.btn-import {
+			.icon {
+				width:16px;
+			}
+		}
+		.btn-sync {
+			.icon {
+				width:16px;
+				height:16px;
+				background: url(images/icons-account-manage.png) no-repeat left top;
+			}
+			&:hover {
+				.icon {
+					background-position: -17px top;
+				}
+			}
+		}
+		&.disabled {
+			a, a:hover {
+                opacity: 1;
+                filter: alpha(opacity=100);
+				cursor: default;
+				&.btn-go, &.btn-go:hover {
+					margin-bottom:0;
+					margin-left:15px;
+					font-size:12px;
+					color:#00a1f2!important;
+					cursor:pointer;
+				}
+			}
+			/*.btn-sync, .btn-sync:hover {
+				.icon {
+					background-position:-34px top;
+				}
+			}*/
+			.btn-import, .btn-import:hover {
+				.icon {
+					background: url(images/icons-account-manage.png) no-repeat -67px top;
+				}
+			}
+		}
+		.lbf-tip-left .lbf-tip-content {
+			.nowrap();
+		}
+	}
+}
+.account-info-tip {
+	padding:0 7px;
+	dt {
+		padding-bottom: 3px;
+		font-size: 12px;
+		color:#fff;
+	}
+	dd {
+		font-size: 12px;
+		color:#a2a9b6;
+	}
+	&.account-noauth-tip {
+		dd {
+			padding-bottom: 8px;
+			border-bottom:1px #545A6C solid;
+		}
+		.tip {
+			font-size: 12px;
+			.icon-warn {
+				vertical-align: middle;
+				margin:-2px 5px 0 0;
+				*margin-top:0;
+			}
+			.btn-go, .btn-go:hover {
+				margin-left:20px;
+				color:#00a1f2;
+			}
+		}
+	}
+}
+.sync-result {
+	*width:350px;
+	.status {
+		height:50px;
+		margin:0 -25px;
+		color:#fff;
+		line-height: 50px;
+		text-align: center;
+		&.complate,
+		&.fail,
+		&.success {
+			margin-bottom:30px;
+			font-size:28px;
+			color:#41494c;
+		}
+		.icon-success, .icon-fail {
+			display: inline-block;
+			vertical-align: middle;
+			width:40px;
+			height:40px;
+			margin-right:15px;
+			background:url(../../base/images/icons20154.png) no-repeat;
+		}
+		.icon-success {
+			background-position:0 -2006px;
+		}
+		.icon-fail {
+			background-position:0 -2056px;
+		}
+	}
+	.list {
+		.tip-success, .tip-fail {
+			float: right;
+			display: inline-block;
+			width:16px;
+			height:16px;
+			margin-top:17px;
+			background:url(images/icons-account-manage.png) no-repeat -103px top;
+		}
+		.tip-success {
+			cursor: default;
+			background-position: -85px top;
+		}
+	}
+	.info-item {
+		margin-bottom: 30px;
+	}
+}
+.sync-mask {
+	z-index:1;
+	position: absolute;
+	top:151px;
+	right:0;
+	bottom:0;
+	left:200px;
+	.mask-bg {
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0; 
+		background-color:#fff;
+		.opacity(@opacity: 80);
+	}
+	.mask-content {
+		position: absolute;
+		top:50%;
+		left:50%;
+		width:200px;
+		height:100px;
+		margin:-50px 0 0 -100px;
+		background-color: #00a1f2;
+		text-align: center;
+		color:#fff;
+		font-size: 16px;
+		border-radius: 4px;
+	}
+	dt {
+		width:20px;
+		height:20px;
+		margin:20px auto 15px auto;
+		font-size: 0;
+        /*Loading样式请在页面中使用class="loading whiteSpin"*/
+	}
+}
+
+
+@media screen and (max-width: 1340px) {
+    .sync-mask {
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    .account-manage {
+        .generate-list(7,5);
+    }
+}
+
+@media screen and (max-width: 1860px) {
+    .account-manage {
+        .generate-list(7,6);
+    }
+}
+
+@media screen and (max-width: 2110px) {
+    .account-manage {
+        .generate-list(7,7);
+    }
+}

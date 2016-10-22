@@ -1,0 +1,45 @@
+/**
+ * @file 让背景变成透明
+ */
+.p-da-clearback {
+    .content-main {
+        background: transparent;
+    }
+
+    .main-hd {
+        margin-left: -38px;
+        padding: 20px 0;
+        height: 40px;
+        line-height: 40px;
+
+        &-label {
+            margin: 0 10px 0 38px;
+        }
+
+        .lbf-text-input {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .lbf-text-input {
+            padding-right: 26px;
+            input {
+                width: 204px;
+
+                &.input-search {
+                    width: 264px;
+                }
+            }
+
+            .icon-search {
+                position: absolute;
+                top: 50%;
+                right: 9px;
+                margin-top: -9px;
+            }
+            // 充值active的样式
+            .icon-search:active {
+                background-position: 0 0;
+            }
+        }
+    }
+}

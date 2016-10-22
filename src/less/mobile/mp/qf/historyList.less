@@ -1,0 +1,135 @@
+@import "../../base/mixin.less";
+@import "../../base/reset.less";
+
+.text-tips {
+	margin-top:10px;
+}
+
+.articles-list {
+	.account-img {
+		img {
+			border-radius:0;
+		}
+	}
+	.account-info .info-left .name-txt {
+		display:table-cell;
+		max-width:280px;
+		@media (max-device-width:800px) {
+			max-width:550px;
+		}
+		@media (max-device-width:600px) {
+			max-width:480px;
+		}
+		@media (max-device-width:414px) {
+			max-width:320px;
+		}
+		@media (max-device-width:375px) {
+			max-width:280px;
+		}
+		@media (max-device-width:320px) {
+			max-width:230px;
+		}
+		height:46px;
+		top:4px;
+		line-height:120%;
+		vertical-align:middle;
+	}
+	.account-info-text {
+		display:block;
+		height: 70px;
+		padding: 0 16px;
+		.borderTop();
+		.account-info-text-span {
+			display:block;
+			line-height:70px;
+			vertical-align:middle;
+			max-width:350px;
+			@media (max-device-width:800px) {
+				max-width:620px;
+			}
+			@media (max-device-width:600px) {
+				max-width:550px;
+			}
+			@media (max-device-width:414px) {
+				max-width:390px;
+			}
+			@media (max-device-width:375px) {
+				max-width:350px;
+			}
+			@media (max-device-width:320px) {
+				max-width:300px;
+			}
+			.ellipsis();
+		}
+	}
+	.account-img-pic {
+		.borderTop();
+		.borderBot();
+		.account-pic {
+			height:140px;
+			overflow:hidden;
+		}
+		padding:15px;
+		img { width:100%; }
+	}
+}
+
+.account-list {
+    & > li {
+        background-color: #fafafa;
+        &:last-of-type {
+            .borderBot();
+            .account-info {
+                &:after {
+                  display: none;
+                }
+            }
+        }
+    }
+    .articles-list {
+        background-color: #fff;
+        .borderTop();
+        .borderBot();
+        .account-info {
+          &:after {
+            display: none;
+          }
+        }
+    }
+	.account-info {
+		.name-txt {
+			max-width:258px;
+			@media (max-device-width:800px) {
+				max-width:528px;
+			}
+			@media (max-device-width:600px) {
+				max-width:458px;
+			}
+			@media (max-device-width:414px) {
+				max-width:298px;
+			}
+			@media (max-device-width:375px) {
+				max-width:258px;
+			}
+			@media (max-device-width:320px) {
+				max-width:208px;
+				line-height:20px;
+			}
+		}
+		.info-right {
+			top:15px;
+		}
+	}
+}
+
+.null-msg {
+    .icon-null {
+        background-image:url(../images/ico_qf_null.png?20151021.png);
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio:2), (min-resolution: 120dpi), not all {
+          background-image:url(../images/ico_qf_null@2x.png?20151021.png);
+        }
+        @media only screen and (-webkit-device-pixel-ratio: 3) {
+          background-image:url(../images/ico_qf_null@3x.png?20151021.png);
+        }
+    }
+}

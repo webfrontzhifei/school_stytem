@@ -1,0 +1,176 @@
+.p-da-rival {
+    .main-rivals {
+    }
+    .main-rival {
+        float: left;
+        margin: 40px 0 20px;
+        width: 50%;
+
+        &-l {
+            float: left;
+            margin-right: 20px;
+            width: 80px;
+
+            a {
+                display: inline-block;
+                padding: 0;
+                width: 80px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            img {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin-left: 8px;
+                margin-bottom: 10px;
+                border-radius: 50%;
+            }
+        }
+
+        &-r {
+            float: right;
+            margin-right: 10%;
+            width: 70%;
+        }
+        &-hd {
+            line-height: 24px;
+
+            h3 {
+                float: left;
+                font-size: 16px;
+                width: 60%;
+                line-height: 24px;
+            }
+
+            p {
+                float: right;
+                font-size: 12px;
+                color: #A2A9B6;
+
+                span {
+                    margin-right: 5px;
+                    vertical-align: -2px;
+                }
+            }
+        }
+
+        &-bd {
+            height: 50px;
+            line-height: 50px / 2;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        &-ft {
+            height: 35px;
+            line-height: 35px;
+        }
+
+        &-latest {
+            position: absolute;
+            padding: 25px;
+            width: 450px;
+            background-color: #FFF;
+            box-shadow: 0px 0px 1px #CCC;
+
+            h4 {
+                margin-bottom: 23px;
+                line-height: 20px;
+                font-weight: bold;
+            }
+            .icon-clear-gray {
+                position: absolute;
+                top: 20px;
+                right: 15px;
+            }
+
+            &-hd {
+                padding-bottom: 16px;
+                line-height: 24px;
+                border-bottom: 1px solid #EDEDED;
+
+                h3 {
+                    display: inline-block;
+                    margin-right: 10px;
+                    max-width: 350px;
+                    vertical-align: middle;
+                    font-size: 16px;
+                }
+                p {
+                    display: inline;
+                    font-size: 12px;
+                    color: #A2A9B6;
+
+                    span {
+                        margin-right: 5px;
+                        vertical-align: -2px;
+                    }
+                }
+            }
+
+            &-bd {
+                margin: 20px 0 30px;
+
+                li {
+                    margin-bottom: 15px;
+                    height: 50px;
+                }
+
+                &-pic {
+                    float: left;
+                    margin-right: 20px;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p,
+                span {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                }
+
+                p {
+                    max-width: 310px;
+
+                    a {
+                        margin-right: 10px;
+                        color: #545A6C;
+                    }
+                }
+                span {
+                    font-size: 12px;
+                    color: #A2A9B6;
+                }
+            }
+
+            &-ft {
+                text-align: right;
+
+                .lbf-button {
+                    margin-left: 12px;
+                    padding: 0;
+                    width: 80px;
+                    height: 40px;
+                    box-sizing: border-box;
+                }
+
+                .main-rival-latest-unsetup,
+                .main-rival-latest-setup {
+                    color: #FFF;
+                    background: #00a1f2;
+                    border: none;
+                }
+                .main-rival-latest-unsetup {
+                    background: #F4615C;
+                }
+            }
+        }
+    }
+}

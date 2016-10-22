@@ -1,0 +1,112 @@
+.p-da {
+    .main-table {
+
+        position: relative;
+
+        h2 {
+            margin: 0 0 30px 30px;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 0;
+            border-collapse: collapse\9;
+        }
+        tr {
+            text-align: left;
+        }
+        tbody tr {
+            border-bottom: 1px solid #E6E6E6;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        th {
+            text-align: left;
+            padding: 15px 20px;
+            line-height: 20px;
+            font-weight: normal;
+            background: #f5f8fa;
+            &:first-child {
+                padding-left: 30px;
+            }
+        }
+        td {
+            padding: 15px 20px;
+            line-height: 20px;
+
+            &:first-child {
+                padding-left: 30px;
+            }
+        }
+        th,
+        td {
+            &[colspan] {
+                text-align: center;
+            }
+
+            &.main-table-nofirst {
+                padding-left: 20px;
+            }
+        }
+        .main-table-msg {
+            width: 60%;
+            padding: 15px 90px 15px 30px;
+
+            a {
+                display: block;
+                height: 60px;
+                line-height: 60px;
+                overflow: hidden;
+                color: inherit;
+                &:hover span {
+                    color: #00a1f2;
+                }
+
+                img {
+                    float: left;
+                    margin-right: 25px;
+                    width: 60px;
+                    height: 60px;
+                    border: none;
+                }
+
+                span {
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    .main-table-small {
+        th {
+            background: transparent;
+        }
+        th,
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        tbody {
+            tr {
+                border: none;
+            }
+            tr:nth-child(2n) {
+                background-color: #F6F8FA;
+            }
+        }
+    }
+
+    s.loading {
+        margin-left: 45%;
+        position: absolute;
+        top: 50%;
+    }
+}
+

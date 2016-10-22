@@ -1,0 +1,155 @@
+@import '../../base/mixin';
+
+.group-panel{
+	.lbf-panel-head{
+		height: 85px;
+		text-align: center;
+		font-size: 24px;
+		color: #1e2330;
+		font-weight: normal;
+		padding: 25px;
+	}
+
+	.lbf-panel-body{
+		padding: 0 25px;
+	}
+	.lbf-panel-foot{
+		padding: 30px 25px 45px;
+	}
+	.lbf-panel-body .link_new {
+		position: absolute;
+		height: 24px;
+		right: 25px;
+		top: 56px;
+		font-size: 16px;
+		.icon-srv-add-blue {
+			margin-right: 6px;
+			vertical-align: -2px;
+		}
+	}
+	.lbf-panel-body .list-loading {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+	}
+	.lbf-panel-body ul{
+		clear: both;
+		height: 400px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		border-top: 1px solid #ebedf2;
+
+		&::-webkit-scrollbar {
+			width: 8px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(0,0,0,0.15);
+			border-radius: 8px;
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: #fff;
+		}
+
+		li{
+			height: 79px;
+			position: relative;
+			padding: 0 20px;
+			border-bottom: 1px solid #ebedf2;
+
+
+			a{
+				display: block;
+				color: #1e2330;
+				line-height: 79px;
+				.group-name {
+					display: inline-block;
+					width: 300px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					vertical-align: middle;
+
+				}
+				.icon-gp {
+					vertical-align: middle;
+					margin-right: 10px;
+				}
+			}
+			.icon-del {
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				margin-top: -9px;
+				display: none;
+			}
+			.icon-edit {
+				position: absolute;
+				right: 45px;
+				top: 50%;
+				margin-top: -9px;
+				display: none;
+			}
+
+			&.new_blt:hover {
+				.icon-del, .icon-edit {
+					display: block;
+				}
+			}
+			&.selected,
+			&.selected:hover{
+				background-color: #d3e9ff;
+			}
+
+			&.empty{
+				height: 399px;
+				text-align: center;
+				font-size: 20px;
+				color: #1e2330;
+				border-bottom: none;
+
+				p{
+					padding: 145px 0 25px;
+				}
+
+				span{
+					display: block;
+				}
+
+				a{
+					font-size: 16px;
+					display: inline-block;
+					line-height: 20px;
+					color: #0067ed;
+
+					&:hover{
+						color: #0056c7;
+					}
+				}
+
+				.loading i{
+					visibility: hidden;
+				}
+			}
+
+			&:hover{
+				background-color: #f5fafe;
+			}
+
+			&.empty:hover{
+				background: none;
+			}
+		}
+	}
+
+
+	.edit_panel {
+		width: 350px;
+		.lbf-dropdown-panel-head {
+			font-weight: normal;
+			font-size: 16px;
+		}
+		.btn_group {
+			margin-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,168 @@
+@import '../../base/mixin';
+@import '../../srv/comp/common';
+@import '../../srv/comp/SrvTargets';
+
+.text-gray {
+  color: @gray;
+}
+
+.lbf-panel-close {
+    z-index: 999;
+}
+
+.button-target-panel {
+    //.mt(-50px);
+}
+
+
+
+//解决dropdownPanel的定位问题
+.page {
+    .abs();
+    left: 0;
+    right: 0;
+}
+#slide{//由于page设为absolute 导航需要进行修改
+    top:0;
+    padding-bottom: 130px;
+}
+
+.content-main {
+
+    //横向排列改为纵向排列
+    .targets-selector .col2-cell {
+        width: 100%;
+    }
+
+    .div-buttons {
+        .pt(40px);
+        .mt(25px);
+        border-top: 1px solid #ebedf2;
+    }
+
+    //Todo: 表单项目内容，暂未使用；（暂时先改为声明 ）
+    .input-div() {
+
+        .mb(20px);
+
+        .label-name {
+          font-size: 14px;
+          .w(60px);
+          .tl();
+          .mr(7px);
+        }
+
+        .region-combobox {
+          .mr(10px);
+
+          .lbf-combobox-label {
+            .w(121px);
+          }
+        }
+
+        .gender-label {
+          .w(121px);
+        }
+
+        .time-label {
+          .w(121px);
+        }
+
+        .date-range {
+          .w(202px);
+          .ml(6px);
+        }
+
+        .fuzzy-search {
+          .w(387px);
+        }
+    }
+
+    //Todo: 表单项目定时发送，暂未使用；（暂时先改为声明 ）
+    .timing-div() {
+
+        .h(40px);
+        .lh(40px);
+
+        span, div {
+            .dib();
+            .vm();
+        }
+
+        .timing-text-label {
+            .rel();
+
+            .lbf-tip {
+                max-width: 300px;
+                .w(300px);
+                top: 22px;
+            }
+        }
+    }
+
+
+    #filteredResult {
+
+        #kfCount {
+            .dib();
+            .pr(5px);
+            .h(20px);
+            .lh(20px);
+        }
+
+        .targeted-customer-text {
+            .dib();
+            .mr(45px);
+            .vm();
+        }
+
+        .loading {
+            .vm();
+        }
+    }
+
+}
+
+.button-target-panel {
+    //.mt(-85px);
+}
+
+//发送按钮
+#create {
+    .w(116px);
+    .h(42px);
+    .lh(42px);
+    font-size: 16px;
+}
+
+.div-title, .div-body {
+    padding-left: 0;
+    padding-right: 0;
+
+    .group-send-content {
+        .rel();
+        min-height: 100px;
+        .tc();
+
+        .loading {
+            margin: 0;
+            .mt(40px);
+            .rel();
+        }
+    }
+}
+
+//加载replyController时，el的样式
+.loading-reply-box {
+    border: 2px dashed #cacdd0;
+    background:#f4f6f9;
+    .h(235px);
+
+    .loading {
+        margin-top: 100px!important;
+    }
+}
+
+body .remind-info {
+    .mb(-10px);
+}

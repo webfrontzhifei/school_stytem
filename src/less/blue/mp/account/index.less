@@ -1,0 +1,383 @@
+@import '../../base/mixin';
+
+
+@avatar-bg-color: #e1e4e6;
+
+.bdgray {
+  border-bottom: 1px solid @border-gray;
+}
+
+.content-main {
+  .account-setting {
+
+    &-failed {
+      .border-radius(5px);
+      .mt(20px);
+      .pt(30px);
+      .pl(20px);
+      .pb(30px);
+      .c(#f4615c);
+      background-color: #ffe2df;
+    }
+
+    &-infocard {
+      .border-radius(5px);
+      .mt(25px);
+      .h(150px);
+      .pl(130px);
+      background-color: @avatar-bg-color;
+
+      &-content {
+        .pt(40px);
+        .pl(20px);
+        .lh(30px);
+
+        .infocard-title {
+          .w(60px);
+        }
+
+        .icon-quest {
+          .mb(-2px);
+          .ml(4px);
+        }
+      }
+    }
+
+    &-avatar {
+      .abs;
+      .ml(-110px);
+      .mt(23px);
+      img {
+        .w(110px);
+        .border-radius(55px);
+      }
+    }
+
+    &-content {
+
+      &-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      &-desc {
+        .lh(40px);
+        .mb(20px);
+      }
+
+
+      .api-info-table {
+        .col1 {
+          .pl(30px);
+        }
+        .col1, .col2 {
+          width: 20%;
+        }
+        .col3 {
+          width: 100px;
+        }
+        .col4 {
+        }
+      }
+
+
+
+      .capability-list-table {
+        .col1 {
+          .pl(30px);
+          .w(400px);
+        }
+        .col2 {
+          width: 100px;
+        }
+      }
+    }
+
+    &-api-info, &-capability-list {
+      font-size: 14px;
+      .lh(50px);
+      a {
+        font-size: 12px;
+      }
+    }
+
+    &-capability-list {
+      .pt(20px);
+    }
+  }
+}
+
+
+
+
+.toolbar-block {
+
+    .bg(#fff);
+    .h(70px);
+    .lh(70px);
+    .pl(20px);
+    .mt(35px);
+    .rel();
+
+    .toolbar-item {
+
+        .dib();
+        .poi();
+        .h(24px);
+        .lh(24px);
+
+        .toolbar-item-icon {
+          vertical-align: -3px;
+            .mr(5px);
+        }
+
+        .toolbar-text {
+            font-size: 16px;
+            .c(@dark);
+        }
+
+        &.disable {
+            cursor: default;
+            opacity: .38;
+            filter: alpha(opacity=38);           
+        }
+
+    }
+
+    
+
+    .toolbar-buttons {
+        .dib();
+        float: right;
+        .mr(20px);
+
+        #create {
+            i {
+                margin: -3px 0;
+                .mr(5px);
+            }
+        }
+
+    }
+
+}
+
+
+#membersList {
+
+  //空员工时候的列表
+  tr.empty-member-table {
+    .tc();
+
+    td {
+
+        .pt(70px);
+        .pb(70px);
+
+        &:hover {
+            .bg(#fff);
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+  }
+
+
+  .col0 {
+    .pl(15px);
+    width: 30px;
+    }
+  .col1 {
+    width: 180px;
+    padding-left: 0!important;
+    }
+  .col2 {width: 150px;}
+  .col3 {width: 30%; padding-right:  20px;}
+  .col4 { text-align: left; }
+  .col5 { width: 100px; }
+
+
+  tr {
+      td { 
+          line-height:180%; 
+          .rel();
+      }
+
+      .member-toolbar {
+          float: right;
+          .rel();
+          top: 3px;
+          right: 10px;
+
+          span {
+              .mr(10px);
+              .poi();
+          }
+      }
+
+      .perm-texts {
+          .perm-block {
+              .ell();
+              .sub-perm {
+                  .c(@gray);
+                  .ell();
+                  word-break: break-all;
+                  word-wrap: break-word;
+              }
+          }
+      }
+
+      .remark-text {
+          .abs();
+          top: 20%;
+          .w(90%);
+          max-height: 40px;
+          .ovh();
+          p {
+              padding: 15px;
+              border: 1px solid transparent;
+              word-wrap: break-word;
+              word-break: break-all;
+
+              p.ell {
+                  .ell();
+              }
+
+              &:hover {
+                  white-space: normal;
+                  overflow: visible;
+                  text-overflow: initial;
+              }
+          }
+      }
+
+      .has-remark {
+
+          &:hover {
+              overflow: visible;
+              z-index: 999;
+
+              p {
+                  .bg(#fff);
+                  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+                  white-space: normal!important;
+              }
+          }
+      }
+
+      &:hover {
+          .member-toolbar {
+              .dib();
+              .vm();
+          }
+      }
+  }
+
+}
+
+#adminTable {
+    .col1 {
+        padding-left: 40px!important;
+        width: 185px!important;
+    }
+    .col2 {
+        width: 186px!important;
+    }
+}
+
+//编辑员工弹窗样式
+.edit-panel {
+    .rel();
+    .pl(15px);
+    top: -10px;
+
+    .row {
+        position: relative;
+        overflow: hidden;  
+        .item-value {
+          display: inline-block;
+        }      
+    }
+    .row-title {
+      float: left;
+      width: 60px;
+      label& {
+        margin-top: 10px;
+      }
+    }
+
+    .panel-permissions-block {
+
+        .rel();
+        .ml(-3px);
+
+        .panel-permission {
+
+            .mt(30px);
+
+            .main-permission {}
+
+            .sub-permissions {
+
+                .mt(10px);
+                .ml(30px);
+                .lh(40px);
+
+                .sub-permission {
+                    .dib();
+                    .mr(58px);
+                }
+            }
+        }
+    }
+
+    .input-long {
+        .w(545px);
+    }
+
+    .input-member-name {
+        .w(240px);
+    }
+
+    .lbf-tip-error {
+        top: -30px!important;
+    }
+
+    #panelResetPwd {
+        .rel();
+        top: 2px;
+    }
+
+}
+
+.text-gray {
+    .c(@gray);
+}
+
+//无权限页面
+.unauthorized-container {
+    .tc();
+
+    img {
+        .mt(70px);
+    }
+
+    h2 {
+        .mt(40px);
+        font-size: 24px;
+    }
+
+    p {
+        .mt(10px);
+    }
+}
+
+//无员工的图标
+.icon-empty-member {
+    .dib();
+    .w(100px);
+    .h(100px);
+    background: url(images/icon-empty-member.png) no-repeat;
+}

@@ -1,0 +1,1071 @@
+.icon-srv,
+.icon-srv-account-checked-highlight,
+.icon-srv-account-checked,
+.icon-srv-account-ticked-highlight,
+.icon-srv-account-ticked,
+.icon-srv-account-type,
+.icon-srv-add-blue,
+.icon-srv-add-mini,
+.icon-srv-add,
+.icon-srv-arr-down,
+.icon-srv-arr-left,
+.icon-srv-arr-right,
+.icon-srv-arr-up,
+.icon-srv-arrow-down,
+.icon-srv-arrow-up,
+.icon-srv-avatar-medium-female,
+.icon-srv-avatar-medium-male,
+.icon-srv-avatar-small,
+.icon-srv-avatar,
+.icon-srv-blocked-building,
+.icon-srv-call-disabled,
+.icon-srv-call-phone,
+.icon-srv-call-small-disabled,
+.icon-srv-call-small,
+.icon-srv-call,
+.icon-srv-callim-disabled,
+.icon-srv-callim,
+.icon-srv-cancel,
+.icon-srv-chain,
+.icon-srv-charge-detail,
+.icon-srv-chat-disabled,
+.icon-srv-chat,
+.icon-srv-close-it,
+.icon-srv-create,
+.icon-srv-ctrl-ellip,
+.icon-srv-del-highlight,
+.icon-srv-del-s,
+.icon-srv-del,
+.icon-srv-del2,
+.icon-srv-delete-highlight,
+.icon-srv-delete,
+.icon-srv-door,
+.icon-srv-down,
+.icon-srv-edit-highlight,
+.icon-srv-edit-s,
+.icon-srv-edit,
+.icon-srv-edit2,
+.icon-srv-edit3-highlight,
+.icon-srv-edit3,
+.icon-srv-female,
+.icon-srv-filter-highlight,
+.icon-srv-filter,
+.icon-srv-first-disabled,
+.icon-srv-first,
+.icon-srv-fixed-phone,
+.icon-srv-globe-highlight,
+.icon-srv-globe,
+.icon-srv-group-card,
+.icon-srv-headphone,
+.icon-srv-imgtext-highlight,
+.icon-srv-imgtext,
+.icon-srv-label-close,
+.icon-srv-last-disabled,
+.icon-srv-last,
+.icon-srv-left-black,
+.icon-srv-male,
+.icon-srv-mark-wx,
+.icon-srv-merge-disabled,
+.icon-srv-merge,
+.icon-srv-mobile-phone,
+.icon-srv-mp-big,
+.icon-srv-mp-card,
+.icon-srv-mp-disabled,
+.icon-srv-mp,
+.icon-srv-next-disabled,
+.icon-srv-next,
+.icon-srv-no-results,
+.icon-srv-nomsg,
+.icon-srv-notebook-highlight,
+.icon-srv-notebook,
+.icon-srv-null,
+.icon-srv-paper-highlight,
+.icon-srv-paper,
+.icon-srv-phone-disable_s,
+.icon-srv-phone,
+.icon-srv-prev-disabled,
+.icon-srv-prev,
+.icon-srv-qq-big,
+.icon-srv-qq-chat-disabled,
+.icon-srv-qq-chat,
+.icon-srv-qq-disabled,
+.icon-srv-qq,
+.icon-srv-qun-photo,
+.icon-srv-qun-share,
+.icon-srv-qun-tg,
+.icon-srv-qun,
+.icon-srv-remove-tag,
+.icon-srv-remove,
+.icon-srv-reset-highlight,
+.icon-srv-reset,
+.icon-srv-right-grey,
+.icon-srv-staff-card,
+.icon-srv-sure-highlight,
+.icon-srv-sure,
+.icon-srv-tag-add-highlight,
+.icon-srv-tag-add,
+.icon-srv-tag-del-highlight,
+.icon-srv-tag-del,
+.icon-srv-tag-highlight,
+.icon-srv-tag,
+.icon-srv-tel-detail,
+.icon-srv-text-highlight,
+.icon-srv-text,
+.icon-srv-tip-gray-t,
+.icon-srv-tip-gray,
+.icon-srv-tips,
+.icon-srv-type-group-card,
+.icon-srv-type-mp-card,
+.icon-srv-type-staff-card,
+.icon-srv-up,
+.icon-srv-wx-big,
+.icon-srv-wx-chat-disabled,
+.icon-srv-wx-chat,
+.icon-srv-wx-small {
+  display: inline-block;
+  font: 0/0 a;
+  color: transparent;
+  overflow: hidden;
+  background: url("../common/images/icons.png?2016621") no-repeat;
+  background-size: 100px auto;
+}
+.icon-srv-account-checked-highlight {
+  width: 16px;
+  height: 16px;
+}
+.highlight .icon-srv-account-checked,
+a:hover .icon-srv-account-checked,
+a:hover .icon-srv-account-checked-highlight,
+.highlight:hover .icon-srv-account-checked,
+.icon-srv-account-checked-highlight:hover,
+.icon-srv-account-checked-highlight {
+  background-position: 0px -409px;
+}
+.icon-srv-account-checked {
+  width: 16px;
+  height: 16px;
+}
+.checked .icon-srv-account,
+a:hover .icon-srv-account,
+a:hover .icon-srv-account-checked,
+.checked:hover .icon-srv-account,
+.icon-srv-account-checked:hover,
+.icon-srv-account-checked {
+  background-position: 0px -617px;
+}
+.icon-srv-account-ticked-highlight {
+  width: 18px;
+  height: 17px;
+}
+.highlight .icon-srv-account-ticked,
+a:hover .icon-srv-account-ticked,
+a:hover .icon-srv-account-ticked-highlight,
+.highlight:hover .icon-srv-account-ticked,
+.icon-srv-account-ticked-highlight:hover,
+.icon-srv-account-ticked-highlight {
+  background-position: 0px -695px;
+}
+.icon-srv-account-ticked {
+  width: 18px;
+  height: 17px;
+  background-position: 0px -776px;
+}
+.icon-srv-account-type {
+  width: 21px;
+  height: 17px;
+  background-position: 0px -803px;
+}
+.icon-srv-add-blue {
+  width: 16px;
+  height: 16px;
+  background-position: 0px -591px;
+}
+.icon-srv-add:hover,
+a:hover .icon-srv-add {
+  background-position: 0px -2984px;
+}
+.icon-srv-add-mini {
+  width: 16px;
+  height: 16px;
+  background-position: 0px -383px;
+}
+.icon-srv-add {
+  width: 24px;
+  height: 24px;
+  background-position: 0px -2950px;
+}
+.icon-srv-arr-down {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -26px;
+}
+.icon-srv-arr-left {
+  width: 8px;
+  height: 14px;
+  background-position: 0px -335px;
+}
+.icon-srv-arr-right {
+  width: 8px;
+  height: 14px;
+  background-position: 0px -311px;
+}
+.icon-srv-arr-up {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -58px;
+}
+.icon-srv-arrow-down {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -74px;
+}
+.icon-srv-arrow-up {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -90px;
+}
+.icon-srv-avatar-medium-female {
+  width: 45px;
+  height: 45px;
+  background-position: 0px -3168px;
+}
+.icon-srv-avatar-medium-male {
+  width: 45px;
+  height: 45px;
+  background-position: 0px -3278px;
+}
+.icon-srv-avatar-small {
+  width: 45px;
+  height: 45px;
+  background-position: 0px -3223px;
+}
+.icon-srv-avatar {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -4700px;
+}
+.icon-srv-blocked-building {
+  width: 19px;
+  height: 18px;
+  background-position: 0px -1558px;
+}
+.icon-srv-call-disabled {
+  width: 50px;
+  height: 50px;
+}
+.disabled .icon-srv-call,
+a:hover .icon-srv-call,
+a:hover .icon-srv-call-disabled,
+.disabled:hover .icon-srv-call,
+.icon-srv-call-disabled:hover,
+.icon-srv-call-disabled {
+  background-position: 0px -3569px;
+}
+.icon-srv-call:hover,
+a:hover .icon-srv-call {
+  background-position: 0px -3449px;
+}
+.icon-srv-call-phone {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -1960px;
+}
+.icon-srv-call-small-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-call-small,
+a:hover .icon-srv-call-small,
+a:hover .icon-srv-call-small-disabled,
+.disabled:hover .icon-srv-call-small,
+.icon-srv-call-small-disabled:hover,
+.icon-srv-call-small-disabled {
+  background-position: 0px -1306px;
+}
+.icon-srv-call-small {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1278px;
+}
+.icon-srv-call {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -3689px;
+}
+.icon-srv-callim-disabled {
+  width: 50px;
+  height: 50px;
+}
+.disabled .icon-srv-callim,
+a:hover .icon-srv-callim,
+a:hover .icon-srv-callim-disabled,
+.disabled:hover .icon-srv-callim,
+.icon-srv-callim-disabled:hover,
+.icon-srv-callim-disabled {
+  background-position: 0px -3989px;
+}
+.icon-srv-callim:hover,
+a:hover .icon-srv-callim {
+  background-position: 0px -3509px;
+}
+.icon-srv-callim {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -3629px;
+}
+.icon-srv-cancel {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2560px;
+}
+.icon-srv-chain {
+  width: 17px;
+  height: 18px;
+  background-position: 0px -1138px;
+}
+.icon-srv-charge-detail:hover,
+a:hover .icon-srv-charge-detail {
+  background-position: 0px -1110px;
+}
+.icon-srv-charge-detail {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1194px;
+}
+.icon-srv-chat-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-chat,
+a:hover .icon-srv-chat,
+a:hover .icon-srv-chat-disabled,
+.disabled:hover .icon-srv-chat,
+.icon-srv-chat-disabled:hover,
+.icon-srv-chat-disabled {
+  background-position: 0px -1446px;
+}
+.icon-srv-chat {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1082px;
+}
+.icon-srv-close-it {
+  width: 10px;
+  height: 10px;
+  background-position: 0px -160px;
+}
+.icon-srv-create {
+  width: 16px;
+  height: 16px;
+  background-position: 0px -643px;
+}
+.icon-srv-ctrl-ellip:hover,
+a:hover .icon-srv-ctrl-ellip {
+  background-position: 0px 0px;
+}
+.icon-srv-ctrl-ellip {
+  width: 15px;
+  height: 3px;
+  background-position: 0px -13px;
+}
+.icon-srv-del-highlight {
+  width: 18px;
+  height: 18px;
+}
+.highlight .icon-srv-del,
+a:hover .icon-srv-del,
+a:hover .icon-srv-del-highlight,
+.highlight:hover .icon-srv-del,
+.icon-srv-del-highlight:hover,
+.icon-srv-del-highlight {
+  background-position: 0px -886px;
+}
+.icon-srv-del:hover,
+a:hover .icon-srv-del {
+  background-position: 0px -914px;
+}
+.icon-srv-del-s:hover,
+a:hover .icon-srv-del-s {
+  background-position: 0px -565px;
+}
+.icon-srv-del-s {
+  width: 16px;
+  height: 16px;
+  background-position: 0px -539px;
+}
+.icon-srv-del {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -998px;
+}
+.icon-srv-del2:hover,
+a:hover .icon-srv-del2 {
+  background-position: 0px -1026px;
+}
+.icon-srv-del2 {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1054px;
+}
+.icon-srv-delete-highlight {
+  width: 20px;
+  height: 20px;
+}
+.highlight .icon-srv-delete,
+a:hover .icon-srv-delete,
+a:hover .icon-srv-delete-highlight,
+.highlight:hover .icon-srv-delete,
+.icon-srv-delete-highlight:hover,
+.icon-srv-delete-highlight {
+  background-position: 0px -2080px;
+}
+.icon-srv-delete:hover,
+a:hover .icon-srv-delete {
+  background-position: 0px -2110px;
+}
+.icon-srv-delete {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2920px;
+}
+.icon-srv-door {
+  width: 16px;
+  height: 18px;
+  background-position: 0px -1166px;
+}
+.icon-srv-down {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -42px;
+}
+.icon-srv-edit-highlight {
+  width: 18px;
+  height: 19px;
+}
+.highlight .icon-srv-edit,
+a:hover .icon-srv-edit,
+a:hover .icon-srv-edit-highlight,
+.highlight:hover .icon-srv-edit,
+.icon-srv-edit-highlight:hover,
+.icon-srv-edit-highlight {
+  background-position: 0px -1901px;
+}
+.icon-srv-edit:hover,
+a:hover .icon-srv-edit {
+  background-position: 0px -1872px;
+}
+.icon-srv-edit-s:hover,
+a:hover .icon-srv-edit-s {
+  background-position: 0px -487px;
+}
+.icon-srv-edit-s {
+  width: 16px;
+  height: 16px;
+  background-position: 0px -461px;
+}
+.icon-srv-edit {
+  width: 18px;
+  height: 19px;
+  background-position: 0px -1843px;
+}
+.icon-srv-edit2:hover,
+a:hover .icon-srv-edit2 {
+  background-position: 0px -1814px;
+}
+.icon-srv-edit2 {
+  width: 18px;
+  height: 19px;
+  background-position: 0px -1785px;
+}
+.icon-srv-edit3-highlight {
+  width: 20px;
+  height: 20px;
+}
+.highlight .icon-srv-edit3,
+a:hover .icon-srv-edit3,
+a:hover .icon-srv-edit3-highlight,
+.highlight:hover .icon-srv-edit3,
+.icon-srv-edit3-highlight:hover,
+.icon-srv-edit3-highlight {
+  background-position: 0px -2470px;
+}
+.icon-srv-edit3:hover,
+a:hover .icon-srv-edit3 {
+  background-position: 0px -2380px;
+}
+.icon-srv-edit3 {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2350px;
+}
+.icon-srv-female {
+  width: 8px;
+  height: 13px;
+  background-position: 0px -265px;
+}
+.icon-srv-filter-highlight {
+  width: 16px;
+  height: 12px;
+}
+.highlight .icon-srv-filter,
+a:hover .icon-srv-filter,
+a:hover .icon-srv-filter-highlight,
+.highlight:hover .icon-srv-filter,
+.icon-srv-filter-highlight:hover,
+.icon-srv-filter-highlight {
+  background-position: 0px -243px;
+}
+.icon-srv-filter {
+  width: 16px;
+  height: 12px;
+  background-position: 0px -221px;
+}
+.icon-srv-first-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-first,
+a:hover .icon-srv-first,
+a:hover .icon-srv-first-disabled,
+.disabled:hover .icon-srv-first,
+.icon-srv-first-disabled:hover,
+.icon-srv-first-disabled {
+  background-position: 0px -1586px;
+}
+.icon-srv-first {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1614px;
+}
+.icon-srv-fixed-phone {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -1930px;
+}
+.icon-srv-globe-highlight {
+  width: 18px;
+  height: 18px;
+}
+.highlight .icon-srv-globe,
+a:hover .icon-srv-globe,
+a:hover .icon-srv-globe-highlight,
+.highlight:hover .icon-srv-globe,
+.icon-srv-globe-highlight:hover,
+.icon-srv-globe-highlight {
+  background-position: 0px -1670px;
+}
+.icon-srv-globe {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1642px;
+}
+.icon-srv-group-card {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -3018px;
+}
+.icon-srv-headphone {
+  width: 18px;
+  height: 19px;
+  background-position: 0px -1698px;
+}
+.icon-srv-imgtext-highlight {
+  width: 100px;
+  height: 100px;
+}
+.highlight .icon-srv-imgtext,
+a:hover .icon-srv-imgtext,
+a:hover .icon-srv-imgtext-highlight,
+.highlight:hover .icon-srv-imgtext,
+.icon-srv-imgtext-highlight:hover,
+.icon-srv-imgtext-highlight {
+  background-position: 0px -5910px;
+}
+.icon-srv-imgtext:hover,
+a:hover .icon-srv-imgtext {
+  background-position: 0px -5800px;
+}
+.icon-srv-imgtext {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -5580px;
+}
+.icon-srv-label-close:hover,
+a:hover .icon-srv-label-close {
+  background-position: 0px -180px;
+}
+.icon-srv-label-close {
+  width: 10px;
+  height: 10px;
+  background-position: 0px -140px;
+}
+.icon-srv-last-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-last,
+a:hover .icon-srv-last,
+a:hover .icon-srv-last-disabled,
+.disabled:hover .icon-srv-last,
+.icon-srv-last-disabled:hover,
+.icon-srv-last-disabled {
+  background-position: 0px -1530px;
+}
+.icon-srv-last {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1502px;
+}
+.icon-srv-left-black:hover,
+a:hover .icon-srv-left-black {
+  background-position: 0px -1990px;
+}
+.icon-srv-left-black {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2020px;
+}
+.icon-srv-male {
+  width: 11px;
+  height: 11px;
+  background-position: 0px -200px;
+}
+.icon-srv-mark-wx {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -359px;
+}
+.icon-srv-merge-disabled {
+  width: 50px;
+  height: 50px;
+}
+.disabled .icon-srv-merge,
+a:hover .icon-srv-merge,
+a:hover .icon-srv-merge-disabled,
+.disabled:hover .icon-srv-merge,
+.icon-srv-merge-disabled:hover,
+.icon-srv-merge-disabled {
+  background-position: 0px -3869px;
+}
+.icon-srv-merge:hover,
+a:hover .icon-srv-merge {
+  background-position: 0px -3809px;
+}
+.icon-srv-merge {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -3749px;
+}
+.icon-srv-mobile-phone {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2200px;
+}
+.icon-srv-mp-big {
+  width: 70px;
+  height: 70px;
+  background-position: 0px -4049px;
+}
+.icon-srv-mp-card {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -3068px;
+}
+.icon-srv-mp-disabled {
+  width: 20px;
+  height: 20px;
+}
+.disabled .icon-srv-mp,
+a:hover .icon-srv-mp,
+a:hover .icon-srv-mp-disabled,
+.disabled:hover .icon-srv-mp,
+.icon-srv-mp-disabled:hover,
+.icon-srv-mp-disabled {
+  background-position: 0px -2290px;
+}
+.icon-srv-mp {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2320px;
+}
+.icon-srv-next-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-next,
+a:hover .icon-srv-next,
+a:hover .icon-srv-next-disabled,
+.disabled:hover .icon-srv-next,
+.icon-srv-next-disabled:hover,
+.icon-srv-next-disabled {
+  background-position: 0px -1474px;
+}
+.icon-srv-next {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -830px;
+}
+.icon-srv-no-results {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -4810px;
+}
+.icon-srv-nomsg {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -4480px;
+}
+.icon-srv-notebook-highlight {
+  width: 17px;
+  height: 18px;
+}
+.highlight .icon-srv-notebook,
+a:hover .icon-srv-notebook,
+a:hover .icon-srv-notebook-highlight,
+.highlight:hover .icon-srv-notebook,
+.icon-srv-notebook-highlight:hover,
+.icon-srv-notebook-highlight {
+  background-position: 0px -1418px;
+}
+.icon-srv-notebook {
+  width: 17px;
+  height: 18px;
+  background-position: 0px -1390px;
+}
+.icon-srv-null {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -4370px;
+}
+.icon-srv-paper-highlight {
+  width: 16px;
+  height: 18px;
+}
+.highlight .icon-srv-paper,
+a:hover .icon-srv-paper,
+a:hover .icon-srv-paper-highlight,
+.highlight:hover .icon-srv-paper,
+.icon-srv-paper-highlight:hover,
+.icon-srv-paper-highlight {
+  background-position: 0px -1362px;
+}
+.icon-srv-paper {
+  width: 16px;
+  height: 18px;
+  background-position: 0px -1334px;
+}
+.icon-srv-phone-disable_s {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2620px;
+}
+.icon-srv-phone {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2650px;
+}
+.icon-srv-prev-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-srv-prev,
+a:hover .icon-srv-prev,
+a:hover .icon-srv-prev-disabled,
+.disabled:hover .icon-srv-prev,
+.icon-srv-prev-disabled:hover,
+.icon-srv-prev-disabled {
+  background-position: 0px -1250px;
+}
+.icon-srv-prev {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -1222px;
+}
+.icon-srv-qq-big {
+  width: 70px;
+  height: 70px;
+  background-position: 0px -4129px;
+}
+.icon-srv-qq-chat-disabled {
+  width: 18px;
+  height: 20px;
+}
+.disabled .icon-srv-qq-chat,
+a:hover .icon-srv-qq-chat,
+a:hover .icon-srv-qq-chat-disabled,
+.disabled:hover .icon-srv-qq-chat,
+.icon-srv-qq-chat-disabled:hover,
+.icon-srv-qq-chat-disabled {
+  background-position: 0px -2770px;
+}
+.icon-srv-qq-chat {
+  width: 18px;
+  height: 20px;
+  background-position: 0px -2800px;
+}
+.icon-srv-qq-disabled {
+  width: 20px;
+  height: 20px;
+}
+.disabled .icon-srv-qq,
+a:hover .icon-srv-qq,
+a:hover .icon-srv-qq-disabled,
+.disabled:hover .icon-srv-qq,
+.icon-srv-qq-disabled:hover,
+.icon-srv-qq-disabled {
+  background-position: 0px -2830px;
+}
+.icon-srv-qq {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2860px;
+}
+.icon-srv-qun-photo {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -3929px;
+}
+.icon-srv-qun-share {
+  width: 48px;
+  height: 48px;
+  background-position: 0px -3391px;
+}
+.icon-srv-qun-tg {
+  width: 48px;
+  height: 48px;
+  background-position: 0px -3333px;
+}
+.icon-srv-qun {
+  width: 100px;
+  height: 71px;
+  background-position: 0px -4289px;
+}
+.icon-srv-remove-tag {
+  width: 8px;
+  height: 8px;
+  background-position: 0px -122px;
+}
+.icon-srv-remove {
+  width: 14px;
+  height: 13px;
+  background-position: 0px -288px;
+}
+.icon-srv-reset-highlight {
+  width: 17px;
+  height: 16px;
+}
+.highlight .icon-srv-reset,
+a:hover .icon-srv-reset,
+a:hover .icon-srv-reset-highlight,
+.highlight:hover .icon-srv-reset,
+.icon-srv-reset-highlight:hover,
+.icon-srv-reset-highlight {
+  background-position: 0px -669px;
+}
+.icon-srv-reset:hover,
+a:hover .icon-srv-reset {
+  background-position: 0px -513px;
+}
+.icon-srv-reset {
+  width: 17px;
+  height: 16px;
+  background-position: 0px -435px;
+}
+.icon-srv-right-grey:hover,
+a:hover .icon-srv-right-grey {
+  background-position: 0px -2890px;
+}
+.icon-srv-right-grey {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2740px;
+}
+.icon-srv-staff-card {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -3118px;
+}
+.icon-srv-sure-highlight {
+  width: 20px;
+  height: 20px;
+}
+.highlight .icon-srv-sure,
+a:hover .icon-srv-sure,
+a:hover .icon-srv-sure-highlight,
+.highlight:hover .icon-srv-sure,
+.icon-srv-sure-highlight:hover,
+.icon-srv-sure-highlight {
+  background-position: 0px -2530px;
+}
+.icon-srv-sure:hover,
+a:hover .icon-srv-sure {
+  background-position: 0px -2440px;
+}
+.icon-srv-sure {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2410px;
+}
+.icon-srv-tag-add-highlight {
+  width: 20px;
+  height: 20px;
+}
+.highlight .icon-srv-tag-add,
+a:hover .icon-srv-tag-add,
+a:hover .icon-srv-tag-add-highlight,
+.highlight:hover .icon-srv-tag-add,
+.icon-srv-tag-add-highlight:hover,
+.icon-srv-tag-add-highlight {
+  background-position: 0px -2260px;
+}
+.icon-srv-tag-add {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2230px;
+}
+.icon-srv-tag-del-highlight {
+  width: 20px;
+  height: 20px;
+}
+.highlight .icon-srv-tag-del,
+a:hover .icon-srv-tag-del,
+a:hover .icon-srv-tag-del-highlight,
+.highlight:hover .icon-srv-tag-del,
+.icon-srv-tag-del-highlight:hover,
+.icon-srv-tag-del-highlight {
+  background-position: 0px -2170px;
+}
+.icon-srv-tag-del {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2140px;
+}
+.icon-srv-tag-highlight {
+  width: 17px;
+  height: 17px;
+}
+.highlight .icon-srv-tag,
+a:hover .icon-srv-tag,
+a:hover .icon-srv-tag-highlight,
+.highlight:hover .icon-srv-tag,
+.icon-srv-tag-highlight:hover,
+.icon-srv-tag-highlight {
+  background-position: 0px -749px;
+}
+.icon-srv-tag {
+  width: 17px;
+  height: 17px;
+  background-position: 0px -722px;
+}
+.icon-srv-tel-detail:hover,
+a:hover .icon-srv-tel-detail {
+  background-position: 0px -970px;
+}
+.icon-srv-tel-detail {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -942px;
+}
+.icon-srv-text-highlight {
+  width: 100px;
+  height: 100px;
+}
+.highlight .icon-srv-text,
+a:hover .icon-srv-text,
+a:hover .icon-srv-text-highlight,
+.highlight:hover .icon-srv-text,
+.icon-srv-text-highlight:hover,
+.icon-srv-text-highlight {
+  background-position: 0px -5030px;
+}
+.icon-srv-text:hover,
+a:hover .icon-srv-text {
+  background-position: 0px -4590px;
+}
+.icon-srv-text {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -5690px;
+}
+.icon-srv-tip-gray-t:hover,
+a:hover .icon-srv-tip-gray-t {
+  background-position: 0px -2050px;
+}
+.icon-srv-tip-gray-t {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2710px;
+}
+.icon-srv-tip-gray {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -858px;
+}
+.icon-srv-tips:hover,
+a:hover .icon-srv-tips {
+  background-position: 0px -2680px;
+}
+.icon-srv-tips {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2590px;
+}
+.icon-srv-type-group-card:hover,
+a:hover .icon-srv-type-group-card {
+  background-position: 0px -4920px;
+}
+.icon-srv-type-group-card {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -6020px;
+}
+.icon-srv-type-mp-card:hover,
+a:hover .icon-srv-type-mp-card {
+  background-position: 0px -5140px;
+}
+.icon-srv-type-mp-card {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -5250px;
+}
+.icon-srv-type-staff-card:hover,
+a:hover .icon-srv-type-staff-card {
+  background-position: 0px -5360px;
+}
+.icon-srv-type-staff-card {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -5470px;
+}
+.icon-srv-up {
+  width: 10px;
+  height: 6px;
+  background-position: 0px -106px;
+}
+.icon-srv-wx-big {
+  width: 70px;
+  height: 70px;
+  background-position: 0px -4209px;
+}
+.icon-srv-wx-chat-disabled {
+  width: 20px;
+  height: 19px;
+}
+.disabled .icon-srv-wx-chat,
+a:hover .icon-srv-wx-chat,
+a:hover .icon-srv-wx-chat-disabled,
+.disabled:hover .icon-srv-wx-chat,
+.icon-srv-wx-chat-disabled:hover,
+.icon-srv-wx-chat-disabled {
+  background-position: 0px -1756px;
+}
+.icon-srv-wx-chat {
+  width: 20px;
+  height: 19px;
+  background-position: 0px -1727px;
+}
+.icon-srv-wx-small {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -2500px;
+}

@@ -1,0 +1,718 @@
+@import '../../../base/variable';
+@import '../../../base/mixin';
+
+
+//滚动条不要track的颜色，同时scrollbar的颜色也变为淡一点
+.scrollBarNoTrackBg(){
+  &::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,.15);
+  }
+}
+
+//顶部“将已接收的成员导入客户库”Button容器样式
+.top-btn-wrap {
+  //登录个人QQ框时
+  &.step1 {
+    .abs;
+    .mt(19);
+    z-index: 10;
+  }
+  //接收群时
+  &.step2 {
+    position: static;
+    .mt(0);
+    .mb(20);
+  }
+}
+
+//个人QQ登录module
+.mod-login {
+  height: 351px;
+  padding-top:124px;
+  text-align: center;
+  border-top: 1px solid @border-color;
+
+  dt {
+    display: inline-block;
+    width: 76px;
+    height: 87px;
+    background: url(images/penguin.png) no-repeat left top;
+    margin-bottom: 28px;
+  }
+  dd {
+    color:@gray;
+    margin-bottom: 35px;
+    line-height: 22px;
+  }
+  .lbf-button-primary {
+    .w(118);
+    line-height: 43px;
+  }
+}
+.tip-login {
+  .pt(3);
+  .c(@gray);
+  .icon-credit-tip {
+    vertical-align: -4px;
+  }
+}
+
+//企业接收群额度说明Tip
+.credit-quota-tip {
+  .credit-quota-content {
+    font-size: 14px;
+    padding: 0 9px;
+    width: 510px;
+  }
+  dd {
+    padding: 12px 0;
+  }
+  label {
+    .dib;
+    .w(165);
+    .pl(15);
+  }
+  .line-gray-t {
+    border-top:1px solid #ebedf2;
+  }
+
+  .credit-volume {
+    .pt(3);
+  }
+
+  .credit-volume-list {
+    .w(330);
+    .ml(180);
+
+    ul{
+      float: left;
+      .w(215);//默认列宽一点
+      &.odd {
+        .w(115);//第二列窄一点
+      }
+    }
+    .item {
+      .db;
+      .nowrap;
+      .pr(10);
+      .pb(10);
+    }
+  }
+
+
+ /* .table-size {
+    .w(510);
+  }*/
+  .table-credit {
+    th,
+    td {
+      .pr(20);
+      .tr;
+      &.side-head {
+        .pl(20);
+        .tl;
+      }
+    }
+    th {
+      .c(@dark);
+      line-height: 50px;
+    }
+    td {
+      .pt(15);
+      .pb(15);
+    }
+  }
+}
+
+//接收群 - 主体样式
+.group-acception{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  .btn-to-import-exist {
+    .abs;
+    .dib;
+  }
+
+  .lay-left, .lay-mid, .lay-right {
+    display: table-cell;
+    vertical-align: top;
+    width: 48%;
+  }
+  .lay-mid {
+    width: 4%;
+  }
+  .mod-select, .owner-select {
+    width: 100%;
+    min-height: 498px;
+    border:1px @border-color solid;
+  }
+  .owner-select {
+    float: right;
+  }
+  .select-hd {
+    height:51px;
+    line-height: 51px;
+    background: @bg-gray;
+    border-bottom: 1px @border-color solid;
+    font-size: 16px;
+    .caption {
+      float:left;
+      margin-left:20px;
+    }
+  }
+  //个人QQ群列表模块
+  .mod-groups-list {
+    .user-info {
+      position: relative;
+      height:81px;
+      border-bottom: 1px @light solid;
+      .nick {
+        display: inline-block;
+        max-width:250px;
+        .ell;
+      }
+      .num {
+        display: inline-block;
+        vertical-align: 1px;
+        font-size:14px;
+      }
+    }
+    .info {
+      float:left;
+      width: 100%;
+      margin:16px 0 0 20px;
+    }
+    .avatar {
+      float:left;
+      margin-right:10px;
+    }
+    img {
+      border-radius: 50px;
+    }
+    dt {
+      padding: 2px 0 0;
+      font-size: 16px;
+    }
+    dd {
+      color:@border-gray;
+    }
+    .action {
+      position: absolute;
+      top:32px;
+      right:20px;
+      height: 20px;
+      line-height: 20px;
+    }
+    .btn-refresh, .split-line, .btn-logout {
+      display: block;
+      float:left;
+    }
+    .split-line {
+      width:0;
+      height: 20px;
+      margin:0 20px 0 18px;
+      border-left:1px @light solid;
+    }
+  }
+
+  //个人QQ群列表
+  .qq-group-list {
+    .rel; //用来给loading做水平居中
+    .h(350);//技巧：减少这个高度,但是会在后面通过members-select-box的padding-top和padding-bottom弥补
+    .members-select-box {
+      .w(100%);
+      .scrollBarNoTrackBg;
+      //技巧：通过members-select-box的padding-top和padding-bottom弥补.qq-group-list高度
+      .pt(7);
+      .pb(7);
+
+      .list-null {
+        font-size: 14px;
+      }
+    }
+
+    li {
+      .h(50);
+      border-bottom: none;
+      list-style: none;
+      &:hover {
+        background-color: transparent;
+      }
+      &.selected {
+        background-color: transparent;
+      }
+      &.disabled {
+        .opacity(100);
+        pointer-events: auto;
+      }
+      //个人QQ群列表里禁止选择的item
+      &.disable-select {
+        cursor: default;
+      }
+
+      .member-info {
+        .ml(49);
+        .mt(8);
+        width: auto;
+        float: none;
+      }
+      .lbf-iradio {
+        .abs;
+        .ml(20);
+        .mt(15);
+      }
+      .member-info-img {
+        .mr(10);
+        & > img {
+          .w(35);
+          .h(35);
+          .radius(35);
+        }
+      }
+      .member-info-name {
+        float: left;
+        .mt(7);
+        .c(@black);
+        width: auto;
+        max-width: 335px;
+      }
+      .size {
+        float: left;
+        .c(@light-gray);
+        font-size: 12px;
+        font-style: normal;
+        .mt(8);
+      }
+      .icon-qun-credit-tip {
+        .mt(7);
+      }
+    }
+
+  }
+}
+
+//群主选择Module
+.owner-select{
+
+  .agree-guide-tip {
+    .dn;
+    .abs;
+    .w(100%);
+    .h(50);
+    line-height: 50px;
+    bottom:0;
+    left:0;
+    background-color: #f8fafb;
+  }
+
+  .select-bd {
+    .staff-list-wrap{
+      .h(446);
+      &.hide{
+        .dn;
+      }
+      /*&.show-agree-guide-tip {
+        .rel;
+        .pb(50);
+        .h(396);
+        .agree-guide-tip {
+          .db;
+        }
+      }*/
+    }
+  }
+
+  .members-select{
+    .h(366);
+    .members-select-search{
+      padding:0;
+      float: left;
+      .w(100%);
+      .h(80);
+      .lbf-text-input {
+        .mt(20);
+        .ml(20);
+        .mr(20);
+      }
+    }
+
+    .members-select-box{
+      .w(100%);
+      .h(366);
+      .scrollBarNoTrackBg;
+
+      .list-null {
+        font-size: 14px;
+      }
+
+      li{
+        border: 0;
+        .lbf-icheckbox{
+          margin-top: 10px;
+          margin-right: 5px;
+        }
+        height: 40px;
+        .member-info{
+          min-width: none;
+          max-width: none;
+          width: auto;
+          height: 26px;
+          margin-top: 9px;
+          margin-left: 22px;
+          float: left;
+          overflow: hidden;
+
+          .member-info-img{
+            margin-top: 4px;
+            margin-right: 8px;
+            float: left;
+          }
+          .member-info-name{
+            margin-top: 1px;
+            color: #1e2330;
+            font-size: 14px;
+            font-weight: normal;
+            float: left;
+            display: inline;
+            width: auto;
+            max-width: 400px;
+          }
+          .member-info-tag{
+            float: left;
+            display: inline;
+            width: auto;
+            margin-top: 1px;
+          }
+
+        }
+
+      }
+
+      li.selected{
+        .lbf-itextbox{
+          display: block;
+        }
+
+        .member-info-name {
+          max-width: 230px;
+        }
+
+      }
+
+    }
+
+    .lbf-itextbox{
+      margin-top: 5px;
+      margin-right: 20px;
+      display: none;
+      .btn-join-group{
+        line-height: inherit;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      .lbf-button-loading {
+        pointer-events: auto;
+        cursor: default;
+      }
+    }
+  }
+}
+
+
+//导入群成员panel
+.group-import-panel {
+  .w(700);
+  .lbf-panel-body {
+    .pl(0);
+    .pr(0);
+  }
+  .lbf-panel-tip {
+    .pt(0);
+  }
+  .import-hd {
+    position: relative;
+    height: 34px;
+    border-bottom: 1px solid @border-color;
+    text-align: center;
+    li {
+      cursor: pointer;
+      float: none;
+      width: auto;
+      text-align: center;
+      .dib;
+      .ml(30);
+      .mr(30);
+      font-size: 16px;
+      line-height: 34px;
+      &.current {
+        .txt {
+          color:@blue;
+        }
+      }
+    }
+    .line {
+      display: none;
+      position: absolute;
+      left:0;
+      bottom: -1px;
+      width: 80px;
+      border-bottom: 1px @blue solid;
+    }
+  }
+  .import-bd {
+    padding:27px 35px 15px;
+    .tit{
+      color:@gray;
+    }
+    .lbf-combobox {
+      width: 100%;
+    }
+    .type-status {
+      height: 100px;
+      margin-right: -15px;
+      .tit {
+        margin-bottom: 10px;
+      }
+      .group, .type, .status {
+        float:left;
+        width: 33.333%;
+      }
+      .status {
+        width: 33.334%;
+      }
+      .lbf-combobox-caption {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .group-bd, .type-bd, .status-bd {
+      padding-right:15px;
+    }
+  }
+
+  //Label
+  .groups-combobox {
+    min-width: 200px;
+  }
+
+  .owner {
+    display: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .tit {
+      padding-bottom: 15px;
+    }
+
+    .set {
+      height: 69px;
+    }
+    .staff-list {
+      li {
+        width:auto;
+        margin-right: 0;
+        padding-bottom: 0;
+        .trans(200);
+        .loading {
+          margin-left: 50%;
+          position: relative;
+          left: -10px;
+        }
+      }
+      .item {
+        .info dt {
+          .db;
+          padding-top:3px;
+          padding-bottom: 3px;
+        }
+        dd {
+          .c(@gray);
+        }
+        .overlay, .btn-item-remove {
+          display: none;
+        }
+        .avatar {
+          cursor: default;
+          .ovh;
+          .mr(10);
+          float:left;
+          .h(50);
+          .w(50);
+          .rel;
+          img {
+            .rel;
+            z-index: 1;
+            .radius(50);
+            &[src='']{
+              .dn;
+            }
+          }
+        }
+        .default-avatar {
+          transform: scale(.5);//Safari Chrome FF
+          transform-origin: 0 0;
+          zoom: .5\9;//IE
+          z-index: 0;
+        }
+      }
+      .btn-edit {
+        float: right;
+        margin-top:5px;
+        margin-bottom: 0;
+        border:none;
+      }
+    }
+    dt {
+      font-size: 16px;
+      .tip {
+        font-size: 14px;
+      }
+    }
+  }
+  .tags {
+    border-top: 1px @light solid;
+  }
+  .tag-item {
+    overflow: hidden;
+    border-bottom: 1px @light solid;
+    .item-hd {
+      cursor: pointer;
+      height: 60px;
+      line-height: 60px;
+    }
+    .tit {
+      float:left;
+    }
+    .icon-srv-tag {
+      vertical-align: middle;
+      margin:-2px 10px 0 0;
+    }
+    .tag {
+      display: inline-block;
+      float:left;
+      height:24px;
+      padding:0 10px;
+      border-radius: 24px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      line-height: 24px;
+      background-color: #E4E8EA;
+      color:@dark;
+      transition: background-color .2s 0s ease-in;
+      &:hover {
+        background-color: #DAE0E6;
+      }
+    }
+    .icon-srv-arr-down, .icon-srv-arr-up {
+      float: right;
+      margin-top: 27px;
+    }
+    .icon-srv-remove-tag {
+      position: absolute;
+      top:8px;
+      right:8px;
+    }
+    .item-hd {
+      .tag.selected {
+        position: relative;
+        margin:18px 0 0 12px;
+        padding-right:20px;
+        background-color: @blue;
+        color:@white;
+      }
+    }
+    .item-bd {
+      overflow: hidden;
+      display: none;
+      padding-bottom: 15px;
+      .tag.selected {
+        background-color: @blue;
+        color:@white;
+      }
+    }
+  }
+  .btn-import-wrap {
+    padding-top:30px;
+    text-align: center;
+    #btn-import {
+      width: 118px;
+      line-height: 43px;
+      font-size: 16px;
+    }
+  }
+}
+
+//已接收的群下拉选项options
+.groups-combobox {
+  &.qidian-combobox-panel {
+    min-width: 198px;
+    max-width: 300px;
+    .members-select {
+
+      .members-select-search {
+        .abs;
+        top:0;
+        left:0;
+        right:0;
+      }
+
+      .members-select-box {
+        .scrollBarNoTrackBg;
+        width:auto;
+        .mt(59);
+        max-height: 245px;  //35 * 7
+        li {
+          width: auto;
+          .info {
+            .mr(15);
+          }
+        }
+        .list-null {
+          .w(150);
+          .ml(-75);
+          font-size: 14px;
+        }
+
+        .table-loading {
+          .mt(0);
+        }
+      }
+    }
+  }
+}
+
+//导入loading panel
+.import-loading-panel {
+  .w(600);
+  .h(405);
+  .icon-import-loading {
+    .w(129);
+    .h(120);
+    .db;
+    margin:110px auto 25px;
+    background: url('images/import-loading.gif') 0 0 no-repeat;
+  }
+}
+
+//导入群部分成功后，弹层里引导用户做2件以上事件的列表item前加.
+.lbf-panel-body {
+  .guide-list {
+    a {
+      &:before {
+        .dib;
+        content: '.';
+        line-height: 14px;
+        vertical-align: 4px;
+        .mr(7);
+      }
+    }
+  }
+}

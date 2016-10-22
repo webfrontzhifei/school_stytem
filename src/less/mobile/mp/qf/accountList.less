@@ -1,0 +1,31 @@
+@import "../../base/mixin.less";
+@import "../../base/reset.less";
+
+.list-area{
+	overflow: scroll;
+}
+.account-list li {
+	.info-right {
+		p {
+			display:block;
+		}
+		.icon-selected {
+			display:none;
+		}
+	}
+	.account-info {
+		.info-right {
+			color:#777;
+		}
+	}
+	&.selected {
+		.info-right {
+			p {
+				display:none;
+			}
+			.icon-selected {
+				display:inline-block;
+			}
+		}
+	}
+}

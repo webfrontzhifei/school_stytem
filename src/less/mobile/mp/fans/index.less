@@ -1,0 +1,177 @@
+@import "../../base/reset.less";
+@import "../../base/mixin.less";
+
+@background-color: #eee;
+@line-color: #dedfe0;
+@grey-font: #777;
+@up-color: #ff9000;
+@down-color: #5db75d;
+body {
+  background: @background-color;
+}
+
+.ns-list-container {
+  //font-size: 14px;
+  ////.retinaBorBot(#f00, 1);
+  //position: relative;
+  //height: 100%;
+  //width: 100%;
+  //position: absolute;
+  //top:0;
+  //bottom: 0;
+
+  ul{
+   height: 100%;
+  }
+  li {
+    margin: 20px 0;
+
+    .retinaBorTop(@line-color, 1);
+    .retinaBorBot(@line-color, 1);
+    background: #fff;
+    position: relative;
+    .account-header {
+      vertical-align: middle;
+      margin: auto 0;
+      height: 70px;
+      .avatar-icon {
+        display: inline-block;
+        vertical-align: middle;
+        //margin-left: 13px;
+        img{
+          margin: 10px 16px;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+      .content {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-top: -5px;
+        .name-txt {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: bold;
+
+        }
+        dt {
+          padding: 10px 0;
+        }
+        .icon-authed {
+          display: inline-block;
+          vertical-align: top;
+          width: 17px;
+          height: 17px;
+          margin-left: 5px;
+          background-image: url('../images/icon-authed.svg?20151105.svg');
+          background-size: 17px 17px;
+        }
+        .type {
+          color: @grey-font;
+          font-size: 14px;
+        }
+        //@media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), not all, not all {
+        //  .icon-authed {
+        //    //.iconsImg2X;
+        //    //background-position:left -84px;
+        //    background-image: url('../images/icon-authed@2x.png?20151021.png');
+        //  }
+        //}
+      }
+      .status {
+        display: inline-block;
+        vertical-align: middle;
+        color: @grey-font;
+        float: right;
+        margin-right: 15px;
+        line-height: 70px;
+      }
+
+    }
+    .account-fans {
+      height: 120px;
+      border-top: 1px solid @line-color;
+      box-sizing: border-box;
+      display: -webkit-flex;
+      display: flex;
+
+      .left-block, .right-block {
+        //display: inline-block;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        display: -webkit-flex;
+        display: flex;
+        height: 120px;
+        vertical-align: middle;
+
+        box-sizing: border-box;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        h1 {
+          font-size: 16px;
+          color:#000;
+        }
+        .wrap {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .left-block {
+        border-right: 1px solid @line-color;
+        .fans-num {
+          margin-top: 10px;
+          color: @grey-font;
+        }
+        .up {
+          color: @up-color;
+        }
+        .down{
+          color: @down-color;
+        }
+        .icon-arrow(@url) {
+          display: inline-block;
+          vertical-align: top;
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+          background-image: url(@url);
+          background-size: 12px 12px;
+        }
+        .icon-up-arrow {
+          .icon-arrow('../images/up-arrow.svg');
+        }
+        .icon-down-arrow {
+          .icon-arrow('../images/down-arrow.svg');
+          //background-image: url('../images/down-arrow.svg');
+        }
+      }
+      .right-block {
+        .right-arrow {
+          display: inline-block;
+          //vertical-align: top;
+          width: 10px;
+          height: 15px;
+          margin-left: 5px;
+          background-image: url('../images/right-arrow.svg');
+          background-size: 10px 15px;
+        }
+
+        .message-num {
+          color: #1bb6ef;
+          margin-top: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

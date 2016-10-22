@@ -1,0 +1,417 @@
+@import '../../../base/variable';
+@import '../../../base/mixin';
+.cust-import {
+  display: table;
+  width: 100%;
+  line-height: 1;
+  .lay-left, .lay-mid, .lay-right {
+    display: table-cell;
+    vertical-align: top;
+    width: 48%;
+  }
+  .lay-mid {
+    width: 4%;
+  }
+  .mod-select, .mod-import {
+    width: 100%;
+    min-height: 498px;
+    border:1px @border-color solid;
+  }
+  .mod-import {
+    float: right;
+  }
+  .select-hd, .import-hd {
+    height:51px;
+    line-height: 51px;
+    background: @bg-gray;
+    border-bottom: 1px @border-color solid;
+    font-size: 16px;
+  }
+  .select-hd {
+    .source {
+      float:left;
+      margin-left:20px;
+    }
+    .selected-sum {
+      display: none;
+      float:right;
+      margin-right: 20px;
+      .sum {
+        margin:0 5px 0 3px;
+        color: @blue;
+      }
+    }
+  }
+  .mod-login {
+    position: relative;
+    height: 351px;
+    padding-top:97px;
+    text-align: center;
+    dt {
+      display: inline-block;
+      width: 76px;
+      height: 87px;
+      background: url(images/penguin.png) no-repeat left top;
+      margin-bottom: 35px;
+    }
+    dd {
+      color:@gray;
+      margin-bottom: 25px;
+      line-height: 20px;
+    }
+    .tip-login {
+      position: absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      margin:0;
+      border-radius: 0;
+    }
+  }
+  .mod-list {
+    display: none;
+    .user-info {
+      position: relative;
+      height:81px;
+      border-bottom: 1px @light solid;
+      .nick {
+        display: inline-block;
+        max-width:250px;
+        .ell;
+      }
+      .num {
+        display: inline-block;
+        vertical-align: 1px;
+        font-size:14px;
+      }
+    }
+    .info {
+      float:left;
+      width: 100%;
+      margin:16px 0 0 20px;
+    }
+    .avatar {
+      float:left;
+      margin-right:10px;
+    }
+    img {
+      border-radius: 50px;
+    }
+    dt {
+      padding: 5px 0 10px 0;
+      font-size: 16px;
+    }
+    dd {
+      // margin-right:-200px;
+      color:@border-gray;
+    }
+    .action {
+      position: absolute;
+      top:18px;
+      right:20px;
+      // float: right;
+      height: 20px;
+      line-height: 20px;
+      // margin-top: 18px;
+      // margin-right: 20px;
+    }
+    .btn-refresh, .split-line, .btn-logout {
+      display: block;
+      float:left;
+    }
+    .split-line {
+      width:0;
+      height: 20px;
+      margin:0 20px 0 18px;
+      border-left:1px @light solid;
+    }
+  }
+  .friends-list {
+    max-height: 564px;
+    overflow-y: auto;
+    .loading {
+      display: block;
+      margin: 170px auto;
+    }
+    li {
+      list-style: none;
+    }
+    .switch {
+      position: static;
+      display: inline-block;
+      padding: 2px;
+      width: 16px;
+      height: 16px;
+      margin-top: -3px;
+      margin-left:15px;
+      vertical-align: middle;
+      background: url(images/icons.png) no-repeat left -60px;
+    }
+    .roots_open, .root_open, .center_open, .bottom_open {
+      background-position: left -80px;
+    }
+    .chk {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 2px;
+      width: 16px;
+      height: 16px;
+      margin-top: -3px;
+      margin-right: 9px;
+      margin-left: 2px;
+      background: url(images/icons.png) no-repeat;
+    }
+    .checkbox_false_full_focus {
+      background-position: 0 -40px;
+    }
+    .checkbox_true_full, .checkbox_true_full_focus,
+    .checkbox_true_part, .checkbox_true_part_focus {
+      background-position: 0 -20px;
+    }
+    a.level0 {
+      display: block;
+      float:left;
+      position: relative;
+      width: 100%;
+      height: 36px;
+      line-height: 36px;
+      color:@black;
+      &:hover {
+        background-color: #F5FAFE;
+        .ico_loading {
+          background-color: #F5FAFE;
+        }
+      }
+      span.num {
+        margin-left: 5px;
+        font-size: 12px;
+      }
+    }
+    a.level1 {
+      color:@black;
+      .switch {
+        display: none;
+      }
+    }
+    .ico_loading {
+      position: absolute;
+      top:10px;
+      left:15px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: #fff url('images/loading.gif') no-repeat left top;
+    }
+    li.level1 {
+      clear: both;
+      height: 36px;
+      line-height: 36px;
+      padding-left:35px;
+      &:hover {
+        background-color: #F5FAFE;
+        .ico_loading {
+          background-color: #F5FAFE;
+        }
+      }
+    }
+    .emoji {
+      margin-left:3px;
+    }
+  }
+  .import-hd {
+    position: relative;
+    li {
+      cursor: pointer;
+      float: left;
+      width: 50%;
+      text-align: center;
+      &.current {
+        .txt {
+          color:@blue;
+        }
+      }
+    }
+    .line {
+      display: none;
+      position: absolute;
+      left:0;
+      bottom: -1px;
+      width: 80px;
+      border-bottom: 1px @blue solid;
+    }
+  }
+  .import-bd {
+    padding:30px;
+    .tit, .tip-belong {
+      color:@gray;
+    }
+    .lbf-combobox {
+      width: 100%;
+    }
+    .type-status {
+      height: 95px;
+      margin-right: -20px;
+      .tit {
+        margin-bottom: 10px;
+      }
+      .type, .status {
+        float:left;
+        width: 50%;
+        // margin-right: 20px;
+      }
+    }
+    .type-bd, .status-bd {
+      padding-right:20px;
+    }
+  }
+  .owner {
+    display: none;
+    .tip-belong {
+      display: none;
+    }
+    .tit, .tip-belong {
+      padding-bottom: 15px;
+    }
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-bottom: 1px @light solid;
+    .set {
+      height: 69px;
+    }
+    .staff-list {
+      li {
+        width:410px;
+        margin-right: 0;
+        padding-bottom: 0;
+      }
+      .item {
+        .info dt {
+          padding-top:9px;
+          padding-bottom: 8px;
+        }
+        .overlay, .btn-item-remove {
+          display: none;
+        }
+        .avatar {
+          cursor: default;
+        }
+      }
+      .btn-edit {
+        float: right;
+        margin-top:5px;
+        margin-bottom: 0;
+        border:none;
+      }
+    }
+    dt {
+      font-size: 16px;
+      .tip {
+        font-size: 14px;
+      }
+    }
+    &.belongsea {
+      .tip-belong {
+        display: block;
+      }
+      .tit {
+        display: none;
+      }
+    }
+  }
+  .tags {
+    border-top: 1px @light solid;
+  }
+  .tag-item {
+    overflow: hidden;
+    border-bottom: 1px @light solid;
+    .item-hd {
+      cursor: pointer;
+      height: 60px;
+      line-height: 60px;
+    }
+    .tit {
+      float:left;
+    }
+    .icon-srv-tag {
+      vertical-align: middle;
+      margin:-2px 10px 0 0;
+    }
+    .tag {
+      display: inline-block;
+      float:left;
+      height:24px;
+      padding:0 10px;
+      border-radius: 24px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      line-height: 24px;
+      background-color: #E4E8EA;
+      color:@dark;
+      transition: background-color .2s 0s ease-in;
+      &:hover {
+        background-color: #DAE0E6;
+      }
+    }
+    .icon-srv-arr-down, .icon-srv-arr-up {
+      float: right;
+      margin-top: 27px;
+    }
+    .icon-srv-remove-tag {
+      position: absolute;
+      top:8px;
+      right:8px;
+    }
+    .item-hd {
+      .tag.selected {
+        position: relative;
+        margin:18px 0 0 12px;
+        padding-right:20px;
+        background-color: @blue;
+        color:@white;
+      }
+    }
+    .item-bd {
+      overflow: hidden;
+      display: none;
+      padding-bottom: 15px;
+      .tag.selected {
+        background-color: @blue;
+        color:@white;
+      }
+    }
+  }
+  .btn-import-wrap {
+    padding-top:30px;
+    text-align: center;
+    #btn-import,
+    .lbf-button-primary {
+      width: 118px;
+      line-height: 43px;
+      font-size: 16px;
+    }
+  }
+}
+.tip-login {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #F8FAFB;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 15px -25px -30px -25px;
+  color:#66686c;
+  .icon-srv-tip-gray {
+    vertical-align: -4px;
+  }
+}
+.showloginagain {
+  position: relative;
+  display: inline-block;
+  color:@blue;
+  cursor: pointer;
+  .loading {
+    position: absolute;
+    top:-15px;
+    left:0;
+  }
+}

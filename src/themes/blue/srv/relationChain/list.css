@@ -1,0 +1,85 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+.table-base tbody td {
+  line-height: 25px;
+  padding: 24px 0;
+}
+.table-content {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.table-content .table .txt-center {
+  text-align: center;
+}
+.table-content .table .txt-no-record {
+  font-size: 24px;
+  color: #1e2330;
+}
+.table-content .table .ctx {
+  width: 300px;
+}
+.table-content .table .ctx span {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.table-content .table .group {
+  width: 360px;
+}
+.table-content .table em {
+  font-style: normal;
+  font-style: initial;
+}
+.table-content .table .text-top {
+  color: #2d323e;
+}
+.table-content .table .text-top .send-ctx {
+  cursor: default;
+}
+.table-content .table .text-bottom {
+  color: #a8abb3;
+}
+.table-content .table .tag {
+  background: #e4e8ea;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  min-width: 20px;
+  height: 25px;
+  float: left;
+  text-align: center;
+}
+.table-content .table .send-user {
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.table-content .table .color-red {
+  color: #ff4222;
+}
+.qidian-status-tip {
+  max-width: 320px;
+  -ms-box-shadow: 0 1px 15px rgba(30, 35, 49, 0.15);
+  -webkit-box-shadow: 0 1px 15px rgba(30, 35, 49, 0.15);
+  -moz-box-shadow: 0 1px 15px rgba(30, 35, 49, 0.15);
+  -o-box-shadow: 0 1px 15px rgba(30, 35, 49, 0.15);
+  box-shadow: 0 1px 15px rgba(30, 35, 49, 0.15);
+  border: 1px solid #dadee7;
+}
+.relation-chain-tip {
+  max-width: 194px;
+}
+.table-base tr {
+  cursor: auto !important;
+}

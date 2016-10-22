@@ -1,0 +1,229 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/**
+ * Font Colors
+ */
+/**
+ * Background Colors
+ */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'microsoft yahei';
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 8px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+body::-webkit-scrollbar-track-piece {
+  background-color: #ddd;
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 8px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+textarea::-webkit-scrollbar-track-piece {
+  background-color: #ddd;
+}
+body {
+  background-color: #f2f5fa;
+}
+body ::-webkit-input-placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 6px!important;
+}
+body ::-moz-placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 6px!important;
+}
+body :-ms-input-placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 6px!important;
+}
+body input:-moz-placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 6px!important;
+}
+body .lbf-textarea-placeholder {
+  top: 6px!important;
+}
+.shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+  display: none!important;
+}
+.icon-nav-back {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 15px;
+  height: 15px;
+  background: url('images/icon-nav-back.png') no-repeat;
+}
+.follow-pc-container {
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: left;
+  position: relative;
+  overflow: visible;
+  font-size: 12px;
+  background-color: #f2f5fa;
+}
+.follow-pc-container .nav {
+  padding-left: 10px;
+  line-height: 18px;
+  z-index: 99;
+  width: 100%;
+  height: 18px;
+  color: #222222;
+  background-color: #f2f5fa;
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.follow-pc-container .nav p {
+  cursor: pointer;
+}
+.follow-pc-container .nav span {
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.follow-pc-container .main {
+  padding-left: 10px;
+  margin-top: 40px;
+}
+.follow-pc-container .row-textarea {
+  margin-top: 10px;
+}
+.follow-pc-container .row-textarea textarea {
+  width: 100%;
+  padding-top: 5px;
+  height: 42px;
+}
+.follow-pc-container .row-button {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.follow-pc-container .row-button .lbf-button {
+  float: right;
+  height: 23px;
+  line-height: 23px;
+  width: 51px;
+  font-size: 12px;
+  padding: 0 2px;
+}
+.follow-pc-container .row-button .text-limit {
+  position: relative;
+  top: -4px;
+  color: #66686c;
+}
+.follow-pc-container .row-button .text-limit .error {
+  color: #ff4222;
+}
+.follow-pc-container .content {
+  position: relative;
+  text-align: left;
+  top: 15px;
+  padding-bottom: 15px;
+}
+.follow-pc-container .content .records {
+  position: relative;
+}
+.follow-pc-container .content .records .follow-item {
+  position: relative;
+  overflow: hidden;
+  margin-top: -14px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.follow-pc-container .content .records .follow-item .avatar {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.follow-pc-container .content .records .follow-item .detail {
+  color: #999999;
+  padding-left: 35px;
+  position: relative;
+  top: 5px;
+}
+.follow-pc-container .content .records .follow-item .detail .job {
+  padding-left: 10px;
+}
+.follow-pc-container .content .records .follow-item .detail .name {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 130px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.follow-pc-container .content .records .follow-item .detail .createTime {
+  position: absolute;
+  right: 0;
+}
+.follow-pc-container .content .records .follow-item .message {
+  padding-left: 35px;
+  margin-top: 7px;
+  line-height: 1.8em;
+  word-wrap: break-word;
+}
+.follow-pc-container .content .records .follow-item .action-del {
+  cursor: pointer;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #ff4222;
+  margin-left: 35px;
+  margin-top: 2px;
+}
+.follow-pc-container .content .records .follow-item:first-child {
+  margin-top: 5px;
+}
+.follow-pc-container .page-jump {
+  position: fixed;
+  z-index: 99;
+  background-color: #f2f5fa;
+  bottom: 0;
+  right: 0;
+  border-top: 1px solid #ebedf2;
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.follow-pc-container .page-jump span {
+  cursor: pointer;
+}

@@ -1,0 +1,172 @@
+/**
+ * 
+ * @variable.less
+ * @author xinxuzhang 
+ * @create 14-11-07
+ */
+/*
+ * 
+ * @mixin.less
+ * @author xinxuzhang 
+ * @create 14-11-05
+ */
+/* added by vergilzhou */
+/* for margin & padding | width & height =================== */
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr25 {
+  margin-right: 25px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml25 {
+  margin-left: 25px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.mtb10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.p10 {
+  padding: 10px;
+}
+.p5_0 {
+  padding: 5px 0;
+}
+.p10_0 {
+  padding: 10px 0;
+}
+.p15_0 {
+  padding: 10px 0;
+}
+.p0_5 {
+  padding: 0 5px;
+}
+.p0_10 {
+  padding: 0 10px;
+}
+.p0_15 {
+  padding: 0 15px;
+}
+/* 表格通用样式 */
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table-base {
+  line-height: 49px;
+}
+.table-base thead td,
+.table-base th {
+  line-height: 50px;
+  padding: 0px;
+  background-color: #f5f7fa;
+  text-align: left;
+  font-weight: normal;
+  font-style: normal;
+}
+.table-base tbody td {
+  padding: 0px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #EDEDED;
+}
+.table-base tr {
+  cursor: default;
+}
+.table-base tr:hover td {
+  background-color: #eafffa;
+}
+.table-page {
+  height: 32px;
+  padding: 10px 10px 8px 22px;
+  background-color: #f5f8fa;
+}
+.table-page-data {
+  float: left;
+  padding-top: 5px;
+}
+.table-page-a {
+  display: inline-block;
+  margin-left: 6px;
+}
+.table-page-a i {
+  vertical-align: -4px;
+}
+.table-page-a:hover {
+  color: #00a1f2;
+}

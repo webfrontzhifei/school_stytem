@@ -1,0 +1,304 @@
+@import '../../base/mixin';
+
+.main-container {
+	border: none;
+}
+
+.balance-container {
+
+	.block-title {
+		font-size: 18px;
+		.c(#494b4d);
+	}
+
+	.table-balance {
+
+		.mb(34px);
+
+		td:first-child {
+			.pl(30px);
+		}
+
+		.view-balance-detail {
+			.pl(15px);
+		}
+
+
+		tbody tr {
+
+			td {
+				.h(69px);
+				.lh(69px);
+
+				.avatar {
+					float: left;
+					margin-right: 15px;
+					img {
+						border-radius: 50px;
+						vertical-align: middle;
+					}
+				}
+				.name {
+					.icon-authed, .icon-wx-authed {
+						width: 14px;
+						height: 14px;
+						display: inline-block;
+						vertical-align: middle;
+						margin-top: -3px;
+						*margin-top: 0;
+						margin-left: 3px;
+						background: url(../reply/images/icons-account-manage.png) no-repeat -51px top;
+					}
+					.icon-wx-authed {
+						margin-top: -1px;
+						*margin-top: 0;
+						background-position: -121px top;
+					}
+				}
+			}
+
+			/*&:last-child {
+				td {
+					border-bottom: 0px solid transparent;
+				}
+			}*/
+
+			&:hover td {
+				.bg(#fff);
+			}
+		}
+		
+	}
+
+	.block-qf-rule {
+		margin-left: 500px;
+
+		& > h3 {
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+
+		.block-qf-type {
+
+			.dib();
+			margin-right: 50px;
+			margin-bottom: 30px;
+
+			.qf-type-icon {
+				.dib();
+				.vm();
+				.w(80px);
+				.h(80px);
+			}
+
+			.qf-type-icon-small {
+				.dib();
+				.w(50px);
+				.h(50px);
+				.vt();
+			}
+
+
+			.qf-type-desc {
+				.dib();
+				.ml(15px);
+				.vt();
+
+				.qf-type-title {
+					font-size: 16px;
+					.mb(5px);
+				}
+
+				.qf-type-tip {
+
+					span {
+						.c(@gray);
+					}
+				}
+			}
+		}
+	}
+	.qf-type-text {
+		color: @gray;
+		line-height: 1.5;
+	}
+
+	.quota-definition {
+		width: 500px; float: left;
+		& > h3 {
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+		.quota-title {
+			font-size: 16px;
+			margin-top: 30px;
+			padding-bottom: 5px;
+			& ~ p {
+				color: @gray;
+				line-height: 1.5;
+			}
+		}
+
+		.icon-coin {
+			.vm();
+			.rel();
+			top: -1px;
+		}
+	}
+}
+
+.balance-range-wrap {
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+	& > input {
+		width: 260px;
+	}
+}
+
+body .table-balance .no-data {
+	td {
+		.tc();
+		.pt(60px);
+		.pb(60px);
+		.pl(0);
+
+		h2 {
+			font-size: 24px;
+			line-height: 35px;
+		}
+
+		&:hover {
+			.bg(#fff);
+		}
+	}
+}
+
+body .table-balance-detail .no-data {
+	td {
+		.tc();
+		.pt(60px);
+		.pb(60px);
+		padding-left: 0 !important;
+
+		h2 {
+			.mt(96px);
+			.mb(96px);
+			font-size: 24px;
+		}
+
+		&:hover {
+			.bg(#fff);
+		}
+	}
+}
+
+.icon-coin {
+	.dib();
+	.w(16px);
+	.h(16px);
+	background: url(images/icon-coin.png) no-repeat;
+}
+
+.balance-detail {
+
+	.rel();
+
+	.table-page-a {
+		.ml(0);
+	}
+
+	.table-page {
+		box-shadow: none;
+		.mb(-20px);
+		.pl(30px);
+	}
+
+	&.empty-content {
+		.empty-tbody {
+			
+			td {
+				.h(300px);
+				.bg(@white);
+			}
+		}
+	}
+
+	.type-select {
+		height: 40px;
+		padding-bottom: 20px;
+		background-color: @white;
+		& > .item {
+			vertical-align: top;
+		}
+	}
+
+	.table-count-text {
+		.pl(5px);
+		.pr(5px);
+	}
+
+	.table-balance-detail {
+
+		tr {
+
+			td {
+				&.quotaTime {
+					.pl(30px);
+					.w(210px);
+				}
+
+				&.quotaType {
+
+				}
+
+				&.quotaChange {
+					text-align: right;
+				}
+
+				&.quotaLeft {
+					text-align: right;
+					.w(190px);
+					.pr(50px);
+				}
+			}
+		}
+
+		tbody tr:hover td {
+			.bg(#fff);
+		}
+
+		.icon-coin {
+			margin: -2px 0;
+			.mr(5px);
+		}
+
+		.increase {
+			.c(@green);
+		}
+
+		.decrease {
+			.c(@red);
+		}
+
+
+	}
+}
+
+
+.icon-no-coin {
+	.dib();
+	.w(100px);
+	.h(100px);
+	background: url(images/icon-no-coin.png) no-repeat;
+}
+
+.balance-popup-panel {
+	top: 10%!important;
+	.lbf-panel-body {
+		.pb(0);
+	}
+	.table-loading {
+		.rel();
+	}
+}

@@ -1,0 +1,603 @@
+.icon-track,
+.icon-back,
+.icon-certi,
+.icon-nav-next-disabled,
+.icon-nav-next,
+.icon-nav-prev-disabled,
+.icon-nav-prev,
+.icon-next-disabled,
+.icon-next,
+.icon-none-min,
+.icon-none,
+.icon-prev-disabled,
+.icon-prev,
+.icon-web-large,
+.icon-web {
+  display: inline-block;
+  font: 0/0 a;
+  color: transparent;
+  overflow: hidden;
+  background: url("track/images/track-icons.png?201662") no-repeat;
+  background-size: 100px auto;
+}
+.icon-back {
+  width: 9px;
+  height: 15px;
+  background-position: 0px -120px;
+}
+.icon-certi {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -72px;
+}
+.icon-nav-next-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-nav-next,
+a:hover .icon-nav-next,
+a:hover .icon-nav-next-disabled,
+.disabled:hover .icon-nav-next,
+.icon-nav-next-disabled:hover,
+.icon-nav-next-disabled {
+  background-position: 0px -229px;
+}
+.icon-nav-next {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -201px;
+}
+.icon-nav-prev-disabled {
+  width: 18px;
+  height: 18px;
+}
+.disabled .icon-nav-prev,
+a:hover .icon-nav-prev,
+a:hover .icon-nav-prev-disabled,
+.disabled:hover .icon-nav-prev,
+.icon-nav-prev-disabled:hover,
+.icon-nav-prev-disabled {
+  background-position: 0px -173px;
+}
+.icon-nav-prev {
+  width: 18px;
+  height: 18px;
+  background-position: 0px -145px;
+}
+.icon-next-disabled {
+  width: 14px;
+  height: 14px;
+}
+.disabled .icon-next,
+a:hover .icon-next,
+a:hover .icon-next-disabled,
+.disabled:hover .icon-next,
+.icon-next-disabled:hover,
+.icon-next-disabled {
+  background-position: 0px -96px;
+}
+.icon-next {
+  width: 14px;
+  height: 14px;
+  background-position: 0px 0px;
+}
+.icon-none-min {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -367px;
+}
+.icon-none {
+  width: 100px;
+  height: 100px;
+  background-position: 0px -432px;
+}
+.icon-prev-disabled {
+  width: 14px;
+  height: 14px;
+}
+.disabled .icon-prev,
+a:hover .icon-prev,
+a:hover .icon-prev-disabled,
+.disabled:hover .icon-prev,
+.icon-prev-disabled:hover,
+.icon-prev-disabled {
+  background-position: 0px -48px;
+}
+.icon-prev {
+  width: 14px;
+  height: 14px;
+  background-position: 0px -24px;
+}
+.icon-web-large {
+  width: 50px;
+  height: 50px;
+  background-position: 0px -307px;
+}
+.icon-web {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -257px;
+}
+body {
+  min-width: 1220px;
+  font: status-bar;
+  font-size: 14px;
+  line-height: 1.42858;
+}
+:focus {
+  outline: none;
+}
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+form,
+ul,
+ol,
+dl,
+dd,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #197dff;
+}
+a * {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #0088cc;
+}
+.hidden {
+  display: none!important;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d2d4;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2c3c5;
+}
+::-webkit-scrollbar-track-piece {
+  background: #f2f5fa;
+}
+#track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f8fa;
+}
+.empty {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin: -100px 0 0 -200px;
+  font-size: 24px;
+}
+.empty p {
+  margin-top: 20px;
+}
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin: -10px 0 0 -10px;
+}
+.vm {
+  vertical-align: middle;
+}
+.track-left {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  bottom: 1px;
+  overflow: hidden;
+  border-right: 1px solid #dadee7;
+  width: 260px;
+  background-color: #f2f5fa;
+}
+.track-left.show {
+  transform: translateX(0);
+}
+.track-left .loading {
+  top: auto;
+  bottom: 10px;
+}
+.track-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  padding: 5px;
+}
+.overview {
+  padding: 5px 0 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #1d2331;
+}
+.overview .item {
+  display: inline-block;
+  width: 49%;
+}
+.overview .item i {
+  font-size: 24px;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: -11px;
+  max-width: 58px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.track-right {
+  position: absolute;
+  left: 260px;
+  right: 0;
+  top: 1px;
+  bottom: 0;
+  overflow: hidden;
+}
+.track-right .null {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15%;
+}
+.track-right .seprator {
+  margin: 15px;
+  background: none;
+}
+.track-right .seprator.atvisit {
+  background: #dadee7;
+}
+.track-right .seprator.atvisit span {
+  font-size: 14px;
+}
+.seprator {
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  background: #dadee7;
+  text-align: center;
+  overflow: visible;
+  margin: 25px 0;
+}
+.seprator.first {
+  margin-top: 15px;
+}
+.seprator span {
+  color: #a5a5a5;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 10px;
+  background: #f2f5fa;
+  margin-top: -10px;
+}
+.section {
+  position: relative;
+}
+.section h1 {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 108px 0 8px;
+  color: #a5a5a5;
+  background-color: #eaedf4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.section h1 span {
+  display: inline-block;
+  float: left;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section h1 i {
+  display: inline-block;
+  max-width: 90px;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section h2 {
+  color: #000;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section i {
+  font-style: normal;
+}
+.section .icon {
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+.section .time {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  line-height: 25px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.list {
+  margin-bottom: 5px;
+}
+.list .icon-certi {
+  vertical-align: -1px;
+  margin-left: 2px;
+}
+.list li {
+  position: relative;
+  padding-left: 60px;
+  min-height: 60px;
+  cursor: pointer;
+}
+.list li:hover {
+  background-color: #e0efff;
+}
+.list li.current {
+  background-color: #d3e9ff;
+}
+.list li .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  background-color: #ebedf2;
+}
+.list li .img img {
+  width: 40px;
+}
+.list li .inner {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 20px;
+  padding: 10px 20px 10px 0;
+}
+.list li .inner h2 {
+  margin-bottom: 2px;
+}
+.list li .inner p {
+  color: #a5a5a5;
+  margin-top: 1px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.list li.single .inner {
+  line-height: 40px;
+}
+.list li.single .inner h2 {
+  margin-bottom: 0;
+}
+.list li:last-child .inner {
+  border-bottom: 0;
+}
+.list li label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #808080;
+}
+.list li .icon-arrow-r {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -8px;
+}
+.list li a {
+  display: block;
+  padding-right: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.list-single li {
+  padding-left: 15px;
+}
+.list-single li .inner {
+  line-height: 40px;
+}
+.list-single li .inner h2 {
+  margin-bottom: 0;
+}
+.list-single li.multi .inner {
+  line-height: 20px;
+}
+.track-right .seprator span {
+  background-color: #f5f8fa;
+}
+.track-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  padding: 10px 5px;
+  bottom: 37px;
+}
+i {
+  font-style: normal;
+}
+.chat {
+  padding: 10px 15px;
+}
+.chat .inner {
+  padding-top: 5px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.chat .inner img {
+  max-width: 100%;
+}
+.toc .name {
+  color: #00cc26;
+}
+.tob .name {
+  color: #0067ed;
+}
+.notice {
+  padding: 5px 10px;
+  background-color: #e8ebed;
+  margin: 15px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.notice p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.web-item {
+  padding: 10px 15px;
+}
+.web-item p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #217aef;
+}
+.web-item .sub-info {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.web-item .sub-info i {
+  margin-left: 5px;
+}
+.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.disabled i {
+  cursor: default;
+}
+.page-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 16px;
+  text-align: right;
+  padding: 10px 15px;
+  border-top: 1px solid #dadee7;
+}
+.page-nav a {
+  line-height: 20px;
+  margin-left: 8px;
+}
+.page-nav a i {
+  vertical-align: -1px;
+}
+.page-nav a:hover {
+  opacity: .8;
+}
+.page-nav a .disabled:hover {
+  opacity: 1;
+}
+@-webkit-keyframes spin {
+  form {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spin {
+  -webkit-animation: spin2 1s linear infinite;
+  animation: spin2 1s linear infinite;
+}
+.loading {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 800ms linear infinite;
+  background-image: url('track/images/loading.png');
+}
+.message {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  right: 0;
+  height: 30px;
+  line-height: 30px;
+  z-index: 1;
+  text-align: center;
+  transform: translateY(-30px);
+  transition: transform .3s;
+}
+.message .loading {
+  position: static;
+  vertical-align: -6px;
+  margin-right: 5px;
+  margin-left: -25px;
+}
+.message a {
+  display: block;
+  line-height: 30px;
+  color: #000;
+  background: #fff3bf;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.message a:hover {
+  background: #feefad;
+}
+.message.show {
+  transform: translateY(0);
+}
+.message.fetch .loading {
+  display: inline-block;
+}

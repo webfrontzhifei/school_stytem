@@ -12,6 +12,7 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "express-session": "^1.14.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
   },
@@ -40,6 +41,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
     "main-bower-files": "^2.13.1",
+    "mongoose": "^4.6.4",
     "run-sequence": "^1.2.2",
     "underscore": "^1.8.3",
     "wiredep": "^4.0.0"

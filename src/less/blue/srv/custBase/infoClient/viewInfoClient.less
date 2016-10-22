@@ -1,0 +1,144 @@
+@import '../../../base/base';
+@import 'icons.css';
+@import 'infoClient.css';
+:root{
+  overflow: hidden;
+}
+html{
+  overflow: hidden;
+}
+body{
+  overflow: hidden;
+  font-size: 13.5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hiddenScrollbar{
+  overflow: hidden;
+}
+
+.info-cards-overlay{
+  background:#6d6f73;
+  width: auto;
+  height: 543px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  .info-cards-overlay-tip{
+    position: absolute;
+    bottom: 0px;
+    width: 395px;
+    left: 161px;
+    background: #797a7d;
+    z-index: 12;
+    font-size: 14px;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    >i{
+      margin-bottom: -4px;
+      margin-right: 5px;
+    }
+  }
+  .info-cards-overlay-close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1999;
+  }
+}
+
+//.info-cards{
+//  position: absolute;
+//  top: 0;
+//  left: 100px;
+//  height: 542px;
+//  .info-cards-row-brief{
+//    height: 193px;
+//  }
+//  .info-cards-row-info{
+//    height:350px;
+//    .info-cards-info{
+//      .info-cards-info-slider{
+//        height: 325px;
+//      }
+//    }
+//  }
+//}
+
+
+.info-cards {
+  font-size: 13.5px;
+  border-radius: 3px;
+  transform: scale(0.86);
+  -ms-transform:scale(0.86);
+  -moz-transform:scale(0.86);
+  -webkit-transform:scale(0.86);
+  -o-transform:scale(0.86);
+  position: absolute;
+  top: -43px;
+  left: 110px;
+
+  .info-cards-row-brief {
+    .info-cards-brief {
+      .brief{
+        margin-left: 120px;
+        margin-right: 10px;
+        .name{
+          font-size: 24px;
+        }
+        .company{
+          font-size: 15px;
+        }
+        .contact{
+          font-size: 13.5px;
+        }
+        .email{
+          font-size: 13.5px;
+        }
+      }
+    }
+  }
+
+  .cards-info-wrap {
+    &:before {
+      display: none;
+    }
+  }
+
+  .info-cards-row-info {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    .info-cards-info {
+      border-right: none;
+      .info-cards-info-item {
+        .ctx{
+          .ctx-c{
+            font-size: 13.5px;
+            margin-left: 97px;
+          }
+        }
+        .title{
+          font-size: 13.5px;
+        }
+      }
+
+      .info-cards-info-slider{
+        font-size: 13.5px;
+        &:before {
+          display: none;
+        }
+        .info-cards-info-slider-title{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
