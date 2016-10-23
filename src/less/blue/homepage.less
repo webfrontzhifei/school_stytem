@@ -1,0 +1,80 @@
+#p_homepage {
+	.header {
+		height: 60px;
+		font-size: 25px;
+		font-weight:bold;
+		background-color: #666666;
+		background-repeat: no-repeat;
+		.nav {
+			width: 960px;
+			margin: 0 auto;
+			.logo {
+				float: left;
+				height: 60px;
+				line-height: 60px;
+				font-weight: lighter;
+				color: #ffffff;
+				font-size: 24px;
+			}
+			.menu {
+				float: right;
+				margin-top: 15px;
+				li {
+					float: left;
+					font-size: 16px;
+					margin-left: 40px;
+					line-height: 30px;
+					a {
+						float: left;
+						color: #ffffff;
+						font-size: 16px;
+						padding-left: 10px;
+						padding-right: 10px;
+						text-decoration: none;
+						border-radius: 5px;
+						font-weight: lighter;
+						vertical-align: top;
+						height: 30px;
+						display: inline-block;
+					}
+					a.active {
+						background-color: rgb(35,35,35);
+					}
+				}
+			}
+			.header-logout {
+				line-height: 60px;
+				width: 60px;
+				float: right; 
+				text-align: center;
+				.icon-logout {
+					vertical-align: middle;
+				}
+			}
+			.userinfo {
+				line-height: 60px;
+				float: right;
+				margin-left: 150px;
+				.avatar {
+					height: 35px;
+					width: 35px;
+					border-radius: 35px;
+					vertical-align: middle;
+					margin-top: -1px;
+				}
+				.user-name {
+					max-width: 150px;
+					overflow: hidden;
+					margin-left: 6px;
+					font-size: 14px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					vertical-align: middle;
+					color: #ffffff;
+					font-weight: lighter;
+					margin-top: -1px;
+				}
+			}
+		}
+	}
+}

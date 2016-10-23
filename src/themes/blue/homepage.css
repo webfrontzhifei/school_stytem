@@ -1,9 +1,78 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#p_homepage .header {
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #666666;
+  background-repeat: no-repeat;
 }
-a {
-  color: #00B7FF;
+#p_homepage .header .nav {
+  width: 960px;
+  margin: 0 auto;
 }
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmxlc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFBO0VBQ0EseURBQUE7Q0NDRDtBREVEO0VBQ0UsZUFBQTtDQ0FEIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gIHBhZGRpbmc6IDUwcHg7XHJcbiAgZm9udDogMTRweCBcIkx1Y2lkYSBHcmFuZGVcIiwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuYSB7XHJcbiAgY29sb3I6ICMwMEI3RkY7XHJcbn0iLCJib2R5IHtcbiAgcGFkZGluZzogNTBweDtcbiAgZm9udDogMTRweCBcIkx1Y2lkYSBHcmFuZGVcIiwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjtcbn1cbmEge1xuICBjb2xvcjogIzAwQjdGRjtcbn1cbiJdfQ== */
+#p_homepage .header .nav .logo {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  font-weight: lighter;
+  color: #ffffff;
+  font-size: 24px;
+}
+#p_homepage .header .nav .menu {
+  float: right;
+  margin-top: 15px;
+}
+#p_homepage .header .nav .menu li {
+  float: left;
+  font-size: 16px;
+  margin-left: 40px;
+  line-height: 30px;
+}
+#p_homepage .header .nav .menu li a {
+  float: left;
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: lighter;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+}
+#p_homepage .header .nav .menu li a.active {
+  background-color: #232323;
+}
+#p_homepage .header .nav .header-logout {
+  line-height: 60px;
+  width: 60px;
+  float: right;
+  text-align: center;
+}
+#p_homepage .header .nav .header-logout .icon-logout {
+  vertical-align: middle;
+}
+#p_homepage .header .nav .userinfo {
+  line-height: 60px;
+  float: right;
+  margin-left: 150px;
+}
+#p_homepage .header .nav .userinfo .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+#p_homepage .header .nav .userinfo .user-name {
+  max-width: 150px;
+  overflow: hidden;
+  margin-left: 6px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #ffffff;
+  font-weight: lighter;
+  margin-top: -1px;
+}

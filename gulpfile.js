@@ -24,14 +24,25 @@ var filepath = {
 };
 
 // 编译 less
-gulp.task('styles', function () {
-  return gulp.src(filepath.less)
+// gulp.task('styles', function () {
+//   return gulp.src(filepath.less)
+//     .pipe($.plumber())
+//     // .pipe($.sourcemaps.init())
+//     .pipe($.less())
+//     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+//     // .pipe($.sourcemaps.write())
+//     .pipe(gulp.dest(path.join(srcdir,'themes')))
+//     .pipe(reload({stream: true}));
+// });
+
+gulp.task('less', function () {
+  return gulp.src('./src/less/blue/homepage.less')
     .pipe($.plumber())
     // .pipe($.sourcemaps.init())
     .pipe($.less())
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     // .pipe($.sourcemaps.write())
-    .pipe(gulp.dest(path.join(srcdir,'themes')))
+    .pipe(gulp.dest('./src/themes/blue'))
     .pipe(reload({stream: true}));
 });
 
@@ -167,9 +178,9 @@ gulp.task('browser-sync', ['nodemon'], function() {
 // });
 
 // // watching
-// gulp.task('watch', function () {
-//   gulp.watch(filepath.scss, ['styles'])
-// });
+gulp.task('watch', function () {
+  gulp.watch('./src/less/blue/homepage.less', ['less']);
+});
 
 // gulp.task('dev', ['dev:server', 'styles', 'watch']);
 // gulp.task('api', ['api:server', 'styles', 'watch']);

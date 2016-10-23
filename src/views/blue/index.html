@@ -4,8 +4,60 @@
         css: ['static_proxy/themes/blue/homepage.css']   
     }); 
 %>
-<div>
-	this is the homepage
+<div id="p_homepage">
+	<div class="header">
+		<div class="nav">
+			<div class="logo">
+				滴滴校园平台
+			</div>
+			<a class="header-logout" href="javascript:void(0);" title="退出登录">
+				<i class="icon-logout">退出登录</i>
+			</a>
+			<div class="userinfo">
+				<img src="/public/avatars/profile.jpg" class="avatar"/><span class="user-name">刘慈文</span>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="/index" class="active">首页</a>
+				</li>
+				<li>
+					<a href="/express/">e速递</a>
+				</li>
+				<li>
+					<a href="/ereader/">e图书</a>
+				</li>
+				<li>
+					<a href="/express/">e资讯</a>
+				</li>
+				<li>
+					<a href="/usercenter/">个人中心</a>
+				</li>
+			</ul>
+			
+			
+		</div>		
+	</div>
+	<div class="module_tabs">
+		<div class="notice">
+			<div class="notice_msg">适度休息，注意天气
+			</div>
+			<div class="date">
+				<span class="day">
+					2016年10月23日
+				</span>
+				<span class="weekday">
+					星期三
+				</span>
+			</div>
+		</div>
+
+		<div class="part_links">
+			<div class="added_links">
+			</div>
+			<span class="btn_add">
+			</span>
+		</div>
+	</div>
 </div>
 <%
 	include('./widget/bottom', {

@@ -41,7 +41,7 @@ app.use(session({
 }));
 
 app.use('/static_proxy', express.static(path.join(__dirname, 'src')));
-
+app.use('/public', express.static(path.join(__dirname, 'dist')));
 app.use('/', index);
 app.use(routes);
 // app.use('/login', login);
