@@ -1,2 +1,25 @@
+<%
+	var _domain = locals.domain,
+		_lbfSrc = locals.lbfSrc,
+		_theme = locals.lbfConf.vars.theme.replace('default', 'blue'),
+		sslDomain = locals.sslDomain || 'bqq.gtimg.com',
+		errorIe = ['Windows NT 6.2',   //win8
+                    'Windows NT 5.2',   //xp x64, window server 2003
+                    'Windows NT 5.1'
+                   ];
+
+	if (ua.isMSIE(data && data.req && data.req.ua) && ua.isErrorSys(data && data.req && data.req.ua, errorIe)) {
+		_domain = sslDomain;
+		_lbfSrc = '//' + sslDomain + '/lbf/0.8.5/LBF.js';
+		_theme = '//' + sslDomain + '/qidian/src/themes/blue';
+	}
+%>
+<script charset="utf-8" src="<%=locals.lbfSrc%>"></script>
+<script type="text/javascript">
+  	var lbfConf = <%== safeJSONStringify(locals.lbfConf) %>;
+    lbfConf.vars.domain = '<%= _domain %>';
+	lbfConf.vars.theme = '<%= _theme %>';
+    LBF.config(lbfConf);
+</script>
 </body>
 </html>

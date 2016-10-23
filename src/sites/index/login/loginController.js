@@ -71,6 +71,7 @@ LBF.define('qidian.sites.index.login.loginController', function(require, exports
 						password: self.passwordInput.value()
 					}
 				}).done(function(res) {
+                    console.log(res);
 					if(res.r = "0"){
 						console.log('success');
 						location.href="/index";

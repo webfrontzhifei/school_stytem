@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><%= title%></title>
+	<link rel="stylesheet" type="text/css" href="static_proxy/themes/blue/lbfUI/css/inline.css" />
+	<link rel="stylesheet" type="text/css" href="static_proxy/themes/blue/base/base.css" />
+	<link rel="stylesheet" type="text/css" href="static_proxy/themes/blue/common/common.css" />
+	<%
+		for(var i in css) {
+	%>
+		<link rel="stylesheet" type="text/css" href="<%=css[i] %>" />
+	<%		
+		}
+	%>
 </head>
 <body>
 	

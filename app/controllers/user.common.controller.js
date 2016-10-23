@@ -31,6 +31,7 @@ module.exports = {
 			} 
 			else {
 				if(result && result.length > 0) {
+					req.session.user = result[0];
 					res.json({
 						r:0
 					});
