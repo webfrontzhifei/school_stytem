@@ -1,3 +1,12 @@
+@gray: #EBEDF2;
+@Darkgray: #A8ABB3;
+@borderColor: #dce0e9;
+@blue: #0067ED;
+@red: #ff4222;
+@green: #00cc26;
+@tableGray: #F8FAFB;
+@fontGray: #66686c;
+
 #p_homepage {
 	.header {
 		height: 60px;
@@ -76,5 +85,55 @@
 				}
 			}
 		}
+	}
+	.module_tabs {
+		margin: 15px auto 30px;
+		width: 960px;
+		border: 1px solid #E9E9E9;
+		box-shadow: 1px 2px 2px 0px #E9E9E9;
+		padding: 10px 15px 10px 25px;
+		.notice {
+			padding-left: 60px;
+			position: relative;
+			display: inline-block;
+			color: @fontGray;
+			width: 240px;
+			.icon-clock {
+				position: absolute;
+				left: 0;
+			}
+		}
+		.part_links {
+			float: right;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			.added_links {
+				float: right;
+				li {
+					background-color:#E9E9E9;
+					line-height: 30px;
+					padding-left: 10px;
+					padding-right: 10px;
+					margin-right: 8px;
+					color: @fontGray;
+					font-weight: bold;
+				}
+			}
+			.btn_add {
+				float: right;
+				border: 1px dotted #C5C5C5;
+				width: 16px;
+				height: 16px;
+				padding: 6px;
+				display: inline-block;
+				line-height: 30px;
+				cursor: pointer;
+				.icon-add-btn {
+					display: block;
+				}
+			}
+			
+		}
+
 	}
 }

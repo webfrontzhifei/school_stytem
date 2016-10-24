@@ -8,6 +8,7 @@ var runSequence = require('run-sequence');
 // var nodemon = require('gulp-nodemon');
 var config = require('./config');
 var path = require('path');
+var spritesmith = require('gulp.spritesmith');
 
 var $ = gulpLoadPlugins();
 var reload = browserSync.reload;
@@ -46,6 +47,15 @@ gulp.task('less', function () {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('sprite',function() {
+  return gulp.src('./src/less/blue/homepage/images/*.png')
+         .pipe(spritesmith({
+          imgName: 'homepage-sprite.png',
+          cssName: 'homepage-sprite.css'
+         }))
+          .pipe(gulp.dest('./src/themes/blue/homepage/'));
+
+});
 gulp.task('fonts', function() {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
     .concat('src/fonts/**/*'))

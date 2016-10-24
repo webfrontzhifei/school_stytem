@@ -1,7 +1,8 @@
 <% 
     include('./widget/top',{
+    	title: '滴滴校园平台',
         locals: local,
-        css: ['static_proxy/themes/blue/homepage.css']   
+        css: ['static_proxy/themes/blue/homepage.css','static_proxy/themes/blue/homepage/homepage-sprite.css']   
     }); 
 %>
 <div id="p_homepage">
@@ -39,6 +40,7 @@
 	</div>
 	<div class="module_tabs">
 		<div class="notice">
+			<div class="icon-clock"></div>
 			<div class="notice_msg">适度休息，注意天气
 			</div>
 			<div class="date">
@@ -52,10 +54,12 @@
 		</div>
 
 		<div class="part_links">
-			<div class="added_links">
-			</div>
 			<span class="btn_add">
+				<i class="icon-add-btn"></i>
 			</span>
+			<ul class="added_links">
+				<li>一键拼车</li>
+			</ul>
 		</div>
 	</div>
 </div>
