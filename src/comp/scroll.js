@@ -12,7 +12,6 @@ LBF.define('qidian.comp.scroll', function (require, exports, module) {
 		};
 		
 		var opts = $.extend({}, defaults, options),intId = [];
-		console.log(opts);
 		
 		function marquee(obj, step){
 		

@@ -1,4 +1,5 @@
 var userModel = require('../models/user.common.model');
+var crypto = require('crypto');
 
 module.exports = {
 	checkLogin: function(req, res, next) {
@@ -17,11 +18,13 @@ module.exports = {
 	},
 	login: function(req, res, next) {
 	
+		var name = req.body.name;
+		var md5 = crypto.createHash('md5'),
+			password = md5.update(req.body.password).digest('hex');
 		var conditions = {
-			name: req.body.userName,
-			password: req.body.password
-		}
-		
+			name: name,
+			password: password
+		}	
 		userModel.find(conditions, function(err, result) {
 			if(err){
 				res.json({
@@ -41,8 +44,6 @@ module.exports = {
 						msg: '请验证用户名密码后重试！'
 					})
 				}
-				
-
 			}	
 		});
 	}
