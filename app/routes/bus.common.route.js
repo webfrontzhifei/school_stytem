@@ -1,6 +1,6 @@
 var express = require('express');
-var newsRouter = express.Router();
-var newsController = require('../controllers/news.common.controller');
+var busRouter = express.Router();
+// var newsController = require('../controllers/news.common.controller');
 var $ = require('underscore');
 
 
@@ -14,16 +14,11 @@ var $ = require('underscore');
 // 		}));
 // 	});
 // });
-newsRouter.get('/news',function(req, res, next){
-	res.render('blue/news/index.html', {
-
-	});
-});
-newsRouter.get('/news/item1',function(req, res, next){
-	res.render('blue/news/itemdetail.html', {
+busRouter.get('/bus',function(req, res, next){
+	res.render('blue/bus/index.html', {
 
 	});
 });
 
 
-module.exports = newsRouter; 
+module.exports = busRouter; 

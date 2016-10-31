@@ -1,0 +1,25 @@
+.news_detail .left_side {
+  padding-right: 30px;
+  width: 620px !important;
+}
+.news_detail .current_pos {
+  margin-top: 14px;
+}
+.news_detail .news_content_title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+}
+.news_detail .news_content_title .news_info {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+.news_detail .news_content_title .news_info .click_num {
+  margin-left: 50px;
+}
+.news_detail .news_content_title .news_content_detail p {
+  text-indent: 2em;
+}
