@@ -1,0 +1,194 @@
+.bus_search {
+	.clearfix {
+		zoom:1;
+		&:before {
+			content: "";
+			display: table;
+		}
+	}
+	.result_fill {
+		padding-top: 13px;
+		background: white;
+		.find-container {
+			width: 1028px;
+			margin: 0 auto;
+			background: white;
+			overflow: hidden;
+			padding-bottom: 50px;
+			div {
+				float: left;
+			}
+			.find-tab {
+					width: 100%;
+					z-index: 2;
+					li{
+						float: left;
+						height: 32px;
+						line-height: 32px;
+						text-align: center;
+						width: 86px;
+						margin-right: 3px;
+						&.sel {
+							background: url('images/tab_sel_new.png') no-repeat;
+							a {
+								color: white;
+							}
+						}
+						&.unsel {
+							background: url('images/tab_unsel_new.png') no-repeat;
+							a {
+								color: #0063b4;
+							}
+						}
+					}
+			}
+			.from-to {
+				border: 1px solid #d6e4eb;
+				.from {
+					width: 260px;
+					#tbFrom {
+						background: none;
+						height: 50px;
+						line-height: 53px;
+						border: none;
+						padding-left: 10px;
+						width: 190px;
+
+					}
+				}
+				.switch {
+					width: 50px;
+					height: 50px;
+					background: url('images/input_chg_new.png') no-repeat;
+				}
+				.to {
+					width: 251px;
+					#tbTo.tbTo {
+						background: none;
+						height: 50px;
+					}
+					#tbTo {
+						line-height: 53px;
+						border: 0;
+						outline: none;
+						padding-left: 10px;
+						width: 190px;
+						float: left;
+					}
+				}
+				#btFromTo.btFromTo {
+					height: 50px;
+					width: 150px;
+					background: url('images/tab_find_btn_new.png') no-repeat;
+					float: left;
+					cursor: pointer;
+					border: 0;
+					text-indent: 999px;
+					outline: none;
+				}
+			}
+			.divAjax {
+				float: left;
+				clear: both;
+				width: 100%;
+				.find-result {
+					width: 100%;
+					margin-top: 20px;
+					.depart {
+						width: 490px;
+						background: #f1f7ff;
+					}
+					.depart-title {
+						width: 490px;
+						height: 49px;
+						text-indent: 10px;
+						line-height: 49px;
+						font-size: 18px;
+				
+						color: white;
+						background: url('images/rt_work_new.png') no-repeat;
+						background-size: 100%;
+						p {
+							height: 49px;
+							line-height: 49px;
+							width: 100%;
+						}
+					}
+					.arrive {
+						width: 490px;
+						margin-left: 16px;
+						background: #fef7ef;
+						.arrive-title {
+							width: 490px;
+							height: 49px;
+							text-indent: 10px;
+							line-height: 49px;
+							font-size: 18px;
+							color: white;
+							background: url('images/rt_gohome_new.png') no-repeat;
+							background-size: 100%;
+						}
+						.route-detail {
+							border: 1px solid #FEB24B;
+						}
+					}
+					.route-detail {
+						width: 100%;
+						box-sizing: border-box;
+						border: 1px solid #55ACFF;
+						padding-left: 20px;
+						.route-num {
+							margin-top: 30px;
+							height: 42px;
+							line-height: 42px;
+							font-size: 20px;
+							font-weight: bold;
+							width: 100%;
+							.bus-sig {
+								height: 100%;
+								vertical-align: middle;
+								display: inline-block;	
+								width: 42px;
+								background: url('images/busline.png') no-repeat;
+							}
+						}
+						.bustime {
+							margin-top: 20px;
+							height: 24px;
+							font-size: 16px;
+							width: 100%;
+							.time {
+								margin-left: 5px;
+								margin-right: 8px;
+								height: 100%;
+								margin-top: -4px;
+								vertical-align: middle;
+								display: inline-block;
+								width: 24px;
+								background: url('images/bustime.png') no-repeat;
+							}
+						}
+						.park {
+							margin-top: 10px;
+							margin-bottom: 10px;
+							height: 24px;
+							font-size: 16px;
+							width: 100%;
+							.part-sig {
+								margin-left: 5px;
+								margin-right: 8px;
+								height: 100%;
+								margin-top: -4px;
+								vertical-align: middle;
+								display: inline-block;
+								width: 24px;
+								background: url('images/buspart.png') no-repeat;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

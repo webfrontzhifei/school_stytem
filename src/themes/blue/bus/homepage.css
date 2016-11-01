@@ -1,0 +1,259 @@
+body {
+  margin: 0 auto;
+  background: #ebebeb;
+}
+#bushomepage .container {
+  width: 100%;
+  min-width: 1024px;
+}
+#bushomepage .container .headerContainer {
+  height: 67px;
+  background-color: #3278be;
+  border-bottom: 3px solid #1e64aa;
+}
+#bushomepage .container .headerContainer .bus_header {
+  margin: 0 auto;
+  width: 1024px;
+}
+#bushomepage .container .headerContainer .bus_header .logo {
+  float: left;
+  margin-left: 12px;
+  width: 196px;
+  background: url('images/logo.png') no-repeat 0 -2px;
+  height: 67px;
+}
+#bushomepage .container .headerContainer .bus_header .area {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+  text-indent: 33px;
+  float: left;
+  margin-left: 22px;
+  background: url('images/city.jpg') no-repeat 0 15px;
+  width: 80px;
+  height: 70px;
+}
+#bushomepage .container .headerContainer .bus_header .area a {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+}
+#bushomepage .container .headerContainer .bus_header .separator_line {
+  float: left;
+  background: url('images/separator_line.jpg') no-repeat 0 -5px;
+  width: 2px;
+  height: 67px;
+}
+#bushomepage .container .headerContainer .bus_header .menu_current {
+  background: url('images/menu_current.jpg') no-repeat bottom center;
+}
+#bushomepage .container .headerContainer .bus_header .menu_index {
+  float: left;
+  width: 99px;
+  height: 70px;
+  text-align: center;
+}
+#bushomepage .container .headerContainer .bus_header .menu {
+  font-size: 18px;
+  color: white;
+}
+#bushomepage .container .headerContainer .bus_header .menu a {
+  font-size: 18px;
+  line-height: 70px;
+  color: white;
+}
+#bushomepage .container .headerContainer .bus_header .menu_fav {
+  float: left;
+  width: 115px;
+  height: 70px;
+  text-align: center;
+}
+#bushomepage .container .headerContainer .bus_header .user {
+  color: #96c8fa;
+  margin-right: 12px;
+  position: relative;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+  padding: 0 30px 0 10px;
+  background: url('images/staff_bg.jpg') no-repeat right center #1e64aa;
+}
+#bushomepage .container .headerContainer .bus_header .staffHead {
+  width: 38px;
+  height: 40px;
+  float: right;
+  margin-top: 15px;
+}
+#bushomepage .container .main_fill {
+  border-bottom: 1px solid #c8c8c8;
+  height: 450px;
+  background: url('images/full_bg_fill.jpg') repeat-x;
+}
+#bushomepage .container .main_fill .main {
+  margin: 0 auto;
+  background: url('images/full_bg.jpg') no-repeat #cfe1ec;
+  height: 375px;
+  padding-left: 236px;
+  width: 821px;
+  padding-top: 76px;
+}
+#bushomepage .container .main_fill .main .search {
+  float: left;
+  padding-left: 30px;
+  background: url('images/search_bg_new.png') no-repeat #cfe1ec;
+  width: 582px;
+  height: 128px;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg {
+  float: left;
+  width: 577px;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto {
+  padding-top: 25px;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto::before {
+  content: "";
+  display: table;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .fl {
+  float: left;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .from .selectList {
+  display: inline-block;
+  background: url('images/searchbox.jpg') no-repeat;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .from .selectList #tbFrom {
+  height: 53px;
+  line-height: 53px;
+  border: 0;
+  padding-left: 10px;
+  background: url('images/selectList.png') no-repeat;
+  width: 190px;
+  background-position: 180px center;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .switch {
+  background-color: #d8e3e9;
+  padding-top: 2px;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .switch .switchSpan {
+  display: block;
+  width: 47px;
+  height: 48px;
+  background: url('images/exchange.jpg') no-repeat;
+  border-bottom: 1px solid #c9cace;
+  margin-top: 1px;
+  border-top: 1px solid #c9cace;
+  background-position-y: -1px;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto .to #tbTo {
+  height: 53px;
+  line-height: 53px;
+  border: 0;
+  padding-left: 10px;
+  background: url('images/searchbox.jpg') no-repeat;
+  bckground-position-x: -4px;
+  width: 190px;
+  outline: none;
+}
+#bushomepage .container .main_fill .main .search .searchBox_bg .divFromto #btFromTo {
+  float: left;
+  cursor: pointer;
+  width: 103px;
+  height: 53px;
+  border: 0;
+  background: url('images/searchButton.jpg') no-repeat;
+  text-indent: 999px;
+  outline: none;
+}
+#bushomepage .container .description {
+  margin: 0 auto;
+  width: 1024px;
+  height: 215px;
+  padding-left: 0;
+  background: #ebebeb;
+}
+#bushomepage .container .description .remark {
+  float: left;
+  background: url('images/remark_bg.jpg') no-repeat -16px 0;
+  width: 595px;
+  height: 215px;
+  padding-left: 50px;
+  padding-top: 0;
+}
+#bushomepage .container .description .remark .title {
+  line-height: 32px;
+  font-size: 16px;
+  color: #5a7896;
+  padding-left: 36px;
+  font-weight: bold;
+  background: url('images/help.jpg') no-repeat;
+  width: 100%;
+  height: 32px;
+  float: left;
+}
+#bushomepage .container .description .remark ul {
+  float: left;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+#bushomepage .container .description .remark ul li {
+  background: url('images/listicon.jpg') no-repeat left center;
+  font-size: 12px;
+  line-height: 2.5em;
+}
+#bushomepage .container .description .remark ul li span {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 6px;
+}
+#bushomepage .container .description .tools {
+  float: right;
+  width: 262px;
+  height: 215px;
+  margin-top: 34px;
+}
+#bushomepage .container .description .tools > div {
+  margin-top: 15px;
+}
+#bushomepage .container .description .tools > div:first-child {
+  margin-top: 0;
+}
+#bushomepage .container .description .tools .download {
+  float: left;
+  background: url('images/download.jpg') no-repeat;
+  padding-left: 68px;
+  width: 230px;
+  height: 54px;
+  line-height: 54px;
+}
+#bushomepage .container .description .tools .ce {
+  float: left;
+  background: url('images/ce.jpg') no-repeat;
+  padding-left: 68px;
+  width: 230px;
+  height: 54px;
+  line-height: 54px;
+}
+#bushomepage .container .home_footer {
+  background-color: #ebebeb;
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #66686c;
+  margin-top: 60px;
+}
+#bushomepage .container .home_footer ::before {
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px #ccc solid;
+  content: '';
+  position: absolute;
+  top: 0;
+}

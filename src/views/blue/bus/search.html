@@ -2,10 +2,10 @@
     include('../widget/top',{
     	title: '滴滴校园平台',
         locals: local,
-        css: ['/static_proxy/themes/blue/bus/homepage.css']   
+        css: ['/static_proxy/themes/blue/bus/homepage.css','/static_proxy/themes/blue/bus/search.css']   
     }); 
 %>
-<div id="bushomepage">
+<div id="bushomepage" class="bus_search">
 	<div class="container">
 		<div class="headerContainer">
 			<div class="bus_header">
@@ -14,11 +14,11 @@
 					<a href="javascript:void(0);">嘉定</a>
 				</div>
 				<div class="separator_line" style="margin-left:26px;"></div>
-				<div class="menu_current menu menu_index">
+				<div class="menu menu_index">
 					<a href="">首页</a>
 				</div>
 				<div class="separator_line"></div>
-				<div class="menu menu_fav">
+				<div class="menu_current menu menu_fav">
 					<a href="">查询线路</a>
 				</div>
 				<div class="separator_line"></div>
@@ -33,21 +33,57 @@
 				</div>
 			</div>
 		</div>
-		<div class="main_fill">
-			<div class="main">
-				<div class="search">
-					<div class="searchBox_bg">
-						<div class="divFromto">
-							<div class="from fl">
-								<span class="selectList"><input type="text" id="tbFrom"/></span>
+		<div class="result_fill">
+			<div class="find-container clearfix">
+				<div class="find-tab">
+					<ul>
+						<li class="sel">
+							<a href="">站点</a>
+						</li>
+						<li class="unsel">
+							<a href="">线路</a>
+						</li>
+					</ul>
+				</div>
+				<div class="from-to">
+					<div class="from">
+						<input type="text" id="tbFrom" class="tbFrom"/>
+					</div>
+					<div class="switch"></div>
+					<div class="to">
+						<input type="text" id="tbTo" class="tbTo"/>
+					</div>
+					<div class="btn btFromTo" id="btFromTo"></div>
+				</div>
+				<div class="divAjax">
+					<div class="find-result">
+						<div class="depart">
+							<div id="divDepartTitle" class="depart-title">
+								<p><span>出发线路</span></p>
 							</div>
-							<div class="switch fl">
-								<span class="switchSpan"></span>
+							<div class="route-detail">
+								<div class="route-num"><span class="bus-sig"></span>S-023</div>
+								<div class="bustime">
+									<span class="time"></span>07:58
+								</div>
+								<div class="park">
+									<span class="part-sig"></span>学生事务处大门站台处发车
+								</div>
 							</div>
-							<div class="to fl">
-								<input type="text" id="tbTo">
+						</div>
+						<div class="arrive">
+							<div id="divArriveTitle" class="arrive-title">
+								<p><span>返回线路</span></p>
 							</div>
-							<input type="text" id="btFromTo" value="搜索"/>
+							<div class="route-detail">
+								<div class="route-num"><span class="bus-sig"></span>Q-002</div>
+								<div class="bustime">
+									<span class="time"></span>09:10
+								</div>
+								<div class="park">
+									<span class="part-sig"></span>食堂旁边站台处发车
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

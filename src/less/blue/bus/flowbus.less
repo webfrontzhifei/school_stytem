@@ -1,0 +1,104 @@
+.flowbus {
+	#timeline {
+		width: 800px;
+		overflow: hidden;
+		margin: 80px auto;
+		position: relative;
+		background: url('images/dot.gif') left 45px repeat-x;
+		#dates {
+			height: 60px;
+			overflow: hidden;
+			li {
+				list-style: none;
+				float: left;
+				width: 100px;
+				height: 50px;
+				font-size: 24px;
+				text-align: center;
+				background: url('images/biggerdot.png') center bottom no-repeat;
+			}
+			&>li>a:hover, &>li>a.selected {
+				color: #c00;
+				text-decoration: none;
+			}
+			.selected {
+				font-size: 38px;
+			}
+			a {
+				line-height: 38px;
+				padding-bottom: 10px;
+				color: #ccc;
+				font-size: 15px;
+			}
+		}
+		#issues {
+			li {
+				width: 800px;
+				list-style: none;
+				float: left;
+				p {
+					font-size: 24px;
+					margin: 20px 70px;
+					font-weight: bold;
+					line-height: 22px;
+					font-family: tahoma;
+					text-align: left;
+					a {
+						font-size: 24px;
+						margin: 4px;
+						display: inline-block;
+						background: #50a0e6;
+						padding: 8px;
+						color: white;
+					}
+
+				}
+				.title {
+					display: block;
+					font-size: 22px;
+					background: #0A4;
+					color: white;
+					height: 28px;
+					width: 150px;
+					text-align: center;
+					padding: 2px;
+					margin: 4px;
+				}
+			}
+		}
+		#next, #prev {
+			position: absolute;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+		#next {
+			right: 0;
+			background-image: url('images/next.png');
+		}
+		#prev {
+			left: 0;
+			background-image: url('images/prev.png');
+			display: block;
+		}
+	}
+	#tips {
+		padding: 5px;
+		float: left;
+		border: 1px solid #ccc;
+		position: absolute;
+		width: 340px;
+		background: #71c941;
+		line-height: 24px;
+		z-index: 999;
+		color: #fff;
+		top: 308px;
+		left: 389px;
+		display: block;
+	}
+}

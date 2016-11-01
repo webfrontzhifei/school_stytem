@@ -1,0 +1,189 @@
+.bus_search .clearfix {
+  zoom: 1;
+}
+.bus_search .clearfix:before {
+  content: "";
+  display: table;
+}
+.bus_search .result_fill {
+  padding-top: 13px;
+  background: white;
+}
+.bus_search .result_fill .find-container {
+  width: 1028px;
+  margin: 0 auto;
+  background: white;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.bus_search .result_fill .find-container div {
+  float: left;
+}
+.bus_search .result_fill .find-container .find-tab {
+  width: 100%;
+  z-index: 2;
+}
+.bus_search .result_fill .find-container .find-tab li {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 86px;
+  margin-right: 3px;
+}
+.bus_search .result_fill .find-container .find-tab li.sel {
+  background: url('images/tab_sel_new.png') no-repeat;
+}
+.bus_search .result_fill .find-container .find-tab li.sel a {
+  color: white;
+}
+.bus_search .result_fill .find-container .find-tab li.unsel {
+  background: url('images/tab_unsel_new.png') no-repeat;
+}
+.bus_search .result_fill .find-container .find-tab li.unsel a {
+  color: #0063b4;
+}
+.bus_search .result_fill .find-container .from-to {
+  border: 1px solid #d6e4eb;
+}
+.bus_search .result_fill .find-container .from-to .from {
+  width: 260px;
+}
+.bus_search .result_fill .find-container .from-to .from #tbFrom {
+  background: none;
+  height: 50px;
+  line-height: 53px;
+  border: none;
+  padding-left: 10px;
+  width: 190px;
+}
+.bus_search .result_fill .find-container .from-to .switch {
+  width: 50px;
+  height: 50px;
+  background: url('images/input_chg_new.png') no-repeat;
+}
+.bus_search .result_fill .find-container .from-to .to {
+  width: 251px;
+}
+.bus_search .result_fill .find-container .from-to .to #tbTo.tbTo {
+  background: none;
+  height: 50px;
+}
+.bus_search .result_fill .find-container .from-to .to #tbTo {
+  line-height: 53px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  width: 190px;
+  float: left;
+}
+.bus_search .result_fill .find-container .from-to #btFromTo.btFromTo {
+  height: 50px;
+  width: 150px;
+  background: url('images/tab_find_btn_new.png') no-repeat;
+  float: left;
+  cursor: pointer;
+  border: 0;
+  text-indent: 999px;
+  outline: none;
+}
+.bus_search .result_fill .find-container .divAjax {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result {
+  width: 100%;
+  margin-top: 20px;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .depart {
+  width: 490px;
+  background: #f1f7ff;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .depart-title {
+  width: 490px;
+  height: 49px;
+  text-indent: 10px;
+  line-height: 49px;
+  font-size: 18px;
+  color: white;
+  background: url('images/rt_work_new.png') no-repeat;
+  background-size: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .depart-title p {
+  height: 49px;
+  line-height: 49px;
+  width: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .arrive {
+  width: 490px;
+  margin-left: 16px;
+  background: #fef7ef;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .arrive .arrive-title {
+  width: 490px;
+  height: 49px;
+  text-indent: 10px;
+  line-height: 49px;
+  font-size: 18px;
+  color: white;
+  background: url('images/rt_gohome_new.png') no-repeat;
+  background-size: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .arrive .route-detail {
+  border: 1px solid #FEB24B;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #55ACFF;
+  padding-left: 20px;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .route-num {
+  margin-top: 30px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .route-num .bus-sig {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  width: 42px;
+  background: url('images/busline.png') no-repeat;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .bustime {
+  margin-top: 20px;
+  height: 24px;
+  font-size: 16px;
+  width: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .bustime .time {
+  margin-left: 5px;
+  margin-right: 8px;
+  height: 100%;
+  margin-top: -4px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 24px;
+  background: url('images/bustime.png') no-repeat;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .park {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 24px;
+  font-size: 16px;
+  width: 100%;
+}
+.bus_search .result_fill .find-container .divAjax .find-result .route-detail .park .part-sig {
+  margin-left: 5px;
+  margin-right: 8px;
+  height: 100%;
+  margin-top: -4px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 24px;
+  background: url('images/buspart.png') no-repeat;
+}

@@ -1,0 +1,94 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/bus/homepage.css','/static_proxy/themes/blue/bus/flowbus.css']   
+    }); 
+%>
+<div id="bushomepage" class="flowbus">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="area">
+					<a href="javascript:void(0);">嘉定</a>
+				</div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu_current menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">查询线路</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">穿梭巴士</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div id="timeline">
+			<ul id="dates" style="width:11400px;margin-left: -50px;">
+				<li><a href="">15:10</a></li>
+				<li><a href="">15:40</a></li>
+				<li><a href="">16:10</a></li>
+				<li><a href="">16:40</a></li>
+				<li><a href="" class="selected">17:10</a></li>
+				<li><a href="">17:40</a></li>
+				<li><a href="">18:10</a></li>
+				<li><a href="">18:40</a></li>
+				<li><a href="">19:10</a></li>
+			</ul>
+			<ul id="issues">
+				<li id="1710">
+					<p>
+						<span class="title">嘉定校区</span>
+						<span class="content">
+							<a href="">Q-013</a>
+							<a href="">Q-014</a>
+							<a href="">Q-015</a>
+							<a href="">Q-016</a>
+							<a href="">Q-017</a>
+							<a href="">Q-018</a>
+							<a href="">Q-019</a>
+						</span>
+					</p>
+					<p>
+						<span class="title">沪北校区</span>
+						<span class="content">
+							<a href="">Q-036</a>
+						</span>
+					</p>
+				</li>
+			</ul>
+			<a href="" id="next">+</a>
+			<a href="" id="prev">-</a>
+		</div>
+		<div id="tips">
+			<div>
+				<span class="title">线路名：</span><span id="lineName">Q-014</span>
+			</div>
+			<div>
+				<span class="title">发车时间: </span><span id="startTime">17:10</span>
+			</div>
+			<div>
+				<span class="title">班车类型：</span><span id="busType">大巴</span>
+			</div>
+			<div><span class="title">站点：</span><span id="sites">嘉定校区(17:10)(停靠在学生事务处门前)->四平校区(18:00)(停靠在大食堂路测)-></span></div>
+		</div>
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>

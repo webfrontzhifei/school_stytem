@@ -19,6 +19,16 @@ busRouter.get('/bus',function(req, res, next){
 
 	});
 });
+busRouter.get('/bus/flow',function(req, res, next){
+	res.render('blue/bus/flowbus.html', {
+
+	});
+});
+busRouter.get('/bus/search',function(req, res, next){
+	res.render('blue/bus/search.html', {
+
+	});
+});
 
 
 module.exports = busRouter; 
