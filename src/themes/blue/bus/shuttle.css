@@ -1,0 +1,120 @@
+.p-shuttle .main {
+  background: url('images/full_bg.jpg') no-repeat 0 -60px #fff;
+  border-bottom: 1px solid #c8c8c8;
+  height: 75px;
+  line-height: 76px;
+  text-align: center;
+  padding: 35px 0 0  328px;
+  width: 696px;
+  margin: 0 auto;
+}
+.p-shuttle .shuttle_bus {
+  width: 1000px;
+  margin: 20px auto;
+}
+.p-shuttle .shuttle_bus #buildingMenu {
+  height: 52px;
+  margin: 15px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.p-shuttle .shuttle_bus #buildingMenu a {
+  display: block;
+  color: #515151;
+}
+.p-shuttle .shuttle_bus #buildingMenu .building_tab {
+  position: absolute;
+  left: 20px;
+  width: 100%;
+  z-index: 2;
+}
+.p-shuttle .shuttle_bus #buildingMenu .building_tab li.current {
+  background-color: #d4e5ef;
+  border: 1px solid #AAA;
+  border-radius: 3px;
+}
+.p-shuttle .shuttle_bus #buildingMenu .building_tab li.current a {
+  color: #313131;
+  font-weight: bold;
+}
+.p-shuttle .shuttle_bus #buildingMenu .building_tab li {
+  float: left;
+  font-size: 14px;
+  height: 52px;
+  line-height: 52px;
+  overflow: hidden;
+  text-align: center;
+  width: 108px;
+}
+.p-shuttle .shuttle_bus #buildingMenu #split_nav {
+  background-color: #AAA;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 51px;
+  width: 100%;
+}
+.p-shuttle .shuttle_bus #search_result li {
+  border-bottom: 1px solid #D4D4D4;
+  overflow: hidden;
+}
+.p-shuttle .shuttle_bus #search_result .building_name {
+  float: left;
+  padding: 16px 0;
+  margin-left: 8px;
+  width: 140px;
+}
+.p-shuttle .shuttle_bus #search_result .shuttle_to {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 27px;
+}
+.p-shuttle .shuttle_bus #search_result span {
+  margin-left: 10px;
+}
+.p-shuttle .shuttle_bus #search_result .ride_details {
+  float: left;
+  padding: 17px 0 15px;
+  margin-left: 17px;
+}
+.p-shuttle .shuttle_bus #search_result dl {
+  clear: both;
+  overflow: hidden;
+  width: 830px;
+}
+.p-shuttle .shuttle_bus #search_result dd {
+  color: #0B5791;
+  line-height: 28px;
+  width: 100%;
+}
+.p-shuttle .shuttle_bus #search_result label {
+  color: #555;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  text-align: right;
+  width: 75px;
+}
+.p-shuttle .shuttle_bus #search_result span {
+  margin-left: 10px;
+}
+.p-shuttle .shuttle_bus #search_result .h_2 {
+  height: auto !important;
+}
+.p-shuttle .shuttle_bus #search_result .all_time {
+  margin-left: 75px;
+}
+.p-shuttle .shuttle_bus #search_result .other {
+  background-color: #fff;
+  color: #818181;
+}
+.p-shuttle .shuttle_bus #search_result .soon_time {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding: 4px;
+  width: 40px;
+  margin-bottom: 9px;
+}

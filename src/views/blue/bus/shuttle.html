@@ -2,7 +2,7 @@
     include('../widget/top',{
     	title: '滴滴校园平台',
         locals: local,
-        css: ['/static_proxy/themes/blue/bus/homepage.css']   
+        css: ['/static_proxy/themes/blue/bus/homepage.css','/static_proxy/themes/blue/bus/shuttle.css']   
     }); 
 %>
 <div id="bushomepage" class="p-shuttle">
@@ -33,26 +33,79 @@
 				</div>
 			</div>
 		</div>
-		<div class="main_fill">
-			<div class="main">
-				<div class="search">
-					<div class="searchBox_bg">
-						<div class="divFromto">
-							<div class="from fl">
-								<span class="selectList"><input type="text" id="tbFrom"/></span>
-							</div>
-							<div class="switch fl">
-								<span class="switchSpan"></span>
-							</div>
-							<div class="to fl">
-								<input type="text" id="tbTo">
-							</div>
-							<input type="text" id="btFromTo" value="搜索"/>
-						</div>
+		<div class="main">
+			
+		</div>
+		<div class="shuttle_bus">
+				<div id="buildingMenu">
+					<div class="building_tab">
+						<ul>
+							<li class="current">
+								<a href="">嘉定校区</a>
+							</li>
+							<li><a href="">四平校区</a></li>
+							<li><a href="">沪西校区</a></li>
+							<li><a href="">沪北校区</a></li>
+						</ul>
 					</div>
+					<div id="split_nav"></div>
+				</div>
+				<div id="search_result">
+					<ul>
+						<li>
+							<div class="building_name">
+								<span class="shuttle_to">四平校区</span>
+							</div>
+							<div class="ride_details">
+								<dl>
+									<dd>
+										<label for="">发车时间:</label>
+										<span>09:10 - 17:55，每隔15分钟一班，午休时间：12:40-13:55。</span>
+									</dd>
+									<dd class="h_2 mt10">
+										<label for="">具体时刻:</label>
+										<div class="all_time"><span class="soon_time other">8:10</span><span class="soon_time other">8:40</span><span class="soon_time other">9:10</span><span class="soon_time other">9:40</span><span class="soon_time other">10:10</span><span class="soon_time other">10:40</span><span class="soon_time other">11:10</span><span class="soon_time other">11:40</span><span class="soon_time other">12:10</span><span class="soon_time other">12:40</span><span class="soon_time other">13:10</span><span class="soon_time other">13:40</span><span class="soon_time other">14:10</span><span class="soon_time other">14:40</span><span class="soon_time other">15:10</span><span class="soon_time other">15:40</span><span class="soon_time other">16:10</span><span class="soon_time other">16:40</span><span class="soon_time other">17:10</span></div>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<div class="building_name">
+								<span class="shuttle_to">沪北校区</span>
+							</div>
+							<div class="ride_details">
+								<dl>
+									<dd>
+										<label for="">发车时间:</label>
+										<span>09:10 - 17:55，每隔15分钟一班，午休时间：12:40-13:55。</span>
+									</dd>
+									<dd class="h_2 mt10">
+										<label for="">具体时刻:</label>
+										<div class="all_time"><span class="soon_time other">8:10</span><span class="soon_time other">8:40</span><span class="soon_time other">9:10</span><span class="soon_time other">9:40</span><span class="soon_time other">10:10</span><span class="soon_time other">10:40</span><span class="soon_time other">11:10</span><span class="soon_time other">11:40</span><span class="soon_time other">12:10</span><span class="soon_time other">12:40</span><span class="soon_time other">13:10</span><span class="soon_time other">13:40</span><span class="soon_time other">14:10</span><span class="soon_time other">14:40</span><span class="soon_time other">15:10</span><span class="soon_time other">15:40</span><span class="soon_time other">16:10</span><span class="soon_time other">16:40</span><span class="soon_time other">17:10</span></div>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<div class="building_name">
+								<span class="shuttle_to">沪西校区</span>
+							</div>
+							<div class="ride_details">
+								<dl>
+									<dd>
+										<label for="">发车时间:</label>
+										<span>09:10 - 17:55，每隔15分钟一班，午休时间：12:40-13:55。</span>
+									</dd>
+									<dd class="h_2 mt10">
+										<label for="">具体时刻:</label>
+										<div class="all_time"><span class="soon_time other">8:10</span><span class="soon_time other">8:40</span><span class="soon_time other">9:10</span><span class="soon_time other">9:40</span><span class="soon_time other">10:10</span><span class="soon_time other">10:40</span><span class="soon_time other">11:10</span><span class="soon_time other">11:40</span><span class="soon_time other">12:10</span><span class="soon_time other">12:40</span><span class="soon_time other">13:10</span><span class="soon_time other">13:40</span><span class="soon_time other">14:10</span><span class="soon_time other">14:40</span><span class="soon_time other">15:10</span><span class="soon_time other">15:40</span><span class="soon_time other">16:10</span><span class="soon_time other">16:40</span><span class="soon_time other">17:10</span></div>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
 		<div class="description">
 			<div class="remark">
 				<div class="title">
