@@ -1,0 +1,89 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/bus/homepage.css']   
+    }); 
+%>
+<div id="bushomepage" class="p-shuttle">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="area">
+					<a href="javascript:void(0);">嘉定</a>
+				</div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">查询线路</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu_current menu menu_fav">
+					<a href="">穿梭巴士</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div class="main_fill">
+			<div class="main">
+				<div class="search">
+					<div class="searchBox_bg">
+						<div class="divFromto">
+							<div class="from fl">
+								<span class="selectList"><input type="text" id="tbFrom"/></span>
+							</div>
+							<div class="switch fl">
+								<span class="switchSpan"></span>
+							</div>
+							<div class="to fl">
+								<input type="text" id="tbTo">
+							</div>
+							<input type="text" id="btFromTo" value="搜索"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="description">
+			<div class="remark">
+				<div class="title">
+					师生乘客须知
+				</div>
+				<ul>
+					<li><span>1</span>&nbsp;&nbsp;&nbsp;前排座位留给有需要的乘客</li>
+					<li><span>1</span>&nbsp;&nbsp;&nbsp;维护我们共同的安全乘车环境，乘坐校车请出示一卡通</li>
+					<li><span>1</span>&nbsp;&nbsp;&nbsp;每天提前五分钟，到达站点好轻松，切勿踩点追车</li>
+					<li><span>1</span>&nbsp;&nbsp;&nbsp;物品遗漏请第一时间联系学校班车管理室寻找。</li>
+				</ul>
+			</div>
+			<div class="tools">
+				<div class="download">
+					<a href="">线路流水线</a>
+				</div>
+				<div class="download">
+					<a href="">最新班车手册</a>
+				</div>
+				<div class="ce">
+					<a href="">意见反馈</a>
+				</div>
+			</div>
+		</div>
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>

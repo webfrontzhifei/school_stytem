@@ -37,7 +37,7 @@ var filepath = {
 // });
 
 gulp.task('less', function () {
-  return gulp.src('./src/less/blue/bus/search.less')
+  return gulp.src('./src/less/blue/bus/shuttle.less')
     .pipe($.plumber())
     // .pipe($.sourcemaps.init())
     .pipe($.less())
@@ -189,7 +189,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
 
 // // watching
 gulp.task('watch', function () {
-  gulp.watch('./src/less/blue/bus/search.less', ['less']);
+  gulp.watch('./src/less/blue/bus/shuttle.less', ['less']);
 });
 
 // gulp.task('dev', ['dev:server', 'styles', 'watch']);

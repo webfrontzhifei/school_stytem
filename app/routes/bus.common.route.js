@@ -29,6 +29,11 @@ busRouter.get('/bus/search',function(req, res, next){
 
 	});
 });
+busRouter.get('/bus/shuttle',function(req, res, next){
+	res.render('blue/bus/shuttle.html', {
+
+	});
+});
 
 
 module.exports = busRouter; 
