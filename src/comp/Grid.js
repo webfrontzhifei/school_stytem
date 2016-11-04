@@ -556,6 +556,7 @@ LBF.define('qidian.comp.Grid', function(require, exports, module) {
 
             if(that.hasCheckboxCol) {
                 that.container.find('.table thead .col-chk').html('<input type="checkbox" />');
+               
                 theadIcheckbox = new iCheckbox({
                     selector: '#' + that.container.attr('id') + ' .table thead .col-chk input',
                     events: {
@@ -589,7 +590,7 @@ LBF.define('qidian.comp.Grid', function(require, exports, module) {
 
             that.events.onFillData && that.events.onFillData.call(that, data, table, function(listItem, index) {
                 var dataList = data[that.listName];
-
+               
                 if(that.hasCheckboxCol) {
                     var listItemId = typeof listItem['data-grid-id'] != 'undefined' ? listItem['data-grid-id'] : listItem.id;
 
@@ -664,6 +665,7 @@ LBF.define('qidian.comp.Grid', function(require, exports, module) {
                         iCheckboxArr[curIndex].uncheck();
                         curTr.removeClass('selected');
                     } else {
+                        console.log(iCheckboxArr);
                         iCheckboxArr[curIndex].check();
                         curTr.addClass('selected');
                     }

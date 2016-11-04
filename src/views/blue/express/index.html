@@ -1,0 +1,61 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['static_proxy/themes/blue/express/homepage.css']   
+    }); 
+%>
+<div id="header-wrapper">
+    <div class="container">
+        <div class="logo">
+        </div>
+        <div id="user-options" class="row">
+            <ul class="nav-user-options" id="nav">
+                <li><a class="current" ext="Default.aspx" href="">首页</a></li>
+                <li><a ext="MyExpress.aspx" href="">我的快递</a></li>
+                <li class="last"><a ext="SendExpress.aspx" href="">我的外寄</a></li>
+            </ul>               
+        </div>
+        <div id="user-account">
+            <img src="/public/avatars/profile.jpg" style="width: 38px; height: 40px; border: 0px;" alt="">
+            <div class="txt">
+                    liuciwen(刘慈文)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <form name="aspnetForm" method="post" action="http://mailcenter.oa.com/Pages/" id="aspnetForm">      
+    <div class="mbg">
+         <div class="txt">
+            <strong class="help">收件注意事项：</strong>
+            <ul>
+                <li><span>1</span>为确保准时收发快递，请保证手机畅通，及时查收短信；</li>
+                <li><span>2</span>为确保快递信件安全，若本人不能领取时，请登录系统设置代领人；</li>
+                <li><span>3</span>请正确填写您的地址和联系方式，以便准确通知您领取，<a href="http://hrk.oa.com/hrkernel/pages/personal.aspx" target="_blank" style="text-decoration:underline;color:Red;">修改个人信息</a>；</li>
+                <li><span>4</span><a style="color:Red;">快递统一到自助柜台领取，请携带好一卡通。</a></li>
+            </ul>
+            <strong class="help mt10">我的外寄注意事项：</strong>
+            <ul>
+                <li><span>1</span>请精确填写收件人地址、姓名、联系电话；</li>
+                <li><span>2</span>可以选择是否实时短信通知，邮件派送进度；</li>
+                <li><span>3</span>快递查询：<a href="http://www.kiees.cn/" target="_blank" style="text-decoration:underline;color:red;">http://www.kiees.cn/</a>；</li>
+            </ul>
+            <strong class="contact-us mt10">咨询方式：</strong>
+            <ul>
+                <li>快递中心工作人员</li>
+            </ul>
+        </div>
+        <a class="btn-view" href="http://mailcenter.oa.com/Pages/MyExpress.aspx"> </a>
+        <a class="btn-send" href="http://office.oa.com/applyfill.aspx?flowid=141" target="_blank"></a>
+    </div>
+	</form>
+</div>
+    <div class="footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    </div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>

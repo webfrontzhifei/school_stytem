@@ -1,0 +1,388 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/express/homepage.css']   
+    }); 
+%>
+<div id="header-wrapper">
+    <div class="container">
+        <div class="logo">
+        </div>
+        <div id="user-options" class="row">
+            <ul class="nav-user-options" id="nav">
+                <li><a ext="Default.aspx" href="">首页</a></li>
+                <li><a class="current" ext="MyExpress.aspx" href="">我的快递</a></li>
+                <li class="last"><a ext="SendExpress.aspx" href="">我的外寄</a></li>
+            </ul>               
+        </div>
+        <div id="user-account">
+            <img src="/public/avatars/profile.jpg" style="width: 38px; height: 40px; border: 0px;" alt="">
+            <div class="txt">
+                    liuciwen(刘慈文)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <form name="aspnetForm" method="post" action="http://mailcenter.oa.com/Pages/MyExpress.aspx" id="aspnetForm">    
+    <div class="my-tab clearfix">
+        <div class="tab-wrapper">
+            <ul id="tabs">
+                <li><a href="" name="#tab1" id="tab-current">未领取</a></li>
+                <li><a href="" name="#tab2">已领取</a></li>
+            </ul>
+            <div id="split_nav"></div>
+        </div>
+        <div id="tab-content">
+            <div id="tab1" style="display: block;">
+                <div class="notice warning">
+                    <span style="line-height:48px;height:48px;"><strong>信息：</strong><span>您好，liuciwen，您有下列快递还没有领取
+                </div>
+                <div class="panel-wrapper">
+                    <div class="panel">
+                        <div id="content" class="last">
+                               <div id="list" class="table-detail mt20">
+            		<div class="table-content">
+                	<div class="table-size">
+                        <table class="table table-base">
+                            <thead>
+                                <tr>
+                                    <th class="tb-view"><span>选择</span></th>
+                                    <th class="tb-name">收件人姓名</th>
+                                    <th class="tb-scene">邮件中心</th>
+                                    <th class="tb-time">快递公司名称</th>
+                                    <th class="tb-action">快递类型</th>
+                                    <th class="tb-action">物流单号</th>
+                                    <th class="tb-action">代领人</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<%
+                            	for(var i = 0; i < unExpress.length; i++){
+                            		var item = unExpress[i];
+
+                            	%>
+                            	<tr>
+									<td><div class="lbf-icheckbox col-chk" id=<%="icheckbox"+i%>><input type="checkbox" id="chk_<%= item.id %>" data-id="<%= item.id %>"/></div></td>
+									<td><%=item.name %></td>
+									<td><%=item.mailcenter %></td>
+									<td><%=item.company %></td>
+									<td><%=item.type %></td>
+									<td><%=item.number %></td>
+									<td><%=item.arriveDate %></td>
+                            	</tr>
+								<%
+                            	} 
+                            	%>
+                            </tbody>
+                        </table>
+                	</div>
+                    <div class="table-page">
+                        <div class="table-page-data">共<span><%=total %></span>条记录，每页显示<a href="javascript:" class="table-page-a"><span>15</span><i class="icon-con-arrow"></i></a></div>
+                        <div class="pagination"></div>
+                    </div>
+                </div>  
+                        </div>
+                    </div>
+                    <div class="panel-wrapper">
+                        <input type="text" id="txtDelegateUser" placeholder="快件如需其他人代领，请输入用户名" value="" style="width: 300px; display: inline-block; color: rgb(169, 169, 169);" class="ui-autocomplete-input">
+                        <input type="button" class="button-blue" id="btnSetDelegateUser" value="设置代领人">
+                    </div>
+                </div>
+               
+            </div>
+            <div id="tab2" style="display: none;">
+                <div class="notice warning">
+                    <span><strong>信息：</strong><span>您好，zhifeizhang，您的快递领取历史记录如下：</span></span>
+                </div>
+                <div id="divAjax">
+					<div class="panel-wrapper">
+	    				<div class="panel">
+	        				<div class="last">
+	            
+	                    	<table id="tbList" border="0" cellspacing="1" cellpadding="0" class="table1">
+		                        <thead>
+		                        <tr>
+		                             <th>
+		                                领取人姓名
+		                            </th>
+		                            <th>
+		                                收件人姓名
+		                            </th>
+		                            <th>
+		                                邮件中心
+		                            </th>
+		                            <th>
+		                                快递公司名称
+		                            </th>
+		                            <th>
+		                                快递类别
+		                            </th>
+		                            <th>
+		                                物流单号
+		                            </th>
+		                            <th>
+		                                到达日期
+		                            </th>
+		                        </tr>
+		                        </thead>
+	                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                中通
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                7834
+			                            </td>
+			                            <td>
+			                                2016-08-15 12:02:41
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                其他
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                202
+			                            </td>
+			                            <td>
+			                                2016-07-06 12:59:34
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                韵达
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                664
+			                            </td>
+			                            <td>
+			                                2016-06-29 09:47:18
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                圆通
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                5394
+			                            </td>
+			                            <td>
+			                                2016-06-20 12:36:53
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                其他
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                83
+			                            </td>
+			                            <td>
+			                                2016-05-23 16:55:40
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                韵达
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                23
+			                            </td>
+			                            <td>
+			                                2016-05-23 09:33:16
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                中通
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                6109
+			                            </td>
+			                            <td>
+			                                2016-05-19 17:07:10
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                顺丰
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                1256
+			                            </td>
+			                            <td>
+			                                2016-04-28 09:26:31
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    <tbody>
+			                        <tr>
+			                            <td>
+			                                zhifeizhang(张志飞)
+			                            </td>
+			                            <td>
+			                                张志飞
+			                            </td>
+			                            <td>
+			                                上分腾云大厦
+			                            </td>
+			                            <td>
+			                                申通
+			                            </td>
+			                            <td>
+			                                包裹
+			                            </td>
+			                            <td>
+			                                2266
+			                            </td>
+			                            <td>
+			                                2016-04-26 12:11:33
+			                            </td>
+			                        </tr>
+			                    </tbody>
+			                
+			                    </table>
+	                
+	        				</div>
+	    				</div>
+					</div>
+            	</div>
+        	</div>
+    	</div>
+        </form>
+    </div>
+    <div class="footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    </div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>
+<script type="text/javascript">
+    LBF.use('qidian.sites.express.MyExpressController', function(MyExpressController) {
+        new MyExpressController(<%== safeJSONStringify(unExpress)%>);
+    });
+</script>
+    

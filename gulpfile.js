@@ -37,13 +37,13 @@ var filepath = {
 // });
 
 gulp.task('less', function () {
-  return gulp.src('./src/less/blue/bus/shuttle.less')
+  return gulp.src('./src/less/blue/express/homepage.less')
     .pipe($.plumber())
     // .pipe($.sourcemaps.init())
     .pipe($.less())
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     // .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('./src/themes/blue/bus'))
+    .pipe(gulp.dest('./src/themes/blue/express'))
     .pipe(reload({stream: true}));
 });
 
@@ -189,7 +189,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
 
 // // watching
 gulp.task('watch', function () {
-  gulp.watch('./src/less/blue/bus/shuttle.less', ['less']);
+  gulp.watch('./src/less/blue/express/homepage.less', ['less']);
 });
 
 // gulp.task('dev', ['dev:server', 'styles', 'watch']);
