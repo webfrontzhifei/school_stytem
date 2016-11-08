@@ -1,0 +1,168 @@
+body {
+  margin: 0 auto;
+  background: #ebebeb;
+}
+#bushomepage .container {
+  width: 100%;
+  min-width: 1024px;
+}
+#bushomepage .container .headerContainer {
+  height: 67px;
+  background-color: #3278be;
+  border-bottom: 3px solid #1e64aa;
+}
+#bushomepage .container .headerContainer .bus_header {
+  margin: 0 auto;
+  width: 1024px;
+}
+#bushomepage .container .headerContainer .bus_header .logo {
+  float: left;
+  margin-left: 12px;
+  width: 196px;
+  background: url('images/logo3.png') no-repeat 0 -2px;
+  height: 67px;
+}
+#bushomepage .container .headerContainer .bus_header .area {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+  text-indent: 33px;
+  float: left;
+  margin-left: 22px;
+  background: url('images/city.jpg') no-repeat 0 15px;
+  width: 80px;
+  height: 70px;
+}
+#bushomepage .container .headerContainer .bus_header .area a {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+}
+#bushomepage .container .headerContainer .bus_header .separator_line {
+  float: left;
+  background: url('images/separator_line.jpg') no-repeat 0 -5px;
+  width: 2px;
+  height: 67px;
+}
+#bushomepage .container .headerContainer .bus_header .menu_current {
+  background: url('images/menu_current.jpg') no-repeat bottom center;
+}
+#bushomepage .container .headerContainer .bus_header .menu_index {
+  float: left;
+  width: 99px;
+  height: 70px;
+  text-align: center;
+}
+#bushomepage .container .headerContainer .bus_header .menu {
+  font-size: 18px;
+  color: white;
+}
+#bushomepage .container .headerContainer .bus_header .menu a {
+  font-size: 18px;
+  line-height: 70px;
+  color: white;
+}
+#bushomepage .container .headerContainer .bus_header .menu_fav {
+  float: left;
+  width: 115px;
+  height: 70px;
+  text-align: center;
+}
+#bushomepage .container .headerContainer .bus_header .user {
+  color: #96c8fa;
+  margin-right: 12px;
+  position: relative;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+  padding: 0 30px 0 10px;
+  background: url('images/staff_bg.jpg') no-repeat right center #1e64aa;
+}
+#bushomepage .container .headerContainer .bus_header .staffHead {
+  width: 38px;
+  height: 40px;
+  float: right;
+  margin-top: 15px;
+}
+#bushomepage .container .mainContainer {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #D2E3ED;
+  overflow: hidden;
+  padding: 20px 0;
+}
+#bushomepage .container .mainContainer .search_area {
+  width: 300px;
+  height: 400px;
+  margin-left: 30px;
+  float: left;
+  background-color: #6861FF;
+  color: white;
+}
+#bushomepage .container .mainContainer .search_area .shorttitle {
+  line-height: 50px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+#bushomepage .container .mainContainer .search_area .search_body {
+  background-color: white;
+  color: #66686c;
+  margin: 0 10px 15px 10px;
+  line-height: 50px;
+  font-size: 18px;
+}
+#bushomepage .container .mainContainer .search_area .search_body .shadule,
+#bushomepage .container .mainContainer .search_area .search_body .des,
+#bushomepage .container .mainContainer .search_area .search_body .time {
+  line-height: 60px;
+}
+#bushomepage .container .mainContainer .search_area .search_body .txt_shadule.txt,
+#bushomepage .container .mainContainer .search_area .search_body .txt_des.txt {
+  border: 1px solid #A8ABB3;
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 60px;
+  background: url('images/area.png') no-repeat right center;
+}
+#bushomepage .container .mainContainer .search_area .search_body .txt_time.txt {
+  border: 1px solid #A8ABB3;
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 60px;
+}
+#bushomepage .container .mainContainer .search_area .search_body .button {
+  width: 210px;
+  margin: 0 20px;
+}
+#bushomepage .container .mainContainer .short_poster {
+  float: left;
+  margin-left: 20px;
+  height: 400px;
+  width: 650px;
+  background: url('images/poster.png') no-repeat left center #1e64aa;
+}
+#bushomepage .container .home_footer {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #66686c;
+  margin-top: 60px;
+}
+#bushomepage .container .home_footer ::before {
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px #EBEDF2 solid;
+  content: '';
+  position: absolute;
+  top: 0;
+}

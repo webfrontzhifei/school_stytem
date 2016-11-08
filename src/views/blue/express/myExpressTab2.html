@@ -29,8 +29,8 @@
     <div class="my-tab clearfix">
         <div class="tab-wrapper">
             <ul id="tabs">
-                <li><a href="" name="#tab1" id="tab-current">未领取</a></li>
-                <li><a href="" name="#tab2">已领取</a></li>
+                <li><a href="" name="#tab1">未领取</a></li>
+                <li><a href="" name="#tab2" id="tab-current">已领取</a></li>
             </ul>
             <div id="split_nav"></div>
         </div>
@@ -48,31 +48,29 @@
                         <table class="table table-base">
                             <thead>
                                 <tr>
-                                    <th class="tb-view"><span>选择</span></th>
+                                    <th class="tb-view">领取人姓名</th>
                                     <th class="tb-name">收件人姓名</th>
                                     <th class="tb-scene">邮件中心</th>
                                     <th class="tb-time">快递公司名称</th>
                                     <th class="tb-action">快递类型</th>
                                     <th class="tb-action">物流单号</th>
-                                    <th class="tb-action">到件时间</th>
-                                    <th class="tb-action">代领人</th>
+                                    <th class="tb-action">到达日期</th>
                                 </tr>
                             </thead>
                             <tbody>
                             	<%
-                            	for(var i = 0; i < unExpress.length; i++){
+                            	for(var i = 0; i < 10; i++){
                             		var item = unExpress[i];
 
                             	%>
                             	<tr>
-									<td><div class="lbf-icheckbox col-chk" id=<%="icheckbox"+i%>><input type="checkbox" id="chk_<%= item.id %>" data-id="<%= item.id %>"/></div></td>
+									<td><%=item.agent %></td>
 									<td><%=item.name %></td>
 									<td><%=item.mailcenter %></td>
 									<td><%=item.company %></td>
 									<td><%=item.type %></td>
 									<td><%=item.number %></td>
 									<td><%=item.arriveDate %></td>
-									<td><%=item.agent %></td>
                             	</tr>
 								<%
                             	} 
@@ -87,10 +85,7 @@
                 </div>  
                         </div>
                     </div>
-                    <div class="panel-wrapper" id="setContainer">
-                        <input type="text" id="txtDelegateUser" placeholder="快件如需其他人代领，请输入用户名" value="" style="width: 300px; display: inline-block; color: rgb(169, 169, 169);" class="ui-autocomplete-input">
-                        <input type="button" class="button-blue" id="btnSetDelegateUser" value="设置代领人">
-                    </div>
+                    
                 </div>
                
             </div>
@@ -383,8 +378,8 @@
 	});
 %>
 <script type="text/javascript">
-    LBF.use('qidian.sites.express.MyExpressController', function(MyExpressController) {
-        new MyExpressController(<%== safeJSONStringify(unExpress)%>);
+    LBF.use('qidian.sites.express.MyExpressTab2Controller', function(MyExpressTab2Controller) {
+        new MyExpressTab2Controller(<%== safeJSONStringify(unExpress)%>);
     });
 </script>
     

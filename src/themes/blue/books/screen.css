@@ -1,0 +1,89 @@
+/* 基础标签固定样式 */
+BODY{color:#4f4f4f; font:12px SimSun,Arial}
+BODY, TABLE, TH, TD, DIV, UL, OL, LI, DL, DT, DD, H1, H2, H3, H4, H5, H6, P, IMG, FORM{margin:0; padding:0;border:0}
+UL, OL, LI, DL, DT, DD{list-style:none}
+H1{font-size:22px}
+H2{font-size:20px}
+H3{font-size:18px}
+H4{font-size:16px}
+H5{font-size:14px}
+H6{font-size:12px}
+INPUT, SELECT, TEXTAREA{font:12px Arial; padding:0}
+
+/* 文字与超连接默认样式 */
+A{color:#0041d9; }
+A:hover{color:#f60; }
+
+A.no{text-decoration:none}
+A.no:hover{text-decoration:underline}
+
+/* 文字样式定义 */
+.b{font-weight:bold}
+.i{font-style:italic}
+.l{font-weight:lighter}
+.u{text-decoration:underline}
+.n{text-decoration:none}
+.s{text-decoration:line-through}
+
+/* 字号定义 */
+.f20{font-size:20px}
+.f18{font-size:18px}
+.f16{font-size:16px}
+.f14{font-size:14px}
+.f12{font-size:12px}
+.f0{font-size:0}
+
+/* 汉字字体 */
+.simsun{font-family:SimSun}
+.simhei{font-family:SimHei}
+.lisu{font-family:LiSu}
+.youyuan{font-family:YouYuan}
+
+/* 常用行高 */
+.lhn{line-height:normal}
+.lh24{line-height:24px}
+
+/*段落前空格*/
+.space{text-indent:2em}
+
+/* 截取超出规定长度的字段 */
+.tof{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+/* 英文自动换行 */
+.ww{word-wrap:break-word; word-break:break-all}
+
+/* 常用颜色 */
+.red{color:#f00}
+.orange{color:#f60}
+.blue{color:#0041d9}
+.green{color:#5f9d2e}
+.grey{color:#999}
+.black{color:#4f4f4f}
+
+/* 浮动 */
+.fl{float:left}
+.fr{float:right}
+.cb{clear:both; height:0; overflow:hidden}
+
+/* 定位 */
+.left{text-align:left}
+.center{text-align:center}
+.right{text-align:right}
+.top{vertical-align:top}
+.bottom{vertical-align:bottom}
+.pR{position:relative}
+.pA{position:absolute}
+
+/* 按钮样式 */
+.btn{border:none; cursor:pointer}
+
+/* 撑不大 */
+.ofH{overflow:hidden}
+
+/* 间距样式 */
+.mauto{margin:0 auto}
+.mb10{margin:0 auto 10px}
+.mb20{margin:0 auto 20px}
+
+/* 宽度和高度 */
+.div_950{width:950px; overflow:hidden; background:#fff}

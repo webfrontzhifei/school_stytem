@@ -1,0 +1,118 @@
+body {
+  margin: 0 auto;
+  background: #ebebeb;
+}
+#bookshomepage .container {
+  width: 100%;
+  min-width: 1024px;
+}
+#bookshomepage .container .ramus {
+  border: solid #3278be;
+  border-width: 2px 1px 1px;
+}
+#bookshomepage .container .green {
+  color: #0067ED;
+}
+#bookshomepage .container .list2_12 {
+  color: #0067ED;
+}
+#bookshomepage .container .headerContainer {
+  height: 67px;
+  background-color: #3278be;
+  border-bottom: 3px solid #1e64aa;
+}
+#bookshomepage .container .headerContainer .bus_header {
+  margin: 0 auto;
+  width: 1024px;
+}
+#bookshomepage .container .headerContainer .bus_header .logo {
+  float: left;
+  margin-left: 12px;
+  width: 196px;
+  background: url('images/logo.png') no-repeat 0 -2px;
+  height: 67px;
+}
+#bookshomepage .container .headerContainer .bus_header .area {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+  text-indent: 33px;
+  float: left;
+  margin-left: 22px;
+  background: url('images/city.jpg') no-repeat 0 15px;
+  width: 80px;
+  height: 70px;
+}
+#bookshomepage .container .headerContainer .bus_header .area a {
+  color: #96c8fa;
+  font-size: 18px;
+  line-height: 70px;
+}
+#bookshomepage .container .headerContainer .bus_header .separator_line {
+  float: left;
+  background: url('images/separator_line.jpg') no-repeat 0 -5px;
+  width: 2px;
+  height: 67px;
+}
+#bookshomepage .container .headerContainer .bus_header .menu_current {
+  background: url('images/menu_current.jpg') no-repeat bottom center;
+}
+#bookshomepage .container .headerContainer .bus_header .menu_index {
+  float: left;
+  width: 99px;
+  height: 70px;
+  text-align: center;
+}
+#bookshomepage .container .headerContainer .bus_header .menu {
+  font-size: 18px;
+  color: white;
+}
+#bookshomepage .container .headerContainer .bus_header .menu a {
+  font-size: 18px;
+  line-height: 70px;
+  color: white;
+}
+#bookshomepage .container .headerContainer .bus_header .menu_fav {
+  float: left;
+  width: 115px;
+  height: 70px;
+  text-align: center;
+}
+#bookshomepage .container .headerContainer .bus_header .user {
+  color: #96c8fa;
+  margin-right: 12px;
+  position: relative;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+  padding: 0 30px 0 10px;
+  background: url('images/staff_bg.jpg') no-repeat right center #1e64aa;
+}
+#bookshomepage .container .headerContainer .bus_header .staffHead {
+  width: 38px;
+  height: 40px;
+  float: right;
+  margin-top: 15px;
+}
+#bookshomepage .container .home_footer {
+  background-color: #ebebeb;
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #66686c;
+  margin-top: 60px;
+}
+#bookshomepage .container .home_footer ::before {
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px #ccc solid;
+  content: '';
+  position: absolute;
+  top: 0;
+}

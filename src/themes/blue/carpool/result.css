@@ -1,0 +1,203 @@
+.page_result .areaload {
+  background-color: #00A1D9;
+  height: 400px;
+  overflow: hidden;
+}
+.page_result .areaload .map {
+  width: 450px;
+  height: 100%;
+  float: left;
+  padding: 20px 0 20px 10px;
+  box-sizing: border-box;
+}
+.page_result .areaload .map #map_container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.page_result .areaload .search_new {
+  float: right;
+  width: 481px;
+  height: 267px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  top: 42px;
+  left: 18px;
+  padding: 40px 30px 0;
+  margin-right: 30px;
+}
+.page_result .areaload .search_new ul li {
+  margin-bottom: 28px;
+  overflow: hidden;
+  zoom: 1;
+}
+.page_result .areaload .search_new ul li input,
+.page_result .areaload .search_new ul li button {
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.page_result .areaload .search_new ul li .form-btn {
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #00A1D9;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff !important;
+  border-radius: 5px;
+  letter-spacing: 32px;
+  padding-left: 30px;
+  margin: 0 0 0 56px;
+}
+.page_result .areaload .search_new ul li .change {
+  float: left;
+  width: 55px;
+  margin: 9px 0 0 0;
+}
+.page_result .areaload .search_new ul li .change a {
+  background: url('images/change_bg.png') no-repeat;
+  width: 55px;
+  height: 23px;
+  display: block;
+  padding-left: 22px;
+  color: white;
+}
+.page_result .areaload .search_new ul li .input-wrap {
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+  background-color: #ffffff;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  width: 211px;
+  height: 43px;
+  float: left;
+}
+.page_result .areaload .search_new ul li .input-wrap span {
+  float: left;
+  width: 56px;
+  border-right: 1px solid #595757;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin: 14px 0 0 0;
+  color: #514F4F;
+}
+.page_result .areaload .search_new ul li .input-wrap .form-input {
+  background-color: transparent;
+  padding: 5px 0 5px 10px;
+  font-size: 14px;
+  color: #514F4F;
+  float: left;
+  width: 134px;
+  margin: 6px 0 0 0;
+}
+.page_result .list_result {
+  width: 1024px;
+  margin: 0 auto;
+}
+.page_result .list_result .title {
+  height: 36px;
+  line-height: 36px;
+  background-color: #00a1d9;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin: 10px auto;
+}
+.page_result .list_result .piao {
+  border: 1px solid #099;
+  width: 1024px;
+  margin: 0 auto;
+}
+.page_result .list_result .piao .clear {
+  clear: both;
+}
+.page_result .list_result .piao dt .ri {
+  width: 126px;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #099;
+  border-bottom: 1px solid #099;
+  padding: 5px 0;
+  text-align: center;
+  background-color: white;
+  height: 25px;
+  line-height: 25px;
+}
+.page_result .list_result .piao dt .ri2 {
+  width: 260px;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #099;
+  border-bottom: none;
+  padding: 5px 0px;
+  text-align: center;
+  color: #06C;
+  font-weight: bold;
+  background: none;
+}
+.page_result .list_result .piao dt .ri2 font {
+  padding-left: 10px;
+}
+.page_result .list_result .piao dd {
+  padding: 10px;
+  height: 34px;
+  line-height: 34px;
+}
+.page_result .list_result dt,
+.page_result .list_result dl,
+.page_result .list_result dd {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+.page_result .list_result table th {
+  color: white;
+  font-size: 15px;
+  height: 50px;
+  text-align: -webkit-center;
+  background-color: #00a1d9;
+  width: 100%;
+  font-weight: normal;
+}
+.page_result .list_result table .btn {
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #fff !important;
+  background-color: #00A1DB;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  font-family: "Microsoft YaHei UI";
+}
+.page_result .list_result table .iconcity {
+  padding-bottom: 7px;
+}
+.page_result .list_result table .iconcity i {
+  background-color: #00a1d9;
+  padding: 0 5px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.page_result .list_result table .iconcity2 i {
+  background-color: #C30;
+  padding: 0 5px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.page_result .list_result table .face80 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 8px;
+  border: 1px solid #cccccc;
+}

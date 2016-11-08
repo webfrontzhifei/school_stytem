@@ -1,0 +1,39 @@
+.login{height:29px; padding:0 8px 0 12px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -29px}
+	.login LI{line-height:29px}
+	.login_1{margin-left:30px}
+	.login_2{padding-left:24px; background:url(http://common.goufang.com/book/images/tribute.gif) no-repeat left}
+	.login_3{margin-right:32px; color:#6e6e6e}
+.logo{margin:15px 0 0 16px}
+.nav{width:704px; margin:34px 0 0}
+	.nav_1, .nav_2, .nav_4{overflow:hidden}
+	.nav_1, .nav_2, .nav_2 DIV, .nav_4, .nav_4 DIV{height:1px}
+	.nav_3{height:33px}
+	.nav_1{border-left:1px solid #d3d3d3; border-right:1px solid #dbdbdb; background:#c0c0c0; margin:0 0 0 1px}
+	.nav_2, .nav_4{border-left:1px solid #dbdbdb; border-right:1px solid #c0c0c0; background:#c8c8c8; padding:0 0 0 1px}
+	.nav_2 DIV{background:#fff}
+	.nav_4 DIV{background:#eaebeb}
+	.nav_3{border:solid #c0c0c0; border-width:0 1px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -58px}
+		.nav_31{height:33px; color:#111}
+			.nav_311{width:300px; height:27px; line-height:27px; padding:0 8px; border:solid 1px; border-color:#747474 #858585 #909090; color:#7b7c7d; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -91px}
+			A.nav_312{width:88px; height:27px; text-decoration:none; background:url(http://common.goufang.com/book/images/btn_2.gif) 0 0; display:block}
+			A.nav_312:hover{text-decoration:none; background:url(http://common.goufang.com/book/images/btn_2.gif) 0 -27px}
+			.nav_313{width:80px; border:1px solid #b2d26b; background:#fff; top:10px; *top:16px; left:-65px !important; left:-83px}
+				.nav_313 A, .nav_313 A:hover{height:25px; line-height:25px; padding:0 8px; color:#666; text-decoration:none; display:block}
+				.nav_313 A:hover{background:#f3f8e8}
+.menu, .menu_1, .menu_2{height:41px}
+.menu{margin:8px auto 6px}
+	.menu_1{width:15px; background:url(http://common.goufang.com/book/images/menu.gif) no-repeat right 0}
+	.menu_2{width:10px; background:url(http://common.goufang.com/book/images/menu.gif) no-repeat left 0}
+	.menu_3{width:921px; height:35px; background:url(http://common.goufang.com/book/images/menu.gif) repeat-x 0 -41px; padding:6px 0 0 4px}
+		.menu_31{height:30px}
+			.menu_31 LI{height:23px; *height:22px; padding-top:7px; *padding-top:8px; font:bold 14px SimSun; float:left}
+			.menu_31_li1{padding-left:20px; padding-right:22px; background:url(http://common.goufang.com/book/images/gap.gif) no-repeat right 7px}
+				.menu_31_li1 A{color:#333; text-decoration:none}
+				.menu_31_li1 A:hover{color:#458300; text-decoration:underline}
+			.menu_31_li2{margin-left:-2px; padding-left:22px; padding-right:22px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -119px}
+				.menu_31_li2 A{color:#458300; text-decoration:none}
+				.menu_31_li2 A:hover{color:#458300; text-decoration:underline}
+.foot{margin:10px auto 0; border-top:1px solid #e9e9e9}
+	.foot UL{padding:22px 0 28px; border-top:1px solid #fff; background:#f7f7f7}
+	.foot LI{height:33px; line-height:33px; color:#6b6b6b}
+	.foot A, .foot A:hover{color:#6b6b6b}

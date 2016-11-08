@@ -1,0 +1,386 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/carpool/homepage.css','/static_proxy/themes/blue/carpool/iconfont.css','/static_proxy/themes/blue/carpool/style.css',
+        	'/static_proxy/themes/blue/carpool/input.css'
+        ]   
+    }); 
+%>
+<div id="bushomepage" class="page_result">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="area">
+					<a href="javascript:void(0);">嘉定</a>
+				</div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我要预订</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav menu_current">
+					<a href="">发起拼车</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+<form class="login-form" action="/Home/Center/fabupinche.html" method="post">
+<input type="hidden" name="id" value="">
+	<dl class="logink" style="width:70%; min-width:800px">
+    	<dt><i class="iconfont">󰀢</i>发布拼车信息</dt>
+        <dd><p style="border:#DDCAB7 1px solid; padding:10px; background:#F1EFEB"><strong style="color:#F00">发布提示：</strong>您的身份未审核，审核后能够提升用户信任度，如需认证请至<a href="/home/center/ver.html">个人中心</a>进行认证</p></dd>        <dd style="position:relative">
+            <ul class="mapadd" id="goaddlist"></ul>
+        	<label>出 发 校 区：</label>
+            <select name="gosheng" onchange="getshi(this.value,'go')">
+            <option value="">请选择校区</option>
+            	<option value="嘉定校区">嘉定校区</option><option value="四平校区">四平校区</option><option value="沪北校区">沪北校区</option><option value="沪西校区">沪西校区</option>            </select>
+            <select name="gocity" onchange="" style="display:none"></select>
+            <input type="text" name="gobiao" onclick="searchadd('go')" onblur="endsearch('go')" id="gobiao" style="display:none" placeholder="输入关键字，选择即可">
+            <input type="hidden" name="golat" id="golat">
+            <input type="hidden" name="golng" id="golng">
+            <input type="hidden" name="goadd">
+        </dd>
+        <dd style="position:relative">
+            <ul class="mapadd" id="endaddlist"></ul>
+        	<label>到 达 校 区：</label>
+            <select name="endsheng" onchange="getshi(this.value,'end')">
+            <option value="">请选择校区</option>
+            	<option value="嘉定校区">嘉定校区</option><option value="四平校区">四平校区</option><option value="沪北校区">沪北校区</option><option value="沪西校区">沪西校区</option>            </select>
+            <select name="endcity" onchange="" style="display:none"></select>
+            <input type="text" name="endbiao" onclick="searchadd('end')" onblur="endsearch('end')" id="endbiao" style="display:none" placeholder="输入关键字，选择即可">
+            <input type="hidden" name="endlat" id="endlat">
+            <input type="hidden" name="endlng" id="endlng">
+            <input type="hidden" name="endadd" id="endadd">
+        </dd>
+        <dd style="position:relative">
+        	<label>出 发 日 期：</label>
+            <select name="godaytype" onchange="changeday(this.value)">
+                <option value="1">仅一次</option>
+                <option value="2">重复</option>
+            </select>
+            <span id="day2" style="display:none">
+            	<label for="x1"><input type="checkbox" value="1" id="x1" name="goday2[]">每周一</label>
+            	<label for="x2"><input type="checkbox" value="2" id="x2" name="goday2[]">每周二</label>
+            	<label for="x3"><input type="checkbox" value="3" id="x3" name="goday2[]">每周三</label>
+            	<label for="x4"><input type="checkbox" value="4" id="x4" name="goday2[]">每周四</label>
+            	<label for="x5"><input type="checkbox" value="5" id="x5" name="goday2[]">每周五</label>
+            	<label for="x6"><input type="checkbox" value="6" id="x6" name="goday2[]">每周六</label>
+            	<label for="x7"><input type="checkbox" value="7" id="x7" name="goday2[]">每周日</label>
+            </span>
+            <select name="goday" id="day1">
+            	<option value="11-07">11-07    今天</option><option value="11-08">11-08    明天</option><option value="11-09">11-09    后天</option><option value="11-10">11-10    周四</option><option value="11-11">11-11    周五</option><option value="11-12">11-12    周六</option><option value="11-13">11-13    周日</option><option value="11-14">11-14    周一</option><option value="11-15">11-15    周二</option><option value="11-16">11-16    周三</option><option value="11-17">11-17    周四</option><option value="11-18">11-18    周五</option><option value="11-19">11-19    周六</option><option value="11-20">11-20    周日</option><option value="11-21">11-21    周一</option>            </select>
+            <script>
+				function changeday(val){
+					if(val==1){
+						$("#day1").show();
+						$("#day2").hide();
+					}else{
+						$("#day2").show();
+						$("#day1").hide();
+					}
+				}
+			</script>
+        </dd>
+        <dd style="position:relative">
+        	<label>出 发 时 间：</label>
+            <select name="gotime[]">
+            	<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20" selected="selected">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>            </select>点
+            <select name="gotime[]">
+            	<option value="00">00</option>
+            	<option value="10">10</option>
+            	<option value="20">20</option>
+            	<option value="30">30</option>
+            	<option value="40">40</option>
+            	<option value="50">50</option>
+            </select>分
+        </dd>
+<dd><label>车 辆 类 型：</label>
+        <select name="car">
+        	<option value="">请选择</option>
+            <option value="舒适私家车">舒适私家车: 裸车20万以下</option><option value="中级私家车">中级私家车: 裸车20-80万</option><option value="豪华私家车">豪华私家车: 裸车80万以上</option><option value="出租车">出租车</option><option value="豪华大巴座位">豪华大巴座位</option><option value="豪华大巴卧铺">豪华大巴卧铺</option><option value="普通大巴">普通大巴</option>        </select>
+        </dd>        <dd><label>提供座位数：</label><input type="text" name="seat" style="min-width:100px;" placeholder="座位数">个</dd>
+        <dd><label>座 位 单 价：</label><input type="text" name="pay" style="min-width:100px; margin-right:10px" onfocus="setpay()" placeholder="不得超出建议价的±50%">元    <font color="#999999" style="padding-left:10px" id="baojiazhuyi"></font>
+        <input type="hidden" id="juli" name="juli">
+        <input type="hidden" id="shijian" name="shijian">
+        <input type="hidden" id="xitongpay" name="xitongpay">
+        </dd>
+        <dd style="position:relative; display:none" id="viaadd1">
+            <ul class="mapadd" id="via1addlist"></ul>
+        	<label>途 经 站 点：</label>
+            <select name="via1sheng" onchange="getshi(this.value,'via1')">
+            <option value="">请选择省</option>
+            	<option value="北京市">北京市</option><option value="天津市">天津市</option><option value="河北省">河北省</option><option value="山西省">山西省</option><option value="内蒙古自治区">内蒙古自治区</option><option value="辽宁省">辽宁省</option><option value="吉林省">吉林省</option><option value="黑龙江省">黑龙江省</option><option value="上海市">上海市</option><option value="江苏省">江苏省</option><option value="浙江省">浙江省</option><option value="安徽省">安徽省</option><option value="福建省">福建省</option><option value="江西省">江西省</option><option value="山东省">山东省</option><option value="河南省">河南省</option><option value="湖北省">湖北省</option><option value="湖南省">湖南省</option><option value="广东省">广东省</option><option value="广西壮族自治区">广西壮族自治区</option><option value="海南省">海南省</option><option value="重庆市">重庆市</option><option value="四川省">四川省</option><option value="贵州省">贵州省</option><option value="云南省">云南省</option><option value="西藏自治区">西藏自治区</option><option value="陕西省">陕西省</option><option value="甘肃省">甘肃省</option><option value="青海省">青海省</option><option value="宁夏回族自治区">宁夏回族自治区</option><option value="新疆维吾尔自治区">新疆维吾尔自治区</option><option value="台湾省">台湾省</option><option value="香港特别行政区">香港特别行政区</option><option value="澳门特别行政区">澳门特别行政区</option>            </select>
+            <select name="via1city" onchange="" style="display:none"></select>
+            <input type="text" name="via1biao" onclick="searchadd('via1')" onblur="endsearch('via1')" id="via1biao" style="display:none; min-width:100px;" placeholder="输入关键字，选择即可">
+            <input type="text" name="via1pay" id="via1pay" style="min-width:50px; width:50px; margin:0px 10px" placeholder="价格">元
+            <input type="hidden" name="via1lat" id="via1lat">
+            <input type="hidden" name="via1lng" id="via1lng">
+            <input type="hidden" name="via1add" id="via1add">
+            <a class="iconfont" style="margin:0px 10px; color:#F00" href="javascript:;" onclick="del1()">󰅕</a>
+            <a class="iconfont" href="javascript:;" onclick="zhan(2)" id="jia1">󰅔</a>
+        </dd>
+        <dd style="position:relative; display:none" id="viaadd2">
+            <ul class="mapadd" id="via2addlist"></ul>
+        	<label>途 经 城 市：</label>
+            <select name="via2sheng" onchange="getshi(this.value,'via2')">
+            <option value="">请选择省</option>
+            	<option value="北京市">北京市</option><option value="天津市">天津市</option><option value="河北省">河北省</option><option value="山西省">山西省</option><option value="内蒙古自治区">内蒙古自治区</option><option value="辽宁省">辽宁省</option><option value="吉林省">吉林省</option><option value="黑龙江省">黑龙江省</option><option value="上海市">上海市</option><option value="江苏省">江苏省</option><option value="浙江省">浙江省</option><option value="安徽省">安徽省</option><option value="福建省">福建省</option><option value="江西省">江西省</option><option value="山东省">山东省</option><option value="河南省">河南省</option><option value="湖北省">湖北省</option><option value="湖南省">湖南省</option><option value="广东省">广东省</option><option value="广西壮族自治区">广西壮族自治区</option><option value="海南省">海南省</option><option value="重庆市">重庆市</option><option value="四川省">四川省</option><option value="贵州省">贵州省</option><option value="云南省">云南省</option><option value="西藏自治区">西藏自治区</option><option value="陕西省">陕西省</option><option value="甘肃省">甘肃省</option><option value="青海省">青海省</option><option value="宁夏回族自治区">宁夏回族自治区</option><option value="新疆维吾尔自治区">新疆维吾尔自治区</option><option value="台湾省">台湾省</option><option value="香港特别行政区">香港特别行政区</option><option value="澳门特别行政区">澳门特别行政区</option>            </select>
+            <select name="via2city" onchange="" style="display:none"></select>
+            <input type="text" name="via2biao" onclick="searchadd('via2')" onblur="endsearch('via2')" id="via2biao" style="display:none; min-width:100px;" placeholder="输入关键字，选择即可">
+            <input type="text" name="via2pay" id="via2pay" style="min-width:50px; width:50px; margin:0px 10px" placeholder="价格">元
+            <input type="hidden" name="via2lat" id="via2lat">
+            <input type="hidden" name="via2lng" id="via2lng">
+            <input type="hidden" name="via2add" id="via2add">
+            <a class="iconfont" style="margin:0px 10px; color:#F00" href="javascript:;" onclick="del2()">󰅕</a>
+            <a class="iconfont" href="javascript:;" onclick="zhan(1)" style="display:none" id="jia2">󰅔</a>
+        </dd>
+        <dd>
+        	<label style="position:relative; top:-86px">其它说明：</label>
+            <textarea name="content" style="width:500px; height:100px"></textarea>
+        </dd>
+        <dd class="btnk" style="margin-top:40px"><button type="submit" class="btn ccolor"><font class="">确定</font></button></dd>
+    </dl>
+    <div style="display:none" id="container"></div>
+</form>
+        <script>
+		var oldgolatlng,oldendlatlng;
+		function zhanvia(){
+			$("#viainit").slideUp(function(){
+				$("#viaadd1").slideDown();
+			});
+		}
+		function zhanvia2(){
+			$("#viaadd2").slideDown();
+		}
+		function del1(){
+			var dis = $("#viaadd2").css("display");
+			if(dis != 'none'){
+				$("#jia2").show();
+			}
+			$("#viaadd1").slideUp(function(){
+				$("#viaadd1 input").each(function(index, element) {
+                    $(this).val('');
+                });
+				$("#viaadd1 select").each(function(index, element) {
+                    $(this).val('');
+                });
+				tiao();
+			});
+		}
+		function del2(){
+			$("#jia2").hide();
+			$("#viaadd2").slideUp(function(){
+				$("#viaadd2 input").each(function(index, element) {
+                    $(this).val('');
+                });
+				$("#viaadd2 select").each(function(index, element) {
+                    $(this).val('');
+                });
+				tiao();
+			});
+		}
+		function zhan(num){
+			$("#viaadd"+num).slideDown();
+			if(num==1) $("#jia2").hide();
+		}
+		function tiao(){
+			var dis1 = $("#viaadd1").css("display");
+			var dis2 = $("#viaadd2").css("display");
+			if(dis1=='none' && dis2=='none') $("#viainit").slideDown();
+		}
+		</script>
+
+	<script type="text/javascript">
+				var map = null;
+				var drivingService = null;
+				var isFirst = 0;
+				var initmap = function (golat,golng,endlat,endlng) {
+					var center = new qq.maps.LatLng(39.916527, 116.397128);
+					map = new qq.maps.Map(document.getElementById('container'), {
+						center:center,
+						zoom:10
+					});
+				  //自动补全地址
+				  //设置驾车路线规划
+					drivingService = new qq.maps.DrivingService({
+						location : "北京",
+						map : map
+					});
+					getResult(golat,golng,endlat,endlng);
+				}
+				function getResult(golat,golng,endlat,endlng) {
+				
+					//设置searchRequest
+					var start = new qq.maps.LatLng(golat, golng);
+					var end = new qq.maps.LatLng(endlat, endlng);
+				
+					drivingService.search(start, end);
+				  
+				  //设置回调函数
+							drivingService.setComplete(function(result) {
+								if (result.type == qq.maps.ServiceResultType.MULTI_DESTINATION) {
+									alert("起终点不唯一");
+								}
+							});
+						 
+				  
+				   //获取距离
+					drivingService.setComplete(function(result) {
+						var car = $("select[name='car']").val();
+						$.post("/home/index/formatjl.html",{car:car,juli:result.detail.distance,shijian:result.detail.duration},function(v){
+							$("#juli").val(v.juli);
+							$("#shijian").val(v.shijian);
+							$("#xitongpay").val(v.pay);
+							$("#baojiazhuyi").html('总距离：<font color="color:#63F">'+v.juli+'</font>公里，约<font color="color:#63F">'+v.shijian+'</font>到达，建议价格<font color="color:#63F">'+v.pay+'</font>元');
+						},'json');
+					});
+				}
+
+
+		function setpay(){
+			var golat = $("#golat").val();
+			var golng = $("#golng").val();
+			var endlat = $("#endlat").val();
+			var endlng = $("#endlng").val();
+			var car = $("select[name='car']").val();
+			if(!car){
+				ui.error('请选择车型');
+				return false;
+			}
+			if(!golng || !golat || !endlng || !endlat){
+				ui.error('请选择起点与终点地址');
+				$("input[name='seat']").focus();
+				return;
+			}
+			var nowgolatlng = golat+','+golng;
+			var nowendlatlng = endlat+','+endlng;
+			if(nowgolatlng!=oldgolatlng || nowendlatlng != oldendlatlng){
+				$("#baojiazhuyi").html('正在计算...');
+				oldgolatlng = nowgolatlng;
+				oldendlatlng = nowendlatlng;
+				initmap(golat,golng,endlat,endlng);
+			}
+		}
+    	$("form").submit(function(){
+    		var self = $(this);
+    		$.post(self.attr("action"), self.serialize(), success, "json");
+    		return false;
+
+    		function success(data){
+    			if(data.status){
+					ui.success('发布成功');
+					setTimeout(function(){
+						window.location.href = "/home/center/paydanbao.html?id="+data.info;
+					},1500);
+    			} else {
+    				//self.find(".Validform_checktip").text(data.info);
+    				//刷新验证码
+					ui.error(data.info);
+    				
+    			}
+    		}
+    	});
+		
+		
+
+			var nowsearch = '';
+			var cha;
+			function searchadd(who){
+				var shi = $("select[name='"+who+"city']").val();
+				if(!shi){
+					ui.error('请选择所在地区');
+					return false;
+				}
+				$("#"+who+"addlist").html('').hide();
+				cha = setInterval(function(){
+					var searchtxt = $("input[name='"+who+"biao']").val();
+					var city = $("select[name='"+who+"city']").val();
+					if(searchtxt){
+						if(nowsearch!=searchtxt){
+							$("#"+who+"lat").val('');
+							$("#"+who+"lng").val('');
+							$.post("/home/index/searchmap.html",{txt:searchtxt,city:city},function(v){
+								nowsearch = searchtxt;
+								var data = v.data;
+								var html = '';
+								for(var i=0; i<data.length; i++){
+									html += '<li style="padding:5px; border:1px solid dashed; cursor:pointer;" onclick="setadd(\''+who+'\',\''+data[i]['title']+'\',\''+data[i]['address']+'\',\''+data[i]['location']['lat']+'\',\''+data[i]['location']['lng']+'\')">'+data[i]['title']+'<p style="font-size:11px; color:#999">'+data[i]['address']+'</p></li>';
+								}
+								if(html) $("#"+who+"addlist").html(html).show();
+							},'json');
+						}
+					}
+				},500);
+			}
+			function endsearch(who){
+				clearInterval(cha);
+				setTimeout(function(){
+					if(who=='go'){
+						var whoname = '出发';
+					}else if(who=='end'){
+						var whoname = '目的地';
+					}else{
+						var whoname = '途经城市';
+					}
+					var lat = $("#"+who+"lat").val();
+					if(!lat){
+						$("#"+who+"biao").val('');
+						$("#"+who+"addlist").hide();
+					//	ui.error('请选择'+whoname+'地址');
+					}
+				},500);
+			}
+			function setadd(who,title,add,lat,lng){
+				clearInterval(cha);
+				$("#"+who+"addlist").hide().html('');
+				title = title ? title : add;
+				$("input[name='"+who+"biao']").val(title);
+				$("input[name='"+who+"add']").val(add);
+				$("#"+who+"lat").val(lat);
+				$("#"+who+"lng").val(lng);
+				$("#"+who+"biao").blur();
+			}
+			
+			
+			
+			function getshi(sheng,who){
+					if(sheng){
+						$.post("/home/index/getshilist.html",{sheng:sheng},function(v){
+							if(v.status){
+								var list = v.list;
+								var html = '';
+								for(var i=0; i<list.length; i++){
+									html +='<option value="'+list[i]['name']+'">'+list[i]['name']+'</option>';
+								}
+								$("select[name="+who+"city]").html(html).show();
+								$("input[name="+who+"biao]").show();
+							}
+						},'json');
+					}
+				}
+
+	</script>
+</div>
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>
+

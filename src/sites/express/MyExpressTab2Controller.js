@@ -1,4 +1,4 @@
-LBF.define('qidian.sites.express.MyExpressController', function(require, exports, module) {
+LBF.define('qidian.sites.express.MyExpressTab2Controller', function(require, exports, module) {
 	var Controller = require('qidian.comp.PageControllerCosy'),
         $ = require('lib.jQuery'),
         TextInput = require('qidian.comp.TextInput'),

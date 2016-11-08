@@ -1,0 +1,167 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/carpool/homepage.css','/static_proxy/themes/blue/carpool/result.css','/static_proxy/themes/blue/carpool/iconfont.css']   
+    }); 
+%>
+<div id="bushomepage" class="page_result">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="area">
+					<a href="javascript:void(0);">嘉定</a>
+				</div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav menu_current">
+					<a href="">我要预订</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">发起拼车</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div class="mainContainer">
+			<div class="areaload">
+				<div class="map">
+					<div id="map_container"></div>
+				</div>
+				<div class="search_new">
+					<ul>
+						<li>
+							<div class="input-wrap">
+								<span>出发地</span>
+								<input type="text" class="form-input" placeholder="出发校区"/>
+							</div>
+							<div class="change">
+								<a href="">换</a>
+							</div>
+							<div class="input-wrap r">
+								<span>目的地</span>
+								<input type="text" placeholder="目的校区" class="form-input">
+							</div>
+						</li>
+						<li>
+							<div class="input-wrap">
+								<span>日期</span>
+								<input type="text" class="form-input" placeholder="出发日期">
+							</div>
+							<input type="button" class="form-btn" value="搜索">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list_result">
+				<div class="title"><i class="iconfont">󰈃</i>预订座位</div>
+				<dl class="piao">
+    				<dt>
+           				 <a class="ri ri2" href="javascript:;" id="day11-07" onclick="showday('11-07','今天')">11-07<font>今天</font></a>
+                         <a class="ri" href="javascript:;" id="day11-08" onclick="showday('11-08','明天')">11-08<font></font></a>                    <a class="ri" href="javascript:;" id="day11-09" onclick="showday('11-09','后天')">11-09<font></font></a>                    <a class="ri" href="javascript:;" id="day11-10" onclick="showday('11-10','周四')">11-10<font></font></a>                    <a class="ri" href="javascript:;" id="day11-11" onclick="showday('11-11','周五')">11-11<font></font></a>                    <a class="ri" href="javascript:;" id="day11-12" onclick="showday('11-12','周六')">11-12<font></font></a>                    <a class="ri" href="javascript:;" id="day11-13" onclick="showday('11-13','周日')">11-13<font></font></a>
+        			</dt>
+        			<div class="clear"></div>
+			        <dd>
+			        	<a><strong>车型：</strong></a>
+			            <!--a class="hover">全部</a-->
+			            <label class="allcar" for="allcar1"><input id="allcar1" type="checkbox" value="舒适私家车">舒适巴士车</label><div class="clear"></div>
+			        </dd>
+        			<div class="clear"></div>
+    			</dl>
+    			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <th height="50" align="center" bgcolor="#00A1D9" width="100">头像</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="100">昵称</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="240"><p>出发地</p><p>目的地</p></th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="100">出发时间</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="100">车型</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="80">收钱</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="80">座位数</th>
+    <th height="50" align="center" bgcolor="#00A1D9" width="80">预定</th>
+  </tr>
+  <tr>
+    <td height="50" align="center" bgcolor="#FFFFFF"><img src="/public/avatars/timg.jpg" class="face80"></td>
+    <td height="50" align="center" bgcolor="#FFFFFF">无</td>
+    <td height="50" bgcolor="#FFFFFF">
+        <p class="iconcity"><i>起</i>嘉定校区</p>
+        <p class="iconcity2"><i>终</i>四平校区</p>
+    </td>
+    <td height="50" align="center" bgcolor="#FFFFFF">19:30</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">舒适私家车</td>
+     <td height="50" align="center" bgcolor="#FFFFFF">8</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">2</td>
+    <td height="50" align="center" bgcolor="#FFFFFF"><a style="width:80px" href="/home/index/view/id/5976.html" class="ccolor btn"><font class="">预定</font></a></td>
+  	</tr>
+  	<tr>
+    <td height="50" align="center" bgcolor="#FFFFFF"><img src="/public/avatars/timg.jpg" class="face80"></td>
+    <td height="50" align="center" bgcolor="#FFFFFF">无</td>
+    <td height="50" bgcolor="#FFFFFF">
+        <p class="iconcity"><i>起</i>嘉定校区</p>
+        <p class="iconcity2"><i>终</i>四平校区</p>
+    </td>
+    <td height="50" align="center" bgcolor="#FFFFFF">7:30</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">舒适私家车</td>
+     <td height="50" align="center" bgcolor="#FFFFFF">8</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">1</td>
+    <td height="50" align="center" bgcolor="#FFFFFF"><a style="width:80px" href="/home/index/view/id/5976.html" class="ccolor btn"><font class="">预定</font></a></td>
+  	</tr>
+  	<tr>
+    <td height="50" align="center" bgcolor="#FFFFFF"><img src="/public/avatars/timg.jpg" class="face80"></td>
+    <td height="50" align="center" bgcolor="#FFFFFF">无</td>
+    <td height="50" bgcolor="#FFFFFF">
+        <p class="iconcity"><i>起</i>嘉定校区</p>
+        <p class="iconcity2"><i>终</i>四平校区</p>
+    </td>
+    <td height="50" align="center" bgcolor="#FFFFFF">10:30</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">舒适私家车</td>
+     <td height="50" align="center" bgcolor="#FFFFFF">8</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">3</td>
+    <td height="50" align="center" bgcolor="#FFFFFF"><a style="width:80px" href="/home/index/view/id/5976.html" class="ccolor btn"><font class="">预定</font></a></td>
+  	</tr>
+  	<tr>
+    <td height="50" align="center" bgcolor="#FFFFFF"><img src="/public/avatars/timg.jpg" class="face80"></td>
+    <td height="50" align="center" bgcolor="#FFFFFF">无</td>
+    <td height="50" bgcolor="#FFFFFF">
+        <p class="iconcity"><i>起</i>嘉定校区</p>
+        <p class="iconcity2"><i>终</i>四平校区</p>
+    </td>
+    <td height="50" align="center" bgcolor="#FFFFFF">15:30</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">舒适私家车</td>
+     <td height="50" align="center" bgcolor="#FFFFFF">8</td>
+    <td height="50" align="center" bgcolor="#FFFFFF">3</td>
+    <td height="50" align="center" bgcolor="#FFFFFF"><a style="width:80px" href="/home/index/view/id/5976.html" class="ccolor btn"><font class="">预定</font></a></td>
+  	</tr>
+    </tbody></table>
+			</div>
+		</div>
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=O5EvlwnkGHa29k8O2GcIA18T0Wi3V8lS"></script>
+<script type="text/javascript">
+	var map = new BMap.Map("map_container");
+	var point = new BMap.Point(121.218859, 31.293246);
+	map.centerAndZoom(point, 15);
+	function addMarker(point){
+	  var marker = new BMap.Marker(point);
+	  map.addOverlay(marker);
+	}
+	addMarker(point);
+</script>

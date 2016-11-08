@@ -1,0 +1,729 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/books/front.css','/static_proxy/themes/blue/books/screen.css','/static_proxy/themes/blue/books/homepage.css']   
+    }); 
+%>
+<div id="bookshomepage">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu_current menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">图书检索</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我的借阅</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我的外借</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我的书库</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div class="div_950 mauto">
+<!-- start:3 -->
+<ul class="menu">
+	<li class="menu_1 fr"></li>
+    <li class="menu_2 fl"></li>
+    <li class="menu_3 fl">
+    	
+        <div class="cb"></div>
+    </li>
+	<div class="cb"></div>
+</ul>
+<!-- end:3 -->
+<!-- end:头部 --><div>
+    <form name="form1" method="post" action="search.aspx" id="form1">
+
+
+<!-- start:主体_left -->
+<div class="div_170 fl">
+	<div class="ramus">
+        <p class="f14 b">所有图书分类</p>
+            
+            
+            <ol><a href="search.aspx?c=1" title="小说" class="no">小说</a></ol>
+            
+            <ol><a href="search.aspx?c=2" title="文学" class="no">文学</a></ol>
+            
+            <ol><a href="search.aspx?c=3" title="艺术" class="no">艺术</a></ol>
+            
+            <ol><a href="search.aspx?c=4" title="传记" class="no">传记</a></ol>
+            
+            <ol><a href="search.aspx?c=5" title="励志与成功" class="no">励志与成功</a></ol>
+            
+            <ol><a href="search.aspx?c=6" title="考试" class="no">考试</a></ol>
+            
+            <ol><a href="search.aspx?c=7" title="教材教辅与参考书" class="no">教材教辅与参考书</a></ol>
+            
+            <ol><a href="search.aspx?c=8" title="管理" class="no">管理</a></ol>
+            
+            <ol><a href="search.aspx?c=9" title="经济" class="no">经济</a></ol>
+            
+            <ol><a href="search.aspx?c=10" title="时尚" class="no">时尚</a></ol>
+            
+            <ol><a href="search.aspx?c=11" title="娱乐" class="no">娱乐</a></ol>
+            
+            <ol><a href="search.aspx?c=12" title="少儿" class="no">少儿</a></ol>
+            
+            <ol><a href="search.aspx?c=13" title="家庭与育儿" class="no">家庭与育儿</a></ol>
+            
+            <ol><a href="search.aspx?c=14" title="健身与保健" class="no">健身与保健</a></ol>
+            
+            <ol><a href="search.aspx?c=15" title="家居休闲" class="no">家居休闲</a></ol>
+            
+            <ol><a href="search.aspx?c=16" title="旅游" class="no">旅游</a></ol>
+            
+            <ol><a href="search.aspx?c=17" title="动漫与绘本" class="no">动漫与绘本</a></ol>
+            
+            <ol><a href="search.aspx?c=18" title="烹饪美食与酒" class="no">烹饪美食与酒</a></ol>
+            
+            <ol><a href="search.aspx?c=19" title="英语与其他外语" class="no">英语与其他外语</a></ol>
+            
+            <ol><a href="search.aspx?c=20" title="婚恋与两性" class="no">婚恋与两性</a></ol>
+            
+            <ol><a href="search.aspx?c=21" title="文化" class="no">文化</a></ol>
+            
+            <ol><a href="search.aspx?c=22" title="计算机与互联网" class="no">计算机与互联网</a></ol>
+            
+            <ol><a href="search.aspx?c=23" title="政治" class="no">政治</a></ol>
+            
+            <ol><a href="search.aspx?c=24" title="法律" class="no">法律</a></ol>
+            
+            <ol><a href="search.aspx?c=25" title="心理学" class="no">心理学</a></ol>
+            
+            <ol><a href="search.aspx?c=26" title="历史" class="no">历史</a></ol>
+            
+            <ol><a href="search.aspx?c=27" title="军事" class="no">军事</a></ol>
+            
+            <ol><a href="search.aspx?c=28" title="社会科学" class="no">社会科学</a></ol>
+            
+            <ol><a href="search.aspx?c=29" title="建筑" class="no">建筑</a></ol>
+            
+            <ol><a href="search.aspx?c=30" title="国学" class="no">国学</a></ol>
+            
+            <ol><a href="search.aspx?c=31" title="哲学" class="no">哲学</a></ol>
+            
+            <ol><a href="search.aspx?c=32" title="宗教与术数" class="no">宗教与术数</a></ol>
+            
+            <ol><a href="search.aspx?c=33" title="语言文字" class="no">语言文字</a></ol>
+            
+            <ol><a href="search.aspx?c=34" title="教育" class="no">教育</a></ol>
+            
+            <ol><a href="search.aspx?c=35" title="医学" class="no">医学</a></ol>
+            
+            <ol><a href="search.aspx?c=36" title="科学与自然" class="no">科学与自然</a></ol>
+            
+            <ol><a href="search.aspx?c=37" title="新闻出版/图书馆/档案学" class="no">新闻出版/图书馆/档案学</a></ol>
+            
+            <ol><a href="search.aspx?c=38" title="科技" class="no">科技</a></ol>
+            
+            <ol><a href="search.aspx?c=39" title="体育" class="no">体育</a></ol>
+            
+            <ol><a href="search.aspx?c=40" title="汽车与交通运输" class="no">汽车与交通运输</a></ol>
+            
+            <ol><a href="search.aspx?c=41" title="地图" class="no">地图</a></ol>
+            
+            <ol><a href="search.aspx?c=42" title="辞典与工具书" class="no">辞典与工具书</a></ol>
+            
+            <ol><a href="search.aspx?c=43" title="期刊杂志" class="no">期刊杂志</a></ol>
+            
+            <ol><a href="search.aspx?c=44" title="套装书" class="no">套装书</a></ol>
+            
+            <ol><a href="search.aspx?c=45" title="影印版" class="no">影印版</a></ol>
+            
+        	
+    </div>
+    <!-- end:left_2 -->
+</div>
+<!-- end:主体_left --><!-- start:主体_right --><div class="div_760 fr">
+	<p class="lh24">当前位置：<a title="换书网首页" href="http://www.huanshuwang.com/">首页</a> > <a href="search.aspx" title="全部图书">全部</a></p>
+    <div class="list2">
+    	<div class="list2_1 ofH">
+        	<p class="list2_11 f14 fl">找到&nbsp;<span class="orange">910243</span>&nbsp;本图书</p>
+            <div class="f14 fl">
+            	<span class="list2_14 fl">排序：</span><span class="list2_12 fl">默认</span><a href="search.aspx?o=pdate" title="换书网图书查找按出版时间排序" class="list2_13 no fl">出版时间</a>
+            </div>
+            <div class="list2_17  f12  fr"><label>&lt;&lt;</label><span>1</span><a href="search.aspx?o=bookid&p=2" title="换书网图书查找下一页">下一页&gt;&gt;</a>
+            </div>
+        	<div class="cb"></div>
+        </div>
+                
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220582" title="乖，摸摸头书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161107045955844.jpg" alt="乖，摸摸头图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220582" class="f14 b green no">乖，摸摸头</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：大冰</td>
+                <td colspan="2">出版社：湖南文艺出版社</td>
+              </tr>
+              <tr>
+                <td>(2014-10出版)</td>
+                <td width="28%">定价：36.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">真实的故事自有万钧之力
+这本书讲述了12个真实的故事
+或许会让你看到那些你永远无法去体会的生活
+见识那些可能你永远都无法结交的人
+【乖，摸摸头】：“杂草...<a href="book.aspx?i=11220582"  title="乖，摸摸头书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220581" title="先秦政治思想史书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/2016110608524756.jpg" alt="先秦政治思想史图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220581" class="f14 b green no">先秦政治思想史</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：梁启超 </td>
+                <td colspan="2">出版社：东方出版社</td>
+              </tr>
+              <tr>
+                <td>(2012-1出版)</td>
+                <td width="28%">定价：42.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">《民国学术经典广库&#8226;思想史类:先秦政治思想史》由梁启超在北京法政专门学校和东南大学讲课的讲义整理而成。全书共三十四章。《序论》部分讨论先秦政治思想所...<a href="book.aspx?i=11220581"  title="先秦政治思想史书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220580" title="肖斯塔科维奇交响曲书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161105094021645.jpg" alt="肖斯塔科维奇交响曲图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220580" class="f14 b green no">肖斯塔科维奇交响曲</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：钱仁平著</td>
+                <td colspan="2">出版社：湖南文艺出版社</td>
+              </tr>
+              <tr>
+                <td>(2000-1出版)</td>
+                <td width="28%">定价：18.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">本书按作曲家、音乐体裁和演奏乐器分类，由专家执笔，内容有赏析疑的分析，也有激浊扬清的评论，不失为引导读者提高欣赏水平的系列佳作。
+<a href="book.aspx?i=11220580"  title="肖斯塔科维奇交响曲书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220579" title="灵境:未知事物的终极探索书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161105092957325.jpg" alt="灵境:未知事物的终极探索图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220579" class="f14 b green no">灵境:未知事物的终极探索</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：(英)约翰·乔布斯(John Jobs)著</td>
+                <td colspan="2">出版社：陕西师范大学出版社</td>
+              </tr>
+              <tr>
+                <td>(2000-1出版)</td>
+                <td width="28%">定价：28.8</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">本书通过对世界上30多个国家的灵异调查者、研究者和目击者的采访、系统地梳理了宗教、幻象、鬼魂、超感官概念、UFO、怪兽和自然界种种奇异现象，用最新的科学理论和心...<a href="book.aspx?i=11220579"  title="灵境:未知事物的终极探索书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220578" title="名家创意系列—海报设计（硬精装）书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161103092822252.jpg" alt="名家创意系列—海报设计（硬精装）图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220578" class="f14 b green no">名家创意系列—海报设计（硬精装）</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：陈伟贤 等编著</td>
+                <td colspan="2">出版社：台湾新形象出版事业有限公司</td>
+              </tr>
+              <tr>
+                <td>(1984-1出版)</td>
+                <td width="28%">定价：166.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220578"  title="名家创意系列—海报设计（硬精装）书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220577" title="—时报广告奖平面得奖作品（台版软精装）书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161103092308488.jpg" alt="—时报广告奖平面得奖作品（台版软精装）图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220577" class="f14 b green no">—时报广告奖平面得奖作品（台版软精装）</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：时报广告奖执行委员会 编</td>
+                <td colspan="2">出版社：台湾视传文化事业事业有限公司</td>
+              </tr>
+              <tr>
+                <td>(2004-1出版)</td>
+                <td width="28%">定价：248.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220577"  title="—时报广告奖平面得奖作品（台版软精装）书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220576" title="风景写生错杂谈书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161103091011732.jpg" alt="风景写生错杂谈图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220576" class="f14 b green no">风景写生错杂谈</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：孙家铨绘画</td>
+                <td colspan="2">出版社：中国旅游出版社</td>
+              </tr>
+              <tr>
+                <td>(2004-1出版)</td>
+                <td width="28%">定价：20.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">该书通过故事教授了风景写生的技法；通过写生解读了人生。
+目录  · · · · · ·
+序
+1 巴东三峡巫峡长
+2 大江流日夜
+3 被水库吞噬掉的古城...<a href="book.aspx?i=11220576"  title="风景写生错杂谈书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220575" title="随心所欲:王书朋绘画随笔暨插图作品集书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/2016110309074391.jpg" alt="随心所欲:王书朋绘画随笔暨插图作品集图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220575" class="f14 b green no">随心所欲:王书朋绘画随笔暨插图作品集</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：王书朋 绘 </td>
+                <td colspan="2">出版社：天津人民美术出版社</td>
+              </tr>
+              <tr>
+                <td>(2001-1出版)</td>
+                <td width="28%">定价：33.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">本书收作者的绘画作品分“绘画随笔”和“插图作品”两部分。是从速写到插图创作的实用和经典范例~~166页图，有超大的信息量叁考价值~~<a href="book.aspx?i=11220575"  title="随心所欲:王书朋绘画随笔暨插图作品集书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220573" title="风景写生错杂谈书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201611/20161103084958683.jpg" alt="风景写生错杂谈图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220573" class="f14 b green no">风景写生错杂谈</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：孙家铨 </td>
+                <td colspan="2">出版社：中国旅游出版社</td>
+              </tr>
+              <tr>
+                <td>(2007-1出版)</td>
+                <td width="28%">定价：20.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">该书通过故事教授了风景写生的技法；通过写生解读了人生。
+目录  · · · · · ·
+序
+1 巴东三峡巫峡长
+2 大江流日夜
+3 被水库吞噬掉的古城...<a href="book.aspx?i=11220573"  title="风景写生错杂谈书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220572" title="果冻营地之谜·帕萨迪纳雪怪书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161025121051885.jpg" alt="果冻营地之谜·帕萨迪纳雪怪图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220572" class="f14 b green no">果冻营地之谜·帕萨迪纳雪怪</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：（美）R.L.斯坦 </td>
+                <td colspan="2">出版社：接力出版社</td>
+              </tr>
+              <tr>
+                <td>(2004-3出版)</td>
+                <td width="28%">定价：16.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">《果冻营地之谜》温迪和艾略特姐弟俩在一次车祸后来到一个叫果冻王国的营地，这里简直太奇怪了：地底下总是发出奇怪的隆隆的声音……营员们为了赢得六块金币都成了比赛狂，...<a href="book.aspx?i=11220572"  title="果冻营地之谜·帕萨迪纳雪怪书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220571" title="东方怪盗·诡异南瓜灯书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161025120010492.jpg" alt="东方怪盗·诡异南瓜灯图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220571" class="f14 b green no">东方怪盗·诡异南瓜灯</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：（美）R.L.斯坦 </td>
+                <td colspan="2">出版社：接力出版社</td>
+              </tr>
+              <tr>
+                <td>(2005-4出版)</td>
+                <td width="28%">定价：16.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">《东方怪盗》金姐儿和她的双胞胎弟弟---帕特与纳特在丝林里迷路了，他们找爸爸妈妈了!天哪，这丛林也实在太古怪了：黄色的草丛，紫色的灌木，还有摩天大楼那么怪树.....<a href="book.aspx?i=11220571"  title="东方怪盗·诡异南瓜灯书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220570" title="解忧杂货店书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161024081927495.jpg" alt="解忧杂货店图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220570" class="f14 b green no">解忧杂货店</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：东野圭吾</td>
+                <td colspan="2">出版社：南海出版公司</td>
+              </tr>
+              <tr>
+                <td>(2014-11出版)</td>
+                <td width="28%">定价：39.5</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220570"  title="解忧杂货店书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220569" title="俗世奇人（修订版）书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161022025410439.jpg" alt="俗世奇人（修订版）图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220569" class="f14 b green no">俗世奇人（修订版）</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：冯骥才</td>
+                <td colspan="2">出版社：作家出版社</td>
+              </tr>
+              <tr>
+                <td>(2008-12出版)</td>
+                <td width="28%">定价：18.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">《俗世奇人》是著名作家冯骥才创作的同名小说集。全书由19个短篇小说连缀构成，各篇文字极精短，半文半白，带有“三言两拍”笔意，作品的风格也接近古典传奇色彩，取话本...<a href="book.aspx?i=11220569"  title="俗世奇人（修订版）书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220568" title="天才在左 疯子在右（完整版）书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161022011622369.jpg" alt="天才在左 疯子在右（完整版）图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220568" class="f14 b green no">天才在左 疯子在右（完整版）</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：高铭</td>
+                <td colspan="2">出版社：北京联合出版公司</td>
+              </tr>
+              <tr>
+                <td>(2016-1出版)</td>
+                <td width="28%">定价：39.8</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">这本书，是一群误入歧途的天才的故事，也是一群入院治疗的疯子的故事。
+这本书，是作者高铭耗时4年深入医院精神科、公安部等神秘机构，和数百名“非常态人类”直接接触...<a href="book.aspx?i=11220568"  title="天才在左 疯子在右（完整版）书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220567" title="心形礼盒书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161021101927174.jpg" alt="心形礼盒图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220567" class="f14 b green no">心形礼盒</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：乔·希尔 </td>
+                <td colspan="2">出版社：新星出版社</td>
+              </tr>
+              <tr>
+                <td>(2007-1出版)</td>
+                <td width="28%">定价：25.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220567"  title="心形礼盒书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220566" title="台湾单车环岛笔记书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161021101439192.jpg" alt="台湾单车环岛笔记图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220566" class="f14 b green no">台湾单车环岛笔记</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：葛磊 </td>
+                <td colspan="2">出版社：中信出版社</td>
+              </tr>
+              <tr>
+                <td>(2016-1出版)</td>
+                <td width="28%">定价：39.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220566"  title="台湾单车环岛笔记书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220565" title="浮生物语2书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161016120659892.jpg" alt="浮生物语2图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220565" class="f14 b green no">浮生物语2</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：裟椤双树</td>
+                <td colspan="2">出版社：中国致公出版社</td>
+              </tr>
+              <tr>
+                <td>(2012-11出版)</td>
+                <td width="28%">定价：29.8</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">《浮生物语2》里，树妖老板娘和老公孽龙敖炽不开茶馆，开起了旅馆，店名依旧叫“不停”。这回的帮工也换成了纸片儿和赵公子。形形色色的客人入住了旅店，并且带来了他们的...<a href="book.aspx?i=11220565"  title="浮生物语2书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220564" title="吉神图说书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161013084340711.jpg" alt="吉神图说图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220564" class="f14 b green no">吉神图说</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：禾三千 </td>
+                <td colspan="2">出版社：黑龙江美术出版社</td>
+              </tr>
+              <tr>
+                <td>(2006-1出版)</td>
+                <td width="28%">定价：46.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">吉神是我国传统民俗文化的一个重要组成部分，举凡天地日月、山川河岳、明君贤相、名臣高士、神仙散人、列祖列宗……都可以被国人尊为吉神。在古代，无论是村镇小城还是州、...<a href="book.aspx?i=11220564"  title="吉神图说书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220562" title="怎样打官司书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161008082934624.jpg" alt="怎样打官司图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220562" class="f14 b green no">怎样打官司</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：杜曙光 陈斌</td>
+                <td colspan="2">出版社：广东科技出版社</td>
+              </tr>
+              <tr>
+                <td>(2003-5出版)</td>
+                <td width="28%">定价：10.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space">纸张好，全新，无折无画痕。<a href="book.aspx?i=11220562"  title="怎样打官司书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+    
+        <div class="list2_2 mauto">
+        	<a href="book.aspx?i=11220561" title="怎样打官司书籍详细介绍" target="_blank"><img src="http://data.huanshuwang.com/book/201610/20161008082753320.jpg" alt="怎样打官司图片" width="120" height="120" class="list2_21 fl" /></a>
+            <table border="0" cellspacing="0" cellpadding="0" class="list2_25 lh24 fr">
+              <tr>
+                <td colspan="2"><a href="book.aspx?i=11220561" class="f14 b green no">怎样打官司</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>作者：杜曙光 陈斌</td>
+                <td colspan="2">出版社：广东</td>
+              </tr>
+              <tr>
+                <td>(2016-1出版)</td>
+                <td width="28%">定价：10.0</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="space"><a href="book.aspx?i=11220561"  title="怎样打官司书籍详细介绍"  target="_blank">详细&gt;&gt;</a></td>
+              </tr>
+            </table>
+            <div class="cb"></div>
+        </div>
+        
+        <!-- 循环结束 -->
+
+        <!-- start:翻页 -->
+        <div class="page fr">
+        <label>上一页</label><label>1</label><a href="search.aspx?o=bookid&p=2" title="换书网图书查找第2页">2</a><a href="search.aspx?o=bookid&p=3" title="换书网图书查找第3页">3</a><a href="search.aspx?o=bookid&p=4" title="换书网图书查找第4页">4</a><a href="search.aspx?o=bookid&p=5" title="换书网图书查找第5页">5</a><a href="search.aspx?o=bookid&p=6" title="换书网图书查找第6页">6</a><a href="search.aspx?o=bookid&p=7" title="换书网图书查找第7页">7</a><a href="search.aspx?o=bookid&p=8" title="换书网图书查找第8页">8</a><a href="search.aspx?o=bookid&p=9" title="换书网图书查找第9页">9</a><a href="search.aspx?o=bookid&p=10" title="换书网图书查找第10页">10</a><a href="search.aspx?o=bookid&p=2">下一页&gt;&gt;</a>
+             </div>
+
+        <!-- end:翻页 -->
+        <div class="cb"></div>
+    </div>
+</div>
+<!-- end:主体_right -->
+<div class="cb"></div>
+    </form>
+</div>
+<!-- end:主体 -->
+        
+<div class="foot"><ul>
+	<li class="center"><a href="http://www.huanshuwang.com/help/gywm.htm" title="关于我们" target="_blank" class="no">关于我们</a>&nbsp;|&nbsp;<a target="_blank"  href="http://www.huanshuwang.com/help/mzsm.htm" class="no">免责声明</a>&nbsp;|&nbsp;<a target="_blank"  title="换书网友情链接"  href="http://www.huanshuwang.com/help/yqlj.htm" class="no">友情链接</a>&nbsp;|&nbsp;<a target="_blank" title="换书网联系我们"  href="http://www.huanshuwang.com/help/lxwm.htm" class="no">联系我们</a>&nbsp;|&nbsp;<a  title="换书网帮助中心" target="_blank"  href="http://www.huanshuwang.com/help/default.htm" class="no">帮助中心</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;&copy;&nbsp;2011 huanshuwang.com,All Rights Reserved</li>
+    <li class="center">
+    <a href="http://www.huanshuwang.com/py.aspx?z=a" title="换书网图书索引A" target="_blank" class="no">A</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=b" title="换书网图书索引B" target="_blank" class="no">B</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=c" title="换书网图书索引C" target="_blank" class="no">C</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=d" title="换书网图书索引D" target="_blank" class="no">D</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=e" title="换书网图书索引E" target="_blank" class="no">E</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=f" title="换书网图书索引F" target="_blank" class="no">F</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=g" title="换书网图书索引G" target="_blank" class="no">G</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=h" title="换书网图书索引H" target="_blank" class="no">H</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=i" title="换书网图书索引I" target="_blank" class="no">I</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=j" title="换书网图书索引J" target="_blank" class="no">J</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=k" title="换书网图书索引K" target="_blank" class="no">K</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=l" title="换书网图书索引L" target="_blank" class="no">L</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=m" title="换书网图书索引M" target="_blank" class="no">M</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=n" title="换书网图书索引N" target="_blank" class="no">N</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=o" title="换书网图书索引O" target="_blank" class="no">O</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=p" title="换书网图书索引P" target="_blank" class="no">P</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=q" title="换书网图书索引Q" target="_blank" class="no">Q</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=r" title="换书网图书索引R" target="_blank" class="no">R</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=s" title="换书网图书索引S" target="_blank" class="no">S</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=t" title="换书网图书索引T" target="_blank" class="no">T</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=w" title="换书网图书索引W" target="_blank" class="no">W</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=x" title="换书网图书索引X" target="_blank" class="no">X</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=y" title="换书网图书索引Y" target="_blank" class="no">Y</a>
+    <a href="http://www.huanshuwang.com/py.aspx?z=z" title="换书网图书索引Z" target="_blank" class="no">Z</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href=""  title="换书网ICP备案" target="_blank" class="no"> 辽ICP备11016337</a>&nbsp;&nbsp;<script src="http://s14.cnzz.com/stat.php?id=3383017&web_id=3383017" language="JavaScript"></script></li>
+</ul></div>
+<script type="text/javascript">if (gf.$("hUserName"))SetHUser();</script>
+
+<!-- end:尾部 -->
+
+<!-- end:尾部 -->
+
+    </div>
+
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>

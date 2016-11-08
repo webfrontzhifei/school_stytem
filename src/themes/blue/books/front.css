@@ -1,0 +1,313 @@
+.div_170{width:170px}
+.div_760{width:760px}
+.div_225{width:225px}
+.div_705{width:705px}
+.plate1{border:1px solid #cecece; background:#f8f8f8}
+	.plate1_1{height:30px; line-height:30px; padding:0 9px; color:#333; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -199px}
+		.plate1_11, A.plate1_12{height:23px; *height:22px; line-height:22px; margin-top:6px}
+		.plate1_11{padding:0 7px 0 8px; *padding:1px 7px 0 8px; border:solid #fff; border-width:1px 1px 0; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -176px}
+		A.plate1_12{padding:1px 8px 0 9px; *padding:2px 8px 0 9px; color:#4f4f4f}
+		A.plate1_12:hover{color:#5f9d2e}
+	.plate1_2{padding:14px 10px 9px; *padding:15px 10px 8px; color:#4c4c4c}
+	.plate1_3{width:150px; padding-bottom:12px}
+		.plate1_31{height:1px; overflow:hidden; border:solid #d5d5d5; border-width:0 1px; background:#9ea2a2}
+		.plate1_32{height:21px; border:solid #9ea2a2; border-width:0 1px}
+			.plate1_321{width:113px; height:21px; line-height:21px; padding:0 4px; border-left:solid #ececec; border-right:solid #9ea2a2; border-width:0 1px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -91px}
+.plate2{border:1px solid #e6e6e6; background:#f5f5f5}
+	.plate2_1{height:26px; padding:8px 0 0 20px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -262px}
+		.plate2_11, .plate2_12, .plate2_13{height:20px}
+		.plate2_11{width:79px; background:url(http://common.goufang.com/book/images/title.gif) no-repeat 0 0}
+		.plate2_12{width:80px; background:url(http://common.goufang.com/book/images/title.gif) no-repeat 0 -32px}
+		.plate2_13{width:52px; background:url(http://common.goufang.com/book/images/title.gif) no-repeat 0 -64px}
+	.plate2_2{line-height:22px; padding:10px 12px 6px 22px}
+	.plate2_3{height:22px; padding-right:20px}
+.plate3{width:705px; border-top:1px solid #e8e8e8}
+	.plate3_1{width:1px; height:241px; background:url(http://common.goufang.com/book/images/bg.gif) 0 -296px}
+	.plate3_2{width:703px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -537px}
+		.plate3_21{line-height:21px}
+		.plate3_22{width:622px; margin:17px auto 5px}
+			.plate3_221{width:5px; height:7px; background:url(http://common.goufang.com/book/images/review.gif) left 0}
+			.plate3_222{background:#fff url(http://common.goufang.com/book/images/review.gif) repeat-x 0 -12px}
+			.plate3_223{width:6px; background:url(http://common.goufang.com/book/images/review.gif) right 0}
+			.plate3_224{border-left:1px solid #c1c1c1; background:#fff}
+			.plate3_225{background:#fff}
+				.plate3_225 TEXTAREA{width:100%; height:65px;  line-height:20px; overflow:scroll; overflow-x:hidden; overflow-y:auto; border:1px solid #fff; background:#fff}
+			.plate3_226{border-right:1px solid #c1c1c1; background:#fff}
+			.plate3_227{height:5px; background:url(http://common.goufang.com/book/images/review.gif) left -7px}
+			.plate3_228{border-bottom:1px solid #c1c1c1; background:#fff}
+			.plate3_229{background:url(http://common.goufang.com/book/images/review.gif) right -7px}
+		.plate3_23{height:25px; line-height:25px; padding:0 43px 0 0}
+		.plate3_33{padding:16px 10px 0 12px; background:url(http://common.goufang.com/book/images/line1.gif) repeat-x bottom}
+			.plate3_331{border:1px solid #cbcbcb}
+			.plate3_332{width:605px}
+				.plate3_3321{height:21px; line-height:21px}
+				.plate3_3322{top:3px; left:10px}
+				.plate3_3323{line-height:20px; padding:10px 0}
+				A.plate3_3324, A.plate3_3324:hover{width:57px; height:22px; line-height:22px; margin:0 4px 16px 0; *margin:0 4px 0 0; text-align:center; color:#333; text-decoration:none; background:url(http://common.goufang.com/book/images/btn_10.gif)}
+.plate4{border:1px solid #ccc; background:#f5f5f5}
+	.plate4_1{height:34px; line-height:34px; padding:0 10px; border-bottom:1px solid #e6e6e6; color:#4b7e07; background:#fff url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 0}
+	.plate4_2{padding:5px 0 7px 15px}
+	.plate4_3{padding:12px 8px 13px; *padding:12px 8px 1px; border-bottom:1px solid #e6e6e6}
+		A.plate4_31, A.plate4_31:hover{width:30px; height:23px; line-height:24px; margin-right:11px; padding:1px 0 0 24px; color:#000; text-decoration:none}
+		A.plate4_31{background:url(http://common.goufang.com/book/images/btn_11.gif) 0 0}
+		A.plate4_31:hover{background:url(http://common.goufang.com/book/images/btn_11.gif) 0 -24px}
+	.plate4_4{padding:5px 0 5px 12px; border:solid #fff; border-width:1px 0}
+	.plate4_5{padding:10px 0 0}
+		.plate4_5 LI{width:50%; height:94px; text-align:center; float:left}
+	.plate4_6{width:203px; padding:2px 0 8px}
+		.plate4_6 LI{height:30px; line-height:30px; padding-left:17px; border-bottom:1px solid #e5e5e5; background:url(http://common.goufang.com/book/images/icon_1.gif) no-repeat 3px 11px}
+.plate5{width:948px; border:solid #d6d6d6; border-width:0 1px 1px; background:url(http://common.goufang.com/book/images/bg_3.gif) repeat-y right}
+	.plate5_1{padding:20px 0 20px 30px; *padding:20px 0 0 30px}
+		.plate5_11{border:1px solid #111}
+		.plate5_12{width:500px; line-height:28px; margin:0 0 0 20px}
+			.plate5_121{margin-right:7px}
+	.plate5_2{margin-bottom:18px; border:solid #d6d6d6; border-width:1px 0}
+		.plate5_2 SPAN, .plate5_2 A{width:99px; height:25px; line-height:25px; border-right:1px solid #d6d6d6; text-align:center; float:left}
+		.plate5_2 A, .plate5_2 A:hover{color:#333; text-decoration:none; background:#f0f0f0}
+	.plate5_3{border-top:1px solid #c9d99a; background:url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 -98px}
+		.plate5_31{height:16px; line-height:16px; padding:13px 10px 12px 15px}
+		.plate5_32 UL{width:204px; padding:0 0 20px 25px; float:left}
+			.plate5_32 IMG, .plate5_32 LI{float:left}
+			.plate5_32 LI{width:95px; height:20px; line-height:20px; margin-left:14px}
+		.plate5_33{width:640px}
+			.plate5_331{height:16px; line-height:16px; padding-bottom:8px; border-bottom:1px solid #dfdfdf}
+			.plate5_332{line-height:22px; padding:8px 0 24px}
+		.plate5_34{width:656px; border-bottom:1px solid #dfdfdf}
+			.plate5_34 IMG, .plate5_34 UL{margin-bottom:10px}
+			.plate5_34 UL{width:560px; line-height:22px}
+			.plate5_341{width:95px}
+		.plate5_35 UL{width:80px; padding:0 0 20px 50px; float:left}
+			.plate5_35 UL LI{padding:10px 0 0}
+.plate6{width:703px; border:1px solid #c0c0c0; background:url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 -98px}
+	.plate6_1{height:37px; line-height:37px; padding:0 10px; border-bottom:1px solid #e6e6e6}
+	.plate6_2{height:165px; background:url(http://common.goufang.com/book/images/line1.gif) repeat-x bottom}
+		.plate6_21{margin:34px 16px 0 24px; border:1px solid #ccc}
+		.plate6_22{width:190px; margin-top:18px}
+			.plate6_22 TD{height:25px}
+			.plate6_22 STRONG{margin-left:10px}
+		.plate6_23{width:342px; margin:17px 22px 0 0 !important; margin:17px 11px 0 0}
+			.plate6_231, .plate6_232, .plate6_233, .plate6_234, .plate6_235, .plate6_236, .plate6_237{overflow:hidden; float:left}
+			.plate6_231, .plate6_236{width:1px; background:#dbdbdb}
+			.plate6_231{height:1px; margin-top:63px}
+			.plate6_232, .plate6_233, .plate6_234, .plate6_235, .plate6_236{width:1px; border:solid #dbdbdb; border-width:1px 0}
+			.plate6_232{height:1px; margin-top:62px}
+			.plate6_233{height:3px; margin-top:61px}
+			.plate6_234{height:5px; margin-top:60px}
+			.plate6_235{height:7px; margin-top:59px}
+			.plate6_236{height:128px}
+				.plate6_236 P{height:9px; margin-top:58px; background:#fff}
+			.plate6_237{width:311px; height:104px; padding:12px; border:solid #dbdbdb; border-width:1px 1px 1px 0; background:#fff}
+				.plate6_237 TABLE{line-height:22px}
+	.plate6_3{height:33px; line-height:33px; margin:20px 0; padding-left:25px; border:solid #e0e0e0; border-width:1px 0; background:#f3f3f3 url(http://common.goufang.com/book/images/icon_2.gif) no-repeat 8px 11px}
+.plate7{width:703px; border:1px solid #d6d6d6}
+	.plate7 H1{height:40px; line-height:40px; padding:0 10px; border-bottom:1px solid #d6d6d6; background:url(http://common.goufang.com/book/images/bg_4.gif) repeat-x 0 -38px}
+	.plate7_1{margin-top:20px}
+		.plate7_11, .plate7_15{background:url(http://common.goufang.com/book/images/bg_6.gif) repeat-x 0 0}
+		.plate7_11{height:29px; line-height:29px; padding:0 28px; border:solid #fff; border-width:0 1px; padding:0 28px}
+		.plate7_12{height:38px; line-height:38px; padding:0 18px}
+		.plate7_13{padding:20px 48px}
+			.plate7_13 P{line-height:20px}
+		.plate7_14{border:1px solid #ccc; border-collapse:collapse}
+			.plate7_14 TH, .plate7_14 TD{border:1px solid #ccc}
+			.plate7_14 TH{background:#f2f2f2}
+			.plate7_14 TD{padding:0 8px}
+		.plate7_15{height:28px; line-height:28px; padding:1px 18px 0; border-style:solid; border-width:1px 1px 0; border-color:#f3f3f3 #fff}
+			.plate7_15 SPAN, .plate7_15 A{height:28px; padding:0 12px; float:left}
+			.plate7_15 SPAN{border:solid #bfbfbf; border-width:0 1px; background:#fff}
+			.plate7_15 A{border-right:1px solid #bfbfbf}
+	.plate7_2{width:372px}
+		.plate7_21{padding:19px 0 14px; border-bottom:1px solid #ededed}
+		.plate7_22{padding:12px 0 15px}
+		.plate7_23{width:320px; height:63px; padding:32px 0 0 50px; border:1px solid #ebebeb; background:#fafafa}
+			.plate7_231, .plate7_231 A, .plate7_231 SPAN{width:117px; height:32px; float:left}
+				.plate7_231 A, .plate7_231 A:hover{text-decoration:none}
+				.plate7_231 A{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px 0}
+				.plate7_231 A:hover{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px -32px}
+				.plate7_231 SPAN{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px -64px}
+			.plate7_232{width:162px; line-height:17px; margin-left:15px}
+	.plate7_3{width:673px; height:33px; line-height:33px; margin:20px auto 12px; padding-left:30px; border:solid #e0e0e0; border-width:1px 0; background:#f8f8f8 url(http://common.goufang.com/book/images/icon_2.gif) no-repeat 10px 11px}
+.plate8{width:223px; border:1px solid #ccc;}
+	.plate8_1{height:30px; line-height:30px; padding:0 8px; border:1px solid #fff; background:#f6f6f6}
+	.plate8_2{border-top:1px solid #ededed}
+		.plate8_21{width:215px; height:80px; background:url(http://common.goufang.com/book/images/line2.gif) repeat-x bottom}
+			.plate8_211{margin:8px 18px 0; border:1px solid #d3d3d3}
+			.plate8_21 LI{line-height:35px; padding-top:5px}
+		.plate8_22{width:80px; padding:10px 0 0 20px; float:left}
+.list1{margin:20px auto 0}
+	.list1 TH{width:98px; height:42px; line-height:42px; font-weight:normal; text-align:right}
+	.list1_1{width:26px; text-align:center; color:#f00}
+	.list1_2{width:200px; height:42px; line-height:42px; padding-left:27px; background:url(http://common.goufang.com/book/images/awoke.gif) no-repeat left}
+	.list1_3{padding:4px 10px 0}
+	.list1_4{width:101px; height:25px; margin-left:10px}
+.list2, .list20{border:1px solid #dfdfdf}
+.list2{width:758px}
+.list20{width:703px}
+	.list2_1{height:33px; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -229px}
+		.list2_11{width:152px; line-height:33px; padding-left:15px}
+		.list2_12, A.list2_13{height:33px; line-height:33px}
+		.list2_12{padding:0 9px 0 10px; border-right:1px solid #dfdfdf; color:#4c7e07; background:#fff}
+		A.list2_13{padding:0 9px 0 10px; border-right:1px solid #dfdfdf; color:#010101}
+		A.list2_13:hover{color:#4c7e07}
+		.list2_14{line-height:33px; border-right:1px solid #dfdfdf}
+		A.list2_15, A.list2_15:hover{width:71px; height:20px; line-height:20px; margin:6px 12px 0 0; padding:1px 0 0 14px; text-decoration:none; background:url(http://common.goufang.com/book/images/select.gif)}
+		.list2_16, .list2_18{height:16px; line-height:16px; padding:0 2px; border:1px solid #d1d1d1}
+		.list2_16{width:20px}
+		.list2_18{width:75px}
+		.list2_17{padding:5px 8px 0 0}
+			.list2_17 LABEL, .list2_17 A, .list2_17 A:hover{height:20px; line-height:20px; padding:0 5px; text-decoration:none; border:1px solid #dbdbdb; background:#fff; float:left}
+			.list2_17 SPAN{height:22px; line-height:22px; padding:0 5px; float:left}
+	.list2_2{width:730px; border-bottom:1px solid #e6e6e6}
+		.list2_21{margin:18px 0 19px 15px; padding:2px; border:1px solid #c4c4c4}
+		.list2_22{width:305px; margin:20px 0 0 16px}
+		.list2_23{width:112px; padding-top:90px}
+		.list2_24{width:145px; padding-top:76px}
+		.list2_25{width:555px; margin:20px 10px 0 0}	
+	.list2_3{width:572px; height:187px; padding:14px 0 0 29px; position:relative}
+		.list2_3 .showbox{width:10000px; height:187px; position:absolute; left:0}
+		.list2_3 .showbox UL LI{width:114px; margin-right:40px !important; margin-right:20px; float:left}
+		.list2_3 .showbox UL LI IMG{height:114px}
+		.list2_3 .showbox UL LI P{line-height:20px}		
+	.list2_4{width:51px; padding-top:60px}
+.list3{width:415px}
+	.list3_1{*margin-bottom:-10px; padding:12px 5px 1px; *padding:13px 5px 0; color:#000; font:20px SimHei}
+	.list3_2{height:1px; background:#ccc; margin:0 auto 30px}
+		.list3_2 P{width:180px; background:#5c972b}
+	TABLE.list3_3 TD, UL.list3_3 LI{height:24px}
+	.list3_4{border:1px solid #ededed; background:#f9f9f9}
+		.list3_41, .list3_42{width:343px; padding:33px 0 19px 30px}
+		.list3_41{border-bottom:1px solid #ddd}
+		.list3_42{border-top:1px solid #fff}
+		.list3_43{width:27px; margin:2px 16px 0 0}
+		.list3_44{width:162px; line-height:18px; margin-left:15px}
+		.list3_45{width:117px; height:32px;}
+			.list3_45 A, .list3_45 SPAN{float:left}
+			A.list3_451, A.list3_451:hover, .list3_451un, A.list3_452, A.list3_452:hover, .list3_452un, A.list3_453, A.list3_453:hover, .list3_453un{width:117px; height:32px; text-decoration:none}
+			A.list3_451{background:url(http://common.goufang.com/book/images/btn_7.gif) 0 0}
+			A.list3_451:hover{background:url(http://common.goufang.com/book/images/btn_7.gif) 0 -32px}
+			.list3_451un{background:url(http://common.goufang.com/book/images/btn_7.gif) 0 -64px}
+			A.list3_452{background:url(http://common.goufang.com/book/images/btn_7.gif) -234px 0}
+			A.list3_452:hover{background:url(http://common.goufang.com/book/images/btn_7.gif) -234px -32px}
+			.list3_452un{background:url(http://common.goufang.com/book/images/btn_7.gif) -234px -64px}
+			A.list3_453{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px 0}
+			A.list3_453:hover{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px -32px}
+			.list3_453un{background:url(http://common.goufang.com/book/images/btn_7.gif) -117px -64px}
+.list4{width:670px}
+	.list4_1 P, .list4_1 A.carte{height:19px; line-height:19px; margin-right:4px; padding:0 8px; border-style:solid; border-width:1px 1px 0; color:#111}
+		.list4_1 P{border-color:#a2b774; background:url(http://common.goufang.com/book/images/bg_4.gif) repeat-x 0 0}
+		.list4_1 A.carte, .list4_1 A.carte:hover{border-color:#c0c8d2; background:url(http://common.goufang.com/book/images/bg_4.gif) repeat-x 0 -19px}
+	.list4_2{height:2px; border-bottom:1px solid #a2b774; background:#c6db96}
+	.list4_3{border-top:1px solid #fff}
+		.list4_3 TH{height:28px; font-weight:lighter; color:#333; text-align:left; background:#f4f4f4}
+		.list4_3 TD{line-height:20px; padding:15px 0; border-bottom:1px solid #dfdfdf}
+.ray1, .ray2{width:180px; padding:10px; border:1px solid #b2d26b; background:#fff}
+.ray1{top:27px; right:12px}
+.ray2{top:24px; *top:25px; left:0}
+	.ray1_1{width:110px; height:16px; line-height:16px; padding:0 4px; border:1px solid #d1d1d1}
+	.ray1_2{line-height:22px; margin-top:8px}
+		.ray1_2 LI{width:50%; float:left}
+		A.ray1_21, A.ray1_21:hover{padding:2px 1px 0 2px; color:#fff; text-decoration:none; background:#5f9d2e}
+.txt_f1, .txt_f2, .txt_f3{height:23px; line-height:23px; padding:0 4px}
+.txt_f1{border:1px solid #7f9db9}
+.txt_f2{border:1px solid #006ad7}
+.txt_f3{border:1px solid #f00}
+.txt_p1, .txt_p2, .txt_p3{margin-left:10px}
+.txt_p2, .txt_p3{line-height:23px; padding:0 10px}
+.txt_p1{position:relative; top:5px}
+.txt_p2{border:1px solid #33abdd; background:#cbecfb}
+.txt_p3{border:1px solid #e14040; background:#fbd0cd}
+.pic1{width:276px; margin-top:45px}
+.pic10{width:276px; margin:10px 22px 0 8px !important; margin:10px 22px 0 4px}
+	.pic1_1, .pic1_2, .pic1_3, .pic1_5, .pic1_6, .pic1_7, .pic1_8, .pic1_9, .pic1_10{height:1px; overflow:hidden}
+	.pic1_1{border:solid #d8d8d8; background:#ccc; margin:0 2px}
+	.pic1_2, .pic1_3, .pic1_4{background:#f2f2f2}
+	.pic1_2{border:solid #ccc; margin:0 1px}
+	.pic1_3{border:solid #d8d8d8}
+	.pic1_4{border:solid #ccc; height:260px; padding:20px 0 0}
+	.pic1_5, .pic1_7, .pic1_8, .pic1_9, .pic1_10{background:#d8d8d8}
+	.pic1_6{border:solid #d8d8d8; border-width:0 2px; background:#ccc}
+	.pic1_7{border:solid #e2e2e2}
+	.pic1_8{border:solid #f6f6f6}
+	.pic1_9{border:solid #ededed; margin:0 1px}
+	.pic1_10{border:solid #e2e2e2; margin:0 3px}
+	.pic1_1, .pic1_2, .pic1_3, .pic1_4, .pic1_7, .pic1_8, .pic1_9, .pic1_10{border-width:0 1px}
+	.pic1_11{height:16px; line-height:16px; margin:13px auto 32px}
+		.pic1_11 IMG{margin-right:7px; float:left}
+.pic2{top:-5px; left:-11px}
+.pic3{margin-left:10px}
+.literal1{height:29px; line-height:29px; padding:0 4px; border:1px solid #f2f2f2; background:#f9f9f9}
+.literal2, .literal4{width:930px}
+.literal2{border-bottom:1px solid #e0e0e0}
+	.literal2 DT{padding:22px 0 7px 20px}
+	.literal2 DD{padding:0 30px 10px 40px}
+	.literal2 DD A{color:#4f4f4f; text-decoration:none}
+	.literal2 DD A:hover{color:#f60; text-decoration:underline}
+.literal4{margin:10px auto 0}
+	.literal4 LI{width:50%; line-height:32px; float:left}
+	.literal4 A{color:#4f4f4f; text-decoration:none}
+	.literal4 A:hover{color:#f60; text-decoration:underline}
+.literal3{width:650px}
+	.literal3_1{padding:30px 0 15px; font:bold 24px Arial}
+	.literal3_2, .literal3_3{padding-left:30px}
+		.literal3_2 LI{line-height:34px}
+	.literal3_3{margin:20px auto 55px}
+.eshow{display:inline; clear:both}
+	.eshow dt, .eshow dd{float:left; height:14px; margin:3px 8px 7px 0; *margin:3px 8px 8px 0; _margin:3px 6px 6px 0}
+	.eshow dt a, .eshow dd a, .eshow dt span, .eshow dd span{text-decoration:none; display:block; height:14px; line-height:14px; border:1px #5c9b2a solid; font-size:12px; text-align:center}
+	.eshow dt a, .eshow dd a{background:#fff}
+	.eshow dt span, .eshow dd span{background:#5c9b2a; color:#fff}
+	.eshow dt, .eshow dt a, .eshow dt span{width:32px}
+	.eshow dd, .eshow dd a, .eshow dd span{width:14px; color:#5c9b2a}
+	.eshow dt a:hover, .eshow dd a:hover{text-decoration:none; position:absolute; height:32px; line-height:32px; font-size:28px; color:#5c9b2a; z-index:100; margin:-9px 0 0 -9px}
+	.eshow dt a:hover{width:68px}
+	.eshow dd a:hover{width:32px}
+.w700{width:700px}
+/* ---------------------- */
+.page{margin:10px !important; margin:10px 5px}
+	.page SPAN{padding:3px 15px 0 0; *padding:4px 15px 0 0}
+	.page A, .page LABEL{float:left; margin:0 0 0 3px; padding:3px 7px 2px; *padding:4px 7px 1px; border:1px solid #bcbcbc; background:#fff; text-align:center}
+	.page LABEL{color:#7b7b7b}
+	.page A, .pageturn A:hover{text-decoration:none}
+	.page A{color:#5c9b2a}
+	.page A:hover{border-color:#5c9b2a; background:#5c9b2a; color:#fff}
+.case2{border:1px solid #ccc; background:#f5f5f5}
+	.case2_1{height:34px; line-height:34px; padding:0 10px; border-bottom:1px solid #e6e6e6; background:#fff url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 0}
+	.case2_2{padding:8px 0 4px}
+	.case2_3 TH{width:72px; font-weight:normal; text-align:right}
+.title{margin:20px auto 0; color:#333}
+	.title_1{height:29px; padding-left:20px; background:url(http://common.goufang.com/book/images/icon_7.gif) no-repeat 7px 3px}
+	.title_2{height:1px; *margin-top:-9px; background:#e0e0e0}
+		.title_2 P{width:198px; background:#b2d26b}
+.pop1, .pop2{padding:10px; border:1px solid #e2dbb1; background:#efe9c5}
+.pop1{width:378px}
+.pop2{width:624px}
+.pop_1, .pop_2, .pop_3, .pop_4{background:#fff; overflow:hidden}
+	.pop_1, .pop_2{height:1px}
+	.pop_1{margin:0 4px}
+	.pop_2{margin:0 2px}
+	.pop_3{height:2px; margin:0 1px}
+		.pop_41{height:31px; line-height:31px; padding:0 6px 0 10px}
+			.pop_41 A, .pop_41 A:hover{text-decoration:none}
+		.pop_42{margin:0 auto 2px}
+		.pop_42 TH{width:22%; height:38px; padding-right:10px; font-weight:normal; text-align:right}
+		.pop_43, .pop_44{width:570px}
+			.pop_431{width:278px; height:19px; line-height:19px; padding:0 4px; border:1px solid #bbb}
+			.pop_432{width:270px; line-height:24px; padding:0 8px 7px; border:1px solid #c7dd99; background:#fff; top:20px; *top:21px; left:0}
+				.pop_432 LI{border-bottom:1px solid #e6e6e6}
+		.pop_44{color:#ccc}
+			.pop_44 A{padding:2px 5px 1px; text-decoration:none; color:#666}
+			.pop_44 A:hover, A.pop_441{color:#666; text-decoration:none; background:#c7dd99}
+		.pop_45{width:558px; height:165px; padding:5px 0 0 10px; border:1px solid #ccc; overflow:scroll; overflow-x:hidden}
+			.pop_45 LI{width:50%; *width:48%; float:left}			
+.ramus{width:168px; padding-bottom:20px; border:solid #b2d26b; border-width:2px 1px 1px}
+	.ramus P{height:32px; line-height:32px; padding-left:9px; border-bottom:1px solid #d9d9d9; color:#333; background:url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 -66px}
+	.ramus OL, .ramus UL{width:160px; margin:0 auto; border-bottom:1px solid #ebf4d5}
+	.ramus OL{height:30px; line-height:30px; background:url(http://common.goufang.com/book/images/ramus0.gif) no-repeat 9px 11px}
+	.ramus UL{line-height:24px; padding:4px 0; color:#999}
+		.ramus_1{padding-left:9px}
+		.ramus_2{padding-left:21px}
+		.ramus_3{padding-left:34px}
+		.ramus_4{padding-left:54px}
+	.ramus A, .ramus A:hover{text-decoration:none}
+		.ramus OL A{padding-left:20px; font-weight:bold; color:#666; display:block}
+		.ramus UL A{color:#666}
+		.ramus OL A:hover, .ramus UL A:hover{color:#5f9d2e}
