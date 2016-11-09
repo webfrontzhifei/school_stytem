@@ -1,0 +1,67 @@
+.ramus{width:198px; padding-bottom:20px; border:solid #b2d26b; border-width:2px 1px 1px}
+	.ramus P{height:32px; line-height:32px; padding-left:9px; border-bottom:1px solid #d9d9d9; color:#333; background:url(http://common.goufang.com/book/images/bg_2.gif) repeat-x 0 -66px}
+	.ramus A, .ramus A:hover{text-decoration:none}
+	.ramus A{width:170px; height:30px; line-height:30px; margin:0 auto; padding-left:20px; border-bottom:1px solid #ebf4d5; font-weight:bold; color:#666; background:url(http://common.goufang.com/book/images/ramus.gif) no-repeat 9px 11px; display:block}
+	.ramus A:hover{color:#5f9d2e}
+.matter{width:735px}
+	.matter_1, .matter_2, .matter_3, .matter_4{border:1px solid #d9d9d9}
+	.matter_1, .matter_2{width:733px}
+	.matter_1{background:#f8f8f8}
+		.matter_11{width:348px; margin:3px 6px 3px 0 !important; margin:3px 3px 3px 0; padding:6px 0; background:#c1c1c1}
+			.matter_11 IMG{border:1px solid #b1b1b1}
+		.matter_12{width:350px; padding-left:18px; color:#333}
+			.matter_121{padding:12px 0 15px; font:bold 22px Arial}
+	{width:733px}
+		.matter_21{width:733px; height:33px; color:#333; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -229px}
+			.matter_21 P, .matter_21 LABEL, .matter_21 A{height:33px; line-height:33px}
+			.matter_21 P{padding:0 30px}
+			.matter_21 A.taxis, .matter_21 A.taxis:hover, .matter_21 A.sort, .matter_21 A.sort:hover{padding:0 12px; border-left:1px solid #dfdfdf; color:#666; text-decoration:none; float:left}
+			.matter_21 A.taxis, .matter_21 A.taxis:hover{background:#fff}
+			.matter_21 LABEL{padding:0 12px; border-left:1px solid #dfdfdf; border-right:1px solid #dfdfdf; background:#fff}
+			.matter_21 A.more{color:#1a66b3; margin-right:10px}
+			.matter_21 A.more:hover{color:#f60}
+		.matter_22 UL{width:146px; height:200px; padding-left:30px; float:left}
+			.matter_22 IMG{margin-bottom:4px}
+			.matter_22 LI{line-height:18px; color:#666}
+			.matter_22 A{color:#1a66b3}
+			.matter_22 A:hover{color:#f60}
+	.matter_3, .matter_4{height:270px}
+	.matter_3{width:474px}
+		.matter_31{height:33px; line-height:33px; padding:0 14px; color:#333; background:url(http://common.goufang.com/book/images/bg.gif) repeat-x 0 -229px}
+			.matter_31 LI{padding-left:20px; background:url(http://common.goufang.com/book/images/icon_14.gif) no-repeat 0 9px}
+		.matter_32{width:442px}
+			.matter_32 TD, .matter_32 TH{border-bottom:1px dashed #afafaf}
+			.matter_32 TD{height:73px; *height:50px; line-height:22px; padding-top:22px; vertical-align:top}
+			A.matter_321{color:#1a66b3}
+			A.matter_321:hover{color:#f60}
+	.matter_4{width:242px}
+		.matter_41{margin-top:10px}
+			.matter_41 UL{width:50%; float:left}
+			.matter_41 LI, .matter_41 P{text-align:center}
+			.matter_41 P{padding:3px 0 6px}
+.under{height:106px; padding:22px 0 0 57px; border:1px solid #dbdbdb; background:#f8f8f8}
+	.under DL{width:148px; float:left}
+	.under DT{height:15px; line-height:15px; padding:0 0 12px 25px; font:bold 14px SimSun}
+	.under DD{height:24px; line-height:24px; padding-left:23px}
+	.under IMG{margin-right:4px; top:2px}
+	.under_1{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 1px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 0}
+	.under_2{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -29px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -30px}
+	.under_3{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -57px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -58px}
+	.under_4{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -86px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -87px}
+	.under_5{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -114px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -115px}
+	.under_6{background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -144px; *background:url(http://common.goufang.com/book/images/icon_8.gif) no-repeat 0 -145px}
+.things{width:760px}
+	.things_1{height:162px; padding:29px 0 0 27px; border:1px solid #d9d9d9; background:#f8f8f8}
+		.things_11{width:120px}
+			.things_11 IMG{padding:3px; border:1px solid #c1c1c1; background:#e8e8e8}
+			.things_11 LI{height:30px; line-height:30px}
+		.things_12{line-height:27px; padding:8px 0 8px 34px}
+			.things_12 IMG{margin:6px 20px 0 0}
+		.things_13{width:505px; height:29px; line-height:29px; margin-left:36px; border:1px solid #e7e7e7; background:#fff}
+			.things_13 LI{width:25%; text-align:center; float:left}
+	.things_2{width:758px; border:1px solid #d9d9d9}
+		.things_21{height:40px; line-height:40px; padding:0 25px; border-bottom:1px solid #d9d9d9; background:#f8f8f8}
+		.things_22{padding:20px 0 24px 56px; *padding:20px 0 0 56px}
+			.things_22 UL{width:120px; height:202px; margin-right:55px; float:left}
+				.things_22 IMG{padding:2px; border:1px solid #c4c4c4}
+				.things_22 LI{line-height:18px}

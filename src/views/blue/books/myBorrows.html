@@ -1,0 +1,106 @@
+<% 
+    include('../widget/top',{
+    	title: '滴滴校园平台',
+        locals: local,
+        css: ['/static_proxy/themes/blue/books/front.css','/static_proxy/themes/blue/books/screen.css','/static_proxy/themes/blue/books/homepage.css']   
+    }); 
+%>
+<div id="bookshomepage">
+	<div class="container">
+		<div class="headerContainer">
+			<div class="bus_header">
+				<div class="logo"></div>
+				<div class="separator_line" style="margin-left:26px;"></div>
+				<div class="menu menu_index">
+					<a href="">首页</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">图书检索</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu_current menu menu_fav">
+					<a href="">我的借阅</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我的外借</a>
+				</div>
+				<div class="separator_line"></div>
+				<div class="menu menu_fav">
+					<a href="">我的书库</a>
+				</div>
+				<div class="user">
+					liuciwen(刘慈文)
+				</div>
+				<div class="staffHead">
+					<img src="/public/avatars/profile.jpg" alt="头像" style="width:38px;height:40px;border:0;"/>
+				</div>
+			</div>
+		</div>
+		<div class="borrows div_950 mauto">
+			<p class="lh24 cur_pos">
+				当前位置：<a href="">我的借阅</a>
+			</p>
+			<div id="list" class="table-detail mt20">
+				<div class="table-content">
+                	<div class="table-size">
+                        <table class="table table-base">
+                            <thead>
+                                <tr>
+                                    <th class="tb-view">ISBN</th>
+                                    <th class="tb-name">书名</th>
+                                     <th class="tb-scene">作者</th>
+                                    <th class="tb-scene">来自</th>
+                                    <th class="tb-time">借阅日期</th>
+                                    <th class="tb-action">应还日期</th>
+                                    <th class="tb-action">联系电话</th>
+                                    <th class="tb-action">取书地</th>
+                                    <th class="tb-action">操作状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<%
+                            	for(var i = 0; i < unExpress.length; i++){
+                            		var item = unExpress[i];
+
+                            	%>
+                            	<tr>
+									<td><%=item.isbn %></td>
+									<td><%=item.title %></td>
+									<td><%=item.author %></td>
+									<td><%=item.owner %></td>
+									<td><%=item.startDate %></td>
+									<td><%=item.endDate %></td>
+									<td><%=item.phone %></td>
+									<td><%=item.place %></td>
+									<td><a href="" class="lbf-button lbf-button-primary <%=item.delay ? 'lbf-button-disabled' : '' %>"><%=item.state %></a></td>
+                            	</tr>
+								<%
+                            	} 
+                            	%>
+                            </tbody>
+                        </table>
+                	</div>
+                    <div class="table-page">
+                        <div class="table-page-data">共<span><%=total %></span>条记录，每页显示<a href="javascript:" class="table-page-a"><span>15</span><i class="icon-con-arrow"></i></a></div>
+                        <div class="pagination"></div>
+                    </div>
+            	</div>
+            </div>  
+		</div>
+		<div class="home_footer">
+        	<p class="copyright">Copyright 2015-2016 frontendzhifei. All Rights Reserved. 前端大飞版权所有</p>
+    	</div>
+	</div>
+</div>
+<%
+	include('../widget/bottom', {
+		locals: local
+	});
+%>
+<script type="text/javascript">
+    LBF.use('qidian.sites.books.MyBorrowsController', function(MyBorrowsController) {
+        new MyBorrowsController(<%== safeJSONStringify(unExpress)%>);
+    });
+</script>
